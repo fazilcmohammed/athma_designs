@@ -39,21 +39,20 @@ const Contact = () => {
                 <FaMapMarkerAlt size={20} />
               </div>
               <p className="text-gray-800">
-                43 Raymouth Rd. <br />
-                Baltimore, London 3910
+                Kottakkal, Malappuram Dist. <br />
               </p>
             </div>
             <div className="flex flex-col items-center text-center">
               <div className="bg-green-600 p-3 rounded-full text-white mb-3">
                 <FaEnvelope size={20} />
               </div>
-              <p className="text-gray-800">info@yourdomain.com</p>
+              <p className="text-gray-800">info@cabvera.com</p>
             </div>
             <div className="flex flex-col items-center text-center">
               <div className="bg-green-600 p-3 rounded-full text-white mb-3">
                 <FaPhone size={20} />
               </div>
-              <p className="text-gray-800">+1 294 3925 3939</p>
+              <p className="text-gray-800">+91 7510 444 222</p>
             </div>
           </div>
 
