@@ -20,9 +20,9 @@ const Navbar = () => {
           {/* <li><a href="/" className="hover:text-gray-500">Home</a></li> */}
           <li><Link to="/" className="hover:text-gray-300">Home</Link></li>
           {/* <li><a href="/about" className="hover:text-gray-500">About</a></li> */}
-          <li><Link to="/about" className="hover:text-gray-300">About</Link></li>
+          <li><Link to="/about" className="hover:text-gray-300">About Us</Link></li>
           {/* <li><a href="/contact" className="hover:text-gray-500">Contact Us</a></li> */}
-          <li><Link to="/contact" className="hover:text-gray-300">Contact</Link></li>
+          <li><Link to="/contact" className="hover:text-gray-300">Contact Us</Link></li>
         </ul>
 
         {/* Hamburger Button */}
@@ -40,8 +40,8 @@ const Navbar = () => {
 
         <ul className="text-lg space-y-6 font-medium text-center">
           <li><a href="/" className="hover:text-gray-500" onClick={() => setIsOpen(false)}>Home</a></li>
-          <li><a href="/about" className="hover:text-gray-500" onClick={() => setIsOpen(false)}>About</a></li>
-          <li><a href="/contact" className="hover:text-gray-500" onClick={() => setIsOpen(false)}>Contact</a></li>
+          <li><a href="/about" className="hover:text-gray-500" onClick={() => setIsOpen(false)}>About Us</a></li>
+          <li><a href="/contact" className="hover:text-gray-500" onClick={() => setIsOpen(false)}>Contact Us</a></li>
         </ul>
 
         {/* Cart Button (Now below links) */}

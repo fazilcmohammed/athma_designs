@@ -6,7 +6,7 @@ const Herosection = () => {
     <section className="flex flex-col md:flex-row items-center justify-between px-6 md:px-16 py-12 md:py-20 bg-white">
       {/* Left Content */}
       <div className="md:w-1/2 text-center md:text-left">
-        <h1 className="text-4xl sm:text-4xl md:text-6xl font-bold text-gray-900 leading-tight md:leading-tight">
+        <h1 className="text-5xl sm:text-5xl md:text-6xl font-bold text-gray-900 leading-tight md:leading-tight">
           Perfect Harmony: <br /> Comfort & <br /> Style
         </h1>
         <p className="text-gray-600 my-6 md:my-8 text-sm sm:text-base">
@@ -27,7 +27,7 @@ const Herosection = () => {
         <img
           src={hero_img}
           alt="Furniture"
-          className="w-[90%] sm:w-[70%] md:w-[600px] h-auto rounded-3xl shadow-lg"
+          className="w-[90%] sm:w-[80%] md:w-[600px] h-auto rounded-3xl shadow-lg"
         />
       </div>
     </section>
