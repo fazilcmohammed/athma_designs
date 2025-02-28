@@ -10,10 +10,10 @@ const Navbar = () => {
     <nav className="bg-white shadow-md px-6 md:px-20 py-4 flex items-center justify-between fixed top-0 left-0 w-full z-50">
       {/* Logo */}
       {/* <div className="text-2xl font-bold text-green-600">VEGEFOODS</div> */}
-      <img src={logo} alt="" className="w-20"/> 
+      <img src={logo} alt="" className="w-14 md:w-16"/> 
 
       {/* Desktop Links */}
-      <div className="hidden md:flex space-x-6 text-gray-700 font-semibold">
+      <div className="hidden md:flex space-x-10 text-gray-700 text-md font-medium">
         <Link to="/" className="hover:text-green-500">HOME</Link>
         <Link to="/about" className="hover:text-green-500">ABOUT</Link>
         <Link to="/contact" className="hover:text-green-500">CONTACT</Link>
@@ -35,7 +35,7 @@ const Navbar = () => {
 
       {/* Mobile Menu (Cart moved inside on small screens) */}
       <div
-        className={`absolute top-16 left-0 w-full bg-black text-white text-center py-5 flex flex-col space-y-4 transition-all duration-300 ${
+        className={`absolute top-[70px] left-0 w-full bg-[#00B3BC] text-white text-center py-10 flex flex-col space-y-6 transition-all duration-300 ${
           isOpen ? "opacity-100 visible" : "opacity-0 invisible"
         }`}
       >

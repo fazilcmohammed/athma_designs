@@ -59,28 +59,28 @@ const Footer = () => {
           </ul>
         </div>
 
-        <div>
-          <h3 className="text-xl font-semibold mb-3">Have a Question?</h3>
-          <ul className="space-y-2 text-gray-500">
-            <li className="flex items-center space-x-2">
-              <FaMapMarkerAlt className="text-green-500" />
-              <span>203 Fake St. Mountain View, San Francisco, CA, USA</span>
-            </li>
-            <li className="flex items-center space-x-2">
-              <FaPhoneAlt className="text-green-500" />
-              <span>+2 392 3929 210</span>
-            </li>
-            <li className="flex items-center space-x-2">
-              <FaEnvelope className="text-green-500" />
-              <span>info@yourdomain.com</span>
-            </li>
-          </ul>
-        </div>
+        <div className="flex flex-col items-center md:items-start">
+  <h3 className="text-xl font-semibold mb-3">Have a Question?</h3>
+  <ul className="space-y-3 text-gray-500">
+    <li className="flex flex-col items-center md:flex-row md:items-start space-x-0 md:space-x-2 text-center md:text-left">
+      <FaMapMarkerAlt className="text-green-500 mb-1 md:mb-0" />
+      <span>203 Fake St. Mountain View, San Francisco, CA, USA</span>
+    </li>
+    <li className="flex flex-col items-center md:flex-row md:items-start space-x-0 md:space-x-2">
+      <FaPhoneAlt className="text-green-500 mb-1 md:mb-0" />
+      <span>+2 392 3929 210</span>
+    </li>
+    <li className="flex flex-col items-center md:flex-row md:items-start space-x-0 md:space-x-2">
+      <FaEnvelope className="text-green-500 mb-1 md:mb-0" />
+      <span>info@yourdomain.com</span>
+    </li>
+  </ul>
+</div>
       </div>
 
       <div className="text-center mt-8 text-gray-500 text-sm">
-        Copyright © {new Date().getFullYear()} All rights reserved | This template is made with ❤️ by{" "}
-        <a href="#" className="text-green-500">Colorlib</a>
+        Copyright © {new Date().getFullYear()} All rights reserved 
+        
       </div>
     </footer>
   );

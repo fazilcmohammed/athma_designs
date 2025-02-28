@@ -43,7 +43,7 @@ export const products = [
       name: "BELL PEPPER",
       price: 120,
       oldPrice: null,
-      discount: "30%",
+      discount: null,
       image: prod1,
     },
     {
@@ -75,7 +75,7 @@ export const products = [
       name: "TOMATO",
       price: 80,
       oldPrice: 120,
-      discount: "30%",
+      discount: null,
       image: prod4,
     },
     {

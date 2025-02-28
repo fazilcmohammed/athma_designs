@@ -46,7 +46,7 @@ const HeroSection = () => {
       <div className="absolute inset-0 bg-black bg-opacity-40 flex flex-col items-center justify-center text-center px-6">
         <h1
           key={slides[currentIndex].title} // Forces React to animate text
-          className={`text-4xl md:text-6xl text-white font-bold transition-opacity duration-1000 ${
+          className={`text-5xl md:w-[50%] md:text-6xl mt-12 text-white font-bold transition-opacity duration-1000 ${
             fade ? "opacity-100" : "opacity-0"
           }`}
         >
@@ -54,7 +54,7 @@ const HeroSection = () => {
         </h1>
         <p
           key={slides[currentIndex].description}
-          className={`text-white text-lg mt-4 transition-opacity duration-1000 ${
+          className={`text-white text-lg my-3 transition-opacity duration-1000 ${
             fade ? "opacity-100" : "opacity-0"
           }`}
         >
