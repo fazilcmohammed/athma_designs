@@ -1,33 +1,64 @@
 import { useState, useEffect } from "react";
-import bgimg1 from '../assets/images/bg_1.jpg'
-import bgimg2 from '../assets/images/bg_2.jpg'
-const images = [
-  bgimg1,  // Change to your actual image paths
-  bgimg2,
+import bgimg1 from "../assets/images/bg_1.jpg";
+import bgimg2 from "../assets/images/bg_2.jpg";
+
+const slides = [
+  {
+    image: bgimg1,
+    title: "We Serve Fresh Vegetables & Fruits",
+    description: "We deliver organic vegetables & fruits",
+  },
+  {
+    image: bgimg2,
+    title: "100% Organic & Fresh Foods",
+    description: "Directly from farms to your home",
+  },
 ];
 
 const HeroSection = () => {
-  const [currentImage, setCurrentImage] = useState(0);
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const [fade, setFade] = useState(true);
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setCurrentImage((prev) => (prev + 1) % images.length);
-    }, 3000); // Change image every 3 seconds
+      setFade(false); // Start fade-out
+
+      setTimeout(() => {
+        setCurrentIndex((prev) => (prev + 1) % slides.length); // Change image & text
+        setFade(true); // Start fade-in after change
+      }, 500); // Allow fade-out before switching
+    }, 4000); // Total cycle: 4s (3.5s visible + 0.5s fade)
 
     return () => clearInterval(interval);
   }, []);
 
   return (
-    <div
-      className="relative w-full h-screen bg-cover bg-center transition-all duration-1000"
-      style={{ backgroundImage: `url(${images[currentImage]})` }}
-    >
-      <div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col items-center justify-center text-center">
-        <h1 className="text-5xl md:text-7xl text-white font-bold">
-          We Serve Fresh Vegetables & Fruits
+    <div className="relative w-full h-screen overflow-hidden">
+      {/* Background Image - Fades with Text */}
+      <div
+        className={`absolute inset-0 w-full h-full bg-cover bg-center transition-opacity duration-1000 ${
+          fade ? "opacity-100" : "opacity-0"
+        }`}
+        style={{ backgroundImage: `url(${slides[currentIndex].image})` }}
+      ></div>
+
+      {/* Overlay & Text */}
+      <div className="absolute inset-0 bg-black bg-opacity-40 flex flex-col items-center justify-center text-center px-6">
+        <h1
+          key={slides[currentIndex].title} // Forces React to animate text
+          className={`text-4xl md:text-6xl text-white font-bold transition-opacity duration-1000 ${
+            fade ? "opacity-100" : "opacity-0"
+          }`}
+        >
+          {slides[currentIndex].title}
         </h1>
-        <p className="text-white text-lg mt-4">
-          We deliver organic vegetables & fruits
+        <p
+          key={slides[currentIndex].description}
+          className={`text-white text-lg mt-4 transition-opacity duration-1000 ${
+            fade ? "opacity-100" : "opacity-0"
+          }`}
+        >
+          {slides[currentIndex].description}
         </p>
         <button className="mt-6 px-6 py-3 bg-green-500 text-white font-semibold rounded-md hover:bg-green-600 transition-all">
           View Details
