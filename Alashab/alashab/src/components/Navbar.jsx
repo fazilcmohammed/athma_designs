@@ -1,15 +1,16 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { FaShoppingCart, FaBars, FaTimes } from "react-icons/fa";
+import logo from '../assets/images/logo.png'
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="bg-white shadow-md px-6 md:px-10 py-4 flex items-center justify-between fixed top-0 left-0 w-full z-50">
+    <nav className="bg-white shadow-md px-6 md:px-20 py-4 flex items-center justify-between fixed top-0 left-0 w-full z-50">
       {/* Logo */}
       {/* <div className="text-2xl font-bold text-green-600">VEGEFOODS</div> */}
-      
+      <img src={logo} alt="" className="w-20"/> 
 
       {/* Desktop Links */}
       <div className="hidden md:flex space-x-6 text-gray-700 font-semibold">
