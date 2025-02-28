@@ -13,10 +13,10 @@ const Navbar = () => {
       <img src={logo} alt="" className="w-14 md:w-16"/> 
 
       {/* Desktop Links */}
-      <div className="hidden md:flex space-x-10 text-gray-700 text-md font-medium">
-        <Link to="/" className="hover:text-green-500">HOME</Link>
-        <Link to="/about" className="hover:text-green-500">ABOUT</Link>
-        <Link to="/contact" className="hover:text-green-500">CONTACT</Link>
+      <div className="hidden md:flex space-x-10 text-gray-700 text-sm font-medium">
+        <Link to="/" className="hover:text-[#068f96]">HOME</Link>
+        <Link to="/about" className="hover:text-[#068f96]">ABOUT</Link>
+        <Link to="/contact" className="hover:text-[#068f96]">CONTACT</Link>
       </div>
 
       {/* Cart (Visible only on Large Screens) */}

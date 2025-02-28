@@ -7,22 +7,22 @@ const ContactSection = () => {
             <div className="grid grid-cols-1 md:grid-cols-4 gap-6 mb-10">
                 <div className="bg-gray-100 p-6 rounded-lg">
                     <h3 className="text-lg font-semibold">Address:</h3>
-                    <p className="text-gray-600">198 West 21th Street, Suite 721 New York, NY 10016</p>
+                    <p className="text-[#068f96] font-bold">198 West 21th Street, Suite 721 New York, NY 10016</p>
                 </div>
                 <div className="bg-gray-100 p-6 rounded-lg">
                     <h3 className="text-lg font-semibold">Phone:</h3>
-                    <p className="text-gray-600 font-bold">+ 1235 2355 98</p>
+                    <p className="text-[#068f96] font-bold">+ 1235 2355 98</p>
                 </div>
                 <div className="bg-gray-100 p-6 rounded-lg">
                     <h3 className="text-lg font-semibold">Email:</h3>
                     <p className="text-gray-600">
-                        <a href="mailto:info@yoursite.com" className="text-blue-500 font-bold">info@yoursite.com</a>
+                        <a href="mailto:info@yoursite.com" className="text-[#068f96] font-bold">info@yoursite.com</a>
                     </p>
                 </div>
                 <div className="bg-gray-100 p-6 rounded-lg">
                     <h3 className="text-lg font-semibold">Website:</h3>
                     <p className="text-gray-600">
-                        <a href="https://yoursite.com" className="text-blue-500 font-bold">yoursite.com</a>
+                        <a href="https://yoursite.com" className="text-[#068f96] font-bold">yoursite.com</a>
                     </p>
                 </div>
             </div>
@@ -67,7 +67,7 @@ const ContactSection = () => {
                         ></textarea>
                         <button
                             type="submit"
-                            className="bg-green-500 text-white font-semibold py-3 px-6 rounded-lg w-full hover:bg-green-600"
+                            className="bg-[#068f96] text-white font-semibold py-3 px-6 rounded-lg w-full hover:bg-[#20d6e0]"
                         >
                             Send Message
                         </button>

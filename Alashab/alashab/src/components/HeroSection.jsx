@@ -60,7 +60,7 @@ const HeroSection = () => {
         >
           {slides[currentIndex].description}
         </p>
-        <button className="mt-6 px-6 py-3 bg-green-500 text-white font-semibold rounded-md hover:bg-green-600 transition-all">
+        <button className="mt-6 px-6 py-3 bg-[#068f96] text-white font-semibold rounded-md hover:bg-green-600 transition-all">
           View Details
         </button>
       </div>

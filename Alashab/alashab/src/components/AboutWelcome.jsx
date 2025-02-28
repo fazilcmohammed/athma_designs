@@ -13,7 +13,7 @@ const AboutWelcome = () => {
           We provide high-quality fresh fruits sourced directly from farms to ensure the best taste and nutrition.
           Our commitment is to deliver fresh and organic products worldwide.
         </p>
-        <button className="mt-6 px-6 py-3 bg-green-500 text-white rounded-lg text-lg font-semibold shadow-md hover:bg-green-600 transition">
+        <button className="mt-6 px-6 py-3 bg-[#068f96] text-white rounded-lg text-lg font-semibold shadow-md hover:bg-green-600 transition">
           Learn More
         </button>
       </div>
