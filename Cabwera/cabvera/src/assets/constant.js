@@ -20,13 +20,13 @@ export const comfortPoints = [
   ];
 
 export const categories = [
-    { name: "Glass Pantry", image: prod1 },
-    { name: "S Corner Storage", image: prod2 },
-    { name: "UMC Shelf", image: prod3 },
+    { name: "Pantry Tall Unit", image: prod1 },
+    { name: "Swing Corner", image: prod2 },
+    { name: "Magic Corner", image: prod3 },
     { name: "Wooden Wicker Basket", image: prod4 },
-    { name: "BPO Glass Bidding", image: prod5 },
-    { name: "Waste Bin (Auto Lid)", image: prod6 },
-    { name: "Satin Tall Unit", image: prod7 },
+    { name: "Bottle Pull Out", image: prod5 },
+    { name: "Waste Bin", image: prod6 },
+    { name: "Side Tall Unit", image: prod7 },
     { name: "Wooden Cutlary", image: prod8 },
 ];
   
