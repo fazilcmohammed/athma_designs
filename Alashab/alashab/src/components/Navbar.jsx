@@ -10,7 +10,8 @@ const Navbar = () => {
     <nav className="bg-white shadow-md px-6 md:px-20 py-4 flex items-center justify-between fixed top-0 left-0 w-full z-50">
       {/* Logo */}
       {/* <div className="text-2xl font-bold text-green-600">VEGEFOODS</div> */}
-      <img src={logo} alt="" className="w-14 md:w-16"/> 
+      <Link to="/" className="hover:text-[#068f96]"><img src={logo} alt="" className="w-14 md:w-16"/> </Link>
+      
 
       {/* Desktop Links */}
       <div className="hidden md:flex space-x-10 text-gray-700 text-sm font-medium">
