@@ -22,7 +22,7 @@ const Footer = () => {
       <div className="container mx-auto px-5 grid md:grid-cols-4 sm:grid-cols-2 gap-8 text-center md:text-left">
         <div>
           {/* <h3 className="text-xl font-semibold mb-3">Vegefoods</h3> */}
-          <img src={logo} alt="" className="w-14 md:w-16"/> 
+          <img src={logo} alt="" className="w-20 md:w-20 mx-auto md:mx-0 my-5"/> 
           <p className="text-gray-500">
             Far far away, behind the word mountains, far from the countries
             Vokalia and Consonantia.
@@ -66,16 +66,16 @@ const Footer = () => {
   <h3 className="text-xl font-semibold mb-3">Have a Question?</h3>
   <ul className="space-y-3 text-gray-500">
     <li className="flex flex-col items-center md:flex-row md:items-start space-x-0 md:space-x-2 text-center md:text-left">
-      <FaMapMarkerAlt className="text-[#068f96] mb-1 md:mb-0" />
-      <span>203 Fake St. Mountain View, San Francisco, CA, USA</span>
+      <FaMapMarkerAlt className="text-[#068f96] md:text-3xl mb-1 md:mb-0" />
+      <span>Office No 166-107 Al Garhoud Bussiness Center, Al Garhoud</span>
     </li>
     <li className="flex flex-col items-center md:flex-row md:items-start space-x-0 md:space-x-2">
-      <FaPhoneAlt className="text-[#068f96] mb-1 md:mb-0" />
-      <span>+2 392 3929 210</span>
+      <FaPhoneAlt className="text-[#068f96] mb-1 text-1xl md:mb-0" />
+      <span>+971 58 2700427 <br /> +971 507576780 <br /> +971 50 6370154</span>
     </li>
     <li className="flex flex-col items-center md:flex-row md:items-start space-x-0 md:space-x-2">
-      <FaEnvelope className="text-[#068f96] mb-1 md:mb-0" />
-      <span>info@yourdomain.com</span>
+      <FaEnvelope className="text-[#068f96] mb-1 text-1xl md:mb-0" />
+      <span>info@alashab.net <br />sales@alashab.net <br />purchase@alashab.net</span>
     </li>
   </ul>
 </div>
