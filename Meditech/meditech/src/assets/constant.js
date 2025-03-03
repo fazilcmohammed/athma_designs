@@ -46,13 +46,13 @@ export const iconsMap = {
       color: "text-blue-400", // Custom color for specialty
     },
     {
-      name: "Danial Frankie",
+      name: "Dr. Highness Tholakkara Nazar",
       specialty: "Doctor",
       image: doc2,
       color: "text-blue-600",
     },
     {
-      name: "Alexa Jhon",
+      name: "Dr Divya",
       specialty: "Doctor",
       image: doc3,
       color: "text-blue-600",
