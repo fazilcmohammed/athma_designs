@@ -1,0 +1,91 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+{% block content %}
+<!-- Hero Section -->
+<div class="hero">
+    <div class="hero-text">
+        <h1>Elegance In Simplicity,<br> Earth’s Harmony</h1>
+        <p>Discover the beauty of minimal fashion.</p>
+    </div>
+</div>
+<div class="best-sellers">
+    <div class="section-header">
+        <h2>Best Sellers</h2>
+        <a href="#" class="view-all">View All</a>
+    </div>
+
+    <div class="products">
+        <div class="product-card">
+            <img src="{% static 'images/product1.jpg' %}" alt="Tailored Stretch">
+            <i class="fas fa-heart wishlist-icon"></i>
+            <h3>Tailored Stretch</h3>
+            <p class="desc">Turn It Up Pants</p>
+            <p class="price">$180</p>
+            <div class="color-options">
+                <span class="color black"></span>
+                <span class="color blue"></span>
+                <span class="color beige"></span>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <img src="{% static 'images/product2.jpg' %}" alt="Technical Silk">
+            <i class="fas fa-heart wishlist-icon"></i>
+            <h3>Technical Silk</h3>
+            <p class="desc">Make A Splash</p>
+            <p class="price">$120</p>
+            <div class="color-options">
+                <span class="color green"></span>
+                <span class="color blue"></span>
+                <span class="color black"></span>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <img src="{% static 'images/product3.jpg' %}" alt="Cool Weave">
+            <i class="fas fa-heart wishlist-icon"></i>
+            <h3>Cool Weave</h3>
+            <p class="desc">Anywhere Dress</p>
+            <p class="price">$210</p>
+            <div class="color-options">
+                <span class="color purple"></span>
+                <span class="color green"></span>
+                <span class="color beige"></span>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% comment %} collection {% endcomment %}
+<div class="collection-section">
+    <h2>Collection</h2>
+    <div class="collection-grid">
+        <!-- Blouses -->
+        <div class="collection-item">
+            <img src="{% static 'images/blouse.jpg' %}" alt="Blouse">
+            <span class="label">Blouses</span>
+        </div>
+
+        <!-- Pants -->
+        <div class="collection-item">
+            <img src="{% static 'images/pants.jpg' %}" alt="Pants">
+            <span class="label">Pants</span>
+        </div>
+
+        <!-- Dresses -->
+        <div class="collection-item">
+            <img src="{% static 'images/dresses.jpg' %}" alt="Dresses">
+            <span class="label">Dresses</span>
+        </div>
+
+        <!-- Outerwear -->
+        <div class="collection-item">
+            <img src="{% static 'images/outerwear.jpg' %}" alt="Outerwear">
+            <span class="label">Outerwear</span>
+        </div>
+    </div>
+</div>
+
+{% endblock content %}

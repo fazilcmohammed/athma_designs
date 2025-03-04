@@ -1,0 +1,106 @@
+{% load static %}
+{% load static tailwind_tags %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Charutha</title>
+
+    <!-- Link to Static CSS -->
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+    {% tailwind_css %}
+    <!-- Link to Static JavaScript -->
+    <script src="{% static 'js/script.js' %}" defer></script>
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/yourkitid.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <nav class="navbar">
+        <!-- Logo -->
+        <div class="logo">
+            <span class="black-text">modi</span><span class="gray-text">mal</span>
+            <p class="sub-text">women clothing</p>
+        </div>
+
+        <!-- Navigation Links -->
+        <ul class="nav-links">
+            <li><a href="#">Collection</a></li>
+            <li><a href="#">New In</a></li>
+            <li><a href="#">Modiweek</a></li>
+            <li><a href="#">Plus Size</a></li>
+            <li><a href="#">Sustainability</a></li>
+        </ul>
+
+        <!-- Icons -->
+        <div class="icons">
+            <i class="fas fa-search"></i>
+            <i class="fas fa-user"></i>
+            <i class="fas fa-heart"></i>
+            <i class="fas fa-shopping-bag"></i>
+        </div>
+    </nav>
+
+    {% block content %}{% endblock content %}
+
+    <footer class="footer">
+        <div class="footer-container">
+            <!-- Newsletter Signup -->
+            <div class="newsletter">
+                <h3>Join Our Club, Get 15% Off For Your Birthday</h3>
+                <div class="email-box">
+                    <input type="email" placeholder="Enter Your Email Address">
+                    <button>&rarr;</button>
+                </div>
+                <label class="checkbox">
+                    <input type="checkbox">
+                    By submitting your email, you agree to receive advertising emails from Modimal.
+                </label>
+                <div class="social-icons">
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-facebook"></i>
+                    <i class="fab fa-pinterest"></i>
+                    <i class="fab fa-tiktok"></i>
+                </div>
+                <p>© 2023 Modimal. All Rights Reserved.</p>
+            </div>
+    
+            <!-- Footer Links -->
+            <div class="footer-links">
+                <div>
+                    <h4>About Modimal</h4>
+                    <ul>
+                        <li><a href="#">Collection</a></li>
+                        <li><a href="#">Sustainability</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Support System</a></li>
+                        <li><a href="#">Terms & Condition</a></li>
+                        <li><a href="#">Copyright Notice</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Help & Support</h4>
+                    <ul>
+                        <li><a href="#">Orders & Shipping</a></li>
+                        <li><a href="#">Returns & Refunds</a></li>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Join Up</h4>
+                    <ul>
+                        <li><a href="#">Modimal Club</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Visit Us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
