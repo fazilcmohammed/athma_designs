@@ -63,7 +63,7 @@
     <h2>Collection</h2>
     <div class="collection-grid">
         <!-- Blouses -->
-        <div class="collection-item">
+        <div class="collection-item" >
             <img src="{% static 'images/blouse.jpg' %}" alt="Blouse">
             <span class="label">Blouses</span>
         </div>
@@ -87,5 +87,30 @@
         </div>
     </div>
 </div>
+
+<section class="sustainability-section">
+    <div class="sustainability-container">
+        <div class="sustainability-text">
+            <h2>Stylish Sustainability In Clothing Promotes Eco-Friendly Choices For A Greater Future</h2>
+            <a href="#" class="sustainability-button">Sustainability</a>
+        </div>
+    </div>
+</section>
+
+{% comment %} collage section {% endcomment %}
+<section class="collage-section">
+    <h2>Follow Us @Modimal</h2>
+    <div class="collage-container">
+        <div class="collage-item collage-item-large">
+            <img src="{% static 'images/collage1.jpg' %}" alt="Fashion Image 1">
+        </div>
+        <div class="collage-grid">
+            <img src="{% static 'images/collage2.jpg' %}" alt="Fashion Image 2">
+            <img src="{% static 'images/collage3.jpg' %}" alt="Fashion Image 3">
+            <img src="{% static 'images/collage4.jpg' %}" alt="Fashion Image 4">
+            <img src="{% static 'images/collage5.jpg' %}" alt="Fashion Image 5">
+        </div>
+    </div>
+</section>
 
 {% endblock content %}

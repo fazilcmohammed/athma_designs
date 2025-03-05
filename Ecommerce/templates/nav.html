@@ -1,41 +1,67 @@
-{% load static %}
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Navbar</title>
-    <link rel="stylesheet" href="styles.css">
-    <script src="script.js" defer></script>
-    <script src="https://kit.fontawesome.com/yourkitid.js" crossorigin="anonymous"></script>
-</head>
-<body>
-
-    <nav class="navbar">
-        <!-- Logo -->
-        <div class="logo">
-            <span class="black-text">modi</span><span class="gray-text">mal</span>
-            <p class="sub-text">women clothing</p>
+<nav class="navbar">
+    <div class="left">
+        <div class="menu-toggle" onclick="toggleMenu()">
+            <i class="fas fa-bars"></i>
         </div>
-
-        <!-- Navigation Links -->
-        <ul class="nav-links">
-            <li><a href="#">Collection</a></li>
-            <li><a href="#">New In</a></li>
-            <li><a href="#">Modiweek</a></li>
-            <li><a href="#">Plus Size</a></li>
-            <li><a href="#">Sustainability</a></li>
-        </ul>
-
-        <!-- Icons -->
-        <div class="icons">
+        <div class="logo">modimal<span>.</span></div>
+    </div>
+    <ul class="nav-links">
+        <li class="dropdown" onmouseover="showDropdown('collection')" onmouseleave="hideDropdown()">
+            <a href="#">Collection</a>
+        </li>
+        <li class="dropdown" onmouseover="showDropdown('new-in')" onmouseleave="hideDropdown()">
+            <a href="#">New In</a>
+        </li>
+        <li><a href="#">Modiweek</a></li>
+        <li class="dropdown" onmouseover="showDropdown('plus-size')" onmouseleave="hideDropdown()">
+            <a href="#">Plus Size</a>
+        </li>
+        <li class="dropdown" onmouseover="showDropdown('sustainability')" onmouseleave="hideDropdown()">
+            <a href="#">Sustainability</a>
+        </li>
+    </ul>
+    <div class="right">
+        <div class="search-box">
+            <input type="text" placeholder="Search...">
             <i class="fas fa-search"></i>
-            <i class="fas fa-user"></i>
-            <i class="fas fa-heart"></i>
-            <i class="fas fa-shopping-bag"></i>
         </div>
-    </nav>
-
-</body>
-</html>
+        <i class="fas fa-user"></i>
+        <i class="fas fa-shopping-bag"></i>
+    </div>
+</nav>
+<div class="dropdown-menu" id="dropdown-content">
+    <div class="dropdown-content">
+        <div class="column">
+            <h4>Category</h4>
+            <a href="#">Shop All</a>
+            <a href="#">Blouses & Top</a>
+            <a href="#">Pants</a>
+            <a href="#">Dresses & Jumpsuits</a>
+            <a href="#">Outerwear & Jackets</a>
+            <a href="#">Pullovers</a>
+            <a href="#">Tees</a>
+            <a href="#">Shorts & Skirts</a>
+        </div>
+        <div class="column">
+            <h4>Featured</h4>
+            <a href="#">New In</a>
+            <a href="#">Plus Size</a>
+            <a href="#">Best Seller</a>
+        </div>
+        <div class="column">
+            <h4>More</h4>
+            <a href="#">Bundles</a>
+            <a href="#">Occasion Wear</a>
+            <a href="#">Matching Set</a>
+            <a href="#">Suiting</a>
+        </div>
+        <div class="column images">
+            <img src="blouses.jpg" alt="Blouses">
+            <p>Blouses</p>
+        </div>
+        <div class="column images">
+            <img src="plus-size.jpg" alt="Plus Size">
+            <p>Plus Size</p>
+        </div>
+    </div>
+</div>
