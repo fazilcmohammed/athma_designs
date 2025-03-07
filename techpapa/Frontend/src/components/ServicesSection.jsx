@@ -1,5 +1,7 @@
 import { services } from "../assets/constant";
 import { FaArrowRight } from "react-icons/fa";
+import { Link } from "react-router-dom";
+
 
 const ServicesSection = () => {
   return (
@@ -18,7 +20,7 @@ const ServicesSection = () => {
           {services.map((service) => (
             <div
               key={service.id}
-              className="p-8  shadow-lg transition-all duration-300 bg-white text-black hover:bg-red-600 hover:text-white hover:scale-105 relative flex flex-col justify-between h-[280px]"
+              className="p-8  shadow-lg transition-all duration-300 bg-white text-black cursor-pointer hover:bg-red-600 hover:text-white hover:scale-105 relative flex flex-col justify-between h-[300px]"
             >
               <p className="absolute text-6xl font-extrabold text-gray-200 opacity-40 -z-10">
                 0{service.id}
@@ -28,10 +30,9 @@ const ServicesSection = () => {
                 <p className="text-sm mb-4">{service.description}</p>
               </div>
               <div className="flex justify-between items-center mt-auto">
-                <a href="#" className="text-sm font-bold flex items-center">
-                  <FaArrowRight className="mr-1" />
-                  KNOW MORE
-                </a>
+              <Link to="/services/telephony-as-a-service/" className="text-sm font-bold flex items-center">
+                  <FaArrowRight className="mr-1" />KNOW MORE
+                </Link>
                 <div className="text-2xl">
                   {service.icon && <service.icon />}
                 </div>

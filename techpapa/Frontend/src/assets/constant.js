@@ -1,6 +1,21 @@
 import { FaCloud, FaHeadset, FaLaptop, FaGraduationCap } from "react-icons/fa";
 import { FaServer, FaTools, FaBuilding, FaMicrochip, FaRobot, FaNetworkWired, FaLifeRing, FaMicrosoft  } from "react-icons/fa";
 
+import logo1 from '../assets/images/brandLogos/1.jpg'
+import logo2 from '../assets/images/brandLogos/2.png'
+import logo3 from '../assets/images/brandLogos/3.png'
+import logo4 from '../assets/images/brandLogos/4.png'
+import logo5 from '../assets/images/brandLogos/5.jpg'
+import logo6 from '../assets/images/brandLogos/6.png'
+import logo7 from '../assets/images/brandLogos/7.png'
+import logo8 from '../assets/images/brandLogos/8.png'
+import logo9 from '../assets/images/brandLogos/9.png'
+import logo10 from '../assets/images/brandLogos/10.png'
+import logo11 from '../assets/images/brandLogos/11.png'
+import logo12 from '../assets/images/brandLogos/12.png'
+import logo13 from '../assets/images/brandLogos/13.png'
+import logo14 from '../assets/images/brandLogos/14.png'
+
 export const menuItems = [
     { name: "About us", dropdown: ["Our Team", "Careers", "Contact"] },
     { name: "Digital Solutions", dropdown: ["AI Solutions", "E-commerce", "CRM"] },
@@ -135,3 +150,67 @@ export const services = [
     },
   ];
   
+
+  export const companyLogos = [
+    logo1,
+    logo2,
+    logo3,
+    logo4,
+    logo5,
+    logo6,
+    logo7,
+    logo8,
+    logo9,
+    logo10,
+    logo11,
+    logo12,
+    logo13,
+    logo14,
+    
+
+  ];
+
+export const azureServices = [
+  {
+    title: "Delivered Business Benefits",
+    description:
+      "Our Cloud management solution services for Azure delivers a complete solution, providing you with one partner for all of your Azure needs. Our experts cater to all your Azure related requirements by leveraging three core features that offer peace of mind and ensure your cloud investment will be optimized, managed and protected.",
+    image: "/your-image-1.jpg",
+  },
+  {
+    title: "Comprehensive Support",
+    description:
+      "Our technical support professionals are available around the clock to resolve issues quickly and effectively. No matter where you are in your journey with Azure, access to expert-level assistance is critical to a successful cloud transformation.",
+    image: "/your-image-2.jpg",
+  },
+  {
+    title: "Financial Control & Governance",
+    description:
+      "If you want to be able to deliver on the promise that moving to the cloud will save your organization money, you need to have a good governance in place first. Gain control of your Azure usage with our industry-expert cloud management services.",
+    image: "/your-image-3.jpg",
+  },
+  {
+    title: "Managed Billing",
+    description:
+      "The first step in maximizing your experience with Cost Management is to investigate and decide which Azure offers best fit your needs. Stop paying for more resources than you need. An optimized cloud gives you the exact resources you need.",
+    image: "/your-image-4.jpg",
+  },
+];
+
+export const hybridServices = [
+  {
+    title:"Cisco",
+    description:"Cisco BroadCloud Calling, now part of the Webex Calling portfolio, is delivered to customers through Cisco’s highly certified service provider network. Cisco Webex Calling is a complete cloud-calling and collaboration solution that can reduce operational cost, improve productivity, and increase revenue by helping you migrate mission-critical business communications to the cloud. Webex Calling is easy and intuitive to provision, manage, and set up. The Webex Control Hub provides a simple interface for IT to make changes, and a self-care portal means users can handle basic settings and preferences for themselves",
+    image: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhVFumBi_UdqvCID-by4pQYfdNDyPMYC_QGPDQMocMnVytvY811Nh43x3sSm4PqzKwQewo3IQCLSQpFkG81u-3S_z7APsH0p2cHNUM0ta2FQQsf7RbhCD6huDianSRssREBhqIz2V4g_SUnON-v2-ucjpneRjAo85kGPHgpk90jKEtPtR218TY-BrH9R_2p/s728-rw-e365/cisco.jpg"
+  },
+  {
+    title:"Avaya",
+    description:"Avaya Cloud Office lets you simplify the way your business communicates. Call, chat, meet, and collaborate no matter where your employees might be. It gives your employees the power to reach out and solve problems with clear, reliable calling and secure unified communications solutions all in the cloud. Avaya’s powerful features like one-touch dialing and directory integration make every call a snap. AI helps you get even more from conversations. Converse easily across touchpoints, devices, and modalities to meet customers wherever they are. With Avaya, Gain the complete freedom of a deployment (cloud, on premise, hybrid model) that fits your need.",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuhWA8s6NPx6XVdu0SAC01WuMZk84pzblFO8HN1xoQEeeaHykVT7EtvluA37dE0_Lrg6Y&usqp=CAU"
+  },
+  {
+    title:"CallGear",
+    description:"CallGear is an online service that shows you where your phone leads come from. It has a dashboard, where it shows where the lead came from a print ad, an online ad or another source. CallGear quickly integrates call tracking into your website by attaching a unique phone number to each ad source, including Google Ads, organic search, Yelp, Facebook, and many others. It assigns unique phone numbers to track which online or offline ads make your phone ring. CallGear ‘s SpeechAnalytics provides you instant call transcriptions within your online dashboards.",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1rPM6dy7Kv6Wh1zmnWlet--wWKGa1FIrz2KQLdyxfGdLLodDFUS-O8UtSe803n6lprnk&usqp=CAU"
+  },
+]

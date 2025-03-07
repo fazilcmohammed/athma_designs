@@ -20,7 +20,7 @@ const Solutions = () => {
     return () => window.removeEventListener("resize", updateColumns);
   }, []);
 
-  const itemsPerPage = columns * rows; // Dynamic visible items
+  const itemsPerPage = columns * rows;
   const totalSlides = Math.max(0, Math.ceil(solutions.length / itemsPerPage) - 1);
 
   const handlePrev = () => {
@@ -68,16 +68,18 @@ const Solutions = () => {
           >
             {Array.from({ length: Math.ceil(solutions.length / itemsPerPage) }).map((_, slideIndex) => (
               <div key={slideIndex} className="flex min-w-full px-3">
-                <div className={`grid gap-6 grid-cols-${columns} grid-rows-2 w-full `}>
+                <div className={`grid gap-8 w-full`}
+                  style={{ gridTemplateColumns: `repeat(${columns}, minmax(0, 1fr))`, gridTemplateRows: "repeat(2, 1fr)" }}
+                >
                   {solutions
                     .slice(slideIndex * itemsPerPage, (slideIndex + 1) * itemsPerPage)
                     .map((item) => (
                       <div
                         key={item.id}
-                        className="p-10 border border-gray-200 shadow-md hover:shadow-lg hover:bg-red-600 hover:text-white hover:cursor-pointer h-[280px] transition-all duration-300"
+                        className="p-10 border border-gray-200 shadow-md hover:shadow-lg h-[280px] transition-all duration-300 hover:bg-red-600 hover:text-white cursor-pointer"
                       >
-                        <item.icon className="text-red-600 text-5xl mx-auto mb-4 " />
-                        <h3 className="text-xl font-bold my-4 ">{item.title}</h3>
+                        <span className=""><item.icon className="text-5xl mx-auto mb-4" /></span>
+                        <h3 className="text-xl font-bold my-4">{item.title}</h3>
                         <p className=" text-sm">{item.description}</p>
                       </div>
                     ))}

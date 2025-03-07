@@ -1,12 +1,19 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
 import Navbar from './components/Navbar'
-import HeroSection from './components/HeroSection'
-import AboutSection from './components/AboutSection'
-import ServicesSection from './components/ServicesSection'
-import Solutions from './components/Solutions'
+
+import Footer from './components/Footer'
+
+import { Route, Routes, Link } from "react-router-dom"; // Import necessary components
+import Home from './assets/pages/Home';
+import AboutUs from './assets/pages/AboutUs';
+import DigitalSolutions from './assets/pages/DigitalSolutions';
+import CloudService from './assets/pages/CloudService';
+import ItInfra from './assets/pages/ItInfra';
+import CyberSecurity from './assets/pages/CyberSecurity';
+import ManagedService from './assets/pages/ManagedService';
+import HybridCloud from './assets/pages/KnowMore/HybridCloud';
+
 
 function App() {
   const [count, setCount] = useState(0)
@@ -14,11 +21,20 @@ function App() {
   return (
     <>
       <div>
+        
         <Navbar/>
-        <HeroSection />
-        <AboutSection/>
-        <ServicesSection/>
-        <Solutions/>
+        <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<AboutUs/>} />
+        <Route path="/services" element={<DigitalSolutions/>} />
+        <Route path="/cloud-service" element={<CloudService />} />
+        <Route path="/services/telephony-as-a-service/" element={<HybridCloud />} />
+        <Route path="/it-infrastructure" element={<ItInfra />} /> {/* 404 Route */}
+        <Route path="/cybersecurity" element={<CyberSecurity />} /> {/* 404 Route */}
+        <Route path="/managedservices" element={<ManagedService />} /> {/* 404 Route */}
+      </Routes>
+        
+        <Footer/>
       </div>
     </>
   )

@@ -72,7 +72,7 @@ const Navbar = () => {
       </ul>
 
       {/* WhatsApp Icon */}
-      <FaWhatsapp className="text-2xl text-gray-600 cursor-pointer hidden md:block" />
+      <a href="https://wa.me/7356568224" target="_blank" rel="noopener noreferrer"><FaWhatsapp className="text-2xl text-gray-600 cursor-pointer hidden md:block" /></a>
     </nav>
   );
 };

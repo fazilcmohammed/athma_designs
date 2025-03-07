@@ -3,3 +3,28 @@
 *{
   font-family: "Inter", sans-serif;
 }
+
+@keyframes scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); } /* Moves half the duplicated logos */
+}
+
+.animate-scroll {
+  animation: scroll 25s linear infinite; /* Adjust time for speed */
+}
+
+/* Stop scrolling on hover */
+.animate-scroll:hover {
+  animation-play-state: paused;
+}
+
+/* Make all logos grey by default */
+.grayscale-logo {
+  filter: grayscale(100%);
+  transition: filter 0.3s ease-in-out;
+}
+
+/* Restore original color on hover */
+.grayscale-logo:hover {
+  filter: grayscale(0%);
+}
