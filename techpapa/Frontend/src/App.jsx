@@ -13,6 +13,9 @@ import ItInfra from './assets/pages/ItInfra';
 import CyberSecurity from './assets/pages/CyberSecurity';
 import ManagedService from './assets/pages/ManagedService';
 import HybridCloud from './assets/pages/KnowMore/HybridCloud';
+import ManagedItService from './assets/pages/KnowMore/ManagedItService';
+import DigitalWorkplace from './assets/pages/KnowMore/DigitalWorkplace';
+import DigitalLearningSolutions from './assets/pages/KnowMore/DigitalLearningSolutions';
 
 
 function App() {
@@ -29,6 +32,9 @@ function App() {
         <Route path="/services" element={<DigitalSolutions/>} />
         <Route path="/cloud-service" element={<CloudService />} />
         <Route path="/services/telephony-as-a-service/" element={<HybridCloud />} />
+        <Route path="/service/managed-it-service/" element={<ManagedItService />} />
+        <Route path="/service/digital-workspace/" element={<DigitalWorkplace />} />
+        <Route path="/service/digital-learning-solutions/" element={<DigitalLearningSolutions />} />
         <Route path="/it-infrastructure" element={<ItInfra />} /> {/* 404 Route */}
         <Route path="/cybersecurity" element={<CyberSecurity />} /> {/* 404 Route */}
         <Route path="/managedservices" element={<ManagedService />} /> {/* 404 Route */}

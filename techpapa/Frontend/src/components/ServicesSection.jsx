@@ -30,7 +30,7 @@ const ServicesSection = () => {
                 <p className="text-sm mb-4">{service.description}</p>
               </div>
               <div className="flex justify-between items-center mt-auto">
-              <Link to="/services/telephony-as-a-service/" className="text-sm font-bold flex items-center">
+              <Link to={service.link} className="text-sm font-bold flex items-center">
                   <FaArrowRight className="mr-1" />KNOW MORE
                 </Link>
                 <div className="text-2xl">

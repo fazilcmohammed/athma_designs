@@ -3,6 +3,7 @@ import { FaWhatsapp } from "react-icons/fa";
 import { FiMenu, FiX } from "react-icons/fi";
 import { menuItems } from "../assets/constant";
 import logo from '../assets/images/logo.png'
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [openDropdown, setOpenDropdown] = useState(null);
@@ -12,7 +13,7 @@ const Navbar = () => {
   return (
     <nav className="fixed top-0 left-0 w-full flex items-center justify-between px-6 md:px-16 py-4 shadow-md bg-white z-50">
       {/* Logo */}
-      <div className="text-xl font-bold text-red-600"><img src={logo} alt="logo" className="w-24 md:w-36"/></div>
+      <div className="text-xl font-bold text-red-600"><Link to="/"><img src={logo} alt="logo" className="w-24 md:w-36"/></Link></div>
 
       {/* Mobile Menu Icon */}
       <div className="md:hidden text-2xl cursor-pointer z-50" onClick={() => setMenuOpen(!menuOpen)}>

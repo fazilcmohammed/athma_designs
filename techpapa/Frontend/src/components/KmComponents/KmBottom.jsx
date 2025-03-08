@@ -1,12 +1,11 @@
 import React from 'react'
 
-const KmBottom = () => {
+const KmBottom = ({bottomSection}) => {
   return (
     <section className="text-center py-12 px-4 bg-white">
       {/* Heading */}
       <h2 className="text-2xl md:text-3xl font-extrabold text-gray-900 max-w-3xl mx-auto">
-        Upgrade Your Business for a Newer, Better Communication Experience for
-        Everyone. Talk to Our Customer Support Desk for a Free Consultation!
+        {bottomSection.bottomTitle}
       </h2>
 
       {/* WhatsApp Button */}

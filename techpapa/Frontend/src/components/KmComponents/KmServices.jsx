@@ -1,28 +1,27 @@
-import React from 'react'
-import { hybridServices } from '../../assets/constant'
+import React from 'react';
 
-const KmServices = () => {
+const KmServices = ({ services, titles }) => {
   return (
     <section className="container mx-auto px-6 py-12">
       {/* Header */}
       <div className="text-center">
-        <p className="text-red-600 font-bold">// AZURE MANAGED SERVICE</p>
+        <p className="text-red-600 font-bold">{titles.serviceSubTitle}</p>
         <h2 className="text-3xl font-bold text-gray-900 mt-2">
-          What Microsoft Azure services do we provide?
+        {titles.serviceTitle}
         </h2>
         <p className="text-gray-700 mt-4 max-w-2xl mx-auto">
-          Cloud adoption services: Consultancy, planning, and deployment services to ensure a
-          smooth transition from on-premise IT systems to Microsoft Azure.
+        {titles.serviceContent}
         </p>
       </div>
 
       {/* Service Cards */}
       <div className="mt-10 space-y-8">
-        {hybridServices.map((service, index) => (
+        {/* Mapping over the services array */}
+        {services[0].services.map((service, index) => (
           <div
             key={index}
             className={`flex flex-col md:flex-row items-center bg-white shadow-lg rounded-lg overflow-hidden ${
-              index % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"
+              index % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'
             }`}
           >
             {/* Image */}
@@ -43,7 +42,7 @@ const KmServices = () => {
         ))}
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default KmServices
+export default KmServices;

@@ -7,12 +7,13 @@ import Solutions from '../../components/Solutions'
 import IspgSection from '../../components/IspgSection'
 import WebaLearn from '../../components/WebaLearn'
 import ChooseUs from '../../components/ChooseUs'
+import HeroSection from '../../components/HeroSection'
 
 const Home = () => {
   return (
     <div>
 
-        <KmHeroSection />
+        <HeroSection/>
         <ScrollingLogos/>
         <AboutSection/>
         <ServicesSection/>
