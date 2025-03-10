@@ -1,81 +1,314 @@
-import { useState } from "react";
-import { FaWhatsapp } from "react-icons/fa";
-import { FiMenu, FiX } from "react-icons/fi";
-import { menuItems } from "../assets/constant";
-import logo from '../assets/images/logo.png'
+import { useState, useRef, useEffect } from "react";
+import { Menu, X, ChevronDown } from "lucide-react";
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
+import logo from '../assets/images/logo.png';
 
 const Navbar = () => {
-  const [openDropdown, setOpenDropdown] = useState(null);
-  const [menuOpen, setMenuOpen] = useState(false);
-  const [mobileDropdown, setMobileDropdown] = useState(null);
+  const [isOpen, setIsOpen] = useState(false);
+  const [dropdownOpen, setDropdownOpen] = useState(null);
+  const dropdownRefs = useRef({});
+
+  const dropdowns = ["Digital Solutions", "Cloud Service", "Cyber Security", "IT Infra"];
+  const dropdownLinks = {
+    "Digital Solutions": ["Service 1", "Service 2", "Service 3"],
+    "Cloud Service": ["Cloud 1", "Cloud 2", "Cloud 3"],
+    "Cyber Security": ["Security 1", "Security 2", "Security 3"],
+    "IT Infra": ["Infra 1", "Infra 2", "Infra 3"],
+  };
+
+  useEffect(() => {
+    function handleClickOutside(event) {
+      let isOutside = true;
+      Object.values(dropdownRefs.current).forEach((ref) => {
+        if (ref && ref.contains(event.target)) {
+          isOutside = false;
+        }
+      });
+
+      if (isOutside) {
+        setDropdownOpen(null);
+      }
+    }
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, []);
+
+  useEffect(() => {
+    if (!isOpen) {
+      setDropdownOpen(null);
+    }
+  }, [isOpen]);
 
   return (
-    <nav className="fixed top-0 left-0 w-full flex items-center justify-between px-6 md:px-16 py-4 shadow-md bg-white z-50">
-      {/* Logo */}
-      <div className="text-xl font-bold text-red-600"><Link to="/"><img src={logo} alt="logo" className="w-24 md:w-36"/></Link></div>
+    <nav className="bg-white shadow-md w-full fixed top-0 left-0 z-50">
+      <div className="container mx-auto px-4 py-3 flex justify-between items-center">
+        <Link to="/" className="text-2xl font-bold text-gray-900">
+          <img src={logo} alt="logo" className="w-24 md:w-36" />
+        </Link>
 
-      {/* Mobile Menu Icon */}
-      <div className="md:hidden text-2xl cursor-pointer z-50" onClick={() => setMenuOpen(!menuOpen)}>
-        {menuOpen ? <FiX /> : <FiMenu />}
+        <div className="hidden md:flex space-x-6">
+          <Link to="/" className="hover:text-blue-600" onClick={() => setIsOpen(false)}>Home</Link>
+          {dropdowns.map((dropdown) => (
+            <div
+              className="relative"
+              key={dropdown}
+              ref={(el) => (dropdownRefs.current[dropdown] = el)}
+            >
+              <button
+                onClick={() =>
+                  setDropdownOpen(dropdownOpen === dropdown ? null : dropdown)
+                }
+                className="flex items-center hover:text-blue-600"
+              >
+                {dropdown}
+                <motion.div animate={{ rotate: dropdownOpen === dropdown ? 180 : 0 }}>
+                  <ChevronDown size={18} className="ml-1" />
+                </motion.div>
+              </button>
+              {dropdownOpen === dropdown && (
+                <motion.div
+                  initial={{ opacity: 0, y: -10 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  className="absolute left-0 mt-2 w-40 bg-white shadow-lg rounded-md py-2"
+                >
+                  {dropdownLinks[dropdown].map((item, index) => (
+                    <Link
+                      key={index}
+                      to={`/${item.toLowerCase().replace(/\s+/g, "")}`}
+                      className="block px-4 py-2 hover:bg-gray-100"
+                      onClick={() => {
+                        setDropdownOpen(null);
+                        setIsOpen(false);
+                      }}
+                    >
+                      {item}
+                    </Link>
+                  ))}
+                </motion.div>
+              )}
+            </div>
+          ))}
+          <Link to="/about" className="hover:text-blue-600" onClick={() => setIsOpen(false)}>About</Link>
+          <Link to="/contact" className="hover:text-blue-600" onClick={() => setIsOpen(false)}>Contact</Link>
+        </div>
+
+        <motion.a
+          whileHover={{ scale: 1.1 }}
+          href="https://wa.me/yourwhatsapplink"
+          className="hidden md:block text-green-500 text-xl"
+        >
+          📞
+        </motion.a>
+
+        <button onClick={() => setIsOpen(!isOpen)} className="md:hidden focus:outline-none">
+          {isOpen ? <X size={28} /> : <Menu size={28} />}
+        </button>
       </div>
 
-      {/* Mobile Menu Overlay */}
-      {menuOpen && <div className="fixed inset-0 bg-black bg-opacity-50 z-40 md:hidden" onClick={() => setMenuOpen(false)}></div>}
-
-      {/* Desktop & Mobile Menu */}
-      <ul className={`md:flex absolute md:static bg-white w-full md:w-auto left-0 top-16 md:top-auto p-6 md:p-0 md:flex-row flex-col md:space-x-6 space-y-4 md:space-y-0 transition-transform duration-300 ease-in-out ${
-        menuOpen ? "translate-x-0" : "-translate-x-full md:translate-x-0"
-      } z-50 shadow-lg md:shadow-none`}>
-        {menuItems.map((item, index) => (
-          <li
-            key={index}
-            className="relative group"
-            onMouseEnter={() => setOpenDropdown(index)}
-            onMouseLeave={() => setOpenDropdown(null)}
-          >
-            <button
-              className="text-black font-medium flex items-center gap-1 w-full"
-              onClick={() => setMobileDropdown(mobileDropdown === index ? null : index)}
-            >
-              {item.name} {item.dropdown && <span>&#9662;</span>}
-            </button>
-
-            {/* Desktop Dropdown */}
-            {item.dropdown && openDropdown === index && (
-              <div 
-                className="absolute left-0 mt-2 w-64 bg-white border rounded-md shadow-lg p-4 hidden md:block"
-                onMouseEnter={() => setOpenDropdown(index)}
-                onMouseLeave={() => setOpenDropdown(null)}
+      {isOpen && (
+        <motion.div
+          initial={{ opacity: 0, y: -10 }}
+          animate={{ opacity: 1, y: 0 }}
+          className="md:hidden bg-white shadow-md py-4 px-4"
+        >
+          <Link to="/" className="block py-2" onClick={() => setIsOpen(false)}>Home</Link>
+          {dropdowns.map((dropdown) => (
+            <div key={dropdown} className="border-b">
+              <button
+                onClick={() => setDropdownOpen(dropdownOpen === dropdown ? null : dropdown)}
+                className="flex justify-between w-full py-2"
               >
-                <ul>
-                  {item.dropdown.map((subItem, subIndex) => (
-                    <li key={subIndex} className="px-4 py-2 hover:bg-gray-100 cursor-pointer">
-                      {subItem}
-                    </li>
+                {dropdown}
+                <ChevronDown size={18} className={`ml-1 ${dropdownOpen === dropdown ? 'rotate-180' : ''}`} />
+              </button>
+              {dropdownOpen === dropdown && (
+                <div className="pl-4">
+                  {dropdownLinks[dropdown].map((item, index) => (
+                    <Link
+                      key={index}
+                      to={`/${item.toLowerCase().replace(/\s+/g, "")}`}
+                      className="block py-2"
+                      onClick={() => {
+                        setDropdownOpen(null);
+                        setIsOpen(false);
+                      }}
+                    >
+                      {item}
+                    </Link>
                   ))}
-                </ul>
-              </div>
-            )}
+                </div>
+              )}
+            </div>
+          ))}
+          <Link to="/about" className="block py-2" onClick={() => setIsOpen(false)}>About</Link>
+          <Link to="/contact" className="block py-2" onClick={() => setIsOpen(false)}>Contact</Link>
+        </motion.div>
+      )}
+    </nav>
+  );
+};
 
-            {/* Mobile Dropdown */}
-            {item.dropdown && mobileDropdown === index && (
-              <ul className="mt-2 w-full bg-gray-100 md:hidden">
-                {item.dropdown.map((subItem, subIndex) => (
-                  <li key={subIndex} className="px-4 py-2 hover:bg-gray-200 cursor-pointer">
-                    {subItem}
-                  </li>
-                ))}
-              </ul>
-            )}
-          </li>
-        ))}
-      </ul>
+export default Navbar;import { useState, useRef, useEffect } from "react";
+import { Menu, X, ChevronDown } from "lucide-react";
+import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
+import logo from '../assets/images/logo.png';
 
-      {/* WhatsApp Icon */}
-      <a href="https://wa.me/7356568224" target="_blank" rel="noopener noreferrer"><FaWhatsapp className="text-2xl text-gray-600 cursor-pointer hidden md:block" /></a>
+const Navbar = () => {
+  const [isOpen, setIsOpen] = useState(false);
+  const [dropdownOpen, setDropdownOpen] = useState(null);
+  const dropdownRefs = useRef({});
+
+  const dropdowns = ["Digital Solutions", "Cloud Service", "Cyber Security", "IT Infra"];
+  const dropdownLinks = {
+    "Digital Solutions": ["Service 1", "Service 2", "Service 3"],
+    "Cloud Service": ["Cloud 1", "Cloud 2", "Cloud 3"],
+    "Cyber Security": ["Security 1", "Security 2", "Security 3"],
+    "IT Infra": ["Infra 1", "Infra 2", "Infra 3"],
+  };
+
+  useEffect(() => {
+    function handleClickOutside(event) {
+      let isOutside = true;
+      Object.values(dropdownRefs.current).forEach((ref) => {
+        if (ref && ref.contains(event.target)) {
+          isOutside = false;
+        }
+      });
+
+      if (isOutside) {
+        setDropdownOpen(null);
+      }
+    }
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, []);
+
+  useEffect(() => {
+    if (!isOpen) {
+      setDropdownOpen(null);
+    }
+  }, [isOpen]);
+
+  return (
+    <nav className="bg-white shadow-md w-full fixed top-0 left-0 z-50">
+      <div className="container mx-auto px-4 py-3 flex justify-between items-center">
+        <Link to="/" className="text-2xl font-bold text-gray-900">
+          <img src={logo} alt="logo" className="w-24 md:w-36" />
+        </Link>
+
+        <div className="hidden md:flex space-x-6">
+          <Link to="/" className="hover:text-blue-600" onClick={() => setIsOpen(false)}>Home</Link>
+          {dropdowns.map((dropdown) => (
+            <div
+              className="relative"
+              key={dropdown}
+              ref={(el) => (dropdownRefs.current[dropdown] = el)}
+            >
+              <button
+                onClick={() =>
+                  setDropdownOpen(dropdownOpen === dropdown ? null : dropdown)
+                }
+                className="flex items-center hover:text-blue-600"
+              >
+                {dropdown}
+                <motion.div animate={{ rotate: dropdownOpen === dropdown ? 180 : 0 }}>
+                  <ChevronDown size={18} className="ml-1" />
+                </motion.div>
+              </button>
+              {dropdownOpen === dropdown && (
+                <motion.div
+                  initial={{ opacity: 0, y: -10 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  className="absolute left-0 mt-2 w-40 bg-white shadow-lg rounded-md py-2"
+                >
+                  {dropdownLinks[dropdown].map((item, index) => (
+                    <Link
+                      key={index}
+                      to={`/${item.toLowerCase().replace(/\s+/g, "")}`}
+                      className="block px-4 py-2 hover:bg-gray-100"
+                      onClick={() => {
+                        setDropdownOpen(null);
+                        setIsOpen(false);
+                      }}
+                    >
+                      {item}
+                    </Link>
+                  ))}
+                </motion.div>
+              )}
+            </div>
+          ))}
+          <Link to="/about" className="hover:text-blue-600" onClick={() => setIsOpen(false)}>About</Link>
+          <Link to="/contact" className="hover:text-blue-600" onClick={() => setIsOpen(false)}>Contact</Link>
+        </div>
+
+        <motion.a
+          whileHover={{ scale: 1.1 }}
+          href="https://wa.me/yourwhatsapplink"
+          className="hidden md:block text-green-500 text-xl"
+        >
+          📞
+        </motion.a>
+
+        <button onClick={() => setIsOpen(!isOpen)} className="md:hidden focus:outline-none">
+          {isOpen ? <X size={28} /> : <Menu size={28} />}
+        </button>
+      </div>
+
+      {isOpen && (
+        <motion.div
+          initial={{ opacity: 0, y: -10 }}
+          animate={{ opacity: 1, y: 0 }}
+          className="md:hidden bg-white shadow-md py-4 px-4"
+        >
+          <Link to="/" className="block py-2" onClick={() => setIsOpen(false)}>Home</Link>
+          {dropdowns.map((dropdown) => (
+            <div key={dropdown} className="border-b">
+              <button
+                onClick={() =>
+                  setDropdownOpen(dropdownOpen === dropdown ? null : dropdown)
+                }
+                className="flex justify-between w-full py-2"
+              >
+                {dropdown}
+                <ChevronDown
+                  size={18}
+                  className={`ml-1 ${dropdownOpen === dropdown ? "rotate-180" : ""}`}
+                />
+              </button>
+              {dropdownOpen === dropdown && (
+                <div className="pl-4">
+                  {dropdownLinks[dropdown].map((item, index) => (
+                    <Link
+                      key={index}
+                      to={`/${item.toLowerCase().replace(/\s+/g, "")}`}
+                      className="block py-2"
+                      onClick={() => {
+                        // Close the dropdown if it's already open
+                        setDropdownOpen(null);
+                        setIsOpen(false); // Close the nav menu
+                      }}
+                    >
+                      {item}
+                    </Link>
+                  ))}
+                </div>
+              )}
+            </div>
+          ))}
+          <Link to="/about" className="block py-2" onClick={() => setIsOpen(false)}>About</Link>
+          <Link to="/contact" className="block py-2" onClick={() => setIsOpen(false)}>Contact</Link>
+        </motion.div>
+      )}
     </nav>
   );
 };
 
 export default Navbar;
+

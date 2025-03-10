@@ -1,9 +1,9 @@
 import React from 'react'
-import KmHeroSection from '../../../components/KmComponents/KmHeroSection'
-import KmServices from '../../../components/KmComponents/KmServices'
-import { managedItService } from '../../constant'
-import KmFirstSection from '../../../components/KmComponents/KmFirstSection'
-import KmBottom from '../../../components/KmComponents/KmBottom'
+import KmHeroSection from '../../components/KmComponents/KmHeroSection'
+import KmServices from '../../components/KmComponents/KmServices'
+import { managedItService } from '../../assets/constant'
+import KmFirstSection from '../../components/KmComponents/KmFirstSection'
+import KmBottom from '../../components/KmComponents/KmBottom'
 
 const ManagedItService = () => {
   return (

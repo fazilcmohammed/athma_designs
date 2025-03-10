@@ -1,10 +1,10 @@
 import React from 'react'
-import KmHeroSection from '../../../components/KmComponents/KmHeroSection'
-import KmFirstSection from '../../../components/KmComponents/KmFirstSection'
-import KmServices from '../../../components/KmComponents/KmServices'
-import KmBottom from '../../../components/KmComponents/KmBottom'
-import { hybridCloudServices } from '../../constant' 
-import { azureContent } from '../../constant'
+import KmHeroSection from '../../components/KmComponents/KmHeroSection'
+import KmFirstSection from '../../components/KmComponents/KmFirstSection'
+import KmServices from '../../components/KmComponents/KmServices'
+import KmBottom from '../../components/KmComponents/KmBottom'
+import { hybridCloudServices } from '../../assets/constant' 
+import { azureContent } from '../../assets/constant'
 
 const HybridCloud = () => {
   

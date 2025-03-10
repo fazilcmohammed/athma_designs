@@ -5,17 +5,17 @@ import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 
 import { Route, Routes, Link } from "react-router-dom"; // Import necessary components
-import Home from './assets/pages/Home';
-import AboutUs from './assets/pages/AboutUs';
-import DigitalSolutions from './assets/pages/DigitalSolutions';
-import CloudService from './assets/pages/CloudService';
-import ItInfra from './assets/pages/ItInfra';
-import CyberSecurity from './assets/pages/CyberSecurity';
-import ManagedService from './assets/pages/ManagedService';
-import HybridCloud from './assets/pages/KnowMore/HybridCloud';
-import ManagedItService from './assets/pages/KnowMore/ManagedItService';
-import DigitalWorkplace from './assets/pages/KnowMore/DigitalWorkplace';
-import DigitalLearningSolutions from './assets/pages/KnowMore/DigitalLearningSolutions';
+import Home from './pages/Home';
+import AboutUs from './pages/AboutUs';
+import DigitalSolutions from './pages/DigitalSolutions';
+import CloudService from './pages/CloudService';
+import ItInfra from './pages/ItInfra';
+import CyberSecurity from './pages/CyberSecurity';
+import ManagedService from './pages/ManagedService';
+import HybridCloud from './pages/KnowMore/HybridCloud';
+import ManagedItService from './pages/KnowMore/ManagedItService';
+import DigitalWorkplace from './pages/KnowMore/DigitalWorkplace';
+import DigitalLearningSolutions from './pages/KnowMore/DigitalLearningSolutions';
 
 
 function App() {
