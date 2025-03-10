@@ -1,18 +1,18 @@
 import React, { useState, useEffect } from "react";
 import { solutions } from "../assets/constant";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const Solutions = () => {
-  const [columns, setColumns] = useState(3); // Default: 3 columns
-  const rows = 2; // Always 2 rows
+  const [columns, setColumns] = useState(3);
+  const rows = 2;
   const [index, setIndex] = useState(0);
 
-  // Adjust columns based on screen size
   useEffect(() => {
     const updateColumns = () => {
-      if (window.innerWidth < 640) setColumns(1); // Small: 1 column
-      else if (window.innerWidth < 1024) setColumns(2); // Medium: 2 columns
-      else setColumns(3); // Large: 3 columns
+      if (window.innerWidth < 640) setColumns(1);
+      else if (window.innerWidth < 1024) setColumns(2);
+      else setColumns(3);
     };
 
     updateColumns();
@@ -34,6 +34,7 @@ const Solutions = () => {
   return (
     <div className="py-16 px-6 md:px-28 bg-white text-black relative overflow-hidden">
       <div className="container mx-auto text-center">
+        
         {/* Header Section */}
         <div className="flex justify-between items-center">
           <div className="text-left">
@@ -74,14 +75,15 @@ const Solutions = () => {
                   {solutions
                     .slice(slideIndex * itemsPerPage, (slideIndex + 1) * itemsPerPage)
                     .map((item) => (
-                      <div
-                        key={item.id}
+                      <Link 
+                        to={item.path} 
+                        key={item.id} 
                         className="p-10 border border-gray-200 shadow-md hover:shadow-lg h-[280px] transition-all duration-300 hover:bg-red-600 hover:text-white cursor-pointer"
                       >
-                        <span className=""><item.icon className="text-5xl mx-auto mb-4" /></span>
+                        <span><item.icon className="text-5xl mx-auto mb-4" /></span>
                         <h3 className="text-xl font-bold my-4">{item.title}</h3>
-                        <p className=" text-sm">{item.description}</p>
-                      </div>
+                        <p className="text-sm">{item.description}</p>
+                      </Link>
                     ))}
                 </div>
               </div>

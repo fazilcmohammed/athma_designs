@@ -74,6 +74,7 @@ export const services = [
       description:
         "Many IT organizations deploy servers that are only running at a fraction of their capacity...",
       icon: FaServer,
+      path: '/service/virtualization-solutions/'
     },
     {
       id: 2,
@@ -81,6 +82,7 @@ export const services = [
       description:
         "For businesses utilizing IT and cloud infrastructure, having a proactive and reliable IT AMC...",
       icon: FaTools,
+      path: "/service/it-amc/"
     },
     {
       id: 3,
@@ -88,6 +90,7 @@ export const services = [
       description:
         "Choosing Emtech as your cloud-managed networking services provider offers a range of benefits...",
       icon: FaCloud,
+      path: "/service/cloud-managed-networking/"
     },
     {
       id: 4,
@@ -95,6 +98,7 @@ export const services = [
       description:
         "EMTECH, one among the top IT companies in UAE, follows a comprehensive approach to creating and managing enterprise ICT...",
       icon: FaBuilding,
+      path: "/service/ict-solutions/"
     },
     {
       id: 5,
@@ -102,6 +106,7 @@ export const services = [
       description:
         "We provide innovative AI solutions to help businesses become agile and smart...",
       icon: FaRobot,
+      path: "/service/artificial-intelligence/"
     },
     {
       id: 6,
@@ -109,6 +114,7 @@ export const services = [
       description:
         "The Internet of Things (IoT) has woven itself into almost every aspect of daily life...",
       icon: FaMicrochip,
+      path: "/service/iot-service/"
     },
     {
       id: 7,
@@ -116,6 +122,7 @@ export const services = [
       description:
         "Emtech’s Cloud Operation Center (COC) offers a dedicated, streamlined solution for businesses...",
       icon: FaCloud,
+      path: "/service/cloud-operations-center/"
     },
     {
       id: 8,
@@ -123,6 +130,7 @@ export const services = [
       description:
         "It’s an incredibly competitive environment for enterprises, and they need every opportunity...",
       icon: FaTools,
+      path: "/service/azure-management-service/"
     },
     {
       id: 9,
@@ -130,6 +138,7 @@ export const services = [
       description:
         "Our Managed IT Service is based on modern digital solutions and services...",
       icon: FaBuilding,
+      path: "/service/managed-it-service/"
     },
     {
       id: 10,
@@ -137,6 +146,7 @@ export const services = [
       description:
         "What is IT Infrastructure? IT Infrastructure is the backbone of any organization...",
       icon: FaNetworkWired,
+      path: "/service/it-infrastructure/"
     },
     {
       id: 11,
@@ -144,6 +154,7 @@ export const services = [
       description:
         "At Emtech, we provide exceptional IT Support Services that help businesses maintain seamless operations 24/7...",
       icon: FaLifeRing,
+      path: "/service/it-support/"
     },
     {
       id: 12,
@@ -151,6 +162,7 @@ export const services = [
       description:
         "As your trusted Microsoft 365 provider, leverage the possibilities and opportunities of...",
       icon: FaMicrosoft,
+      path: "/service/microsoft-365-suite/"
     },
   ];
   
@@ -508,3 +520,324 @@ export const hybridCloudTelephony = [
   },
 ]
 
+
+export const aboutUs = [
+  {
+    heroTitle : "About Us",
+    contentSubTitle : "",
+    contentTitle : "Digital Learning Solutions",
+    content : "Serving your technology needs for more than three decades in the U.A.E",
+  }
+]
+
+export const aboutSolutions = [
+  {
+    title: "Infrastructure Solutions",
+    description: "We help our clients design, implement, and manage best-in-class, highly secure, and scalable enterprise IT infrastructure solutions.",
+    image: "https://cdn-lloaj.nitrocdn.com/ZZYluWSojHiVGvdfeOPfFCBERbKVDvPk/assets/images/optimized/rev-886f8dd/i0.wp.com/pegasustechnologies.com/wp-content/uploads/2022/02/3bf9e20f0ffcb5955e0b814d75b96c67.content.jpg",
+  },
+  {
+    title: "Cloud Solutions",
+    description: "Take the full advantage of cloud innovation and accelerate your business by relying on effective hybrid and multi cloud approach from us.",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbqDeReMyKOCEAXLbTnCMy5eLBHQmO59RPoA&s",
+  },
+  {
+    title: "Cyber Security Solutions",
+    description: "It is our mission to ensure Data security in many different forms it takes. We provide cyber security solutions to protect digital assets of your organization.",
+    image: "https://www.theforage.com/blog/wp-content/uploads/2022/12/what-is-cybersecurity.jpg",
+  },
+  {
+    title: "Managed IT Service",
+    description: "Achieve highest level of efficiency of your business with all levels of IT Support to cover all your technology needs.",
+    image: "https://img.freepik.com/free-photo/standard-quality-control-collage-concept_23-2149595847.jpg",
+  },
+  {
+    title: "Digital Solutions",
+    description: "Creating digital solutions to solve conventional business challenges by using latest in Web, AI, and Blockchain technologies.",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkdWEPaAKsKmUw8bMSmFurZbf2vSWZh9NGzw&s",
+  },
+]
+
+
+export const digitalSolutions = [
+  {
+  heroTitle : "Digital Solutions",
+  contentSubTitle : " Digital Solutions. Digital Results",
+  contentTitle : "The Complete Digital Transformation Experience",
+  content : "Digital Solutions helps you drive business outcomes by looking beyond traditional ways of working. At EMTECH, we can help your business tap into the power of digital technologies to drive better business outcomes. We are a leading provider of digital solutions in the UAE, and our team of experts has the knowledge and experience to help your business succeed. We provide you with a wide spectrum of digital solutions and services to help you create, deliver and build digital experiences. Whether you are just beginning your digital journey, or seeking new opportunities to accelerate growth, our digital solutions and services empower your business transformation journey. We work with you to understand your unique business needs and develop a tailored digital solution that will help you achieve your desired results.",
+  contentImg : "https://imageio.forbes.com/specials-images/imageserve/65adf497bd5d0347e5af3b8d/Data-is-a-strategic-asset-/960x0.jpg?format=jpg&width=960",
+  serviceSubTitle : "Digital Solutions. Digital Results",
+  serviceTitle : "A Complete Set Of Digital Services To Help You Ride The Digital Wave",
+  serviceContent : "",
+  services : [
+    {
+      title:"Digital Commerce Ecosystem",
+      description:"Make your business future-ready on a highly scalable Enterprise eCommerce Platform. oOrjit is a highly flexible & customizable customer-merchant engagement platform adaptable to any business model.",
+      image: "https://unctad.org/sites/default/files/2021-03/2021-03-15_eCommerceCOVID19report-1-1220x675px.jpg"
+    },
+    {
+      title:"Automotive Digital Ecosystem",
+      description:"An innovative digital ecosystem for automotive. Digital showroom, Parts digitalization, Dealership Management, 360 Customer interaction platform, aftermarket and services.",
+      image: "https://media.istockphoto.com/id/1259149536/photo/driverless-car-interior-with-futuristic-dashboard-for-autonomous-control-system.jpg?s=612x612&w=0&k=20&c=t6C2-1zTJw1s0girSu6h9lPIeQ7NF_PatZYGDqoQRPs="
+    },
+    {
+      title:"Digital Solution for Driving School",
+      description:"Fully automate your driving school operations and reclaim time to focus on running your business. We help driving schools to simplify and automate the driving school management process with complete software solutions for your driving school.",
+      image: "https://www.mishainfotech.com/images/drive.jpg"
+    },
+    {
+      title:"Digital Learning Solutions",
+      description:"We provide innovative learning technology solutions and eLearning content development services to support the organization’s digital transformation of training. We develop eLearning courses that learners will enjoy learning from, helping to meet the learning objective. View the complete service and solutions details to learn about our digital learning solutions.",
+      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRj6q26edHKoPFPUoJvX_V8-KpqZnIDx5d30A&s"
+    },
+    {
+      title:"Digital Collaboration Solutions",
+      description:"The modern experience in Microsoft SharePoint is designed to be compelling, flexible, and more performant. Emtech specializes in helping you develop and implement modern SharePoint experience and digital workforce collaboration.",
+      image: "https://blog.mindmanager.com/wp-content/uploads/2022/03/shutterstock_1836258856.jpg"
+    },
+
+  ],
+  bottomTitle : "Get The Transformational Technologies And Expertise To Guide Your Organization Through Digital Business Changes"
+  }
+]
+
+export const cloudServices = [
+  {
+  heroTitle : "Cloud Service",
+  contentSubTitle : " go Cloud",
+  contentTitle : "Making The Cloud Sing To Your Business",
+  content : "Digital Solutions helps you drive business outcomes by looking beyond traditional ways of working. At EMTECH, we can help your business tap into the power of digital technologies to drive better business outcomes. We are a leading provider of digital solutions in the UAE, and our team of experts has the knowledge and experience to help your business succeed. We provide you with a wide spectrum of digital solutions and services to help you create, deliver and build digital experiences. Whether you are just beginning your digital journey, or seeking new opportunities to accelerate growth, our digital solutions and services empower your business transformation journey. We work with you to understand your unique business needs and develop a tailored digital solution that will help you achieve your desired results.",
+  contentImg : "https://imageio.forbes.com/specials-images/imageserve/65adf497bd5d0347e5af3b8d/Data-is-a-strategic-asset-/960x0.jpg?format=jpg&width=960",
+  serviceSubTitle : "Cloud Solutions for You",
+  serviceTitle : "More Efficiency, Innovation, And Scalability.",
+  serviceContent : "",
+  services : [
+    {
+      title:"Azure Design & Deployment Services",
+      description:"Consult, Design, Implement and Optimize cloud solutions for enterprises. Working closely with Microsoft we help organizations with seamless cloud adaption and seamless migration services.",
+      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqJ4AUyJmzRlg14IYzIx8-XAb3zr0lCIFpTg&s"
+    },
+    {
+      title:"Optimize And Manage Cloud Spend",
+      description:"Assess maturity and efficiency to manage cloud costs with financial accountability, budgets, and forecasts through a unified and seamless experience. Automatic recommendations for cost optimization opportunities.",
+      image: "https://www.parallels.com/blogs/ras/app/uploads/2019/08/multi-cloud-management.jpg"
+    },
+    {
+      title:"Configuration & Operations Management",
+      description:"Efficiently govern cloud operations with improved productivity and assured repeatability through a rule-based orchestration and seamless experience. Integrated enterprise workflows for efficient cloud operations.",
+      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYA_gsUzmWYurFIWsjYdifOtxkEgX4uvMMyA&s"
+    },
+    {
+      title:"Security & Compliance",
+      description:"Proactively govern security operations autonomously. Streamline operations with real-time, unified visibility into security threats, attacks, and vulnerability data, and enable remediation for assured security.",
+      image: "https://bridgepointconsulting.com/wp-content/uploads/2023/01/it-security-compliance-consultants-skills-job-duties-hiring-benefits.jpg"
+    },
+    {
+      title:"Continuous Governance",
+      description:"Actualize cloud governance best practices for cloud operations, security, compliance, access, and resource by implementing a well-architected framework. Achieve integrated and continuous governance across cost, security and operations.",
+      image: "https://www.cio.com/wp-content/uploads/2025/01/3626614-0-65645800-1736868150-shutterstock_2058800093_Summit-Art-Creations.jpg?quality=50&strip=all&w=1024"
+    },
+
+  ],
+  bottomTitle : "Delivering Innovative Cloud Solutions With World-Class Expertise",
+  }
+]
+
+export const itInfrastructure = [
+  {
+  heroTitle : "IT Infrastructure Services",
+  contentSubTitle : " go Cloud",
+  contentTitle : "Making The Cloud Sing To Your Business",
+  content : "Digital Solutions helps you drive business outcomes by looking beyond traditional ways of working. At EMTECH, we can help your business tap into the power of digital technologies to drive better business outcomes. We are a leading provider of digital solutions in the UAE, and our team of experts has the knowledge and experience to help your business succeed. We provide you with a wide spectrum of digital solutions and services to help you create, deliver and build digital experiences. Whether you are just beginning your digital journey, or seeking new opportunities to accelerate growth, our digital solutions and services empower your business transformation journey. We work with you to understand your unique business needs and develop a tailored digital solution that will help you achieve your desired results.",
+  contentImg : "https://vareli.co.in/vareliCMS/public/images/235343867/IT_Infrastructure.jpg",
+  serviceSubTitle : "Free Active Consultation",
+  serviceTitle : "Tailor-Made Solutions To Suit Your Business Needs",
+  serviceContent : "",
+  services : [
+    {
+      title:"Campus Wi-Fi Solutions",
+      description:"Get up to speed with our WiFi solutions that work for your community’s education, residential, and business needs. We offer a range of WiFi solutions that can be tailored to meet your specific needs. From high-speed internet access to corporate networks, we have the right solution for every application.",
+      image: "https://www.sentia.ca/Portals/0/EasyDNNNews/222/600600p1133EDNmainimg-Wireless-Network1.png"
+    },
+    {
+      title:"CCTV Solutions",
+      description:"Our expertise covers security planning, CCTV Installations, and maintenance in Dubai. We help in formulating solutions for an effective surveillance system that can be customized to your needs. We provide a complete solution that includes equipment selection, installation, maintenance, and training.",
+      image: "https://takyon.co.in/uploads/blog/why-cctv-security-systems-are-critical-for-today-businesses.jpeg"
+    },
+    {
+      title:"Switching Solutions",
+      description:"We provide a comprehensive portfolio of switching solutions for Enterprise Networks, data centers, and smaller businesses. These solutions are optimized for a wide range of industries, including service providers, financial services, and the public sector.",
+      image: "https://edspl.net/uploads/netswitch_1.webp"
+    },
+    {
+      title:"IP Telephony Solution",
+      description:"IP Telephone Systems are a great way to improve the quality of your business communication. Emtech is an IP telephony solution provider in UAE, we offer a wide range of solutions for small to large businesses. Our experts assist you to choose the best possible solution for your business needs.",
+      image: "https://www.researchdive.com/blogImages/R2PZbHjor4.jpeg"
+    },
+    {
+      title:"Next Generation Firewall",
+      description:"Our services are designed to keep your network safe, secure, and reliable. We provide the best security solutions for small, mid-sized and large enterprise businesses to protect their network infrastructure from sophisticated cyber threats.",
+      image: "https://fedscoop.com/wp-content/uploads/sites/5/2023/06/SNG-Cisco_Header_v01-3.jpg"
+    },
+    {
+      title:"Server Solutions",
+      description:"With years of experience in providing server solutions, we have gained extensive knowledge of various applications used by businesses today. We offer both physical and virtual servers to our clients with various configurations to choose from.",
+      image: "https://www.cybershoppe.in/wp-content/uploads/2020/08/servers.jpg"
+    },
+  ],
+  bottomTitle : "Build A Strong Backbone Infrastructure To Power Your Next Generation Digital Services",
+  }
+]
+
+export const cyberSecurity = [
+  {
+  heroTitle : "Cyber Security",
+  contentSubTitle : " go Cloud",
+  contentTitle : "Making The Cloud Sing To Your Business",
+  content : "Digital Solutions helps you drive business outcomes by looking beyond traditional ways of working. At EMTECH, we can help your business tap into the power of digital technologies to drive better business outcomes. We are a leading provider of digital solutions in the UAE, and our team of experts has the knowledge and experience to help your business succeed. We provide you with a wide spectrum of digital solutions and services to help you create, deliver and build digital experiences. Whether you are just beginning your digital journey, or seeking new opportunities to accelerate growth, our digital solutions and services empower your business transformation journey. We work with you to understand your unique business needs and develop a tailored digital solution that will help you achieve your desired results.",
+  contentImg : "https://vareli.co.in/vareliCMS/public/images/235343867/IT_Infrastructure.jpg",
+  serviceSubTitle : "Protecting Assets, Revitalizing Business",
+  serviceTitle : "Enterprise Security And Advanced Threat Protection Solutions",
+  serviceContent : "",
+  services : [
+    {
+      title:"EDR, MDR & XDR Solutions",
+      description:"Central to every security strategy is a detection and response capability which catches threats that have circumvented traditional security measures. EDR , MDR, XDR are three main detection and response solutions",
+      image: "https://media.licdn.com/dms/image/D5612AQGX6glFlEArJg/article-cover_image-shrink_600_2000/0/1681234403630?e=2147483647&v=beta&t=gq0NvcEzPoNO-p7cbbaFg0gABEkeq8PCWvGujAB7KH4"
+    },
+    {
+      title:"Network Security & WAF Solutions",
+      description:"Architects to protect your network from the latest threats while accelerating your important SaaS, SD-WAN, and cloud application traffic. Consulting, designing, implementation and supporting enterprise network security and WAF solutions.",
+      image: "https://www.elegantthemes.com/blog/wp-content/uploads/2020/02/waf.png"
+    },
+    {
+      title:"SIEM & SOC Solutions",
+      description:"Multi-tenant cloud architecture fueled with integrated threat intelligence, a built-in app store with purpose-built threat detection apps. Proactively monitor your endpoint, network, and the cloud using our SOC As A Service.",
+      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoqUZXkULGkiKfjuvRRneM40rCvxIPmDQ9AA&s"
+    },
+    {
+      title:"Messaging Security, Dark web solutions",
+      description:"Adapt the right technology solutions to protect your organization’s reputation in email fraud attacks by authenticating all your senders, without blocking legitimate emails. Analyze email with multi-layered content analysis, reputation analysis, and sandboxing within a single email security solution.",
+      image: "https://www.happiestminds.com/wp-content/uploads/2024/07/What-is-Dark-Web.jpg"
+    },
+    {
+      title:"PAM, MFA & ZTNA Solutions",
+      description:"Prevent unauthorized access to applications and network resources. Monitor and log the activity. Enable Multi-Factor-Authentication to validate the access in realtime. ZTNA provides secure remote access to an organization’s applications, data, and services based on clearly defined access control policies.",
+      image: "https://emudhra.com/hubfs/Imported_Blog_Media/EbIZzOaRRA2RnivK3X2C-1.png"
+    },
+    
+  ],
+  bottomTitle : "Strengthen Your Organization Cyber Defense Using Our Managed SOC Services",
+  }
+]
+
+export const managedService = [
+  {
+  heroTitle : "Managed IT service in UAE",
+  contentSubTitle : " go Cloud",
+  contentTitle : "Making The Cloud Sing To Your Business",
+  content : "Digital Solutions helps you drive business outcomes by looking beyond traditional ways of working. At EMTECH, we can help your business tap into the power of digital technologies to drive better business outcomes. We are a leading provider of digital solutions in the UAE, and our team of experts has the knowledge and experience to help your business succeed. We provide you with a wide spectrum of digital solutions and services to help you create, deliver and build digital experiences. Whether you are just beginning your digital journey, or seeking new opportunities to accelerate growth, our digital solutions and services empower your business transformation journey. We work with you to understand your unique business needs and develop a tailored digital solution that will help you achieve your desired results.",
+  contentImg : "https://vareli.co.in/vareliCMS/public/images/235343867/IT_Infrastructure.jpg",
+  serviceSubTitle : "MANAGED IT SERVICE",
+  serviceTitle : "Power your business with Emtech’s Managed IT Service in UAE",
+  serviceContent : "",
+  services : [
+    {
+      title:"Managed IT Infrastructure",
+      description:"Our Managed Infrastructure Services gives you comprehensive management and monitoring of your on-premises, cloud IT infrastructure to enhance operational agility, reduce risk and optimize cloud and technology infrastructure investments.",
+      image: "https://blog.vectorusa.com/hubfs/GettyImages-1214111410.jpg"
+    },
+    {
+      title:"SOC as a Service",
+      description:"Take your security detection and response best practices to the cloud. Visualize and understand the malicious activity. Analyze, prioritize and respond to threats in rapid time. Safeguard your company data, people, and processes.",
+      image: "https://contentsecurity.com.au/wp-content/uploads/2024/01/CS_Web_banners_Premium_SOC_Service-scaled.jpg"
+    },
+    {
+      title:"Managed Cloud Service",
+      description:"With our Managed Service you achieve continuous and autonomous cloud governance, and continuous cloud compliance, run highly available and lean operations, early identify and mitigate security threats and optimize cloud costs.",
+      image: "https://www.msrcosmos.com/wp-content/uploads/2023/07/Cloud-Managed-Services.webp"
+    },
+    {
+      title:"Managed Email Security",
+      description:"Email threats evolve every day. Our team ensures that your defensive systems stay ahead of attackers. With our Managed Email Security services, you get regular health checks and gain peace of mind knowing that you’re protected with the latest updates.",
+      image: "https://azureity.com/wp-content/uploads/2023/05/secure-email-company.jpg"
+    },
+    {
+      title:"Managed Services Network & Security",
+      description:"Reduce downtime and ensure maximum uptime with our Managed Network & Security service. We provide support in configuration management, security policy creation and rollout etc. Our online to onsite support can help you reduce the outages.",
+      image: "https://suntechnologies.com/wp-content/uploads/2021/03/Network-security-support.jpg"
+    },
+    
+  ],
+  bottomTitle : "Strengthen Your Organization Cyber Defense Using Our Managed SOC Services",
+  }
+]
+
+export const virtualizationSolution = [
+  {
+  heroTitle : "Virtualization Solutions",
+  contentSubTitle : " go Cloud",
+  contentTitle : "Making The Cloud Sing To Your Business",
+  content : "Digital Solutions helps you drive business outcomes by looking beyond traditional ways of working. At EMTECH, we can help your business tap into the power of digital technologies to drive better business outcomes. We are a leading provider of digital solutions in the UAE, and our team of experts has the knowledge and experience to help your business succeed. We provide you with a wide spectrum of digital solutions and services to help you create, deliver and build digital experiences. Whether you are just beginning your digital journey, or seeking new opportunities to accelerate growth, our digital solutions and services empower your business transformation journey. We work with you to understand your unique business needs and develop a tailored digital solution that will help you achieve your desired results.",
+  contentImg : "https://vareli.co.in/vareliCMS/public/images/235343867/IT_Infrastructure.jpg",
+  serviceSubTitle : "Virtualization Solutions",
+  serviceTitle : "Virtualization Offers Strong Business Benefits",
+  serviceContent : "Many IT organizations deploy servers that are only running at a fraction of their capacity, often because they are dedicating their physical server to a specific application. This is usually an inefficient mechanism because there is an excess capacity that is not being consumed, which leads to higher operating costs. Our Virtualization solutions can benefit your organization in several ways, with a single server, you are able to create several virtual machines. Virtualization enables more efficient utilization of computer hardware and enables a greater return on an organization’s hardware investment. Virtualization uses software to create an abstraction layer over the physical hardware. In doing so, it creates a virtual compute system, known as virtual machines (VMs). This allows organizations to run multiple virtual computers, operating systems, and applications on a single physical server. Simply put, it is a more efficient use of the physical computer hardware; this, in turn, provides a greater return on a company’s investment.",
+  services : [
+    {
+      title:"VMware Virtualization",
+      description:"VMware virtualization enables efficient resource use by running multiple virtual machines (VMs) on one physical server, connected via a hypervisor. Benefits include improved flexibility, cost savings by reducing physical hardware, streamlined management with VMware tools, and increased reliability through features like live migration and backups—making it a robust, adaptable IT solution.",
+      image: "https://cdn-ioeej.nitrocdn.com/YmndllJeXYDrJZhQjYQYRcvDxfdvvQhr/assets/images/optimized/rev-e69c88e/emtech.ae/wp-content/uploads/2020/12/VMware-Virtualization.jpg"
+    },
+    {
+      title:"Microsoft Hyper-V Hypervisors",
+      description:"A hypervisor is a lightweight software layer that allocates a host computer’s resources to guest operating systems. Microsoft’s Hyper-V enables hardware virtualization, allowing each virtual machine to run on virtual hardware, including virtual hard drives, switches, and other devices. This allows multiple operating systems to run on one server or client computer.",
+      image: "https://cdn-ioeej.nitrocdn.com/YmndllJeXYDrJZhQjYQYRcvDxfdvvQhr/assets/images/optimized/rev-e69c88e/emtech.ae/wp-content/uploads/2020/12/Microsoft-Hyper-V-Hypervisors.jpg"
+    },
+    
+  ],
+  bottomTitle : "Virtualize your IT Infrastructure to reduce downtime and enhance resiliency!",
+  }
+]
+
+export const amcSupport = [
+  {
+  heroTitle : "Premium IT AMC Support",
+  contentSubTitle : " go Cloud",
+  contentTitle : "Making The Cloud Sing To Your Business",
+  content : "Digital Solutions helps you drive business outcomes by looking beyond traditional ways of working. At EMTECH, we can help your business tap into the power of digital technologies to drive better business outcomes. We are a leading provider of digital solutions in the UAE, and our team of experts has the knowledge and experience to help your business succeed. We provide you with a wide spectrum of digital solutions and services to help you create, deliver and build digital experiences. Whether you are just beginning your digital journey, or seeking new opportunities to accelerate growth, our digital solutions and services empower your business transformation journey. We work with you to understand your unique business needs and develop a tailored digital solution that will help you achieve your desired results.",
+  contentImg : "https://vareli.co.in/vareliCMS/public/images/235343867/IT_Infrastructure.jpg",
+  serviceSubTitle : "Premium AMC Support",
+  serviceTitle : "AMC Onboarding with Emtech for the First Time",
+  serviceContent : "When a client takes an AMC with us, we support them comprehensively throughout the years offering them with diverse types of help. After signing AMC with Emtech first time, we conduct a detailed study of customer complete IT infrastructure to fix all lingering issues once for all, apparently, we also recommend best practices. Preventive maintenance will be carried out every quarter and a detailed report will be shared with the customer regarding the details of issues and recommendations for them to look at the cases and action. Periodic review meeting will be conducted with Account manager to take support feedback from the customer as a part of continues improvement process.",
+  services : [
+    {
+      title:"Primary IT Support",
+      description:"When a client associates with Emtech for the first time, we carry out a full and comprehensive assessment of their IT and technical infrastructure to understand various issues, shortcomings and other lingering concerns that plague their technology infrastructure. Once we take care of all the issues of the client, we also provide them with effective practices and guidelines to ensure that their IT infrastructure performs and continues to perform as intended by the client.",
+      image: "https://unity-connect.com/wp-content/uploads/2023/04/What-Is-IT-Support-A-Useful-Guide-Featured-Image_669226057-1024x683.jpg"
+    },
+    {
+      title:"Preventive Maintenance",
+      description:"As per the requirements, every quarter, we carry our preventive maintenance of the IT systems and infrastructure of the client to identify any issues. Once the same is done, we will also provide the clients with a detailed report of the findings, the analysis, and the guidelines to fix the issues that were identified, as well. This will support the client learn about the issues and the remedies they need to address not only the current concern but also the ones in the future.",
+      image: "https://www.techdonut.co.uk/sites/default/files/regularitmaintenance_87023960_0.jpg"
+    },
+    {
+      title:"Periodic Reviews",
+      description:"Emtech looks to constantly improve the services and AMC support that we offer. Hence, we always try to learn about the experience that the clients have with us. Thus, we carry out periodic review meetings with the account manager to learn about the kind of experience and feedback from the client so as to improve our service support for our clients. This approach has greatly helped us render high value-adding AMC services to our clients, at all times.",
+      image: "https://media.licdn.com/dms/image/v2/D5612AQHlXMimK6vlkg/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1694193303284?e=2147483647&v=beta&t=CsMYZECGylboNWV0YutYrfUIKFH5yn5S5NAn5mua9bQ"
+    },
+    {
+      title:"Scalable",
+      description:"Emtech understands that every business wants to grow and they work incessantly for the same. As a result, we offer them with scalable IT AMC services that can respond proactively to the dynamic nature of the business and its growth objectives.",
+      image: "https://mcim24x7.b-cdn.net/wp-content/uploads/2024/05/Standardization-and-scalability.png"
+    },
+    {
+      title:"Flexible",
+      description:"Unlike typical IT AMC providers in the UAE, Emtech offers flexible, dynamic support that adapts to clients' evolving needs and business goals. We deliver tailored, top-notch IT AMC services that others cannot match, making Emtech the most reliable and economical choice for exceptional IT support in the region.",
+      image: "https://media.licdn.com/dms/image/v2/C4D0DAQHdcrIn7LGz9g/learning-public-crop_144_256/learning-public-crop_144_256/0/1567195925868?e=2147483647&v=beta&t=PkwbrT2fXinSl0j_zaB6j-Elf4K7OnuTO2HH4HqitCU"
+    },
+    
+  ],
+  bottomTitle : "Want Answers? Learn About Our IT AMC Solutions and Services Talking to Our Experts, Now",
+  }
+]
