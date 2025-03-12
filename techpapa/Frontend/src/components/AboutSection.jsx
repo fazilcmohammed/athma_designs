@@ -9,28 +9,26 @@ const AboutSection = () => {
         <h2 className="text-4xl sm:text-4xl md:text-5xl text-center md:text-left font-extrabold mb-4">
           Modern Technology <br /> Solutions Company
         </h2>
-        <p className="text-red-600 font-semibold text-center md:text-left uppercase py-1 md:py-3">
+        <p className="text-blue-600 font-semibold text-center md:text-left uppercase py-1 md:py-3">
           // Serving Your Technology Needs Since 1993
         </p>
         <p className="text-gray-700 mt-4 text-center md:text-left leading-relaxed">
-          In a world that moves faster every day, we need to be constantly evolving.
-          That’s where we come in. <strong>We are a Modern Technology Solutions & Integrated Service Management Organization</strong> 
-          that uses technology to solve complex business challenges and deliver exceptional value to our clients.
+        In today's fast-paced world, staying ahead means continuously evolving. That’s where we come in. As a Modern Technology Solutions & Integrated Service Management Organization, we leverage cutting-edge technology to solve complex business challenges and deliver exceptional value to our clients.
         </p>
         <p className="text-gray-700 mt-4 text-center md:text-left leading-relaxed">
-          <strong>Our Commitment to Customers</strong> is what makes us unique. We strive to 
-          build a reputable organization and a desirable place to work. Our impact 
-          extends through innovation, collective efforts, and the smart use of technology.
+        What sets us apart is our unwavering dedication to our customers. We have consciously built a reputable organization and a desirable workplace, driven by innovation and excellence. Our mission is to create a meaningful impact—on our clients, our communities, and the future of technology—through collaboration and transformative solutions.
+
+Every day, we work towards this vision, making it a reality.
         </p>
 
         {/* Icons Section */}
         <div className="flex flex-col sm:flex-row items-center md:items-start gap-6 mt-8">
           <div className="flex items-center gap-2">
-            <FaShieldAlt className="text-red-600 text-2xl" />
+            <FaShieldAlt className="text-blue-600 text-2xl" />
             <p className="text-gray-800 font-semibold">Technology Partner You Can Trust</p>
           </div>
           <div className="flex items-center gap-2">
-            <MdVerified className="text-red-600 text-2xl" />
+            <MdVerified className="text-blue-600 text-2xl" />
             <p className="text-gray-800 font-semibold">ISO 20000-1:2018 Certified</p>
           </div>
         </div>

@@ -1,13 +1,59 @@
-import React from "react";
+import React, { useState } from "react";
+import emailjs from "@emailjs/browser";
 
 const ContactSection = () => {
+    const [formData, setFormData] = useState({
+        name: "",
+        email: "",
+        subject: "",
+        message: "",
+    });
+
+    const [statusMessage, setStatusMessage] = useState("");
+
+    const handleChange = (e) => {
+        setFormData({ ...formData, [e.target.name]: e.target.value });
+    };
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+
+        const { name, email, subject, message } = formData;
+
+        if (!name || !email || !subject || !message) {
+            setStatusMessage("❌ Please fill in all fields.");
+            return;
+        }
+
+        const templateParams = {
+            user_name: name,
+            user_email: email,
+            subject: subject,
+            message: message,
+        };
+
+        emailjs
+            .send("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", templateParams, "YOUR_PUBLIC_KEY")
+            .then(
+                (response) => {
+                    console.log("SUCCESS!", response.status, response.text);
+                    setStatusMessage("✅ Message sent successfully!");
+                    setFormData({ name: "", email: "", subject: "", message: "" }); // Clear form
+                },
+                (err) => {
+                    console.error("FAILED...", err);
+                    setStatusMessage("❌ Failed to send message. Try again.");
+                }
+            );
+    };
+
     return (
         <div className="max-w-6xl mx-auto py-16 px-6">
             {/* Contact Details */}
             <div className="grid grid-cols-1 md:grid-cols-4 gap-6 mb-10">
                 <div className="bg-gray-100 p-6 rounded-lg">
                     <h3 className="text-lg font-semibold">Address:</h3>
-                    <p className="text-[#068f96] font-bold">Head office : office No 166-107 Al Garhoud Bussiness Center, Al Garhoud, Dubai, UAE.</p>
+                    <p className="text-[#068f96] font-bold">Head office : office No 166-107 Al Garhoud Business Center, Al Garhoud, Dubai, UAE.</p>
                 </div>
                 <div className="bg-gray-100 p-6 rounded-lg">
                     <h3 className="text-lg font-semibold">Phone:</h3>
@@ -16,13 +62,15 @@ const ContactSection = () => {
                 <div className="bg-gray-100 p-6 rounded-lg">
                     <h3 className="text-lg font-semibold">Email:</h3>
                     <p className="text-gray-600">
-                        <a href="mailto:info@yoursite.com" className="text-[#068f96] font-bold">info@alashab.net <br />sales@alashab.net <br />purchase@alashab.net</a>
+                        <a href="mailto:info@alashab.net" className="text-[#068f96] font-bold">
+                            info@alashab.net <br /> sales@alashab.net <br /> purchase@alashab.net
+                        </a>
                     </p>
                 </div>
                 <div className="bg-gray-100 p-6 rounded-lg">
                     <h3 className="text-lg font-semibold">Website:</h3>
                     <p className="text-gray-600">
-                        <a href="https://yoursite.com" className="text-[#068f96] font-bold">alashab.net</a>
+                        <a href="https://alashab.net" className="text-[#068f96] font-bold">alashab.net</a>
                     </p>
                 </div>
             </div>
@@ -41,28 +89,40 @@ const ContactSection = () => {
 
                 {/* Contact Form */}
                 <div className="bg-white shadow-md p-8 rounded-lg">
-                    <form>
+                    <form onSubmit={handleSubmit}>
                         <input
                             type="text"
+                            name="name"
                             placeholder="Your Name"
                             className="w-full p-3 border border-gray-300 rounded-lg mb-4"
+                            value={formData.name}
+                            onChange={handleChange}
                             required
                         />
                         <input
                             type="email"
+                            name="email"
                             placeholder="Your Email"
                             className="w-full p-3 border border-gray-300 rounded-lg mb-4"
+                            value={formData.email}
+                            onChange={handleChange}
                             required
                         />
                         <input
                             type="text"
+                            name="subject"
                             placeholder="Subject"
                             className="w-full p-3 border border-gray-300 rounded-lg mb-4"
+                            value={formData.subject}
+                            onChange={handleChange}
                             required
                         />
                         <textarea
+                            name="message"
                             placeholder="Message"
                             className="w-full p-3 border border-gray-300 rounded-lg mb-4 h-28"
+                            value={formData.message}
+                            onChange={handleChange}
                             required
                         ></textarea>
                         <button
@@ -72,6 +132,7 @@ const ContactSection = () => {
                             Send Message
                         </button>
                     </form>
+                    {statusMessage && <p className="text-center mt-4 text-gray-700">{statusMessage}</p>}
                 </div>
             </div>
         </div>

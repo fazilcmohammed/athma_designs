@@ -7,11 +7,11 @@ const KmServices = ({ services, titles }) => {
     <section className="container mx-auto px-6 py-12">
       {/* Header */}
       <div className="text-center">
-        <p className="text-red-600 font-bold uppercase">// {titles.serviceSubTitle}</p>
-        <h2 className="text-3xl font-bold text-gray-900 mt-2">
+        <p className="text-blue-600 font-bold uppercase">// {titles.serviceSubTitle}</p>
+        <h2 className="text-4xl font-bold text-gray-900 mt-2">
         {titles.serviceTitle}
         </h2>
-        <p className="text-gray-700 mt-4 max-w-2xl mx-auto">
+        <p className="text-gray-700 mt-4 md:w-[90%]  mx-auto">
         {titles.serviceContent}
         </p>
       </div>
@@ -22,12 +22,12 @@ const KmServices = ({ services, titles }) => {
         {services[0].services.map((service, index) => (
           <div
             key={index}
-            className={`flex flex-col md:flex-row items-center bg-white shadow-lg rounded-lg overflow-hidden ${
+            className={`flex flex-col md:flex-row items-center md:justify-between md:px-20 md:py-10 bg-white shadow-lg rounded-lg overflow-hidden ${
               index % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'
             }`}
           >
             {/* Image */}
-            <div className="md:w-1/2">
+            <div className="md:w-[40%]">
               <img
                 src={service.image}
                 alt={service.title}
@@ -36,11 +36,11 @@ const KmServices = ({ services, titles }) => {
             </div>
 
             {/* Text */}
-            <div className="md:w-1/2 p-6">
-              <h3 className="text-xl font-bold">{service.title}</h3>
-              <p className="text-gray-700 mt-2">{service.description}</p>
+            <div className="md:w-[58%] p-6">
+              <h3 className="text-2xl font-bold">{service.title}</h3>
+              <p className="text-gray-700 my-3">{service.description}</p>
               <button
-          className="px-6 py-3 mt-5 bg-red-600 hover:bg-red-700 text-white font-semibold rounded transition"
+          className="px-6 py-3 mt-5 bg-blue-600 hover:bg-blue-800 text-white font-semibold rounded transition"
           onClick={() => setShowModal(true)}
         >
           Know More

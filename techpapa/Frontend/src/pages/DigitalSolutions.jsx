@@ -28,7 +28,7 @@ const DigitalSolutions = () => {
 
         </h2>
         <p className="text-gray-700 mt-4 leading-relaxed">
-        Digital Solutions helps you drive business outcomes by looking beyond traditional ways of working. At EMTECH, we can help your business tap into the power of digital technologies to drive better business outcomes. We are a leading provider of digital solutions in the UAE, and our team of experts has the knowledge and experience to help your business succeed.
+        Digital Solutions helps you drive business outcomes by looking beyond traditional ways of working. At TECHPAPPA, we can help your business tap into the power of digital technologies to drive better business outcomes. We are a leading provider of digital solutions in the UAE, and our team of experts has the knowledge and experience to help your business succeed.
         </p>
         
         <p className="text-gray-700 mt-4 leading-relaxed">

@@ -17,9 +17,9 @@ const Home = () => {
         <AboutSection/>
         <ServicesSection/>
         <Solutions/>
-        <IspgSection/>
-        <WebaLearn/>
-        <ChooseUs/>     
+        {/* <IspgSection/> */}
+        {/* <WebaLearn/> */}
+        {/* <ChooseUs/>      */}
     </div>
   )
 }

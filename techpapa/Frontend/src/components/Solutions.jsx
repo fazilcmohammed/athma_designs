@@ -38,9 +38,9 @@ const Solutions = () => {
         {/* Header Section */}
         <div className="flex justify-between items-center">
           <div className="text-left">
-            <p className="text-sm uppercase text-red-600 font-bold">// OUR SOLUTIONS</p>
+            <p className="text-sm uppercase text-blue-600 font-bold">// OUR SOLUTIONS</p>
             <h2 className="text-3xl sm:text-4xl font-bold mt-2">
-              We Have The <span className="text-red-600">Right Expertise</span>
+              We Have The <span className="text-blue-600">Right Expertise</span>
             </h2>
           </div>
 
@@ -48,13 +48,13 @@ const Solutions = () => {
           <div className="space-x-1">
             <button
               onClick={handlePrev}
-              className="p-2 border border-gray-300 rounded-lg hover:bg-red-600 hover:text-white transition duration-300"
+              className="p-2 border border-gray-300 rounded-lg hover:bg-blue-600 hover:text-white transition duration-300"
             >
               <FaChevronLeft />
             </button>
             <button
               onClick={handleNext}
-              className="p-2 border border-gray-300 rounded-lg hover:bg-red-600 hover:text-white transition duration-300"
+              className="p-2 border border-gray-300 rounded-lg hover:bg-blue-600 hover:text-white transition duration-300"
             >
               <FaChevronRight />
             </button>
@@ -78,7 +78,7 @@ const Solutions = () => {
                       <Link 
                         to={item.path} 
                         key={item.id} 
-                        className="p-10 border border-gray-200 shadow-md hover:shadow-lg h-[280px] transition-all duration-300 hover:bg-red-600 hover:text-white cursor-pointer"
+                        className="p-10 border border-gray-200 shadow-md hover:shadow-lg h-[280px] transition-all duration-300 hover:bg-blue-600 hover:text-white cursor-pointer"
                       >
                         <span><item.icon className="text-5xl mx-auto mb-4" /></span>
                         <h3 className="text-xl font-bold my-4">{item.title}</h3>
@@ -96,7 +96,7 @@ const Solutions = () => {
           {Array.from({ length: totalSlides + 1 }).map((_, i) => (
             <span
               key={i}
-              className={`w-3 h-3 rounded-full ${index === i ? "bg-red-600" : "bg-gray-300"}`}
+              className={`w-3 h-3 rounded-full ${index === i ? "bg-blue-600" : "bg-gray-300"}`}
             ></span>
           ))}
         </div>

@@ -18,7 +18,7 @@ const HybridCloud = () => {
       />
       <section className="py-12 px-6 bg-white">
       {/* Subheading */}
-      <p className="text-red-600 font-bold text-center uppercase text-sm">
+      <p className="text-blue-600 font-bold text-center uppercase text-sm">
         // Your Partner of Choice for Microsoft Azure
       </p>
 

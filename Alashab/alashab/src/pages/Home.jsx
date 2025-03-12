@@ -5,6 +5,7 @@ import Features from '../components/Feautres'
 import Products from '../components/Products'
 import Newsletter from '../components/Newsletter'
 import { Helmet } from "react-helmet-async";
+import ProductsByCountry from '../components/ProductsByCountry'
 
 const Home = () => {
   return (
@@ -15,6 +16,7 @@ const Home = () => {
       </Helmet>
         <HeroSection/>
         <Features/>
+        <ProductsByCountry/>
         <Products/>
         <Newsletter/>
     </div>

@@ -535,28 +535,34 @@ export const aboutSolutions = [
     title: "Infrastructure Solutions",
     description: "We help our clients design, implement, and manage best-in-class, highly secure, and scalable enterprise IT infrastructure solutions.",
     image: "https://cdn-lloaj.nitrocdn.com/ZZYluWSojHiVGvdfeOPfFCBERbKVDvPk/assets/images/optimized/rev-886f8dd/i0.wp.com/pegasustechnologies.com/wp-content/uploads/2022/02/3bf9e20f0ffcb5955e0b814d75b96c67.content.jpg",
+    path: "/it-infrastructure"
   },
   {
     title: "Cloud Solutions",
     description: "Take the full advantage of cloud innovation and accelerate your business by relying on effective hybrid and multi cloud approach from us.",
     image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbqDeReMyKOCEAXLbTnCMy5eLBHQmO59RPoA&s",
+    path: "/cloud-service"
   },
   {
     title: "Cyber Security Solutions",
     description: "It is our mission to ensure Data security in many different forms it takes. We provide cyber security solutions to protect digital assets of your organization.",
     image: "https://www.theforage.com/blog/wp-content/uploads/2022/12/what-is-cybersecurity.jpg",
+    path: "/cyber-security"
   },
   {
     title: "Managed IT Service",
     description: "Achieve highest level of efficiency of your business with all levels of IT Support to cover all your technology needs.",
     image: "https://img.freepik.com/free-photo/standard-quality-control-collage-concept_23-2149595847.jpg",
+    path: "/it-managed-service"
   },
   {
     title: "Digital Solutions",
     description: "Creating digital solutions to solve conventional business challenges by using latest in Web, AI, and Blockchain technologies.",
     image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkdWEPaAKsKmUw8bMSmFurZbf2vSWZh9NGzw&s",
+    path: "/digital-solutions"
   },
 ]
+
 
 
 export const digitalSolutions = [
@@ -839,5 +845,330 @@ export const amcSupport = [
     
   ],
   bottomTitle : "Want Answers? Learn About Our IT AMC Solutions and Services Talking to Our Experts, Now",
+  }
+]
+
+export const cloudNetworking = [
+  {
+  heroTitle : "Cloud Managed Networking",
+  contentSubTitle : " go Cloud",
+  contentTitle : "Making The Cloud Sing To Your Business",
+  content : "Digital Solutions helps you drive business outcomes by looking beyond traditional ways of working. At EMTECH, we can help your business tap into the power of digital technologies to drive better business outcomes. We are a leading provider of digital solutions in the UAE, and our team of experts has the knowledge and experience to help your business succeed. We provide you with a wide spectrum of digital solutions and services to help you create, deliver and build digital experiences. Whether you are just beginning your digital journey, or seeking new opportunities to accelerate growth, our digital solutions and services empower your business transformation journey. We work with you to understand your unique business needs and develop a tailored digital solution that will help you achieve your desired results.",
+  contentImg : "https://vareli.co.in/vareliCMS/public/images/235343867/IT_Infrastructure.jpg",
+  serviceSubTitle : "Cloud Managed Networking",
+  serviceTitle : "Benefits of Cloud Managed Networking",
+  serviceContent : "With cloud-managed networking, administrators can see their entire network, regardless of location, gather real-time data for planning and troubleshooting purposes, and make configuration changes all from a single pane of glass. No management hardware or travel needed. The main advantages of cloud-managed networking is that the product and product update process is managed by the vendor. New features and functionality are continuously developed and automatically delivered, allowing IT to focus on introducing new services, instead of planning for downtime.",
+  services : [
+    {
+      title:"Cisco Meraki",
+      description:"Cisco Meraki simplifies IT with centralized management for WLAN, switching, security, and more, reducing costs and complexity. Meraki MS Switches feature Layer 7 application and client analysis, allowing administrators to identify users, content, and applications on the network. This enables detailed monitoring, automatic reporting, and policy enforcement to optimize network performance.",
+      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTikAhoiiDUeYhrAeOWeg4DEHCH6JQYWzIJcw&s"
+    },
+    {
+      title:"Aruba",
+      description:"Aruba’s Cloud-managed networking portfolio ensures reliable support for fast-paced, mobile-first environments. Key solutions include Aruba Central for unified network management, Aruba SD-Branch for secure SD-WAN and branch operations, and Aruba Device Insight for intelligent device discovery and visibility. These solutions work together to enhance Aruba’s comprehensive range of access points, switches, and gateways.",
+      image: "https://play-lh.googleusercontent.com/cvwWfyqF2uBtIAoVAcMRUBawvREHN1ZHIpDZ70pkseIiKoTY-BxbYAqG2sieG4KpC5I"
+    },
+  ],
+  bottomTitle : "We can help you choose the right cloud network solution that suits for your current and growing business need!",
+  }
+]
+
+export const enterprise = [
+  {
+  heroTitle : "Enterprise ICT",
+  contentSubTitle : "",
+  contentTitle : "Making The Cloud Sing To Your Business",
+  content : "Digital Solutions helps you drive business outcomes by looking beyond traditional ways of working. At EMTECH, we can help your business tap into the power of digital technologies to drive better business outcomes. We are a leading provider of digital solutions in the UAE, and our team of experts has the knowledge and experience to help your business succeed. We provide you with a wide spectrum of digital solutions and services to help you create, deliver and build digital experiences. Whether you are just beginning your digital journey, or seeking new opportunities to accelerate growth, our digital solutions and services empower your business transformation journey. We work with you to understand your unique business needs and develop a tailored digital solution that will help you achieve your desired results.",
+  contentImg : "https://vareli.co.in/vareliCMS/public/images/235343867/IT_Infrastructure.jpg",
+  serviceSubTitle : "",
+  serviceTitle : "",
+  serviceContent : "With cloud-managed networking, administrators can see their entire network, regardless of location, gather real-time data for planning and troubleshooting purposes, and make configuration changes all from a single pane of glass. No management hardware or travel needed. The main advantages of cloud-managed networking is that the product and product update process is managed by the vendor. New features and functionality are continuously developed and automatically delivered, allowing IT to focus on introducing new services, instead of planning for downtime.",
+  services : [
+    {
+      title:"Cisco Meraki",
+      description:"Cisco Meraki simplifies IT with centralized management for WLAN, switching, security, and more, reducing costs and complexity. Meraki MS Switches feature Layer 7 application and client analysis, allowing administrators to identify users, content, and applications on the network. This enables detailed monitoring, automatic reporting, and policy enforcement to optimize network performance.",
+      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTikAhoiiDUeYhrAeOWeg4DEHCH6JQYWzIJcw&s"
+    },
+    {
+      title:"Aruba",
+      description:"Aruba’s Cloud-managed networking portfolio ensures reliable support for fast-paced, mobile-first environments. Key solutions include Aruba Central for unified network management, Aruba SD-Branch for secure SD-WAN and branch operations, and Aruba Device Insight for intelligent device discovery and visibility. These solutions work together to enhance Aruba’s comprehensive range of access points, switches, and gateways.",
+      image: "https://play-lh.googleusercontent.com/cvwWfyqF2uBtIAoVAcMRUBawvREHN1ZHIpDZ70pkseIiKoTY-BxbYAqG2sieG4KpC5I"
+    },
+  ],
+  bottomTitle : "Stay ahead and stay relevant by joining hands with TECHPAPPA, one of the top IT companies in Dubai!",
+  }
+]
+
+export const artificialIntelligence = [
+  {
+  heroTitle : "Artificial Intelligence",
+  contentSubTitle : "",
+  contentTitle : "Making The Cloud Sing To Your Business",
+  content : "Digital Solutions helps you drive business outcomes by looking beyond traditional ways of working. At EMTECH, we can help your business tap into the power of digital technologies to drive better business outcomes. We are a leading provider of digital solutions in the UAE, and our team of experts has the knowledge and experience to help your business succeed. We provide you with a wide spectrum of digital solutions and services to help you create, deliver and build digital experiences. Whether you are just beginning your digital journey, or seeking new opportunities to accelerate growth, our digital solutions and services empower your business transformation journey. We work with you to understand your unique business needs and develop a tailored digital solution that will help you achieve your desired results.",
+  contentImg : "https://vareli.co.in/vareliCMS/public/images/235343867/IT_Infrastructure.jpg",
+  serviceSubTitle : "",
+  serviceTitle : "",
+  serviceContent : "With cloud-managed networking, administrators can see their entire network, regardless of location, gather real-time data for planning and troubleshooting purposes, and make configuration changes all from a single pane of glass. No management hardware or travel needed. The main advantages of cloud-managed networking is that the product and product update process is managed by the vendor. New features and functionality are continuously developed and automatically delivered, allowing IT to focus on introducing new services, instead of planning for downtime.",
+  services : [
+    {
+      title:"Cisco Meraki",
+      description:"Cisco Meraki simplifies IT with centralized management for WLAN, switching, security, and more, reducing costs and complexity. Meraki MS Switches feature Layer 7 application and client analysis, allowing administrators to identify users, content, and applications on the network. This enables detailed monitoring, automatic reporting, and policy enforcement to optimize network performance.",
+      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTikAhoiiDUeYhrAeOWeg4DEHCH6JQYWzIJcw&s"
+    },
+    {
+      title:"Aruba",
+      description:"Aruba’s Cloud-managed networking portfolio ensures reliable support for fast-paced, mobile-first environments. Key solutions include Aruba Central for unified network management, Aruba SD-Branch for secure SD-WAN and branch operations, and Aruba Device Insight for intelligent device discovery and visibility. These solutions work together to enhance Aruba’s comprehensive range of access points, switches, and gateways.",
+      image: "https://play-lh.googleusercontent.com/cvwWfyqF2uBtIAoVAcMRUBawvREHN1ZHIpDZ70pkseIiKoTY-BxbYAqG2sieG4KpC5I"
+    },
+  ],
+  bottomTitle : "Talk to Our Engineers About Your Need and We Would Love to Help You",
+  }
+]
+
+export const iot = [
+  {
+  heroTitle : "Internet of Things (IoT)",
+  contentSubTitle : "",
+  contentTitle : "Making The Cloud Sing To Your Business",
+  content : "Digital Solutions helps you drive business outcomes by looking beyond traditional ways of working. At EMTECH, we can help your business tap into the power of digital technologies to drive better business outcomes. We are a leading provider of digital solutions in the UAE, and our team of experts has the knowledge and experience to help your business succeed. We provide you with a wide spectrum of digital solutions and services to help you create, deliver and build digital experiences. Whether you are just beginning your digital journey, or seeking new opportunities to accelerate growth, our digital solutions and services empower your business transformation journey. We work with you to understand your unique business needs and develop a tailored digital solution that will help you achieve your desired results.",
+  contentImg : "https://vareli.co.in/vareliCMS/public/images/235343867/IT_Infrastructure.jpg",
+  serviceSubTitle : "",
+  serviceTitle : "",
+  serviceContent : "With cloud-managed networking, administrators can see their entire network, regardless of location, gather real-time data for planning and troubleshooting purposes, and make configuration changes all from a single pane of glass. No management hardware or travel needed. The main advantages of cloud-managed networking is that the product and product update process is managed by the vendor. New features and functionality are continuously developed and automatically delivered, allowing IT to focus on introducing new services, instead of planning for downtime.",
+  services : [
+    {
+      title:"Cisco Meraki",
+      description:"Cisco Meraki simplifies IT with centralized management for WLAN, switching, security, and more, reducing costs and complexity. Meraki MS Switches feature Layer 7 application and client analysis, allowing administrators to identify users, content, and applications on the network. This enables detailed monitoring, automatic reporting, and policy enforcement to optimize network performance.",
+      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTikAhoiiDUeYhrAeOWeg4DEHCH6JQYWzIJcw&s"
+    },
+    {
+      title:"Aruba",
+      description:"Aruba’s Cloud-managed networking portfolio ensures reliable support for fast-paced, mobile-first environments. Key solutions include Aruba Central for unified network management, Aruba SD-Branch for secure SD-WAN and branch operations, and Aruba Device Insight for intelligent device discovery and visibility. These solutions work together to enhance Aruba’s comprehensive range of access points, switches, and gateways.",
+      image: "https://play-lh.googleusercontent.com/cvwWfyqF2uBtIAoVAcMRUBawvREHN1ZHIpDZ70pkseIiKoTY-BxbYAqG2sieG4KpC5I"
+    },
+  ],
+  bottomTitle : "Whether you plan to launch a new IoT initiative or upscale an existing IoT application, TECHPAPPA will support you with a relevant service.",
+  }
+]
+
+export const itStructure = [
+  {
+  heroTitle : "IT Infrastructure",
+  contentSubTitle : "",
+  contentTitle : "Making The Cloud Sing To Your Business",
+  content : "Digital Solutions helps you drive business outcomes by looking beyond traditional ways of working. At EMTECH, we can help your business tap into the power of digital technologies to drive better business outcomes. We are a leading provider of digital solutions in the UAE, and our team of experts has the knowledge and experience to help your business succeed. We provide you with a wide spectrum of digital solutions and services to help you create, deliver and build digital experiences. Whether you are just beginning your digital journey, or seeking new opportunities to accelerate growth, our digital solutions and services empower your business transformation journey. We work with you to understand your unique business needs and develop a tailored digital solution that will help you achieve your desired results.",
+  contentImg : "https://vareli.co.in/vareliCMS/public/images/235343867/IT_Infrastructure.jpg",
+  serviceSubTitle : "",
+  serviceTitle : "Why Opt for Infrastructure Solutions from Emtech?",
+  serviceContent : "Emtech offers a range of IT infrastructure services. We provide free active consultation, we implement services by using latest technology solutions that deliver a differentiated value to your business, by enhancing operational efficiencies, boosting productivity and performance, accelerating time-to-market, and reducing costs. Our IT Infrastructure consulting services enable organizations to design, build, run and manage a scalable, flexible, and reliable IT infrastructure. Through our suite of services, we help our customers in reducing infrastructure costs and facilitate them to focus on strategic initiatives and business transformation. We are experts in pairing up the top IT infrastructure technologies to meet each client’s specific need. We have an extensive pool of infrastructure specialists who can help you create, run and manage the next-generation IT Infrastructure.",
+  services : [
+    {
+      title:"",
+      description:"",
+      image: ""
+    },
+    {
+      title:"",
+      description:"",
+      image: ""
+    },
+  ],
+  bottomTitle : "From offering expert advice to solving complex problems, we've got you covered!",
+  }
+]
+
+export const itSupport = [
+  {
+  heroTitle : "24 /7 Critical Support",
+  contentSubTitle : "",
+  contentTitle : "Making The Cloud Sing To Your Business",
+  content : "Digital Solutions helps you drive business outcomes by looking beyond traditional ways of working. At EMTECH, we can help your business tap into the power of digital technologies to drive better business outcomes. We are a leading provider of digital solutions in the UAE, and our team of experts has the knowledge and experience to help your business succeed. We provide you with a wide spectrum of digital solutions and services to help you create, deliver and build digital experiences. Whether you are just beginning your digital journey, or seeking new opportunities to accelerate growth, our digital solutions and services empower your business transformation journey. We work with you to understand your unique business needs and develop a tailored digital solution that will help you achieve your desired results.",
+  contentImg : "https://vareli.co.in/vareliCMS/public/images/235343867/IT_Infrastructure.jpg",
+  serviceSubTitle : "24 /7 Critical Support",
+  serviceTitle : "How Can Techpappa's IT Support Help You?",
+  serviceContent : "While many businesses have certain support wings for their business, most of them cannot handle the stress and challenges that come with a ransomware attack or anything of that sort. That is exactly why you need a team of experts that you can rely on to put back frameworks and infrastructures that are attacked by malwares to be put back. Then you can call us, Emtech. With our team working round the clock monitoring your IT infrastructure and watching over it for any suspicious activities, you get access to the knowledge and expertise of savvy, insightful and experienced team round the clock. Not only can Emtech’s IT support can work to create an environment where your infrastructure is protected and secured from threats, it can also empower your own in-house security team to face any of the challenges that might come your way.",
+  services : [
+    {
+      title:"Proactive Support Program",
+      description:"As an experienced IT support team, we do not wait for things to happen. Instead, we work proactively to patch any security issues as and when they happen. We also run regular diagnostics to make certain that every security measure is active and running.",
+      image: "https://www.marketing-logic.com/wp-content/uploads/2017/10/approaches-to-setting-up-customer-support.jpg"
+    },
+    {
+      title:"IT Support Strategy",
+      description:"The business will be given an inventive IT support strategy according to which the business will address any and all security threats when they happen to accelerate the process of identification of the damage and its mitigation.",
+      image: "https://cdn.elearningindustry.com/wp-content/uploads/2019/02/4-overlooked-benefits-corporate-training-software-offers-your-customer-care-team-1024x574.jpg"
+    },
+    {
+      title:"An Inventive Security Framework",
+      description:"As per the requirements and demands of your business and its operational nature, we help you create an excellent and comprehensive IT protection strategy to ensure that every loophole for an attack is checked and sealed.",
+      image: "https://img.freepik.com/premium-photo/cyber-security-data-protection-information-privacy-internet-technology-conceptbusinessman_660230-167587.jpg?w=360"
+    },
+    {
+      title:"In-House Team Training",
+      description:"Though we work as an extension of your in-house team, we also share our expertise, knowledge and insights with your in-house team and offer them with the required training to handle any eventualities.",
+      image: "https://gyrus.com/wp-content/uploads/2024/03/training-in-teams.webp"
+    },
+  ],
+  bottomTitle : "Want Answers for Your IT Support Requirements? Let’s Have a Fruitful Discussion for an Inventive IT Support Strategy",
+  }
+]
+
+export const microsoft365 = [
+  {
+  heroTitle : "Do More with Less with Microsoft 365",
+  contentSubTitle : "",
+  contentTitle : "Making The Cloud Sing To Your Business",
+  content : "Digital Solutions helps you drive business outcomes by looking beyond traditional ways of working. At EMTECH, we can help your business tap into the power of digital technologies to drive better business outcomes. We are a leading provider of digital solutions in the UAE, and our team of experts has the knowledge and experience to help your business succeed. We provide you with a wide spectrum of digital solutions and services to help you create, deliver and build digital experiences. Whether you are just beginning your digital journey, or seeking new opportunities to accelerate growth, our digital solutions and services empower your business transformation journey. We work with you to understand your unique business needs and develop a tailored digital solution that will help you achieve your desired results.",
+  contentImg : "https://vareli.co.in/vareliCMS/public/images/235343867/IT_Infrastructure.jpg",
+  serviceSubTitle : "Microsoft Office 365",
+  serviceTitle : "Benefits of Having Microsoft Office 365",
+  serviceContent : "What makes Microsoft 365 an exceptionally value-adding addition to businesses of al sizes and shapes is that it brings a plethora of versions of the same that will just fit your individual requirements aptly. With Microsoft 365, all of your documents are always on the cloud and can be accessed by the user from any device that supports Microsoft 365 from anywhere in the world. In addition, Microsoft 365 comes with a yearly/monthly subscription fee unlike the one-time perpetual license fee that was associated with the MS Office. Along with the changes in the pricing, Microsoft 365 also come with a variety of added focus on cloud services and online storage option, which makes is easier for businesses to access, edit and manage their documents from anywhere in the world without having to depend on a third-party cloud storage system.",
+  services : [
+    {
+      title:"Microsoft Office 365",
+      description:"Microsoft 365 Suite integrates chat, calls, online meetings, and collaboration tools like Teams, OneDrive, and Office apps, all with advanced security features. It offers a cost-effective solution for remote or onsite work, safeguarding business data and streamlining IT management. Choose from various plans tailored to your business needs, enhancing productivity and connectivity.",
+      image: "https://5.imimg.com/data5/SELLER/Default/2023/10/352827027/VK/OM/YZ/187779313/80-500x500.jpeg"
+    },
+  ],
+  bottomTitle : "Take Advantage of the All-New Office 365 for a Whole New Office Experience Talk to Our Engineers Now!",
+  }
+]
+
+export const cloudOperations = [
+  {
+  heroTitle : "Cloud Operations Center",
+  contentSubTitle : "",
+  contentTitle : "Making The Cloud Sing To Your Business",
+  content : "Digital Solutions helps you drive business outcomes by looking beyond traditional ways of working. At EMTECH, we can help your business tap into the power of digital technologies to drive better business outcomes. We are a leading provider of digital solutions in the UAE, and our team of experts has the knowledge and experience to help your business succeed. We provide you with a wide spectrum of digital solutions and services to help you create, deliver and build digital experiences. Whether you are just beginning your digital journey, or seeking new opportunities to accelerate growth, our digital solutions and services empower your business transformation journey. We work with you to understand your unique business needs and develop a tailored digital solution that will help you achieve your desired results.",
+  contentImg : "https://vareli.co.in/vareliCMS/public/images/235343867/IT_Infrastructure.jpg",
+  serviceSubTitle : "Cloud Operations Center",
+  serviceTitle : "What do Techpappa’s Managed Cloud Services Include?",
+  serviceContent : "Techpappa offers comprehensive and value-adding managed cloud services fitting the needs of the clients. We understand that each of the clients that come to us has unique needs and wants us to help them in the most suitable way to their business. As a result, we render highly bespoke services that get the work done. No matter how extensive and challenging your cloud infrastructure is and what management support you need from us, we are capable of delivering the most effective, tailored managed cloud services to all our clients.",
+  services : [
+    {
+      title:"Our Managed Cloud Services Strategy for You",
+      description:"Techpappa wants to cater to all the requirements of clients when it comes to managed cloud services no matter the size of their operations. Hence, we approach each of them with a unique strategy that fits their needs in order to help them manage their cloud services for maximum ROI and efficiency. Our managed cloud services strategy can help you realize three organization goals. In fact, our strategy has been developed to help business achieve them.",
+      image: "https://media.licdn.com/dms/image/v2/D4D12AQEEBJ-VlcDQyQ/article-cover_image-shrink_600_2000/article-cover_image-shrink_600_2000/0/1671176551647?e=2147483647&v=beta&t=KzjmXwKTrZZ1jw4jfsgRPsuDKSOYWOIJJsvy_CSb2gs"
+    },
+    {
+      title:"Self-Service Capabilities",
+      description:"Being capable of leveraging the potency of cloud infrastructure all by themselves is an important aspect of managing cloud services for an organization. That’s the why Techpappa’s cloud management services provide the users with the capability to various cloud computing instances real time, monitor the costs involved in its operations and capably assess and allocate resources effectively.",
+      image: "https://media.licdn.com/dms/image/v2/D5612AQFYaAQXdO4qCQ/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1704829841287?e=2147483647&v=beta&t=rfD3KGFiF33MmSZ3Q_B8Mv9R_LGxUKmKAsQcdx3hJ_o"
+    },
+    {
+      title:"Managing Workflow",
+      description:"Workflow management is one of the most crucial elements in taking full advantage of the capability of a cloud infrastructure. Techpappa’s team can support and empower you to effectively do away with any human interference while performing the needed methods in both creating and managing cloud instances.",
+      image: "https://www.siav.com/wp-content/uploads/workflow-management-1.jpg"
+    },
+    {
+      title:"Cloud Analysis",
+      description:"With better analysis of a cloud infrastructure, a business can always effectively manage their cloud service with a breeze. Our support can offer you the platform and skills you need to proactively analyze important elements such as latency, workload, compliance requirements, downtime, and the like to bring your cloud infrastructure to help your business.",
+      image: "https://www.liquidweb.com/wp-content/uploads/2024/03/cloud-workload.jpg"
+    },
+  ],
+  bottomTitle : "Want Answers? Talk to Our Managed Cloud Service Experts Today",
+  }
+]
+
+export const azureManage = [
+  {
+  heroTitle : "Azure Managed Service",
+  contentSubTitle : "",
+  contentTitle : "Making The Cloud Sing To Your Business",
+  content : "Digital Solutions helps you drive business outcomes by looking beyond traditional ways of working. At EMTECH, we can help your business tap into the power of digital technologies to drive better business outcomes. We are a leading provider of digital solutions in the UAE, and our team of experts has the knowledge and experience to help your business succeed. We provide you with a wide spectrum of digital solutions and services to help you create, deliver and build digital experiences. Whether you are just beginning your digital journey, or seeking new opportunities to accelerate growth, our digital solutions and services empower your business transformation journey. We work with you to understand your unique business needs and develop a tailored digital solution that will help you achieve your desired results.",
+  contentImg : "https://vareli.co.in/vareliCMS/public/images/235343867/IT_Infrastructure.jpg",
+  serviceSubTitle : "Azure Cloud Service",
+  serviceTitle : "Cloud Optimization and Strategy",
+  serviceContent : "",
+  services : [
+    {
+      title:"Comprehensive Support",
+      description:"No matter where you are in your journey with Azure, access to export- level assistance is critical to a successful cloud transformation. Techpappa is your resource for azure assistance through incident support, spend analysis, education, and advisory services.",
+      image: "https://www.riministreet.com/wp-content/uploads/2020/06/solution_need_comprehensiveresponsive_1-560x477.jpg"
+    },
+    {
+      title:"Financial control & governance",
+      description:"Gain control of your Azure usage with our industry expert cloud management services. Our advisory services, along with technical support, help you govern and maintain an optimized Azure environment.",
+      image: "https://missouribusiness.net/wp-content/uploads/2022/07/what-are-financial-controls-1024x683.jpg"
+    },
+    {
+      title:"Managed Billing",
+      description:"We handle the back-end coordination of your Azure billing, bundling it into one invoice for simplicity. You can purchase Azure directly through us with no pre-paid, long-term commitments, providing you one partner for all your Azure purchase and support needs.",
+      image: "https://hitconsultant.net/wp-content/uploads/2019/11/Kareo-Sells-Managed-Billing-Services-Business-to-Health-Prime-International.jpg"
+    },
+    {
+      title:"Optimizing your Azure Environment",
+      description:"Microsoft azure offers your business the best capabilities for cloud computing, but managing the environment requires expertise and strategic analysis. Techpappa’s Cloud management for Azure can provide you with operational support and maintenance throughout your journey to Azure Our experts offer guidance and analysis around your cloud operations, financial governance, and provide support for your questions and concerns.",
+      image: "https://images.squarespace-cdn.com/content/v1/5877fcf8ebbd1a0e70bf993e/1604252543138-NS9NTDW8JDR16ACF0MOX/Two+coworkers+in+a+happy+and+productive+office+environment"
+    },
+    {
+      title:"Azure Care Package",
+      description:"As the key component of our cloud management of Azure , the Azure care package provides incident support for unexpected issues and managed escalation to Microsoft premier support. You also again access to the subject matter experts for advisory and administrative services.",
+      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRz3KUF2IUXno2o0rLQ0Cv9DAEY_xY7Th8TgBWAZ2RX7peZBluz2FgCoQl-asU2LaEYhR4&usqp=CAU"
+    },
+    {
+      title:"24/7 critical support",
+      description:"Joining hands with a 24/7 cloud administrations supplier like Emtech is a method for getting high caliber-Yet saavy-all day, every minute IT support. Techpappa works from a dedicated system which ensures that is accessible every minute of every day/365.",
+      image: "https://unity-connect.com/wp-content/uploads/2023/04/What-Is-IT-Support-A-Useful-Guide-Featured-Image_669226057.jpg"
+    },
+    {
+      title:"Azure Purchase",
+      description:"Optionally, purchase Azure directly from us without a pre-paid long-term commitment and take advantage of our bundled services and end-to-end customer support. Our ability and wide knowledge to purchase Azure provides one seamless partner for all your needs.",
+      image: "https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/366021-pricing-img1-656x440?resMode=sharp2&op_usm=1.5,0.65,15,0&wid=664&hei=498&qlt=100&fit=constrain"
+    },
+  ],
+  bottomTitle : "Reduce your cloud spend up to 30% by optimizing your cloud workloads.!",
+  }
+]
+
+export const contactUs = [
+  {
+  heroTitle : "CONTACT US",
+  contentSubTitle : "",
+  contentTitle : "Making The Cloud Sing To Your Business",
+  content : "Digital Solutions helps you drive business outcomes by looking beyond traditional ways of working. At EMTECH, we can help your business tap into the power of digital technologies to drive better business outcomes. We are a leading provider of digital solutions in the UAE, and our team of experts has the knowledge and experience to help your business succeed. We provide you with a wide spectrum of digital solutions and services to help you create, deliver and build digital experiences. Whether you are just beginning your digital journey, or seeking new opportunities to accelerate growth, our digital solutions and services empower your business transformation journey. We work with you to understand your unique business needs and develop a tailored digital solution that will help you achieve your desired results.",
+  contentImg : "https://vareli.co.in/vareliCMS/public/images/235343867/IT_Infrastructure.jpg",
+  serviceSubTitle : "Azure Cloud Service",
+  serviceTitle : "Cloud Optimization and Strategy",
+  serviceContent : "",
+  services : [
+    {
+      title:"Comprehensive Support",
+      description:"No matter where you are in your journey with Azure, access to export- level assistance is critical to a successful cloud transformation. Techpappa is your resource for azure assistance through incident support, spend analysis, education, and advisory services.",
+      image: "https://www.riministreet.com/wp-content/uploads/2020/06/solution_need_comprehensiveresponsive_1-560x477.jpg"
+    },
+    {
+      title:"Financial control & governance",
+      description:"Gain control of your Azure usage with our industry expert cloud management services. Our advisory services, along with technical support, help you govern and maintain an optimized Azure environment.",
+      image: "https://missouribusiness.net/wp-content/uploads/2022/07/what-are-financial-controls-1024x683.jpg"
+    },
+    {
+      title:"Managed Billing",
+      description:"We handle the back-end coordination of your Azure billing, bundling it into one invoice for simplicity. You can purchase Azure directly through us with no pre-paid, long-term commitments, providing you one partner for all your Azure purchase and support needs.",
+      image: "https://hitconsultant.net/wp-content/uploads/2019/11/Kareo-Sells-Managed-Billing-Services-Business-to-Health-Prime-International.jpg"
+    },
+    {
+      title:"Optimizing your Azure Environment",
+      description:"Microsoft azure offers your business the best capabilities for cloud computing, but managing the environment requires expertise and strategic analysis. Techpappa’s Cloud management for Azure can provide you with operational support and maintenance throughout your journey to Azure Our experts offer guidance and analysis around your cloud operations, financial governance, and provide support for your questions and concerns.",
+      image: "https://images.squarespace-cdn.com/content/v1/5877fcf8ebbd1a0e70bf993e/1604252543138-NS9NTDW8JDR16ACF0MOX/Two+coworkers+in+a+happy+and+productive+office+environment"
+    },
+    {
+      title:"Azure Care Package",
+      description:"As the key component of our cloud management of Azure , the Azure care package provides incident support for unexpected issues and managed escalation to Microsoft premier support. You also again access to the subject matter experts for advisory and administrative services.",
+      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRz3KUF2IUXno2o0rLQ0Cv9DAEY_xY7Th8TgBWAZ2RX7peZBluz2FgCoQl-asU2LaEYhR4&usqp=CAU"
+    },
+    {
+      title:"24/7 critical support",
+      description:"Joining hands with a 24/7 cloud administrations supplier like Emtech is a method for getting high caliber-Yet saavy-all day, every minute IT support. Techpappa works from a dedicated system which ensures that is accessible every minute of every day/365.",
+      image: "https://unity-connect.com/wp-content/uploads/2023/04/What-Is-IT-Support-A-Useful-Guide-Featured-Image_669226057.jpg"
+    },
+    {
+      title:"Azure Purchase",
+      description:"Optionally, purchase Azure directly from us without a pre-paid long-term commitment and take advantage of our bundled services and end-to-end customer support. Our ability and wide knowledge to purchase Azure provides one seamless partner for all your needs.",
+      image: "https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/366021-pricing-img1-656x440?resMode=sharp2&op_usm=1.5,0.65,15,0&wid=664&hei=498&qlt=100&fit=constrain"
+    },
+  ],
+  bottomTitle : "Reduce your cloud spend up to 30% by optimizing your cloud workloads.!",
   }
 ]

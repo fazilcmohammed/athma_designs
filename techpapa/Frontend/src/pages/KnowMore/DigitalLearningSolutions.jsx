@@ -17,12 +17,12 @@ const DigitalLearningSolutions = () => {
           className="rounded-lg shadow-lg w-full"
         />
         {/* Decorative Dots */}
-        <div className="absolute top-10 -left-6 w-16 h-24 border-l-4 border-dotted border-red-500 hidden md:block"></div>
+        <div className="absolute top-10 -left-6 w-16 h-24 border-l-4 border-dotted border-blue-500 hidden md:block"></div>
       </div>
 
       {/* Right - Text Content */}
       <div className="w-full md:w-1/2">
-        <p className="text-red-600 font-bold">// DIGITAL LEARNING SOLUTIONS</p>
+        <p className="text-blue-600 font-bold">// DIGITAL LEARNING SOLUTIONS</p>
         <h2 className="text-3xl font-bold text-gray-900 mt-2">
         Digital Learning Solutions
         </h2>

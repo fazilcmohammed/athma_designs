@@ -5,10 +5,10 @@ import CallbackModal from "./CallBackModal";
  // Import the modal component
 
 const slides = [
-  { image: "https://images.unsplash.com/photo-1568605114967-8130f3a36994" },
-  { image: "https://images.unsplash.com/photo-1519125323398-675f0ddb6308" },
-  { image: "https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0" },
-  { image: "https://images.unsplash.com/photo-1493612276216-ee3925520721" },
+  { image: "https://images.pexels.com/photos/158826/structure-light-led-movement-158826.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" },
+  { image: "https://images.pexels.com/photos/1148820/pexels-photo-1148820.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" },
+  { image: "https://images.pexels.com/photos/256302/pexels-photo-256302.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" },
+  { image: "https://images.pexels.com/photos/193350/pexels-photo-193350.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" },
 ];
 
 const HeroSection = () => {
@@ -52,10 +52,10 @@ const HeroSection = () => {
       {/* Overlay */}
       <div className="absolute inset-0 bg-black bg-opacity-60 flex flex-col items-center justify-center text-white text-center">
         <h1 className="text-5xl font-bold mb-6">
-          <span className="text-red-500">enable.</span> empower. evolve.
+          <span className="text-red-500"></span> Empower With Techpappa.
         </h1>
         <button
-          className="px-6 py-3 bg-red-600 hover:bg-red-700 text-white font-semibold rounded transition"
+          className="px-6 py-3 bg-blue-500 hover:bg-blue-700 text-white font-semibold rounded transition"
           onClick={() => setShowModal(true)}
         >
           REQUEST A CALLBACK

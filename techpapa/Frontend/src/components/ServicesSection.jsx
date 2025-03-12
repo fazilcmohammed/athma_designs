@@ -20,7 +20,7 @@ const ServicesSection = () => {
           {services.map((service) => (
             <div
               key={service.id}
-              className="p-8  shadow-lg transition-all duration-300 bg-white text-black cursor-pointer hover:bg-red-600 hover:text-white hover:scale-105 relative flex flex-col justify-between h-[300px]"
+              className="p-8  shadow-lg transition-all duration-300 bg-white text-black cursor-pointer hover:bg-blue-600 hover:text-white hover:scale-105 relative flex flex-col justify-between h-[300px]"
             >
               <p className="absolute text-6xl font-extrabold text-gray-200 opacity-40 -z-10">
                 0{service.id}

@@ -27,6 +27,7 @@ import ItSupport from './pages/solutions/ItSupport';
 import Microsoft365 from './pages/solutions/Microsoft365';
 import CloudOperation from './pages/solutions/CloudOperation';
 import AzureService from './pages/solutions/AzureService';
+import Contact from './pages/Contact';
 
 
 function App() {
@@ -61,6 +62,8 @@ function App() {
         <Route path="/service/cloud-operations-center/" element={<CloudOperation/>} />
         <Route path="/service/azure-management-service/" element={<AzureService/>} />
         <Route path="/service/managed-it-service/" element={<ManagedItService/>} />
+        <Route path="/service/managed-it-service/" element={<ManagedItService/>} />
+        <Route path="/contact" element={<Contact/>} />
       </Routes>
         
         <Footer/>

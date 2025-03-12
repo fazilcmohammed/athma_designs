@@ -28,7 +28,7 @@ const ItInfra = () => {
         IT Infrastructure Services That Offer A Differentiated Value
         </h2>
         <p className="text-gray-700 mt-4 leading-relaxed">
-        EMTECH offers a range of IT infrastructure services. We provide free active consultation, we implement services by using the latest technology solutions that deliver a differentiated value to your business, by enhancing operational efficiencies, boosting productivity and performance, accelerating time-to-market, and reducing costs.
+        TECHPAPPA offers a range of IT infrastructure services. We provide free active consultation, we implement services by using the latest technology solutions that deliver a differentiated value to your business, by enhancing operational efficiencies, boosting productivity and performance, accelerating time-to-market, and reducing costs.
         </p>
         
         <p className="text-gray-700 mt-4 leading-relaxed">

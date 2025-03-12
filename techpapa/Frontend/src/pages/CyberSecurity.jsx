@@ -36,7 +36,7 @@ const CyberSecurity = () => {
         </p>
 
         <p className="text-gray-700 mt-4 leading-relaxed">
-        EMTECH a Cyber Security Solutions Provider in UAE offers an extensive suite of cyber security services in UAE that are catered to your individual business needs. Our team of cybersecurity professionals provides support and advice on your security posture, as well as the best approach for your industry, and then implements a solution that we manage so that we can monitor your entire cybersecurity initiative. With our wide range of cyber security solutions, we provide you with reliable protection and help you prevent data breaches.
+        TECHPAPPA Cyber Security Solutions Provider in UAE offers an extensive suite of cyber security services in UAE that are catered to your individual business needs. Our team of cybersecurity professionals provides support and advice on your security posture, as well as the best approach for your industry, and then implements a solution that we manage so that we can monitor your entire cybersecurity initiative. With our wide range of cyber security solutions, we provide you with reliable protection and help you prevent data breaches.
         </p>
         <button
           className="px-6 py-3 mt-5 bg-red-600 hover:bg-red-700 text-white font-semibold rounded transition"

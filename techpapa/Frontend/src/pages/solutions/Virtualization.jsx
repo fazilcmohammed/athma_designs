@@ -17,12 +17,12 @@ const Virtualization = () => {
           className="rounded-lg shadow-lg w-full"
         />
         {/* Decorative Dots */}
-        <div className="absolute top-10 -left-6 w-16 h-24 border-l-4 border-dotted border-red-500 hidden md:block"></div>
+        <div className="absolute top-10 -left-6 w-16 h-24 border-l-4 border-dotted border-blue-500 hidden md:block"></div>
       </div>
 
       {/* Right - Text Content */}
       <div className="w-full md:w-1/2">
-        <p className="text-red-600 font-bold">// Infrastructure Solutions</p>
+        <p className="text-blue-600 font-bold">// Infrastructure Solutions</p>
         <h2 className="text-3xl font-bold text-gray-900 mt-2">
         Virtualization Solutions, Design, and Deployment
         </h2>
@@ -39,7 +39,7 @@ const Virtualization = () => {
           on a company’s investment.
         </p>
         <button
-          className="px-6 py-3 mt-5 bg-red-600 hover:bg-red-700 text-white font-semibold rounded transition"
+          className="px-6 py-3 mt-5 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded transition"
           onClick={() => setShowModal(true)}
         >
           REQUEST A CALLBACK
