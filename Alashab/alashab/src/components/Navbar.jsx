@@ -27,7 +27,7 @@ const Navbar = () => {
           onMouseLeave={() => setDropdownOpen(false)}
         >
           <button className="hover:text-[#068f96] flex items-center space-x-1 focus:outline-none">
-            <span>PRODUCTS</span>
+          <Link to="/products" className="hover:text-[#068f96]">PRODUCTS</Link>
             <IoIosArrowDown 
               className={`transition-transform duration-300 ${dropdownOpen ? "rotate-180" : "rotate-0"}`} 
             />

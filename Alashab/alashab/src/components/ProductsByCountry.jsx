@@ -1,5 +1,5 @@
 import React from 'react'
-import { productsByCountry } from '../assets/constant'
+import { countrys } from '../assets/constant'
 import { Link } from "react-router-dom";
 
 const ProductsByCountry = () => {
@@ -12,7 +12,7 @@ const ProductsByCountry = () => {
             </p>
     
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10">
-  {productsByCountry.map((prod, index) => (
+  {countrys.map((prod, index) => (
     <Link key={index} to={`${prod.page}`}>
       <div className="relative h-64 w-full bg-cover bg-no-repeat bg-center rounded-lg shadow-lg transform transition duration-500 hover:scale-105" 
         style={{ backgroundImage: `url(${prod.img})` }}>
