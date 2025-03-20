@@ -18,8 +18,8 @@ const HybridCloud = () => {
       />
       <section className="py-12 px-6 bg-white">
       {/* Subheading */}
-      <p className="text-blue-600 font-bold text-center uppercase text-sm">
-        // Your Partner of Choice for Microsoft Azure
+      <p className="text-primaryBlue font-bold text-center uppercase text-sm">
+        Your Partner of Choice for Microsoft Azure
       </p>
 
       {/* Main Heading */}
@@ -29,7 +29,7 @@ const HybridCloud = () => {
       </h2>
 
       {/* Paragraphs */}
-      <p className="text-gray-700 text-lg text-center max-w-5xl mx-auto mt-6">
+      <p className="text-gray-700 text-lg text-left max-w-5xl mx-auto mt-6">
         <strong>Microsoft Azure</strong> offers unparalleled cloud computing
         capabilities, yet effectively managing this environment requires
         expertise and strategic insight. Emtech’s Cloud Management for Azure
@@ -42,17 +42,17 @@ const HybridCloud = () => {
         you to focus on your business goals.
       </p>
 
-      <p className="text-gray-700 text-lg text-center max-w-5xl mx-auto mt-4">
+      <p className="text-gray-700 text-lg text-left max-w-5xl mx-auto mt-4">
         <strong>Streamline your Azure</strong> environment and operations with a
         single expert partner for all your support, billing, and governance
         needs.
       </p>
 
       {/* Mapping over content */}
-      <div className="mt-8 space-y-6 max-w-5xl mx-auto">
+      <div className="mt-8 space-y-10 max-w-5xl mx-auto">
         {azureContent.map((item, index) => (
           <div key={index}>
-            <h3 className="text-xl font-bold text-gray-900">{item.title}</h3>
+            <h3 className="text-xl font-bold text-gray-900 mb-2">{item.title}</h3>
             <p className="text-gray-700 text-lg">{item.description}</p>
           </div>
         ))}

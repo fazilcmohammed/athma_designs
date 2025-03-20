@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import { FaPaperPlane, FaChevronDown, FaChevronUp } from "react-icons/fa";
 import logo from '../assets/images/logo.png';
 import CallbackModal from "./CallBackModal";
@@ -17,111 +18,103 @@ const Footer = () => {
           {/* Company Section */}
           <div>
             <h3
-              className="text-lg font-bold mb-4 cursor-pointer flex items-center justify-between md:block"
+              className="text-md font-bold mb-4 cursor-pointer flex items-center justify-between md:block"
               onClick={() => setIsCompanyOpen(!isCompanyOpen)}
             >
               Company
               <span className="md:hidden">{isCompanyOpen ? <FaChevronUp /> : <FaChevronDown />}</span>
             </h3>
-            {/* Dropdown for Mobile */}
-            <ul className={`space-y-2 text-gray-300 ${isCompanyOpen ? "block" : "hidden"} md:block`}>
-              <li>About us</li>
-              <li>ISPG Middle East Technologies</li>
-              <li>Weba Learn</li>
-              <li>Industries</li>
-              <li>News</li>
-              <li>Contact</li>
-              <li>Careers</li>
-              <li>Blogs</li>
-              <li>Privacy Policy</li>
+            <ul className={`space-y-2 text-gray-300 text-sm ${isCompanyOpen ? "block" : "hidden"} md:block`}>
+              <li><Link to="/about">About us</Link></li>
+              <li><Link to="/contact">Contact</Link></li>
+              <li><Link to="/careers">Careers</Link></li>
+              <li><Link to="/blogs">Blogs</Link></li>
+              <li><Link to="/privacy-policy">Privacy Policy</Link></li>
             </ul>
           </div>
 
           {/* ICT Solutions Section */}
           <div>
             <h3
-              className="text-lg font-bold mb-4 cursor-pointer flex items-center justify-between md:block"
+              className="text-md font-bold mb-4 cursor-pointer flex items-center justify-between md:block"
               onClick={() => setIsIctSolutionsOpen(!isIctSolutionsOpen)}
             >
               ICT Solutions
               <span className="md:hidden">{isIctSolutionsOpen ? <FaChevronUp /> : <FaChevronDown />}</span>
             </h3>
-            {/* Dropdown for Mobile */}
-            <ul className={`space-y-2 text-gray-300 ${isIctSolutionsOpen ? "block" : "hidden"} md:block`}>
-              <li>Campus Wi-Fi Solution</li>
-              <li>CCTV Surveillance</li>
-              <li>HCI Infrastructure</li>
-              <li>Intelligent Switching</li>
-              <li>IP Telephony Solutions</li>
-              <li>Next Generation Firewall</li>
-              <li>Server Solutions</li>
-              <li>Storage Solutions</li>
-              <li>Structured Cabling</li>
-              <li>Virtualization Solutions</li>
+            <ul className={`space-y-2 text-gray-300 text-sm ${isIctSolutionsOpen ? "block" : "hidden"} md:block`}>
+              <li><Link to="/service/wifi-solutions/">Campus Wi-Fi Solution</Link></li>
+              <li><Link to="/service/cctv-surveillance/">CCTV Surveillance</Link></li>
+              <li><Link to="/service/hci-infrastructure/">HCI Infrastructure</Link></li>
+              <li><Link to="/service/intelligent-switching/">Intelligent Switching</Link></li>
+              <li><Link to="/service/ip-telephony-solutions/">IP Telephony Solutions</Link></li>
+              <li><Link to="/service/next-generation-firewall/">Next Generation Firewall</Link></li>
+              <li><Link to="/service/server-solutions/">Server Solutions</Link></li>
+              <li><Link to="/service/storage-solutions/">Storage Solutions</Link></li>
+              <li><Link to="/service/structured-cabling/">Structured Cabling</Link></li>
+              <li><Link to="/service/virtualization-solutions/">Virtualization Solutions</Link></li>
             </ul>
           </div>
 
           {/* Cloud Solutions Section */}
           <div>
             <h3
-              className="text-lg font-bold mb-4 cursor-pointer flex items-center justify-between md:block"
+              className="text-md font-bold mb-4 cursor-pointer flex items-center justify-between md:block"
               onClick={() => setIsCloudSolutionsOpen(!isCloudSolutionsOpen)}
             >
               Cloud Solutions
               <span className="md:hidden">{isCloudSolutionsOpen ? <FaChevronUp /> : <FaChevronDown />}</span>
             </h3>
-            {/* Dropdown for Mobile */}
-            <ul className={`space-y-2 text-gray-300 ${isCloudSolutionsOpen ? "block" : "hidden"} md:block`}>
-              <li>Azure Cloud Solution</li>
-              <li>Azure Backup Solution</li>
-              <li>Azure Active Directory</li>
-              <li>Cloud Managed Networking</li>
-              <li>Cloud Email Security</li>
-              <li>Cloud Optimization</li>
-              <li>Cloud Firewall</li>
-              <li>Desktop as a Service</li>
-              <li>Wi-Fi as a Service</li>
-              <li>Telephony as a Service</li>
+            <ul className={`space-y-2 text-gray-300 text-sm ${isCloudSolutionsOpen ? "block" : "hidden"} md:block`}>
+              <li><Link to="/service/azure-cloud-solution/">Azure Cloud Solution</Link></li>
+              <li><Link to="/service/microsoft-azure-backup/">Azure Backup Solution</Link></li>
+              <li><Link to="/service/azure-active-directory/">Azure Active Directory</Link></li>
+              <li><Link to="/service/cloud-managed-networking/">Cloud Managed Networking</Link></li>
+              <li><Link to="/service/cloud-email-security/">Cloud Email Security</Link></li>
+              <li><Link to="/service/cloud-optimization-service/">Cloud Optimization</Link></li>
+              <li><Link to="/service/next-generation-cloud-firewall/">Cloud Firewall</Link></li>
+              <li><Link to="/service/desktop-as-a-service/">Desktop as a Service</Link></li>
+              <li><Link to="/service/wi-fi-as-a-service/">Wi-Fi as a Service</Link></li>
+              <li><Link to="/service/telephony-as-a-service/">Telephony as a Service</Link></li>
             </ul>
           </div>
 
           {/* Professional Service Section */}
           <div>
             <h3
-              className="text-lg font-bold mb-4 cursor-pointer flex items-center justify-between md:block"
+              className="text-md font-bold mb-4 cursor-pointer flex items-center justify-between md:block"
               onClick={() => setIsProfessionalServicesOpen(!isProfessionalServicesOpen)}
             >
               Professional Service
               <span className="md:hidden">{isProfessionalServicesOpen ? <FaChevronUp /> : <FaChevronDown />}</span>
             </h3>
-            {/* Dropdown for Mobile */}
-            <ul className={`space-y-2 text-gray-300 ${isProfessionalServicesOpen ? "block" : "hidden"} md:block`}>
-              <li>Azure Managed Services</li>
-              <li>Cloud Operations Center</li>
-              <li>Digital IT Support</li>
-              <li>IT Help Desk Service</li>
-              <li>Managed IT Services</li>
-              <li>Network Operations Center</li>
-              <li>On-Site Engineer</li>
-              <li>Premium AMC Support</li>
-              <li>Technology Consulting</li>
-              <li>24/7 Critical Support</li>
+            <ul className={`space-y-2 text-gray-300 text-sm ${isProfessionalServicesOpen ? "block" : "hidden"} md:block`}>
+              <li><Link to="/service/azure-management-service/">Azure Managed Services</Link></li>
+              <li><Link to="/service/cloud-operations-center/">Cloud Operations Center</Link></li>
+              <li><Link to="/services/digital-it">Digital IT Support</Link></li>
+              <li><Link to="/services/help-desk">IT Help Desk Service</Link></li>
+              <li><Link to="/service/managed-it-service/">Managed IT Services</Link></li>
+              <li><Link to="/services/noc">Network Operations Center</Link></li>
+              <li><Link to="/services/on-site">On-Site Engineer</Link></li>
+              <li><Link to="/service/it-amc/">Premium AMC Support</Link></li>
+              <li><Link to="/services/consulting">Technology Consulting</Link></li>
+              <li><Link to="/service/it-support/">24/7 Critical Support</Link></li>
             </ul>
           </div>
 
           {/* Subscribe Section */}
           <div>
-            <h3 className="text-lg font-bold mb-4">Subscribe</h3>
-            <p className="text-gray-300 mb-4">
-              Follow our newsletter to stay updated about latest technology and solutions
+            <h3 className="text-md font-bold mb-4">Subscribe</h3>
+            <p className="text-gray-300 text-sm mb-4">
+              Follow our newsletter to stay updated about the latest technology and solutions.
             </p>
-            <div className="flex items-center  rounded-none overflow-hidden">
+            <div className="flex items-center rounded-none overflow-hidden">
               <input
                 type="email"
                 placeholder="Your Email"
                 className="w-full p-2 text-black outline-none"
               />
-              <button className="bg-red-700 hover:bg-red-900 transform duration-100 ease-in-out p-3 text-white">
+              <button className="bg-primaryBlue hover:bg-blue-600 transform duration-100 ease-in-out p-3 text-white">
                 <FaPaperPlane />
               </button>
             </div>
@@ -139,13 +132,11 @@ const Footer = () => {
         </div>
         <div>
           <button
-            className="px-6 py-3 bg-red-600 hover:bg-red-700 text-white font-semibold rounded transition border md:border-none"
+            className="px-6 py-3 bg-primaryBlue hover:bg-blue-700 text-white font-semibold rounded transition border md:border-none"
             onClick={() => setShowModal(true)}
           >
             REQUEST A CALLBACK
           </button>
-
-          {/* Callback Modal */}
           <CallbackModal isOpen={showModal} onClose={() => setShowModal(false)} />
         </div>
       </div>

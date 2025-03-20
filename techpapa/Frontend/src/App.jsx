@@ -1,9 +1,7 @@
 import { useState } from 'react'
 import './App.css'
 import Navbar from './components/Navbar'
-
 import Footer from './components/Footer'
-
 import { Route, Routes, Link } from "react-router-dom"; // Import necessary components
 import Home from './pages/Home';
 import AboutUs from './pages/AboutUs';
@@ -28,6 +26,26 @@ import Microsoft365 from './pages/solutions/Microsoft365';
 import CloudOperation from './pages/solutions/CloudOperation';
 import AzureService from './pages/solutions/AzureService';
 import Contact from './pages/Contact';
+import CampusWifi from './pages/FooterLinks/ICTSolutions/CampusWifi';
+import CCTVSurveillance from './pages/FooterLinks/ICTSolutions/CCTVSurveillance';
+import ScrollToTop from './components/ScrollToTop';
+import HCIInfrastructure from './pages/FooterLinks/ICTSolutions/HCIInfrastructure';
+import IntelligentSwitching from './pages/FooterLinks/ICTSolutions/IntelligentSwitching';
+import IpTelephony from './pages/FooterLinks/ICTSolutions/IpTelephony';
+import NextGenFirewall from './pages/FooterLinks/ICTSolutions/NextGenFirewall';
+import ServerSolutions from './pages/FooterLinks/ICTSolutions/ServerSolutions';
+import StorageSolutions from './pages/FooterLinks/ICTSolutions/StorageSolutions';
+import StructuredCabling from './pages/FooterLinks/ICTSolutions/StructuredCabling';
+import VirtualizationSolutions from './pages/FooterLinks/ICTSolutions/VirtualizationSolutions';
+import AzureCloudSolution from './pages/FooterLinks/Cloud Solution/AzureCloudSolution';
+import AzureBackupSolution from './pages/FooterLinks/Cloud Solution/AzureBackupSolution';
+import AureAdSolution from './pages/FooterLinks/Cloud Solution/AureAdSolution';
+import CloudEmailSecurity from './pages/FooterLinks/Cloud Solution/CloudEmailSecurity';
+import CloudOptimization from './pages/FooterLinks/Cloud Solution/CloudOptimization';
+import CloudFirewall from './pages/FooterLinks/Cloud Solution/CloudFirewall';
+import DesktopAsService from './pages/FooterLinks/Cloud Solution/DesktopAsService';
+import WifiAsService from './pages/FooterLinks/Cloud Solution/WifiAsService';
+import TelephonyAsServices from './pages/FooterLinks/Cloud Solution/TelephonyAsServices';
 
 
 function App() {
@@ -36,7 +54,7 @@ function App() {
   return (
     <>
       <div>
-        
+        <ScrollToTop /> {/* Ensures scrolling to top on route change */}
         <Navbar/>
         <Routes>
         <Route path="/" element={<Home />} />
@@ -48,7 +66,7 @@ function App() {
         <Route path="/service/digital-workspace/" element={<DigitalWorkplace />} />
         <Route path="/service/digital-learning-solutions/" element={<DigitalLearningSolutions />} />
         <Route path="/it-infrastructure" element={<ItInfra />} /> {/* 404 Route */}
-        <Route path="/cybersecurity" element={<CyberSecurity />} /> {/* 404 Route */}
+        <Route path="/cyber-security" element={<CyberSecurity />} /> {/* 404 Route */}
         <Route path="/it-managed-service" element={<ManagedService />} /> 
         <Route path="/service/virtualization-solutions/" element={<Virtualization />} />
         <Route path="/service/it-amc/" element={<AmcSupport />} />
@@ -64,6 +82,25 @@ function App() {
         <Route path="/service/managed-it-service/" element={<ManagedItService/>} />
         <Route path="/service/managed-it-service/" element={<ManagedItService/>} />
         <Route path="/contact" element={<Contact/>} />
+        <Route path="/service/wifi-solutions/" element={<CampusWifi/>} />
+        <Route path="/service/cctv-surveillance/" element={<CCTVSurveillance/>} />
+        <Route path="/service/hci-infrastructure/" element={<HCIInfrastructure/>} />
+        <Route path="/service/intelligent-switching/" element={<IntelligentSwitching/>} />
+        <Route path="/service/ip-telephony-solutions/" element={<IpTelephony/>} />
+        <Route path="/service/next-generation-firewall/" element={<NextGenFirewall/>} />
+        <Route path="/service/server-solutions/" element={<ServerSolutions/>} />
+        <Route path="/service/storage-solutions/" element={<StorageSolutions/>} />
+        <Route path="/service/structured-cabling/" element={<StructuredCabling/>} />
+        <Route path="/service/azure-cloud-solution/" element={<AzureCloudSolution/>} />
+        <Route path="/service/microsoft-azure-backup/" element={<AzureBackupSolution/>} />
+        <Route path="/service/azure-active-directory/" element={<AureAdSolution/>} />
+        <Route path="/service/cloud-email-security/" element={<CloudEmailSecurity/>} />
+        <Route path="/service/cloud-optimization-service/" element={<CloudOptimization/>} />
+        <Route path="/service/next-generation-cloud-firewall/" element={<CloudFirewall/>} />
+        <Route path="/service/desktop-as-a-service/" element={<DesktopAsService/>} />
+        <Route path="/service/wi-fi-as-a-service/" element={<WifiAsService/>} />
+        <Route path="/service/telephony-as-a-service/" element={<TelephonyAsServices/>} />
+        
       </Routes>
         
         <Footer/>

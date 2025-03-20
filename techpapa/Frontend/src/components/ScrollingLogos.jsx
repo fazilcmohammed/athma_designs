@@ -3,7 +3,7 @@ import { companyLogos } from "../assets/constant";
 
 const ScrollingLogos = () => {
     return (
-        <div className="overflow-hidden w-full bg-gray-100 py-10">
+        <div className="overflow-hidden w-full bg-white py-10">
           <div className="relative flex items-center">
             <div className="flex animate-scroll gap-20 w-max">
               {/* Display the logos twice for infinite looping */}

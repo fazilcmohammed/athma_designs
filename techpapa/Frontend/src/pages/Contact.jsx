@@ -6,7 +6,7 @@ const Contact = () => {
   return (
     <>
      <KmHeroSection heroSection={contactUs[0]}/>   
-    <div className="min-h-screen bg-gray-100 flex flex-col justify-center items-center p-6">
+    <div className="min-h-screen bg-gray-100 flex flex-col justify-center items-center p-6 mt-10">
       <div className="max-w-6xl w-full bg-white shadow-lg rounded-lg p-8">
         {/* Header */}
         <h2 className="text-3xl font-bold text-center text-gray-800 mb-6">
@@ -23,7 +23,7 @@ const Contact = () => {
               <label className="block text-gray-700 font-medium mb-2">Full Name</label>
               <input
                 type="text"
-                className="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-red-500"
+                className="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primaryBlue"
                 placeholder="John Doe"
                 required
               />
@@ -32,7 +32,7 @@ const Contact = () => {
               <label className="block text-gray-700 font-medium mb-2">Email Address</label>
               <input
                 type="email"
-                className="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-red-500"
+                className="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primaryBlue"
                 placeholder="your@email.com"
                 required
               />
@@ -40,7 +40,7 @@ const Contact = () => {
             <div>
               <label className="block text-gray-700 font-medium mb-2">Message</label>
               <textarea
-                className="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-red-500"
+                className="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primaryBlue"
                 rows="4"
                 placeholder="Write your message..."
                 required
@@ -48,7 +48,7 @@ const Contact = () => {
             </div>
             <button
               type="submit"
-              className="w-full bg-red-600 text-white py-3 rounded-md hover:bg-red-700 transition"
+              className="w-full bg-primaryBlue text-white py-3 rounded-md hover:bg-blue-700 transition"
             >
               Send Message
             </button>

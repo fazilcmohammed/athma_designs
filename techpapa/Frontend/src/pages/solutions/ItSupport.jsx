@@ -9,7 +9,11 @@ const ItSupport = () => {
     <>
       <KmHeroSection heroSection={itSupport[0]} />
 
-      <section className="container mx-auto px-6 py-12 md:flex md:items-center md:space-x-12">
+      <section className="container mx-auto px-6 py-12 flex flex-col md:items-center md:space-x-12">
+      <p className="text-gray-900 font-bold text-center uppercase">Professional Service</p>
+        <h2 className="text-5xl font-bold text-gray-900 mt-5 mb-10 text-center">
+        Nationwide Emergency 24/7 Onsite IT Support
+        </h2>
       {/* Left - Image */}
       <div className="relative w-full md:w-1/2">
         <img
@@ -17,21 +21,17 @@ const ItSupport = () => {
           alt="Cloud Telephony"
           className="rounded-lg shadow-lg w-full"
         />
-        {/* Decorative Dots */}
-        <div className="absolute top-10 -left-6 w-16 h-24 border-l-4 border-dotted border-blue-500 hidden md:block"></div>
+        
       </div>
 
       {/* Right - Text Content */}
-      <div className="w-full md:w-1/2">
-        <p className="text-blue-600 font-bold">// Professional Service</p>
-        <h2 className="text-4xl font-bold text-gray-900 mt-2">
-        Nationwide Emergency 24/7 Onsite IT Support
-        </h2>
+      <div className="w-full md:w-full  my-10 text-center">
+        
         <p className="text-gray-700 mt-4 leading-relaxed">
         At Techpappa, we provide exceptional IT Support Services that help businesses maintain seamless operations 24/7. Our extensive expertise in technology integration and management spans multiple industries, making us the preferred IT partner for leading banks and financial institutions in the region. In today’s tech-driven world, businesses relying on advanced technology platforms need a robust, reliable, and scalable support structure. Emtech delivers IT Support Services that ensure your systems are always running smoothly, securely, and efficiently. Whether you need help managing your IT infrastructure, optimizing operations, or troubleshooting complex issues, our proactive support is tailored to meet your unique business needs. We focus on minimizing downtime, resolving issues quickly, and ensuring long-term stability. As one of the most successful nationwide IT Managed Services providers, we can help guide your IT needs. With Gold partnerships with Microsoft, VEEAM, SonicWall, Sophos, and more, we are poised to be your IT managed service partner. Explore more about our IT Managed Services today.
         </p>
         <button
-          className="px-6 py-3 mt-5 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded transition"
+          className="px-6 py-3 mt-5 bg-primaryBlue hover:bg-blue-700 text-white font-semibold rounded transition"
           onClick={() => setShowModal(true)}
         >
           REQUEST A CALLBACK

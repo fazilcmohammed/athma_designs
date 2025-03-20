@@ -1,82 +1,49 @@
-import { useState, useEffect } from "react";
-import { motion, AnimatePresence } from "framer-motion";
-import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
-import CallbackModal from "./CallBackModal";
- // Import the modal component
+import React from "react";
+import { motion } from "framer-motion";
+import { ArrowRightIcon } from "@heroicons/react/24/solid";
+import herobg from "../assets/images/heroImg.jpg";
+import { Link } from "react-router-dom";
 
-const slides = [
-  { image: "https://images.pexels.com/photos/158826/structure-light-led-movement-158826.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" },
-  { image: "https://images.pexels.com/photos/1148820/pexels-photo-1148820.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" },
-  { image: "https://images.pexels.com/photos/256302/pexels-photo-256302.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" },
-  { image: "https://images.pexels.com/photos/193350/pexels-photo-193350.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" },
-];
 
 const HeroSection = () => {
-  const [currentSlide, setCurrentSlide] = useState(0);
-  const [showModal, setShowModal] = useState(false);
-
-  // Auto-slide every 5 seconds
-  useEffect(() => {
-    const interval = setInterval(() => {
-      nextSlide();
-    }, 5000);
-    return () => clearInterval(interval);
-  }, [currentSlide]);
-
-  const nextSlide = () => {
-    setCurrentSlide((prev) => (prev + 1) % slides.length);
-  };
-
-  const prevSlide = () => {
-    setCurrentSlide((prev) => (prev - 1 + slides.length) % slides.length);
-  };
-
   return (
-    <div className="relative w-full h-screen overflow-hidden">
-      {/* Background while image loads */}
-      <div className="absolute inset-0 w-full h-full bg-black"></div>
+    <div className="bg-blue-50 px-6 pt-32 pb-16 sm:px-8 md:px-12 lg:px-24">
+      <div className="max-w-7xl mx-auto flex flex-col lg:flex-row gap-12 lg:gap-16 items-center">
 
-      {/* Image Slider */}
-      <AnimatePresence>
-        <motion.img
-          key={currentSlide}
-          src={slides[currentSlide].image}
-          alt={`Slide ${currentSlide + 1}`}
-          className="absolute inset-0 w-full h-full object-cover transition-opacity duration-1000"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          exit={{ opacity: 0 }}
-        />
-      </AnimatePresence>
+        {/* Left Section - Text & Buttons */}
+        <div className="text-center lg:text-left lg:w-1/2">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 leading-tight mb-4">
+            Innovative IT Solutions for Business Growth in UAE
+          </h1>
+          <p className="text-base sm:text-lg text-gray-600 mb-6">
+            Tech Pappa delivers cutting-edge IT solutions, enhancing business efficiency, security, and growth across the UAE.
+          </p>
+          <div className="flex flex-col lg:flex-row items-center lg:space-x-4 space-y-3 lg:space-y-0">
+            <Link to="/about" className="px-5 sm:px-6 py-2 bg-[#079DDA] text-white font-semibold rounded-lg shadow-md hover:bg-cyan-600 transition">
+              Learn More
+            </Link>
+            <a href="https://wa.me/919876543210" // Replace with your WhatsApp number
+              target="_blank"
+              rel="noopener noreferrer" className="px-5 sm:px-6 py-2 flex items-center gap-2 bg-transparent text-[#079DDA] font-semibold border-2 border-[#079DDA] rounded-lg shadow-md hover:bg-blue-50 transition">
+              Let's Talk
+              <motion.span
+                initial={{ x: 0 }}
+                whileHover={{ x: 5 }}
+                transition={{ type: "spring", stiffness: 300 }}
+              >
+                <ArrowRightIcon className="w-5 h-5 text-[#079DDA]" />
+              </motion.span>
+            </a>
+          </div>
+        </div>
 
-      {/* Overlay */}
-      <div className="absolute inset-0 bg-black bg-opacity-60 flex flex-col items-center justify-center text-white text-center">
-        <h1 className="text-5xl font-bold mb-6">
-          <span className="text-red-500"></span> Empower With Techpappa.
-        </h1>
-        <button
-          className="px-6 py-3 bg-blue-500 hover:bg-blue-700 text-white font-semibold rounded transition"
-          onClick={() => setShowModal(true)}
-        >
-          REQUEST A CALLBACK
-        </button>
+        {/* Right Section - Image (Placed Below on Mobile) */}
+        <div className="lg:w-1/2 flex justify-center">
+          <div className="rounded-xl overflow-hidden shadow-lg w-full max-w-sm sm:max-w-md md:max-w-lg lg:max-w-none">
+            <img src={herobg} alt="Hero" className="w-full h-auto object-cover" />
+          </div>
+        </div>
       </div>
-
-      {/* Slider Controls */}
-      <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 flex items-center gap-6 text-white">
-        <button onClick={prevSlide} className="hover:text-gray-300">
-          <FaArrowLeft size={20} />
-        </button>
-        <span className="text-lg">
-          {currentSlide + 1}/{slides.length}
-        </span>
-        <button onClick={nextSlide} className="hover:text-gray-300">
-          <FaArrowRight size={20} />
-        </button>
-      </div>
-
-      {/* Callback Modal */}
-      <CallbackModal isOpen={showModal} onClose={() => setShowModal(false)} />
     </div>
   );
 };

@@ -1,48 +1,58 @@
-import { FaShieldAlt } from "react-icons/fa";
-import { MdVerified } from "react-icons/md";
+import { Link } from "react-router-dom";
 
 const AboutSection = () => {
   return (
-    <div className="container mx-auto px-6 py-16 md:py-20 grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-12 items-center">
-      {/* Left Content */}
-      <div>
-        <h2 className="text-4xl sm:text-4xl md:text-5xl text-center md:text-left font-extrabold mb-4">
-          Modern Technology <br /> Solutions Company
+    <section className="px-6 md:px-12 lg:px-24 py-16">
+      {/* Heading Section */}
+      <div className="text-center">
+        <p className="text-gray-900 font-bold">About</p>
+        <h2 className="text-3xl sm:text-4xl md:text-5xl text-primaryBlue font-extrabold mb-4">
+          TechPappa
         </h2>
-        <p className="text-blue-600 font-semibold text-center md:text-left uppercase py-1 md:py-3">
-          // Serving Your Technology Needs Since 1993
-        </p>
-        <p className="text-gray-700 mt-4 text-center md:text-left leading-relaxed">
-        In today's fast-paced world, staying ahead means continuously evolving. That’s where we come in. As a Modern Technology Solutions & Integrated Service Management Organization, we leverage cutting-edge technology to solve complex business challenges and deliver exceptional value to our clients.
-        </p>
-        <p className="text-gray-700 mt-4 text-center md:text-left leading-relaxed">
-        What sets us apart is our unwavering dedication to our customers. We have consciously built a reputable organization and a desirable workplace, driven by innovation and excellence. Our mission is to create a meaningful impact—on our clients, our communities, and the future of technology—through collaboration and transformative solutions.
+      </div>
 
-Every day, we work towards this vision, making it a reality.
-        </p>
+      {/* Content Section */}
+      <div className="container mx-auto grid grid-cols-1 xl:grid-cols-2 gap-12 items-center">
+        {/* Left Content */}
+        <div className="text-center xl:text-left">
+          <p className="text-gray-700 leading-relaxed">
+            At Tech Pappa, we are dedicated to revolutionizing the world of
+            technology by providing innovative solutions that empower businesses
+            and individuals. Our expertise spans across account technology,
+            automation, cloud computing, AI-driven financial management, and
+            secure digital transactions, ensuring that our clients stay ahead in
+            an ever-evolving digital landscape.
+          </p>
+          <p className="text-gray-700 mt-4 leading-relaxed">
+            With a commitment to efficiency, security, and innovation, Tech
+            Pappa helps businesses streamline operations, optimize performance,
+            and embrace the future of technology. Whether it’s automating
+            financial processes, integrating advanced fintech solutions, or
+            enhancing cybersecurity, we provide cutting-edge tools to drive
+            success.
+          </p>
 
-        {/* Icons Section */}
-        <div className="flex flex-col sm:flex-row items-center md:items-start gap-6 mt-8">
-          <div className="flex items-center gap-2">
-            <FaShieldAlt className="text-blue-600 text-2xl" />
-            <p className="text-gray-800 font-semibold">Technology Partner You Can Trust</p>
-          </div>
-          <div className="flex items-center gap-2">
-            <MdVerified className="text-blue-600 text-2xl" />
-            <p className="text-gray-800 font-semibold">ISO 20000-1:2018 Certified</p>
+          {/* Read More Button */}
+          <div className="mt-6">
+            <Link
+              to="/about"
+              className="inline-block px-6 py-3 bg-primaryBlue text-white font-semibold rounded-lg shadow-md hover:bg-blue-600 transition-all"
+            >
+              Read More
+            </Link>
           </div>
         </div>
-      </div>
 
-      {/* Right Image Section */}
-      <div className="relative flex justify-center">
-        <img
-          src="https://plus.unsplash.com/premium_photo-1661310027237-8f4ed9ebc6ee?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-          alt="Team"
-          className="w-full sm:w-[80%] md:w-[90%] h-auto rounded-lg shadow-lg"
-        />
+        {/* Right Image Section */}
+        <div className="flex justify-center xl:justify-end">
+          <img
+            src="https://plus.unsplash.com/premium_photo-1661310027237-8f4ed9ebc6ee?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt="Team"
+            className="w-full max-w-sm sm:max-w-md md:max-w-lg lg:max-w-none rounded-lg shadow-lg"
+          />
+        </div>
       </div>
-    </div>
+    </section>
   );
 };
 

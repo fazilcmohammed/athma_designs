@@ -2,20 +2,20 @@ import React from "react";
 
 const KmHeroSection = ({heroSection}) => {
   return (
-    <div className="relative w-full h-56 md:h-56 lg:h-80">
+    <div className=" mt-32 ">
       {/* Background Image */}
-      <img
+      {/* <img
         src="https://cdn-ioeej.nitrocdn.com/YmndllJeXYDrJZhQjYQYRcvDxfdvvQhr/assets/images/optimized/rev-e69c88e/emtech.ae/wp-content/uploads/2020/12/aboutusbg.jpg"
         alt="Hybrid Cloud Solutions"
         className="w-full h-full object-cover"
       />
       
       {/* Overlay */}
-      <div className="absolute inset-0 bg-black bg-opacity-20"></div>
+      {/* <div className="absolute inset-0 bg-black bg-opacity-20"></div>  */}
 
       {/* Text */}
-      <div className="absolute inset-0 flex items-center px-6 md:px-12">
-        <h1 className="text-white text-3xl md:text-3xl lg:text-5xl font-bold mt-20  md:mt-24">
+      <div className="text-center  px-6 md:px-12">
+        <h1 className="bg-gray-100 text-primaryBlue px-4 py-1 rounded-full font-medium inline-block uppercase">
           {heroSection.heroTitle}
         </h1>
       </div>

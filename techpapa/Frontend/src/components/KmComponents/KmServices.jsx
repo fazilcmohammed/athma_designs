@@ -7,7 +7,7 @@ const KmServices = ({ services, titles }) => {
     <section className="container mx-auto px-6 py-12">
       {/* Header */}
       <div className="text-center">
-        <p className="text-blue-600 font-bold uppercase">// {titles.serviceSubTitle}</p>
+        <p className="text-primaryBlue font-bold uppercase">{titles.serviceSubTitle}</p>
         <h2 className="text-4xl font-bold text-gray-900 mt-2">
         {titles.serviceTitle}
         </h2>
@@ -40,7 +40,7 @@ const KmServices = ({ services, titles }) => {
               <h3 className="text-2xl font-bold">{service.title}</h3>
               <p className="text-gray-700 my-3">{service.description}</p>
               <button
-          className="px-6 py-3 mt-5 bg-blue-600 hover:bg-blue-800 text-white font-semibold rounded transition"
+          className="px-6 py-3 mt-5 bg-primaryBlue hover:bg-blue-800 text-white font-semibold rounded transition"
           onClick={() => setShowModal(true)}
         >
           Know More

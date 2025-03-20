@@ -76,7 +76,7 @@ const CallbackModal = ({ isOpen, onClose }) => {
           <div className="flex justify-between items-center">
             <button
               type="submit"
-              className="bg-red-600 text-white px-4 py-2 rounded-md"
+              className="bg-primaryBlue text-white px-4 py-2 rounded-md"
               disabled={loading}
             >
               {loading ? "Sending..." : "Send Request"}

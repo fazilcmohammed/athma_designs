@@ -10,16 +10,16 @@ const AboutUs = () => {
   return (
     <>
       <KmHerosection heroSection={aboutUs[0]}/>
-      <section className="container mx-auto px-6 py-12  md:items-center">
+      <section className="container mx-auto px-6 py-12 flex flex-col md:items-center">
       {/* Left - Image */}
-      
-
-      {/* Right - Text Content */}
-      <div className="w-full md:w-full">
-        <p className="text-blue-600 font-bold">// Managed IT Service</p>
-        <h1 className="text-4xl font-bold text-gray-900 mt-2">
+      <p className="text-gray-900 font-bold text-center uppercase">Managed IT Service</p>
+        <h1 className="text-5xl font-bold text-gray-900 mt-5 mb-10 text-center">
         Serving your technology needs for more than three decades in the U.A.E
         </h1>
+
+      {/* Right - Text Content */}
+      <div className="w-full md:w-full ">
+        
         <p className="text-gray-700 mt-4 leading-relaxed">
         We are a premier IT company serving Dubai, Abu Dhabi, Sharjah, and the wider UAE, specializing in IT solutions and integrated service management. Our expertise in technology enables us to tackle complex business challenges and deliver outstanding value to our clients. Recognized as one of the top IT companies in the UAE, we offer a wide range of services tailored to the diverse needs of our clientele.
 
@@ -37,32 +37,27 @@ Our dedicated team is committed to providing exceptional customer service and ad
         <p className="text-gray-700 mt-4 leading-relaxed">
         What sets us apart is our unwavering commitment to our customers. We have intentionally built a reputable organization and a sought-after workplace. Our goal is to create a positive impact on both our clients and the communities we serve through innovative technology solutions and collective efforts. We pursue this objective daily with passion, ensuring that we always deliver on our promises and act in the best interest of our customers. Our core value is simple: we do what we say. Our team goes the extra mile to respond swiftly and meet the needs of our clients. When you partner with TECHPAPPA, you gain the advantage of our organization's collective experience and expertise. Our people are deeply committed to our mission and values.</p>
       </div>
-      <div className='text-left text-gray-900 mt-5'>
-        <h1 className='text-3xl font-bold'>Why We are Unique:</h1>
-        <div>
-        <div className='flex items-center text-gray-700 my-4 text-md gap-2'>
-        <FaHandPointRight className='text-blue-600 text-xl' />24/7 service desk provides round the clock critical support to all our customers <br />
-        </div>
-        <div className='flex items-center text-gray-700 my-4 text-md gap-2'>
-        <FaHandPointRight className='text-blue-600 text-xl' />Strict Service Level Agreements and Online Ticketing Tool <br />
-        </div>
-        <div className='flex items-center text-gray-700 my-4 text-md gap-2'>
-        <FaHandPointRight className='text-blue-600 text-xl' />Dedicated Account Managers to escalate high priority cases <br />
-        </div>
-        <div className='flex items-center text-gray-700 my-4 text-md gap-2'>
-        <FaHandPointRight className='text-blue-600 text-xl' />Certified engineers provides unlimited remote support and 24/7 onsite critical support <br />
-        </div>
-        <div className='flex items-center text-gray-700 my-4 text-md gap-2'>
-        <FaHandPointRight className='text-blue-600 text-xl' />Well defined call classification and escalation matrix <br />
-        </div>
-        <div className='flex items-center text-gray-700 my-4 text-md gap-2'>
-        <FaHandPointRight className='text-blue-600 text-xl' />As a CSR initiative , we extend support to non-customers ( in case of any IT emergency ) <br />
-        </div>
-        </div>
+      <div className='text-center text-gray-900 mt-5'>
+  <h1 className='text-3xl font-bold'>Why We are Unique:</h1>
+  <div className='mt-4 space-y-4'>
+    {[
+      "24/7 service desk provides round the clock critical support to all our customers",
+      "Strict Service Level Agreements and Online Ticketing Tool",
+      "Dedicated Account Managers to escalate high priority cases",
+      "Certified engineers provides unlimited remote support and 24/7 onsite critical support",
+      "Well defined call classification and escalation matrix",
+      "As a CSR initiative, we extend support to non-customers (in case of any IT emergency)",
+    ].map((item, index) => (
+      <div key={index} className='flex items-start text-left text-gray-700 text-md gap-3'>
+        <FaHandPointRight className='text-primaryBlue w-5 h-5 flex-shrink-0' />
+        <span>{item}</span>
       </div>
+    ))}
+  </div>
+</div>
     </section>
     <section className="py-12 bg-gray-100 text-center">
-  <h2 className="text-blue-600 font-semibold">//OUR SOLUTIONS</h2>
+  {/* <h2 className="text-blue-600 font-semibold">OUR SOLUTIONS</h2> */}
   <h1 className="text-3xl font-bold mb-8">Our Solutions</h1>
   <div className="max-w-6xl mx-auto grid md:grid-cols-2 lg:grid-cols-2 gap-8">
     {aboutSolutions.map((solution, index) => (
@@ -71,7 +66,7 @@ Our dedicated team is committed to providing exceptional customer service and ad
         <div className="text-left">
           <h3 className="text-xl font-bold">{solution.title}</h3>
           <p className="text-gray-600 mt-2">{solution.description}</p>
-          <a href={solution.path} className="mt-4 px-4 py-2 bg-blue-600 text-white rounded-lg flex items-center gap-2 hover:bg-blue-700 md:w-[40%]">
+          <a href={solution.path} className="mt-4 px-4 py-2 bg-primaryBlue text-white rounded-lg flex items-center gap-2 hover:bg-blue-700 md:w-[40%]">
             Learn More <span><FaArrowRight /></span>
           </a>
         </div>

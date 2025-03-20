@@ -88,7 +88,7 @@ export const services = [
       id: 3,
       title: "Cloud Managed Networking",
       description:
-        "Choosing Emtech as your cloud-managed networking services provider offers a range of benefits...",
+        "Choosing TECHPAPPA as your cloud-managed networking services provider offers a range of benefits...",
       icon: FaCloud,
       path: "/service/cloud-managed-networking/"
     },
@@ -96,7 +96,7 @@ export const services = [
       id: 4,
       title: "Enterprise ICT",
       description:
-        "EMTECH, one among the top IT companies in UAE, follows a comprehensive approach to creating and managing enterprise ICT...",
+        "TECHPAPPA, one among the top IT companies in UAE, follows a comprehensive approach to creating and managing enterprise ICT...",
       icon: FaBuilding,
       path: "/service/ict-solutions/"
     },
@@ -120,7 +120,7 @@ export const services = [
       id: 7,
       title: "Cloud Operations Center",
       description:
-        "Emtech’s Cloud Operation Center (COC) offers a dedicated, streamlined solution for businesses...",
+        "TECHPAPPA’s Cloud Operation Center (COC) offers a dedicated, streamlined solution for businesses...",
       icon: FaCloud,
       path: "/service/cloud-operations-center/"
     },
@@ -152,7 +152,7 @@ export const services = [
       id: 11,
       title: "24/7 Critical Support",
       description:
-        "At Emtech, we provide exceptional IT Support Services that help businesses maintain seamless operations 24/7...",
+        "At TECHPAPPA, we provide exceptional IT Support Services that help businesses maintain seamless operations 24/7...",
       icon: FaLifeRing,
       path: "/service/it-support/"
     },
@@ -213,12 +213,17 @@ export const azureServices = [
   },
 ];
 
+import hcs1 from "../assets/images/hcsBenefits.webp"
+import hcs2 from "../assets/images/hcsComprehensivesupport.jpg"
+import hcs3 from "../assets/images/hcsFinancecontrol.jpg"
+import hcs4 from "../assets/images/hcsManagedBilling.jpg"
+
 export const hybridCloudServices = [
   {
   heroTitle : "Hybrid Cloud Solutions",
   contentSubTitle : " Microsoft Azure",
   contentTitle : "Modernize your IT with Microsoft Azure",
-  content : "Emtech is a Microsoft Gold Cloud Platform Partner, recognized as a leading Azure provider with deep knowledge of cloud strategy, platform deployment, and ongoing management. Our provision includes migration assessments, deployment plans, and cloud optimization, ensuring the best performance from your infrastructure. We keep ahead of the latest Azure developments from Microsoft so that our customers can adopt best practices, enable innovation, and future-proof their businesses. Emtech offers tailored Azure solutions to align with your unique business goals, driving productivity and efficiency. Our team of certified experts provides end-to-end support, from planning to deployment, ensuring a smooth and secure cloud transition. Emtech’s managed Azure services allow your business to scale seamlessly while controlling costs and enhancing agility. Partnering with Emtech means reliable, scalable, and secure cloud infrastructure that empowers your business to thrive.",
+  content : "TECHPAPPA is a Microsoft Gold Cloud Platform Partner, recognized as a leading Azure provider with deep knowledge of cloud strategy, platform deployment, and ongoing management. Our provision includes migration assessments, deployment plans, and cloud optimization, ensuring the best performance from your infrastructure. We keep ahead of the latest Azure developments from Microsoft so that our customers can adopt best practices, enable innovation, and future-proof their businesses. TECHPAPPA offers tailored Azure solutions to align with your unique business goals, driving productivity and efficiency. Our team of certified experts provides end-to-end support, from planning to deployment, ensuring a smooth and secure cloud transition. TECHPAPPA’s managed Azure services allow your business to scale seamlessly while controlling costs and enhancing agility. Partnering with TECHPAPPA means reliable, scalable, and secure cloud infrastructure that empowers your business to thrive.",
   contentImg : "https://imageio.forbes.com/specials-images/imageserve/65adf497bd5d0347e5af3b8d/Data-is-a-strategic-asset-/960x0.jpg?format=jpg&width=960",
   serviceSubTitle : "Azure Managed Service",
   serviceTitle : "What Microsoft Azure services do we provide?",
@@ -227,22 +232,22 @@ export const hybridCloudServices = [
     {
       title:"Delivered Business Benefits",
       description:"Our Cloud management solution services for Azure delivers a complete solution, providing you with one partner for all of your Azure needs. Our experts cater to all your Azure-related requirements by leveraging three core features that offer peace of mind and ensure your cloud investment will be optimized, managed and protected.",
-      image: "https://cdn-ioeej.nitrocdn.com/YmndllJeXYDrJZhQjYQYRcvDxfdvvQhr/assets/images/optimized/rev-e69c88e/emtech.ae/wp-content/uploads/2024/11/Delivered-business-benefits.jpg"
+      image: hcs1
     },
     {
       title:"Comprehensive Support",
-      description:"Our technical support professionals are available around the clock to resolve issues quickly and effectively. No matter where you are in your journey with Azure, access to export- level assistance is critical to a successful cloud transformation. Emtech is your resource for azure assistance through incident support, spend analysis and advisory services. Our Managed Services provide comprehensive support coverage for all your cloud requirements.",
-      image: "https://cdn-ioeej.nitrocdn.com/YmndllJeXYDrJZhQjYQYRcvDxfdvvQhr/assets/images/optimized/rev-e69c88e/emtech.ae/wp-content/uploads/2024/11/Comprehensive-Support.jpg"
+      description:"Our technical support professionals are available around the clock to resolve issues quickly and effectively. No matter where you are in your journey with Azure, access to export- level assistance is critical to a successful cloud transformation. TECHPAPPA is your resource for azure assistance through incident support, spend analysis and advisory services. Our Managed Services provide comprehensive support coverage for all your cloud requirements.",
+      image: hcs2
     },
     {
       title:"Financial Control & Governance",
       description:"If you want to be able to deliver on the promise that moving to the cloud will save your organization money, you need to have a good governance in place first. Gain control of your Azure usage with our industry expert cloud management services. Our advisory services, along with technical support, help you govern and maintain an optimized Azure environment to have better control and optimization on cloud spend.",
-      image: "https://cdn-ioeej.nitrocdn.com/YmndllJeXYDrJZhQjYQYRcvDxfdvvQhr/assets/images/optimized/rev-e69c88e/emtech.ae/wp-content/uploads/2024/11/Financial-control-governance.jpg"
+      image: hcs3
     },
     {
       title:"Managed Billing",
       description:"The first step in maximizing your experience within Cost Management is to investigate and decide which Azure offer is best for you. Stop wasting money paying for more resources than you need. An optimized cloud gives you the exact resources you need. Our cloud optimization features are powered by machine learning and designed around your actual usage. Optimize costs today and take actions toward ongoing efficiency and lower unit costs over time.",
-      image: "https://cdn-ioeej.nitrocdn.com/YmndllJeXYDrJZhQjYQYRcvDxfdvvQhr/assets/images/optimized/rev-e69c88e/emtech.ae/wp-content/uploads/2024/11/Managed-billing.jpg"
+      image: hcs4
     },
   ],
   bottomTitle : "Driving Microsoft Modern Workplace and Azure success across the region.!"
@@ -259,93 +264,116 @@ export const azureContent = [
   {
     title: "24/7 Critical Support",
     description:
-      "Partnering with Emtech for 24/7 cloud administration provides high-quality, cost-effective IT support around the clock. Our dedicated system ensures availability 24/7, 365 days a year, offering reliable support whenever you need it.",
+      "Partnering with TECHPAPPA for 24/7 cloud administration provides high-quality, cost-effective IT support around the clock. Our dedicated system ensures availability 24/7, 365 days a year, offering reliable support whenever you need it.",
   },
   {
     title: "Azure Purchase",
     description:
-      "Choose the flexibility of pay-as-you-go Azure purchases directly from Emtech, with bundled services and end-to-end support. Our expertise ensures a seamless experience, from subscription to ongoing support.",
+      "Choose the flexibility of pay-as-you-go Azure purchases directly from TECHPAPPA, with bundled services and end-to-end support. Our expertise ensures a seamless experience, from subscription to ongoing support.",
   },
   {
     title: "Cloud Solutions Provider",
     description:
-      "As a Microsoft Cloud Solutions Provider, Emtech provides Azure subscription support and exclusive access to our Cloud Management Portal. Our technical knowledge, commitment to customer success, and high standards ensure a dependable Azure experience throughout your cloud journey.",
+      "As a Microsoft Cloud Solutions Provider, TECHPAPPA provides Azure subscription support and exclusive access to our Cloud Management Portal. Our technical knowledge, commitment to customer success, and high standards ensure a dependable Azure experience throughout your cloud journey.",
   },
 ];
+
+import managed1 from "../assets/images/managedCloudservice.webp"
+import managed2 from "../assets/images/microsoft-azure-services.jpg"
+import managed3 from "../assets/images/Microsoft-365-1.png"
+import managed4 from "../assets/images/daas.jpg"
+import managed6 from "../assets/images/managedItsecurity.jpg"
+import managed7 from "../assets/images/managedNetwork.png"
+import managed8 from "../assets/images/managedserver.jpg"
+import managed9 from "../assets/images/managedDatabase.jpg"
+import managed10 from "../assets/images/managedStorage.jpg"
+import managed11 from "../assets/images/managedDesktop.jpeg"
 
 export const managedItService = [
   {
   heroTitle : "Managed IT Service in UAE",
   contentSubTitle : " Managed IT Service",
   contentTitle : "A catalyst in business transformation",
-  content : "Our Managed IT Service is based on modern digital solutions and services that use innovative technology solutions to solve business problems, delivering exceptional value. Specializing in digital transformation and cloud-based technologies, we imagine, build, and empower IT-enabled business solutions. From essential reactive monitoring to overall  IT infrastructure management, Emtech’s managed services ensure that all our customers delegate their routine maintenance tasks to us whilst investing their capital and resources on other mission-critical tasks requiring domain expertise.",
+  content : "Our Managed IT Service is based on modern digital solutions and services that use innovative technology solutions to solve business problems, delivering exceptional value. Specializing in digital transformation and cloud-based technologies, we imagine, build, and empower IT-enabled business solutions. From essential reactive monitoring to overall  IT infrastructure management, TECHPAPPA’s managed services ensure that all our customers delegate their routine maintenance tasks to us whilst investing their capital and resources on other mission-critical tasks requiring domain expertise.",
   contentImg : "https://imageio.forbes.com/specials-images/imageserve/65adf497bd5d0347e5af3b8d/Data-is-a-strategic-asset-/960x0.jpg?format=jpg&width=960",
   serviceSubTitle : "Managed IT Service",
-  serviceTitle : "Power your business with Emtech's Managed IT Service in UAE",
+  serviceTitle : "Power your business with TECHPAPPA's Managed IT Service in UAE",
   serviceContent : "",
   services : [
     {
       title:"Managed Cloud Services",
-      description:"Work with us to deploy the most suitable cloud platform for your data, balancing high performance and reliable access with every security policy, regulatory requirement, and privacy obligation . As the industry’s leading next gen cloud service provider, Emtech serves as an experienced cloud partner for organizations around the Middle East, while working closely with customers to understand unique cloud requirements and challenges. As business needs change, Emtech capabilities grow and evolve to help guide and support customers throughout the entire cloud lifecycle.",
-      image: "https://cdn-ioeej.nitrocdn.com/YmndllJeXYDrJZhQjYQYRcvDxfdvvQhr/assets/images/optimized/rev-e69c88e/emtech.ae/wp-content/uploads/2021/01/Managed-Cloud-Services.jpg"
+      description:"Work with us to deploy the most suitable cloud platform for your data, balancing high performance and reliable access with every security policy, regulatory requirement, and privacy obligation . As the industry’s leading next gen cloud service provider, TECHPAPPA serves as an experienced cloud partner for organizations around the Middle East, while working closely with customers to understand unique cloud requirements and challenges. As business needs change, TECHPAPPA capabilities grow and evolve to help guide and support customers throughout the entire cloud lifecycle.",
+      image: managed1
     },
     {
       title:"Microsoft Azure Services",
-      description:"The flexibility, reliability, and scale of an enterprise-ready cloud, coupled with the tailoring, transparency, and proactive management of our experienced team. Emtech offers extend in-house talent with our remote dedicated team of engineering professionals, architects, and account managers with proven experience in creating architecture, as well as building complete solutions, deploying to production, and performing operations management",
-      image: "https://cdn-ioeej.nitrocdn.com/YmndllJeXYDrJZhQjYQYRcvDxfdvvQhr/assets/images/optimized/rev-e69c88e/emtech.ae/wp-content/uploads/2021/01/Microsoft-Azure-Services.jpg"
+      description:"The flexibility, reliability, and scale of an enterprise-ready cloud, coupled with the tailoring, transparency, and proactive management of our experienced team. TECHPAPPA offers extend in-house talent with our remote dedicated team of engineering professionals, architects, and account managers with proven experience in creating architecture, as well as building complete solutions, deploying to production, and performing operations management",
+      image: managed2
     },
     {
       title:"Managed Microsoft 365 Services",
-      description:"Support your employees' productivity and collaboration while keeping your data safe, through the industry-leading platform delivered by an experienced Microsoft Partner.Emtech’s Managed Microsoft 365 service helps you get the most out of your Microsoft 365 investment, with a choice of enterprise-class support and service management packages to fulfil a range of support level and budget requirements",
-      image: "https://cdn-ioeej.nitrocdn.com/YmndllJeXYDrJZhQjYQYRcvDxfdvvQhr/assets/images/optimized/rev-e69c88e/emtech.ae/wp-content/uploads/2021/01/Managed-Microsoft-365-Services.jpg"
+      description:"Support your employees' productivity and collaboration while keeping your data safe, through the industry-leading platform delivered by an experienced Microsoft Partner.TECHPAPPA’s Managed Microsoft 365 service helps you get the most out of your Microsoft 365 investment, with a choice of enterprise-class support and service management packages to fulfil a range of support level and budget requirements",
+      image: managed3
     },
     {
       title:"Desktop as a Service",
       description:"Provide your users with full and secure VDI access to their data, applications and the company network anywhere and at any time. Quickly deployed with multiple connectivity options and scales to meet the changing size of your business or need for remote working. With Windows Virtual Desktop, you can deploy and scale your Windows desktops and apps on Azure in minutes and get built-in security and compliance features.",
-      image: "https://cdn-ioeej.nitrocdn.com/YmndllJeXYDrJZhQjYQYRcvDxfdvvQhr/assets/images/optimized/rev-e69c88e/emtech.ae/wp-content/uploads/2021/01/Desktop-as-a-Service.jpg"
+      image: managed4
     },
     {
       title:"Managed IT Security",
       description:"Round the clock monitoring and protection from intrusions, malware along with regular security audits. 24 x 7 IT infrastructure monitoring and security. Through our effective and reliable 24x7 network monitoring, we are able to gain critical insight into your technology platform integrity and can more easily provide you with cost-effective managed support.",
-      image: "https://cdn-ioeej.nitrocdn.com/YmndllJeXYDrJZhQjYQYRcvDxfdvvQhr/assets/images/optimized/rev-e69c88e/emtech.ae/wp-content/uploads/2021/01/Managed-IT-Security.jpg"
+      image: managed6
     },
     {
       title:"Managed Server",
-      description:"Tech-Assured’s Managed Server Services ensure smooth and efficient servers across any hardware type and deployment. Rapid growth in business may require a more sophisticated server solution, and of course, it needs to be cost-effective and compatible with storage offerings. With Emtech, you are worry free. Emtech gives you a best in server solutions.",
-      image: "https://cdn-ioeej.nitrocdn.com/YmndllJeXYDrJZhQjYQYRcvDxfdvvQhr/assets/images/optimized/rev-e69c88e/emtech.ae/wp-content/uploads/2021/01/Managed-Server.jpg"
+      description:"Tech-Assured’s Managed Server Services ensure smooth and efficient servers across any hardware type and deployment. Rapid growth in business may require a more sophisticated server solution, and of course, it needs to be cost-effective and compatible with storage offerings. With TECHPAPPA, you are worry free. TECHPAPPA gives you a best in server solutions.",
+      image: managed7
     },
     {
       title:"Managed Network",
-      description:"Our managed network services are great to drive cost-effectiveness, reliability, and efficiency of enterprise networks. Report, manage and administer, WAN, LAN and Wireless infrastructure with proven Service Level Agreements. Emtech is responsible for delivering great managed network services and experiences to users.",
-      image: "https://cdn-ioeej.nitrocdn.com/YmndllJeXYDrJZhQjYQYRcvDxfdvvQhr/assets/images/optimized/rev-e69c88e/emtech.ae/wp-content/uploads/2021/01/Managed-Network.jpg"
+      description:"Our managed network services are great to drive cost-effectiveness, reliability, and efficiency of enterprise networks. Report, manage and administer, WAN, LAN and Wireless infrastructure with proven Service Level Agreements. TECHPAPPA is responsible for delivering great managed network services and experiences to users.",
+      image: managed8
     },
     {
       title:"Managed Database",
       description:"Database management services covering leading database systems like Microsoft SQL Server, Oracle and MySQL. Allow your developers to deliver more value by focusing on the features that matter to your customers. With this variety of database types available, we can find you the right managed database.",
-      image: "https://cdn-ioeej.nitrocdn.com/YmndllJeXYDrJZhQjYQYRcvDxfdvvQhr/assets/images/optimized/rev-e69c88e/emtech.ae/wp-content/uploads/2021/01/Managed-Database.jpg"
+      image: managed9
     },
     {
-      title:"Managed Storage & Backu",
-      description:"Round the clock data backups and storage ensuring full compliance. Emtech gives importance to the kind of organization and their highly sensitive data measures. With an all-round safety net for your data, we shield your mission-critical IT resources with our online application backup and restore facilities, besides enhancing performance and managing business risk.",
-      image: "https://cdn-ioeej.nitrocdn.com/YmndllJeXYDrJZhQjYQYRcvDxfdvvQhr/assets/images/optimized/rev-e69c88e/emtech.ae/wp-content/uploads/2021/01/Managed-Storage-Backup.jpg"
+      title:"Managed Storage & Backup",
+      description:"Round the clock data backups and storage ensuring full compliance. TECHPAPPA gives importance to the kind of organization and their highly sensitive data measures. With an all-round safety net for your data, we shield your mission-critical IT resources with our online application backup and restore facilities, besides enhancing performance and managing business risk.",
+      image: managed10
     },
     {
       title:"Managed Desktop & Mobile",
       description:"Enjoy a 360-degree view of your IT assets and security with remote support for desktop and mobile setups. We keep business devices healthy with fresh installs of Desktop & Mobile devices. We have expertise to help you manage all of your company’s desktop and mobile hardware in an efficient and cost-effective manner",
-      image: "https://cdn-ioeej.nitrocdn.com/YmndllJeXYDrJZhQjYQYRcvDxfdvvQhr/assets/images/optimized/rev-e69c88e/emtech.ae/wp-content/uploads/2021/01/Managed-Desktop-Mobile.jpg"
+      image: managed11
     },
   ],
   bottomTitle : "Move from technology-constrained to service-enabled managed IT!"
   }
 ]
 
-
+import dw1 from "../assets/images/dwDesktop.jpg"
+import dw2 from "../assets/images/dwSecurity.jpg"
+import dw3 from "../assets/images/dwScaleup.jpg"
+import dw4 from "../assets/images/dwCostcutting.jpeg"
+import dw5 from "../assets/images/dwWorkshop.jpg"
+import dw6 from "../assets/images/dwMigration.webp"
+import dw7 from "../assets/images/dwImplementation.jpg"
+import dw8 from "../assets/images/dwPrivacy.jpg"
+import dw9 from "../assets/images/dwAdoption.webp"
+import dw10 from "../assets/images/dwManagement.webp"
+import dw11 from "../assets/images/dwTeams.png"
+import dw12 from "../assets/images/dwCollaboration.jpeg"
+import dw13 from "../assets/images/dwTeamwork.jpg"
 export const digitalWorkplace = [
   {
   heroTitle : "The digital workplace - Think, share, do",
   contentSubTitle : "",
   contentTitle : "A catalyst in business transformation",
-  content : "Our Managed IT Service is based on modern digital solutions and services that use innovative technology solutions to solve business problems, delivering exceptional value. Specializing in digital transformation and cloud-based technologies, we imagine, build, and empower IT-enabled business solutions. From essential reactive monitoring to overall  IT infrastructure management, Emtech’s managed services ensure that all our customers delegate their routine maintenance tasks to us whilst investing their capital and resources on other mission-critical tasks requiring domain expertise.",
+  content : "Our Managed IT Service is based on modern digital solutions and services that use innovative technology solutions to solve business problems, delivering exceptional value. Specializing in digital transformation and cloud-based technologies, we imagine, build, and empower IT-enabled business solutions. From essential reactive monitoring to overall  IT infrastructure management, TECHPAPPA’s managed services ensure that all our customers delegate their routine maintenance tasks to us whilst investing their capital and resources on other mission-critical tasks requiring domain expertise.",
   contentImg : "https://imageio.forbes.com/specials-images/imageserve/65adf497bd5d0347e5af3b8d/Data-is-a-strategic-asset-/960x0.jpg?format=jpg&width=960",
   serviceSubTitle : "Digital workplace solutions",
   serviceTitle : "Empower your users with the building blocks of Digital Workplace",
@@ -354,149 +382,157 @@ export const digitalWorkplace = [
     {
       title:"Deliver Windows 10 desktops on any device, anywhere",
       description:"Provide employees the best virtualized experience with the only solution fully optimized for Windows 10 and Office 365. Regardless of your device type bring-your-own-device (BYOD) and remote connect to your enterprise experience with Windows Virtual Desktop. ITs can pick whatever Azure VM will meet their teams needs and leverage the Windows 10 multi-session advantage that only Azure offers.",
-      image: "https://cdn-ioeej.nitrocdn.com/YmndllJeXYDrJZhQjYQYRcvDxfdvvQhr/assets/images/optimized/rev-e69c88e/emtech.ae/wp-content/uploads/2021/01/Deliver-Windows-10-desktops-on-any-device-anywhere.jpg"
+      image: dw1
     },
     {
       title:"Built-in intelligent security",
       description:"Keep your applications and data secure and compliant with security capabilities that can proactively detect threats and take remedial action. Securely store all your employee and company data in Azure instead of local desktops. Take the advantage of Azure security offering such as Azure Firewall, Azure Security Center, Azure Sentinel and Microsoft Defender ATP for end-to-end security from the endpoint to the applications.",
-      image: "https://cdn-ioeej.nitrocdn.com/YmndllJeXYDrJZhQjYQYRcvDxfdvvQhr/assets/images/optimized/rev-e69c88e/emtech.ae/wp-content/uploads/2021/01/Built-in-intelligent-security.jpg"
+      image: dw2
     },
     {
       title:"Deploy and scale in minutes",
       description:"Simplify deployment and management of your infrastructure and quickly scale based on your business needs. The Azure portal is your management hub for Windows Virtual Desktop. Configure network, deploy desktop, and enable security with a few clicks. Setup automated scaling with Logic Apps and manage your images efficiently with Azure image gallery.",
-      image: "https://cdn-ioeej.nitrocdn.com/YmndllJeXYDrJZhQjYQYRcvDxfdvvQhr/assets/images/optimized/rev-e69c88e/emtech.ae/wp-content/uploads/2021/01/Deploy-and-scale-in-minutes.jpg"
+      image: dw3
     },
     {
       title:"Reduce cost using existing licenses",
       description:"Use existing licenses to save cost with a modern cloud-based virtual desktop infrastructure (VDI) and pay only for what you use. Reduce infrastructure costs by right sizing VMs and shutting down VMs in use. Increase utilization of VMs with Windows 10 multi-session. Reduce management overhead by moving all your VDI into a managed service in the cloud.",
-      image: "https://cdn-ioeej.nitrocdn.com/YmndllJeXYDrJZhQjYQYRcvDxfdvvQhr/assets/images/optimized/rev-e69c88e/emtech.ae/wp-content/uploads/2021/01/Reduce-cost-using-existing-licenses.jpg"
+      image: dw4
     },
     {
       title:"Assessments & Workshops",
-      description:"Discover ways to work better together and create a modern workplace effectively. Confidently make your next move. An IT envisioning session, assessment, workshop, or JumpStart with our experienced team will give you deep understanding and a clear path forward. Emtech evaluates your current collaboration and communication tools and directs you on how to transform teamwork across your organization.",
-      image: "https://cdn-ioeej.nitrocdn.com/YmndllJeXYDrJZhQjYQYRcvDxfdvvQhr/assets/images/optimized/rev-e69c88e/emtech.ae/wp-content/uploads/2021/01/Assessments-Workshops.jpg"
+      description:"Discover ways to work better together and create a modern workplace effectively. Confidently make your next move. An IT envisioning session, assessment, workshop, or JumpStart with our experienced team will give you deep understanding and a clear path forward. TECHPAPPA evaluates your current collaboration and communication tools and directs you on how to transform teamwork across your organization.",
+      image: dw5
     },
     {
       title:"Migration Services",
       description:"We support migrations from on-premises to M365 as well as SharePoint Classic to SharePoint Modern. We help you modernize your employee’s remote work experience, and we help you create a plan to optimize your cost savings. We make the transition easy for you by following best practices in implementation, and ensuring your team is informed every step of the way, including planning, setting up, migrating, and managing.",
-      image: "https://cdn-ioeej.nitrocdn.com/YmndllJeXYDrJZhQjYQYRcvDxfdvvQhr/assets/images/optimized/rev-e69c88e/emtech.ae/wp-content/uploads/2021/01/Migration-Services.jpg"
+      image: dw6
     },
     {
       title:"Implementation",
-      description:"Establish a secure modern digital workplace. With a variety of security and privacy capabilities, Emtech can help you secure your data, establish company governance, and help you comply with specific standards. When implementing any new system across your organization, Emtech identifies how you’ll protect all the data you hold. With this idea we design your entire infrastructure.",
-      image: "https://cdn-ioeej.nitrocdn.com/YmndllJeXYDrJZhQjYQYRcvDxfdvvQhr/assets/images/optimized/rev-e69c88e/emtech.ae/wp-content/uploads/2021/01/Implementation.jpg"
+      description:"Establish a secure modern digital workplace. With a variety of security and privacy capabilities, TECHPAPPA can help you secure your data, establish company governance, and help you comply with specific standards. When implementing any new system across your organization, TECHPAPPA identifies how you’ll protect all the data you hold. With this idea we design your entire infrastructure.",
+      image: dw7
     },
     {
       title:"Privacy & Security",
       description:"Database management services covering leading database systems like Microsoft SQL Server, Oracle and MySQL. Allow your developers to deliver more value by focusing on the features that matter to your customers. With this variety of database types available, we can find you the right managed database.",
-      image: "https://cdn-ioeej.nitrocdn.com/YmndllJeXYDrJZhQjYQYRcvDxfdvvQhr/assets/images/optimized/rev-e69c88e/emtech.ae/wp-content/uploads/2021/01/Privacy-Security.jpg"
+      image: dw8
     },
     {
       title:"Adoption & Change Management",
       description:"We assist in creating a user adoption and change management strategy that will ensure your program is implemented successfully and your team adapts to the transition. We help you create a customized road map and set actionable steps that guide you to an effective modern workplace.",
-      image: "https://cdn-ioeej.nitrocdn.com/YmndllJeXYDrJZhQjYQYRcvDxfdvvQhr/assets/images/optimized/rev-e69c88e/emtech.ae/wp-content/uploads/2021/01/Adoption-Change-Management.jpg"
+      image: dw9
     },
     {
       title:"Management & Monitoring",
-      description:"With Emtech’s continuous management and monitoring of your environment you will be able to concentrate in the things that matter. Peak employee experience with a connected modern workplace. Our Consulting practitioners can help you design and implement your digital workplace, as well as help drive your innovation agenda through the effective implementation of your digital workplace.",
-      image: "https://cdn-ioeej.nitrocdn.com/YmndllJeXYDrJZhQjYQYRcvDxfdvvQhr/assets/images/optimized/rev-e69c88e/emtech.ae/wp-content/uploads/2021/01/Management-Monitoring.jpg"
+      description:"With TECHPAPPA’s continuous management and monitoring of your environment you will be able to concentrate in the things that matter. Peak employee experience with a connected modern workplace. Our Consulting practitioners can help you design and implement your digital workplace, as well as help drive your innovation agenda through the effective implementation of your digital workplace.",
+      image: dw10
     },
     {
       title:"Microsoft Teams",
       description:"The hub for communication and collaboration. No matter where your employees are located, they can communicate in real time with Microsoft Teams. Chat, video calling and screen sharing all boost real-time communication in the workplace and reduce the amount of clutter that goes unnoticed in email.",
-      image: "https://cdn-ioeej.nitrocdn.com/YmndllJeXYDrJZhQjYQYRcvDxfdvvQhr/assets/images/optimized/rev-e69c88e/emtech.ae/wp-content/uploads/2021/01/Microsoft-Teams.jpg"
+      image: dw11
     },
     {
       title:"Collaboration",
       description:"Teams is the go-to secure, reliable, scalable and cost-effective collaboration tool that meets the needs of today’s mobile and global workforce. From chatting to online meetings to co-authoring sharing files. Teams enables employees to communicate and collaborate anytime, anywhere.",
-      image: "https://cdn-ioeej.nitrocdn.com/YmndllJeXYDrJZhQjYQYRcvDxfdvvQhr/assets/images/optimized/rev-e69c88e/emtech.ae/wp-content/uploads/2021/01/Collaboration.jpg"
+      image: dw12
     },
     {
       title:"Teamwork is How Work Gets Done",
       description:"When you have a place to create and make decisions as a team, there’s no limit to what you can achieve. Teams brings everything together in a shared workspace where you can chat, meet, share files and work with business apps. With Teams, you can have built-in access to everything you need right in Office 365. With the latest communication technology from Microsoft you can connect the tools and services that employees use every day in a single hub. With mobile apps designed to help you work on the go, your employees can work better together.",
-      image: "https://cdn-ioeej.nitrocdn.com/YmndllJeXYDrJZhQjYQYRcvDxfdvvQhr/assets/images/optimized/rev-e69c88e/emtech.ae/wp-content/uploads/2021/01/Teamwork-is-How-Work-Gets-Done.jpg"
+      image: dw13
     },
   ],
   bottomTitle : "Experience the power of a truly digital workplace with us!"
   }
 ]
 
+import dl1 from "../assets/images/dlElearningdevelopment.jpeg"
+import dl2 from "../assets/images/dlMicroLearning.jpg"
+import dl3 from "../assets/images/dlSimulation.jpg"
+import dl4 from "../assets/images/dlVideolearning.jpeg"
+import dl5 from "../assets/images/dlGamebasedLearning.jpg"
+import dl6 from "../assets/images/dlEbook.jpg"
+import dl7 from "../assets/images/dlImmersiveLearning.webp"
+import dl8 from "../assets/images/dlLMS.jpg"
+import dl9 from "../assets/images/dlMobileLearning.jpeg"
+import dl10 from "../assets/images/dlBlendedLearning.jpg"
+import dl11 from "../assets/images/dlChange Management.jpeg"
+import dl12 from "../assets/images/dlConsultancy.webp"
 export const digitalLearning = [
   {
   heroTitle : "DIGITAL LEARNING SOLUTIONS",
   contentSubTitle : "",
   contentTitle : "Digital Learning Solutions",
-  content : "Our Managed IT Service is based on modern digital solutions and services that use innovative technology solutions to solve business problems, delivering exceptional value. Specializing in digital transformation and cloud-based technologies, we imagine, build, and empower IT-enabled business solutions. From essential reactive monitoring to overall  IT infrastructure management, Emtech’s managed services ensure that all our customers delegate their routine maintenance tasks to us whilst investing their capital and resources on other mission-critical tasks requiring domain expertise.",
+  content : "Our Managed IT Service is based on modern digital solutions and services that use innovative technology solutions to solve business problems, delivering exceptional value. Specializing in digital transformation and cloud-based technologies, we imagine, build, and empower IT-enabled business solutions. From essential reactive monitoring to overall  IT infrastructure management, TECHPAPPA’s managed services ensure that all our customers delegate their routine maintenance tasks to us whilst investing their capital and resources on other mission-critical tasks requiring domain expertise.",
   contentImg : "https://imageio.forbes.com/specials-images/imageserve/65adf497bd5d0347e5af3b8d/Data-is-a-strategic-asset-/960x0.jpg?format=jpg&width=960",
   serviceSubTitle : "Learning technology services",
   serviceTitle : "Adapt Digital Learning To Empower Your Employees",
   serviceContent : "",
   services : [
     {
-      title:"Deliver Windows 10 desktops on any device, anywhere",
-      description:"Provide employees the best virtualized experience with the only solution fully optimized for Windows 10 and Office 365. Regardless of your device type bring-your-own-device (BYOD) and remote connect to your enterprise experience with Windows Virtual Desktop. ITs can pick whatever Azure VM will meet their teams needs and leverage the Windows 10 multi-session advantage that only Azure offers.",
-      image: "https://cdn-ioeej.nitrocdn.com/YmndllJeXYDrJZhQjYQYRcvDxfdvvQhr/assets/images/optimized/rev-e69c88e/emtech.ae/wp-content/uploads/2021/01/Deliver-Windows-10-desktops-on-any-device-anywhere.jpg"
+      title:"Custom eLearning Development",
+      description:"Custom-made eLearning courses to meet your organization’s training needs on compliance, business processes, soft skills topics etc. We design highly interactive eLearning courses using high-end graphics and animations to enable effective learning. Our development team consisting of instructional designers, eLearning developers and media developers with many years of eLearning development experience always ensures high quality eLearning course delivery.",
+      image: dl1
     },
     {
-      title:"Built-in intelligent security",
-      description:"Keep your applications and data secure and compliant with security capabilities that can proactively detect threats and take remedial action. Securely store all your employee and company data in Azure instead of local desktops. Take the advantage of Azure security offering such as Azure Firewall, Azure Security Center, Azure Sentinel and Microsoft Defender ATP for end-to-end security from the endpoint to the applications.",
-      image: "https://cdn-ioeej.nitrocdn.com/YmndllJeXYDrJZhQjYQYRcvDxfdvvQhr/assets/images/optimized/rev-e69c88e/emtech.ae/wp-content/uploads/2021/01/Built-in-intelligent-security.jpg"
+      title:"Micro Learning",
+      description:"Micro eLearning course delivers short bursts of content for learners to study at their convenience and apply the knowledge immediately. Researches have shown that we learn more (and retain it better) when we study in short focused bursts than when we are forced to sit through hour long classes. We help your organization to adapt digital learning through micro learning modules.",
+      image: dl2
     },
     {
-      title:"Deploy and scale in minutes",
-      description:"Simplify deployment and management of your infrastructure and quickly scale based on your business needs. The Azure portal is your management hub for Windows Virtual Desktop. Configure network, deploy desktop, and enable security with a few clicks. Setup automated scaling with Logic Apps and manage your images efficiently with Azure image gallery.",
-      image: "https://cdn-ioeej.nitrocdn.com/YmndllJeXYDrJZhQjYQYRcvDxfdvvQhr/assets/images/optimized/rev-e69c88e/emtech.ae/wp-content/uploads/2021/01/Deploy-and-scale-in-minutes.jpg"
+      title:"Simulation based software training",
+      description:"Business software learning using simulation-based courses. A simulation-based learning offers a safe, cost effective and realistic experience for organizations to help their employees learn vital skills needed to use business software solutions.",
+      image: dl3
     },
     {
-      title:"Reduce cost using existing licenses",
-      description:"Use existing licenses to save cost with a modern cloud-based virtual desktop infrastructure (VDI) and pay only for what you use. Reduce infrastructure costs by right sizing VMs and shutting down VMs in use. Increase utilization of VMs with Windows 10 multi-session. Reduce management overhead by moving all your VDI into a managed service in the cloud.",
-      image: "https://cdn-ioeej.nitrocdn.com/YmndllJeXYDrJZhQjYQYRcvDxfdvvQhr/assets/images/optimized/rev-e69c88e/emtech.ae/wp-content/uploads/2021/01/Reduce-cost-using-existing-licenses.jpg"
+      title:"Learning Videos",
+      description:"Video learning merges audio and visual cues and context in a way that makes it exceptionally good as a teaching method. According to researches, employees are 75 percent more likely to watch a video than to read documents, emails or web articles.",
+      image: dl4
     },
     {
-      title:"Assessments & Workshops",
-      description:"Discover ways to work better together and create a modern workplace effectively. Confidently make your next move. An IT envisioning session, assessment, workshop, or JumpStart with our experienced team will give you deep understanding and a clear path forward. Emtech evaluates your current collaboration and communication tools and directs you on how to transform teamwork across your organization.",
-      image: "https://cdn-ioeej.nitrocdn.com/YmndllJeXYDrJZhQjYQYRcvDxfdvvQhr/assets/images/optimized/rev-e69c88e/emtech.ae/wp-content/uploads/2021/01/Assessments-Workshops.jpg"
+      title:"Game based learning",
+      description:"Game based learning for more effective learning. When you participate in mental activity in a gamified way , the body relaxes and alleviates stress and improves learning. Through gamification, a similar effect can be achieved in eLearning by challenging learners or motivating them to achieve a learning objective.",
+      image: dl5
     },
     {
-      title:"Migration Services",
-      description:"We support migrations from on-premises to M365 as well as SharePoint Classic to SharePoint Modern. We help you modernize your employee’s remote work experience, and we help you create a plan to optimize your cost savings. We make the transition easy for you by following best practices in implementation, and ensuring your team is informed every step of the way, including planning, setting up, migrating, and managing.",
-      image: "https://cdn-ioeej.nitrocdn.com/YmndllJeXYDrJZhQjYQYRcvDxfdvvQhr/assets/images/optimized/rev-e69c88e/emtech.ae/wp-content/uploads/2021/01/Migration-Services.jpg"
+      title:"eBook",
+      description:"Transform your documents into interactive eBooks for engaging reading experience with knowledge check, notes, tracking, reporting etc. The documents can be made available for reference and reading through any device, transforming traditional reading experience into digital form.",
+      image: dl6
     },
     {
-      title:"Implementation",
-      description:"Establish a secure modern digital workplace. With a variety of security and privacy capabilities, Emtech can help you secure your data, establish company governance, and help you comply with specific standards. When implementing any new system across your organization, Emtech identifies how you’ll protect all the data you hold. With this idea we design your entire infrastructure.",
-      image: "https://cdn-ioeej.nitrocdn.com/YmndllJeXYDrJZhQjYQYRcvDxfdvvQhr/assets/images/optimized/rev-e69c88e/emtech.ae/wp-content/uploads/2021/01/Implementation.jpg"
+      title:"Immersive Learning",
+      description:"Learning through Virtual Reality to enable experiential learning involving different senses. Immersive learning provides realistic training simulations using innovative technologies such as 3D and 360-degree views.",
+      image: dl7
     },
     {
-      title:"Privacy & Security",
-      description:"Database management services covering leading database systems like Microsoft SQL Server, Oracle and MySQL. Allow your developers to deliver more value by focusing on the features that matter to your customers. With this variety of database types available, we can find you the right managed database.",
-      image: "https://cdn-ioeej.nitrocdn.com/YmndllJeXYDrJZhQjYQYRcvDxfdvvQhr/assets/images/optimized/rev-e69c88e/emtech.ae/wp-content/uploads/2021/01/Privacy-Security.jpg"
+      title:"Learning Management Systems",
+      description:"Use Learning Management System for administration, documentation, tracking, reporting, learning analytics, automation, and delivery of eLearning courses, or learning and development programs.",
+      image: dl8
     },
     {
-      title:"Adoption & Change Management",
-      description:"We assist in creating a user adoption and change management strategy that will ensure your program is implemented successfully and your team adapts to the transition. We help you create a customized road map and set actionable steps that guide you to an effective modern workplace.",
-      image: "https://cdn-ioeej.nitrocdn.com/YmndllJeXYDrJZhQjYQYRcvDxfdvvQhr/assets/images/optimized/rev-e69c88e/emtech.ae/wp-content/uploads/2021/01/Adoption-Change-Management.jpg"
+      title:"Mobile Learning",
+      description:"Make learning on the go possible by making contents available through mobile devices. Mobile learning is also known as mLearning and it is a new way to get access to a variety of learning contents available online using mobile devices and make learning on the go possible.",
+      image: dl9
     },
     {
-      title:"Management & Monitoring",
-      description:"With Emtech’s continuous management and monitoring of your environment you will be able to concentrate in the things that matter. Peak employee experience with a connected modern workplace. Our Consulting practitioners can help you design and implement your digital workplace, as well as help drive your innovation agenda through the effective implementation of your digital workplace.",
-      image: "https://cdn-ioeej.nitrocdn.com/YmndllJeXYDrJZhQjYQYRcvDxfdvvQhr/assets/images/optimized/rev-e69c88e/emtech.ae/wp-content/uploads/2021/01/Management-Monitoring.jpg"
+      title:"Blended Learning Solutions",
+      description:"Combining classroom-based approach with online learning. Blended learning enables organizations to blend the best of the classroom, virtual and online learning for optimum learning outcomes.",
+      image: dl10
     },
     {
-      title:"Microsoft Teams",
-      description:"The hub for communication and collaboration. No matter where your employees are located, they can communicate in real time with Microsoft Teams. Chat, video calling and screen sharing all boost real-time communication in the workplace and reduce the amount of clutter that goes unnoticed in email.",
-      image: "https://cdn-ioeej.nitrocdn.com/YmndllJeXYDrJZhQjYQYRcvDxfdvvQhr/assets/images/optimized/rev-e69c88e/emtech.ae/wp-content/uploads/2021/01/Microsoft-Teams.jpg"
+      title:"Change Management",
+      description:"We help organization's digital transformation journey by offering change management services including end user training on technology to adapt change. Transformations are difficult undertakings and come with a high likelihood of failure. But with a focused plan and right change management approach can help achieve the desired success.",
+      image: dl11
     },
     {
-      title:"Collaboration",
-      description:"Teams is the go-to secure, reliable, scalable and cost-effective collaboration tool that meets the needs of today’s mobile and global workforce. From chatting to online meetings to co-authoring sharing files. Teams enables employees to communicate and collaborate anytime, anywhere.",
-      image: "https://cdn-ioeej.nitrocdn.com/YmndllJeXYDrJZhQjYQYRcvDxfdvvQhr/assets/images/optimized/rev-e69c88e/emtech.ae/wp-content/uploads/2021/01/Collaboration.jpg"
+      title:"Solution Consultancy",
+      description:"We offer organization with strategy, platforms & tools to help you accelerate your digital learning transformation plans by providing consultancy services to achieve your goals faster.",
+      image: dl12
     },
-    {
-      title:"Teamwork is How Work Gets Done",
-      description:"When you have a place to create and make decisions as a team, there’s no limit to what you can achieve. Teams brings everything together in a shared workspace where you can chat, meet, share files and work with business apps. With Teams, you can have built-in access to everything you need right in Office 365. With the latest communication technology from Microsoft you can connect the tools and services that employees use every day in a single hub. With mobile apps designed to help you work on the go, your employees can work better together.",
-      image: "https://cdn-ioeej.nitrocdn.com/YmndllJeXYDrJZhQjYQYRcvDxfdvvQhr/assets/images/optimized/rev-e69c88e/emtech.ae/wp-content/uploads/2021/01/Teamwork-is-How-Work-Gets-Done.jpg"
-    },
+    
   ],
   bottomTitle : "Empower your workforce through digital learning!!"
   }
@@ -570,7 +606,7 @@ export const digitalSolutions = [
   heroTitle : "Digital Solutions",
   contentSubTitle : " Digital Solutions. Digital Results",
   contentTitle : "The Complete Digital Transformation Experience",
-  content : "Digital Solutions helps you drive business outcomes by looking beyond traditional ways of working. At EMTECH, we can help your business tap into the power of digital technologies to drive better business outcomes. We are a leading provider of digital solutions in the UAE, and our team of experts has the knowledge and experience to help your business succeed. We provide you with a wide spectrum of digital solutions and services to help you create, deliver and build digital experiences. Whether you are just beginning your digital journey, or seeking new opportunities to accelerate growth, our digital solutions and services empower your business transformation journey. We work with you to understand your unique business needs and develop a tailored digital solution that will help you achieve your desired results.",
+  content : "Digital Solutions helps you drive business outcomes by looking beyond traditional ways of working. At TECHPAPPA, we can help your business tap into the power of digital technologies to drive better business outcomes. We are a leading provider of digital solutions in the UAE, and our team of experts has the knowledge and experience to help your business succeed. We provide you with a wide spectrum of digital solutions and services to help you create, deliver and build digital experiences. Whether you are just beginning your digital journey, or seeking new opportunities to accelerate growth, our digital solutions and services empower your business transformation journey. We work with you to understand your unique business needs and develop a tailored digital solution that will help you achieve your desired results.",
   contentImg : "https://imageio.forbes.com/specials-images/imageserve/65adf497bd5d0347e5af3b8d/Data-is-a-strategic-asset-/960x0.jpg?format=jpg&width=960",
   serviceSubTitle : "Digital Solutions. Digital Results",
   serviceTitle : "A Complete Set Of Digital Services To Help You Ride The Digital Wave",
@@ -598,7 +634,7 @@ export const digitalSolutions = [
     },
     {
       title:"Digital Collaboration Solutions",
-      description:"The modern experience in Microsoft SharePoint is designed to be compelling, flexible, and more performant. Emtech specializes in helping you develop and implement modern SharePoint experience and digital workforce collaboration.",
+      description:"The modern experience in Microsoft SharePoint is designed to be compelling, flexible, and more performant. TECHPAPPA specializes in helping you develop and implement modern SharePoint experience and digital workforce collaboration.",
       image: "https://blog.mindmanager.com/wp-content/uploads/2022/03/shutterstock_1836258856.jpg"
     },
 
@@ -612,7 +648,7 @@ export const cloudServices = [
   heroTitle : "Cloud Service",
   contentSubTitle : " go Cloud",
   contentTitle : "Making The Cloud Sing To Your Business",
-  content : "Digital Solutions helps you drive business outcomes by looking beyond traditional ways of working. At EMTECH, we can help your business tap into the power of digital technologies to drive better business outcomes. We are a leading provider of digital solutions in the UAE, and our team of experts has the knowledge and experience to help your business succeed. We provide you with a wide spectrum of digital solutions and services to help you create, deliver and build digital experiences. Whether you are just beginning your digital journey, or seeking new opportunities to accelerate growth, our digital solutions and services empower your business transformation journey. We work with you to understand your unique business needs and develop a tailored digital solution that will help you achieve your desired results.",
+  content : "Digital Solutions helps you drive business outcomes by looking beyond traditional ways of working. At TECHPAPPA, we can help your business tap into the power of digital technologies to drive better business outcomes. We are a leading provider of digital solutions in the UAE, and our team of experts has the knowledge and experience to help your business succeed. We provide you with a wide spectrum of digital solutions and services to help you create, deliver and build digital experiences. Whether you are just beginning your digital journey, or seeking new opportunities to accelerate growth, our digital solutions and services empower your business transformation journey. We work with you to understand your unique business needs and develop a tailored digital solution that will help you achieve your desired results.",
   contentImg : "https://imageio.forbes.com/specials-images/imageserve/65adf497bd5d0347e5af3b8d/Data-is-a-strategic-asset-/960x0.jpg?format=jpg&width=960",
   serviceSubTitle : "Cloud Solutions for You",
   serviceTitle : "More Efficiency, Innovation, And Scalability.",
@@ -654,7 +690,7 @@ export const itInfrastructure = [
   heroTitle : "IT Infrastructure Services",
   contentSubTitle : " go Cloud",
   contentTitle : "Making The Cloud Sing To Your Business",
-  content : "Digital Solutions helps you drive business outcomes by looking beyond traditional ways of working. At EMTECH, we can help your business tap into the power of digital technologies to drive better business outcomes. We are a leading provider of digital solutions in the UAE, and our team of experts has the knowledge and experience to help your business succeed. We provide you with a wide spectrum of digital solutions and services to help you create, deliver and build digital experiences. Whether you are just beginning your digital journey, or seeking new opportunities to accelerate growth, our digital solutions and services empower your business transformation journey. We work with you to understand your unique business needs and develop a tailored digital solution that will help you achieve your desired results.",
+  content : "Digital Solutions helps you drive business outcomes by looking beyond traditional ways of working. At TECHPAPPA, we can help your business tap into the power of digital technologies to drive better business outcomes. We are a leading provider of digital solutions in the UAE, and our team of experts has the knowledge and experience to help your business succeed. We provide you with a wide spectrum of digital solutions and services to help you create, deliver and build digital experiences. Whether you are just beginning your digital journey, or seeking new opportunities to accelerate growth, our digital solutions and services empower your business transformation journey. We work with you to understand your unique business needs and develop a tailored digital solution that will help you achieve your desired results.",
   contentImg : "https://vareli.co.in/vareliCMS/public/images/235343867/IT_Infrastructure.jpg",
   serviceSubTitle : "Free Active Consultation",
   serviceTitle : "Tailor-Made Solutions To Suit Your Business Needs",
@@ -677,7 +713,7 @@ export const itInfrastructure = [
     },
     {
       title:"IP Telephony Solution",
-      description:"IP Telephone Systems are a great way to improve the quality of your business communication. Emtech is an IP telephony solution provider in UAE, we offer a wide range of solutions for small to large businesses. Our experts assist you to choose the best possible solution for your business needs.",
+      description:"IP Telephone Systems are a great way to improve the quality of your business communication. TECHPAPPA is an IP telephony solution provider in UAE, we offer a wide range of solutions for small to large businesses. Our experts assist you to choose the best possible solution for your business needs.",
       image: "https://www.researchdive.com/blogImages/R2PZbHjor4.jpeg"
     },
     {
@@ -700,7 +736,7 @@ export const cyberSecurity = [
   heroTitle : "Cyber Security",
   contentSubTitle : " go Cloud",
   contentTitle : "Making The Cloud Sing To Your Business",
-  content : "Digital Solutions helps you drive business outcomes by looking beyond traditional ways of working. At EMTECH, we can help your business tap into the power of digital technologies to drive better business outcomes. We are a leading provider of digital solutions in the UAE, and our team of experts has the knowledge and experience to help your business succeed. We provide you with a wide spectrum of digital solutions and services to help you create, deliver and build digital experiences. Whether you are just beginning your digital journey, or seeking new opportunities to accelerate growth, our digital solutions and services empower your business transformation journey. We work with you to understand your unique business needs and develop a tailored digital solution that will help you achieve your desired results.",
+  content : "Digital Solutions helps you drive business outcomes by looking beyond traditional ways of working. At TECHPAPPA, we can help your business tap into the power of digital technologies to drive better business outcomes. We are a leading provider of digital solutions in the UAE, and our team of experts has the knowledge and experience to help your business succeed. We provide you with a wide spectrum of digital solutions and services to help you create, deliver and build digital experiences. Whether you are just beginning your digital journey, or seeking new opportunities to accelerate growth, our digital solutions and services empower your business transformation journey. We work with you to understand your unique business needs and develop a tailored digital solution that will help you achieve your desired results.",
   contentImg : "https://vareli.co.in/vareliCMS/public/images/235343867/IT_Infrastructure.jpg",
   serviceSubTitle : "Protecting Assets, Revitalizing Business",
   serviceTitle : "Enterprise Security And Advanced Threat Protection Solutions",
@@ -742,10 +778,10 @@ export const managedService = [
   heroTitle : "Managed IT service in UAE",
   contentSubTitle : " go Cloud",
   contentTitle : "Making The Cloud Sing To Your Business",
-  content : "Digital Solutions helps you drive business outcomes by looking beyond traditional ways of working. At EMTECH, we can help your business tap into the power of digital technologies to drive better business outcomes. We are a leading provider of digital solutions in the UAE, and our team of experts has the knowledge and experience to help your business succeed. We provide you with a wide spectrum of digital solutions and services to help you create, deliver and build digital experiences. Whether you are just beginning your digital journey, or seeking new opportunities to accelerate growth, our digital solutions and services empower your business transformation journey. We work with you to understand your unique business needs and develop a tailored digital solution that will help you achieve your desired results.",
+  content : "Digital Solutions helps you drive business outcomes by looking beyond traditional ways of working. At TECHPAPPA, we can help your business tap into the power of digital technologies to drive better business outcomes. We are a leading provider of digital solutions in the UAE, and our team of experts has the knowledge and experience to help your business succeed. We provide you with a wide spectrum of digital solutions and services to help you create, deliver and build digital experiences. Whether you are just beginning your digital journey, or seeking new opportunities to accelerate growth, our digital solutions and services empower your business transformation journey. We work with you to understand your unique business needs and develop a tailored digital solution that will help you achieve your desired results.",
   contentImg : "https://vareli.co.in/vareliCMS/public/images/235343867/IT_Infrastructure.jpg",
   serviceSubTitle : "MANAGED IT SERVICE",
-  serviceTitle : "Power your business with Emtech’s Managed IT Service in UAE",
+  serviceTitle : "Power your business with TECHPAPPA’s Managed IT Service in UAE",
   serviceContent : "",
   services : [
     {
@@ -779,12 +815,15 @@ export const managedService = [
   }
 ]
 
+import vmImg1 from "../assets/images/vmimg1.jpeg"
+import vmImg2 from "../assets/images/hyperV.png"
+
 export const virtualizationSolution = [
   {
   heroTitle : "Virtualization Solutions",
   contentSubTitle : " go Cloud",
   contentTitle : "Making The Cloud Sing To Your Business",
-  content : "Digital Solutions helps you drive business outcomes by looking beyond traditional ways of working. At EMTECH, we can help your business tap into the power of digital technologies to drive better business outcomes. We are a leading provider of digital solutions in the UAE, and our team of experts has the knowledge and experience to help your business succeed. We provide you with a wide spectrum of digital solutions and services to help you create, deliver and build digital experiences. Whether you are just beginning your digital journey, or seeking new opportunities to accelerate growth, our digital solutions and services empower your business transformation journey. We work with you to understand your unique business needs and develop a tailored digital solution that will help you achieve your desired results.",
+  content : "Digital Solutions helps you drive business outcomes by looking beyond traditional ways of working. At TECHPAPPA, we can help your business tap into the power of digital technologies to drive better business outcomes. We are a leading provider of digital solutions in the UAE, and our team of experts has the knowledge and experience to help your business succeed. We provide you with a wide spectrum of digital solutions and services to help you create, deliver and build digital experiences. Whether you are just beginning your digital journey, or seeking new opportunities to accelerate growth, our digital solutions and services empower your business transformation journey. We work with you to understand your unique business needs and develop a tailored digital solution that will help you achieve your desired results.",
   contentImg : "https://vareli.co.in/vareliCMS/public/images/235343867/IT_Infrastructure.jpg",
   serviceSubTitle : "Virtualization Solutions",
   serviceTitle : "Virtualization Offers Strong Business Benefits",
@@ -793,12 +832,12 @@ export const virtualizationSolution = [
     {
       title:"VMware Virtualization",
       description:"VMware virtualization enables efficient resource use by running multiple virtual machines (VMs) on one physical server, connected via a hypervisor. Benefits include improved flexibility, cost savings by reducing physical hardware, streamlined management with VMware tools, and increased reliability through features like live migration and backups—making it a robust, adaptable IT solution.",
-      image: "https://cdn-ioeej.nitrocdn.com/YmndllJeXYDrJZhQjYQYRcvDxfdvvQhr/assets/images/optimized/rev-e69c88e/emtech.ae/wp-content/uploads/2020/12/VMware-Virtualization.jpg"
+      image: vmImg1
     },
     {
       title:"Microsoft Hyper-V Hypervisors",
       description:"A hypervisor is a lightweight software layer that allocates a host computer’s resources to guest operating systems. Microsoft’s Hyper-V enables hardware virtualization, allowing each virtual machine to run on virtual hardware, including virtual hard drives, switches, and other devices. This allows multiple operating systems to run on one server or client computer.",
-      image: "https://cdn-ioeej.nitrocdn.com/YmndllJeXYDrJZhQjYQYRcvDxfdvvQhr/assets/images/optimized/rev-e69c88e/emtech.ae/wp-content/uploads/2020/12/Microsoft-Hyper-V-Hypervisors.jpg"
+      image: vmImg2
     },
     
   ],
@@ -811,15 +850,15 @@ export const amcSupport = [
   heroTitle : "Premium IT AMC Support",
   contentSubTitle : " go Cloud",
   contentTitle : "Making The Cloud Sing To Your Business",
-  content : "Digital Solutions helps you drive business outcomes by looking beyond traditional ways of working. At EMTECH, we can help your business tap into the power of digital technologies to drive better business outcomes. We are a leading provider of digital solutions in the UAE, and our team of experts has the knowledge and experience to help your business succeed. We provide you with a wide spectrum of digital solutions and services to help you create, deliver and build digital experiences. Whether you are just beginning your digital journey, or seeking new opportunities to accelerate growth, our digital solutions and services empower your business transformation journey. We work with you to understand your unique business needs and develop a tailored digital solution that will help you achieve your desired results.",
+  content : "Digital Solutions helps you drive business outcomes by looking beyond traditional ways of working. At TECHPAPPA, we can help your business tap into the power of digital technologies to drive better business outcomes. We are a leading provider of digital solutions in the UAE, and our team of experts has the knowledge and experience to help your business succeed. We provide you with a wide spectrum of digital solutions and services to help you create, deliver and build digital experiences. Whether you are just beginning your digital journey, or seeking new opportunities to accelerate growth, our digital solutions and services empower your business transformation journey. We work with you to understand your unique business needs and develop a tailored digital solution that will help you achieve your desired results.",
   contentImg : "https://vareli.co.in/vareliCMS/public/images/235343867/IT_Infrastructure.jpg",
   serviceSubTitle : "Premium AMC Support",
-  serviceTitle : "AMC Onboarding with Emtech for the First Time",
-  serviceContent : "When a client takes an AMC with us, we support them comprehensively throughout the years offering them with diverse types of help. After signing AMC with Emtech first time, we conduct a detailed study of customer complete IT infrastructure to fix all lingering issues once for all, apparently, we also recommend best practices. Preventive maintenance will be carried out every quarter and a detailed report will be shared with the customer regarding the details of issues and recommendations for them to look at the cases and action. Periodic review meeting will be conducted with Account manager to take support feedback from the customer as a part of continues improvement process.",
+  serviceTitle : "AMC Onboarding with TECHPAPPA for the First Time",
+  serviceContent : "When a client takes an AMC with us, we support them comprehensively throughout the years offering them with diverse types of help. After signing AMC with TECHPAPPA first time, we conduct a detailed study of customer complete IT infrastructure to fix all lingering issues once for all, apparently, we also recommend best practices. Preventive maintenance will be carried out every quarter and a detailed report will be shared with the customer regarding the details of issues and recommendations for them to look at the cases and action. Periodic review meeting will be conducted with Account manager to take support feedback from the customer as a part of continues improvement process.",
   services : [
     {
       title:"Primary IT Support",
-      description:"When a client associates with Emtech for the first time, we carry out a full and comprehensive assessment of their IT and technical infrastructure to understand various issues, shortcomings and other lingering concerns that plague their technology infrastructure. Once we take care of all the issues of the client, we also provide them with effective practices and guidelines to ensure that their IT infrastructure performs and continues to perform as intended by the client.",
+      description:"When a client associates with TECHPAPPA for the first time, we carry out a full and comprehensive assessment of their IT and technical infrastructure to understand various issues, shortcomings and other lingering concerns that plague their technology infrastructure. Once we take care of all the issues of the client, we also provide them with effective practices and guidelines to ensure that their IT infrastructure performs and continues to perform as intended by the client.",
       image: "https://unity-connect.com/wp-content/uploads/2023/04/What-Is-IT-Support-A-Useful-Guide-Featured-Image_669226057-1024x683.jpg"
     },
     {
@@ -829,17 +868,17 @@ export const amcSupport = [
     },
     {
       title:"Periodic Reviews",
-      description:"Emtech looks to constantly improve the services and AMC support that we offer. Hence, we always try to learn about the experience that the clients have with us. Thus, we carry out periodic review meetings with the account manager to learn about the kind of experience and feedback from the client so as to improve our service support for our clients. This approach has greatly helped us render high value-adding AMC services to our clients, at all times.",
+      description:"TECHPAPPA looks to constantly improve the services and AMC support that we offer. Hence, we always try to learn about the experience that the clients have with us. Thus, we carry out periodic review meetings with the account manager to learn about the kind of experience and feedback from the client so as to improve our service support for our clients. This approach has greatly helped us render high value-adding AMC services to our clients, at all times.",
       image: "https://media.licdn.com/dms/image/v2/D5612AQHlXMimK6vlkg/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1694193303284?e=2147483647&v=beta&t=CsMYZECGylboNWV0YutYrfUIKFH5yn5S5NAn5mua9bQ"
     },
     {
       title:"Scalable",
-      description:"Emtech understands that every business wants to grow and they work incessantly for the same. As a result, we offer them with scalable IT AMC services that can respond proactively to the dynamic nature of the business and its growth objectives.",
+      description:"TECHPAPPA understands that every business wants to grow and they work incessantly for the same. As a result, we offer them with scalable IT AMC services that can respond proactively to the dynamic nature of the business and its growth objectives.",
       image: "https://mcim24x7.b-cdn.net/wp-content/uploads/2024/05/Standardization-and-scalability.png"
     },
     {
       title:"Flexible",
-      description:"Unlike typical IT AMC providers in the UAE, Emtech offers flexible, dynamic support that adapts to clients' evolving needs and business goals. We deliver tailored, top-notch IT AMC services that others cannot match, making Emtech the most reliable and economical choice for exceptional IT support in the region.",
+      description:"Unlike typical IT AMC providers in the UAE, TECHPAPPA offers flexible, dynamic support that adapts to clients' evolving needs and business goals. We deliver tailored, top-notch IT AMC services that others cannot match, making TECHPAPPA the most reliable and economical choice for exceptional IT support in the region.",
       image: "https://media.licdn.com/dms/image/v2/C4D0DAQHdcrIn7LGz9g/learning-public-crop_144_256/learning-public-crop_144_256/0/1567195925868?e=2147483647&v=beta&t=PkwbrT2fXinSl0j_zaB6j-Elf4K7OnuTO2HH4HqitCU"
     },
     
@@ -848,12 +887,15 @@ export const amcSupport = [
   }
 ]
 
+import aruba from "../assets/images/arubacloud.png"
+import meraki from "../assets/images/ciscoMeraki.png"
+
 export const cloudNetworking = [
   {
   heroTitle : "Cloud Managed Networking",
   contentSubTitle : " go Cloud",
   contentTitle : "Making The Cloud Sing To Your Business",
-  content : "Digital Solutions helps you drive business outcomes by looking beyond traditional ways of working. At EMTECH, we can help your business tap into the power of digital technologies to drive better business outcomes. We are a leading provider of digital solutions in the UAE, and our team of experts has the knowledge and experience to help your business succeed. We provide you with a wide spectrum of digital solutions and services to help you create, deliver and build digital experiences. Whether you are just beginning your digital journey, or seeking new opportunities to accelerate growth, our digital solutions and services empower your business transformation journey. We work with you to understand your unique business needs and develop a tailored digital solution that will help you achieve your desired results.",
+  content : "Digital Solutions helps you drive business outcomes by looking beyond traditional ways of working. At TECHPAPPA, we can help your business tap into the power of digital technologies to drive better business outcomes. We are a leading provider of digital solutions in the UAE, and our team of experts has the knowledge and experience to help your business succeed. We provide you with a wide spectrum of digital solutions and services to help you create, deliver and build digital experiences. Whether you are just beginning your digital journey, or seeking new opportunities to accelerate growth, our digital solutions and services empower your business transformation journey. We work with you to understand your unique business needs and develop a tailored digital solution that will help you achieve your desired results.",
   contentImg : "https://vareli.co.in/vareliCMS/public/images/235343867/IT_Infrastructure.jpg",
   serviceSubTitle : "Cloud Managed Networking",
   serviceTitle : "Benefits of Cloud Managed Networking",
@@ -862,12 +904,12 @@ export const cloudNetworking = [
     {
       title:"Cisco Meraki",
       description:"Cisco Meraki simplifies IT with centralized management for WLAN, switching, security, and more, reducing costs and complexity. Meraki MS Switches feature Layer 7 application and client analysis, allowing administrators to identify users, content, and applications on the network. This enables detailed monitoring, automatic reporting, and policy enforcement to optimize network performance.",
-      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTikAhoiiDUeYhrAeOWeg4DEHCH6JQYWzIJcw&s"
+      image: meraki
     },
     {
       title:"Aruba",
       description:"Aruba’s Cloud-managed networking portfolio ensures reliable support for fast-paced, mobile-first environments. Key solutions include Aruba Central for unified network management, Aruba SD-Branch for secure SD-WAN and branch operations, and Aruba Device Insight for intelligent device discovery and visibility. These solutions work together to enhance Aruba’s comprehensive range of access points, switches, and gateways.",
-      image: "https://play-lh.googleusercontent.com/cvwWfyqF2uBtIAoVAcMRUBawvREHN1ZHIpDZ70pkseIiKoTY-BxbYAqG2sieG4KpC5I"
+      image: aruba
     },
   ],
   bottomTitle : "We can help you choose the right cloud network solution that suits for your current and growing business need!",
@@ -879,7 +921,7 @@ export const enterprise = [
   heroTitle : "Enterprise ICT",
   contentSubTitle : "",
   contentTitle : "Making The Cloud Sing To Your Business",
-  content : "Digital Solutions helps you drive business outcomes by looking beyond traditional ways of working. At EMTECH, we can help your business tap into the power of digital technologies to drive better business outcomes. We are a leading provider of digital solutions in the UAE, and our team of experts has the knowledge and experience to help your business succeed. We provide you with a wide spectrum of digital solutions and services to help you create, deliver and build digital experiences. Whether you are just beginning your digital journey, or seeking new opportunities to accelerate growth, our digital solutions and services empower your business transformation journey. We work with you to understand your unique business needs and develop a tailored digital solution that will help you achieve your desired results.",
+  content : "Digital Solutions helps you drive business outcomes by looking beyond traditional ways of working. At TECHPAPPA, we can help your business tap into the power of digital technologies to drive better business outcomes. We are a leading provider of digital solutions in the UAE, and our team of experts has the knowledge and experience to help your business succeed. We provide you with a wide spectrum of digital solutions and services to help you create, deliver and build digital experiences. Whether you are just beginning your digital journey, or seeking new opportunities to accelerate growth, our digital solutions and services empower your business transformation journey. We work with you to understand your unique business needs and develop a tailored digital solution that will help you achieve your desired results.",
   contentImg : "https://vareli.co.in/vareliCMS/public/images/235343867/IT_Infrastructure.jpg",
   serviceSubTitle : "",
   serviceTitle : "",
@@ -905,7 +947,7 @@ export const artificialIntelligence = [
   heroTitle : "Artificial Intelligence",
   contentSubTitle : "",
   contentTitle : "Making The Cloud Sing To Your Business",
-  content : "Digital Solutions helps you drive business outcomes by looking beyond traditional ways of working. At EMTECH, we can help your business tap into the power of digital technologies to drive better business outcomes. We are a leading provider of digital solutions in the UAE, and our team of experts has the knowledge and experience to help your business succeed. We provide you with a wide spectrum of digital solutions and services to help you create, deliver and build digital experiences. Whether you are just beginning your digital journey, or seeking new opportunities to accelerate growth, our digital solutions and services empower your business transformation journey. We work with you to understand your unique business needs and develop a tailored digital solution that will help you achieve your desired results.",
+  content : "Digital Solutions helps you drive business outcomes by looking beyond traditional ways of working. At TECHPAPPA, we can help your business tap into the power of digital technologies to drive better business outcomes. We are a leading provider of digital solutions in the UAE, and our team of experts has the knowledge and experience to help your business succeed. We provide you with a wide spectrum of digital solutions and services to help you create, deliver and build digital experiences. Whether you are just beginning your digital journey, or seeking new opportunities to accelerate growth, our digital solutions and services empower your business transformation journey. We work with you to understand your unique business needs and develop a tailored digital solution that will help you achieve your desired results.",
   contentImg : "https://vareli.co.in/vareliCMS/public/images/235343867/IT_Infrastructure.jpg",
   serviceSubTitle : "",
   serviceTitle : "",
@@ -931,7 +973,7 @@ export const iot = [
   heroTitle : "Internet of Things (IoT)",
   contentSubTitle : "",
   contentTitle : "Making The Cloud Sing To Your Business",
-  content : "Digital Solutions helps you drive business outcomes by looking beyond traditional ways of working. At EMTECH, we can help your business tap into the power of digital technologies to drive better business outcomes. We are a leading provider of digital solutions in the UAE, and our team of experts has the knowledge and experience to help your business succeed. We provide you with a wide spectrum of digital solutions and services to help you create, deliver and build digital experiences. Whether you are just beginning your digital journey, or seeking new opportunities to accelerate growth, our digital solutions and services empower your business transformation journey. We work with you to understand your unique business needs and develop a tailored digital solution that will help you achieve your desired results.",
+  content : "Digital Solutions helps you drive business outcomes by looking beyond traditional ways of working. At TECHPAPPA, we can help your business tap into the power of digital technologies to drive better business outcomes. We are a leading provider of digital solutions in the UAE, and our team of experts has the knowledge and experience to help your business succeed. We provide you with a wide spectrum of digital solutions and services to help you create, deliver and build digital experiences. Whether you are just beginning your digital journey, or seeking new opportunities to accelerate growth, our digital solutions and services empower your business transformation journey. We work with you to understand your unique business needs and develop a tailored digital solution that will help you achieve your desired results.",
   contentImg : "https://vareli.co.in/vareliCMS/public/images/235343867/IT_Infrastructure.jpg",
   serviceSubTitle : "",
   serviceTitle : "",
@@ -957,11 +999,11 @@ export const itStructure = [
   heroTitle : "IT Infrastructure",
   contentSubTitle : "",
   contentTitle : "Making The Cloud Sing To Your Business",
-  content : "Digital Solutions helps you drive business outcomes by looking beyond traditional ways of working. At EMTECH, we can help your business tap into the power of digital technologies to drive better business outcomes. We are a leading provider of digital solutions in the UAE, and our team of experts has the knowledge and experience to help your business succeed. We provide you with a wide spectrum of digital solutions and services to help you create, deliver and build digital experiences. Whether you are just beginning your digital journey, or seeking new opportunities to accelerate growth, our digital solutions and services empower your business transformation journey. We work with you to understand your unique business needs and develop a tailored digital solution that will help you achieve your desired results.",
+  content : "Digital Solutions helps you drive business outcomes by looking beyond traditional ways of working. At TECHPAPPA, we can help your business tap into the power of digital technologies to drive better business outcomes. We are a leading provider of digital solutions in the UAE, and our team of experts has the knowledge and experience to help your business succeed. We provide you with a wide spectrum of digital solutions and services to help you create, deliver and build digital experiences. Whether you are just beginning your digital journey, or seeking new opportunities to accelerate growth, our digital solutions and services empower your business transformation journey. We work with you to understand your unique business needs and develop a tailored digital solution that will help you achieve your desired results.",
   contentImg : "https://vareli.co.in/vareliCMS/public/images/235343867/IT_Infrastructure.jpg",
   serviceSubTitle : "",
-  serviceTitle : "Why Opt for Infrastructure Solutions from Emtech?",
-  serviceContent : "Emtech offers a range of IT infrastructure services. We provide free active consultation, we implement services by using latest technology solutions that deliver a differentiated value to your business, by enhancing operational efficiencies, boosting productivity and performance, accelerating time-to-market, and reducing costs. Our IT Infrastructure consulting services enable organizations to design, build, run and manage a scalable, flexible, and reliable IT infrastructure. Through our suite of services, we help our customers in reducing infrastructure costs and facilitate them to focus on strategic initiatives and business transformation. We are experts in pairing up the top IT infrastructure technologies to meet each client’s specific need. We have an extensive pool of infrastructure specialists who can help you create, run and manage the next-generation IT Infrastructure.",
+  serviceTitle : "Why Opt for Infrastructure Solutions from TECHPAPPA?",
+  serviceContent : "TECHPAPPA offers a range of IT infrastructure services. We provide free active consultation, we implement services by using latest technology solutions that deliver a differentiated value to your business, by enhancing operational efficiencies, boosting productivity and performance, accelerating time-to-market, and reducing costs. Our IT Infrastructure consulting services enable organizations to design, build, run and manage a scalable, flexible, and reliable IT infrastructure. Through our suite of services, we help our customers in reducing infrastructure costs and facilitate them to focus on strategic initiatives and business transformation. We are experts in pairing up the top IT infrastructure technologies to meet each client’s specific need. We have an extensive pool of infrastructure specialists who can help you create, run and manage the next-generation IT Infrastructure.",
   services : [
     {
       title:"",
@@ -983,11 +1025,11 @@ export const itSupport = [
   heroTitle : "24 /7 Critical Support",
   contentSubTitle : "",
   contentTitle : "Making The Cloud Sing To Your Business",
-  content : "Digital Solutions helps you drive business outcomes by looking beyond traditional ways of working. At EMTECH, we can help your business tap into the power of digital technologies to drive better business outcomes. We are a leading provider of digital solutions in the UAE, and our team of experts has the knowledge and experience to help your business succeed. We provide you with a wide spectrum of digital solutions and services to help you create, deliver and build digital experiences. Whether you are just beginning your digital journey, or seeking new opportunities to accelerate growth, our digital solutions and services empower your business transformation journey. We work with you to understand your unique business needs and develop a tailored digital solution that will help you achieve your desired results.",
+  content : "Digital Solutions helps you drive business outcomes by looking beyond traditional ways of working. At TECHPAPPA, we can help your business tap into the power of digital technologies to drive better business outcomes. We are a leading provider of digital solutions in the UAE, and our team of experts has the knowledge and experience to help your business succeed. We provide you with a wide spectrum of digital solutions and services to help you create, deliver and build digital experiences. Whether you are just beginning your digital journey, or seeking new opportunities to accelerate growth, our digital solutions and services empower your business transformation journey. We work with you to understand your unique business needs and develop a tailored digital solution that will help you achieve your desired results.",
   contentImg : "https://vareli.co.in/vareliCMS/public/images/235343867/IT_Infrastructure.jpg",
   serviceSubTitle : "24 /7 Critical Support",
   serviceTitle : "How Can Techpappa's IT Support Help You?",
-  serviceContent : "While many businesses have certain support wings for their business, most of them cannot handle the stress and challenges that come with a ransomware attack or anything of that sort. That is exactly why you need a team of experts that you can rely on to put back frameworks and infrastructures that are attacked by malwares to be put back. Then you can call us, Emtech. With our team working round the clock monitoring your IT infrastructure and watching over it for any suspicious activities, you get access to the knowledge and expertise of savvy, insightful and experienced team round the clock. Not only can Emtech’s IT support can work to create an environment where your infrastructure is protected and secured from threats, it can also empower your own in-house security team to face any of the challenges that might come your way.",
+  serviceContent : "While many businesses have certain support wings for their business, most of them cannot handle the stress and challenges that come with a ransomware attack or anything of that sort. That is exactly why you need a team of experts that you can rely on to put back frameworks and infrastructures that are attacked by malwares to be put back. Then you can call us, TECHPAPPA. With our team working round the clock monitoring your IT infrastructure and watching over it for any suspicious activities, you get access to the knowledge and expertise of savvy, insightful and experienced team round the clock. Not only can TECHPAPPA’s IT support can work to create an environment where your infrastructure is protected and secured from threats, it can also empower your own in-house security team to face any of the challenges that might come your way.",
   services : [
     {
       title:"Proactive Support Program",
@@ -1019,7 +1061,7 @@ export const microsoft365 = [
   heroTitle : "Do More with Less with Microsoft 365",
   contentSubTitle : "",
   contentTitle : "Making The Cloud Sing To Your Business",
-  content : "Digital Solutions helps you drive business outcomes by looking beyond traditional ways of working. At EMTECH, we can help your business tap into the power of digital technologies to drive better business outcomes. We are a leading provider of digital solutions in the UAE, and our team of experts has the knowledge and experience to help your business succeed. We provide you with a wide spectrum of digital solutions and services to help you create, deliver and build digital experiences. Whether you are just beginning your digital journey, or seeking new opportunities to accelerate growth, our digital solutions and services empower your business transformation journey. We work with you to understand your unique business needs and develop a tailored digital solution that will help you achieve your desired results.",
+  content : "Digital Solutions helps you drive business outcomes by looking beyond traditional ways of working. At TECHPAPPA, we can help your business tap into the power of digital technologies to drive better business outcomes. We are a leading provider of digital solutions in the UAE, and our team of experts has the knowledge and experience to help your business succeed. We provide you with a wide spectrum of digital solutions and services to help you create, deliver and build digital experiences. Whether you are just beginning your digital journey, or seeking new opportunities to accelerate growth, our digital solutions and services empower your business transformation journey. We work with you to understand your unique business needs and develop a tailored digital solution that will help you achieve your desired results.",
   contentImg : "https://vareli.co.in/vareliCMS/public/images/235343867/IT_Infrastructure.jpg",
   serviceSubTitle : "Microsoft Office 365",
   serviceTitle : "Benefits of Having Microsoft Office 365",
@@ -1040,7 +1082,7 @@ export const cloudOperations = [
   heroTitle : "Cloud Operations Center",
   contentSubTitle : "",
   contentTitle : "Making The Cloud Sing To Your Business",
-  content : "Digital Solutions helps you drive business outcomes by looking beyond traditional ways of working. At EMTECH, we can help your business tap into the power of digital technologies to drive better business outcomes. We are a leading provider of digital solutions in the UAE, and our team of experts has the knowledge and experience to help your business succeed. We provide you with a wide spectrum of digital solutions and services to help you create, deliver and build digital experiences. Whether you are just beginning your digital journey, or seeking new opportunities to accelerate growth, our digital solutions and services empower your business transformation journey. We work with you to understand your unique business needs and develop a tailored digital solution that will help you achieve your desired results.",
+  content : "Digital Solutions helps you drive business outcomes by looking beyond traditional ways of working. At TECHPAPPA, we can help your business tap into the power of digital technologies to drive better business outcomes. We are a leading provider of digital solutions in the UAE, and our team of experts has the knowledge and experience to help your business succeed. We provide you with a wide spectrum of digital solutions and services to help you create, deliver and build digital experiences. Whether you are just beginning your digital journey, or seeking new opportunities to accelerate growth, our digital solutions and services empower your business transformation journey. We work with you to understand your unique business needs and develop a tailored digital solution that will help you achieve your desired results.",
   contentImg : "https://vareli.co.in/vareliCMS/public/images/235343867/IT_Infrastructure.jpg",
   serviceSubTitle : "Cloud Operations Center",
   serviceTitle : "What do Techpappa’s Managed Cloud Services Include?",
@@ -1076,7 +1118,7 @@ export const azureManage = [
   heroTitle : "Azure Managed Service",
   contentSubTitle : "",
   contentTitle : "Making The Cloud Sing To Your Business",
-  content : "Digital Solutions helps you drive business outcomes by looking beyond traditional ways of working. At EMTECH, we can help your business tap into the power of digital technologies to drive better business outcomes. We are a leading provider of digital solutions in the UAE, and our team of experts has the knowledge and experience to help your business succeed. We provide you with a wide spectrum of digital solutions and services to help you create, deliver and build digital experiences. Whether you are just beginning your digital journey, or seeking new opportunities to accelerate growth, our digital solutions and services empower your business transformation journey. We work with you to understand your unique business needs and develop a tailored digital solution that will help you achieve your desired results.",
+  content : "Digital Solutions helps you drive business outcomes by looking beyond traditional ways of working. At TECHPAPPA, we can help your business tap into the power of digital technologies to drive better business outcomes. We are a leading provider of digital solutions in the UAE, and our team of experts has the knowledge and experience to help your business succeed. We provide you with a wide spectrum of digital solutions and services to help you create, deliver and build digital experiences. Whether you are just beginning your digital journey, or seeking new opportunities to accelerate growth, our digital solutions and services empower your business transformation journey. We work with you to understand your unique business needs and develop a tailored digital solution that will help you achieve your desired results.",
   contentImg : "https://vareli.co.in/vareliCMS/public/images/235343867/IT_Infrastructure.jpg",
   serviceSubTitle : "Azure Cloud Service",
   serviceTitle : "Cloud Optimization and Strategy",
@@ -1109,7 +1151,7 @@ export const azureManage = [
     },
     {
       title:"24/7 critical support",
-      description:"Joining hands with a 24/7 cloud administrations supplier like Emtech is a method for getting high caliber-Yet saavy-all day, every minute IT support. Techpappa works from a dedicated system which ensures that is accessible every minute of every day/365.",
+      description:"Joining hands with a 24/7 cloud administrations supplier like TECHPAPPA is a method for getting high caliber-Yet saavy-all day, every minute IT support. Techpappa works from a dedicated system which ensures that is accessible every minute of every day/365.",
       image: "https://unity-connect.com/wp-content/uploads/2023/04/What-Is-IT-Support-A-Useful-Guide-Featured-Image_669226057.jpg"
     },
     {
@@ -1127,7 +1169,7 @@ export const contactUs = [
   heroTitle : "CONTACT US",
   contentSubTitle : "",
   contentTitle : "Making The Cloud Sing To Your Business",
-  content : "Digital Solutions helps you drive business outcomes by looking beyond traditional ways of working. At EMTECH, we can help your business tap into the power of digital technologies to drive better business outcomes. We are a leading provider of digital solutions in the UAE, and our team of experts has the knowledge and experience to help your business succeed. We provide you with a wide spectrum of digital solutions and services to help you create, deliver and build digital experiences. Whether you are just beginning your digital journey, or seeking new opportunities to accelerate growth, our digital solutions and services empower your business transformation journey. We work with you to understand your unique business needs and develop a tailored digital solution that will help you achieve your desired results.",
+  content : "Digital Solutions helps you drive business outcomes by looking beyond traditional ways of working. At TECHPAPPA, we can help your business tap into the power of digital technologies to drive better business outcomes. We are a leading provider of digital solutions in the UAE, and our team of experts has the knowledge and experience to help your business succeed. We provide you with a wide spectrum of digital solutions and services to help you create, deliver and build digital experiences. Whether you are just beginning your digital journey, or seeking new opportunities to accelerate growth, our digital solutions and services empower your business transformation journey. We work with you to understand your unique business needs and develop a tailored digital solution that will help you achieve your desired results.",
   contentImg : "https://vareli.co.in/vareliCMS/public/images/235343867/IT_Infrastructure.jpg",
   serviceSubTitle : "Azure Cloud Service",
   serviceTitle : "Cloud Optimization and Strategy",
@@ -1160,7 +1202,7 @@ export const contactUs = [
     },
     {
       title:"24/7 critical support",
-      description:"Joining hands with a 24/7 cloud administrations supplier like Emtech is a method for getting high caliber-Yet saavy-all day, every minute IT support. Techpappa works from a dedicated system which ensures that is accessible every minute of every day/365.",
+      description:"Joining hands with a 24/7 cloud administrations supplier like TECHPAPPA is a method for getting high caliber-Yet saavy-all day, every minute IT support. Techpappa works from a dedicated system which ensures that is accessible every minute of every day/365.",
       image: "https://unity-connect.com/wp-content/uploads/2023/04/What-Is-IT-Support-A-Useful-Guide-Featured-Image_669226057.jpg"
     },
     {
