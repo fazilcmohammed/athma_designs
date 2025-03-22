@@ -1,0 +1,44 @@
+const [formData, setFormData] = useState({
+        name: "",
+        email: "",
+        subject: "",
+        message: "",
+    });
+
+    const [statusMessage, setStatusMessage] = useState("");
+
+    const handleChange = (e) => {
+        setFormData({ ...formData, [e.target.name]: e.target.value });
+    };
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+
+        const { name, email, subject, message } = formData;
+
+        if (!name || !email || !subject || !message) {
+            setStatusMessage("❌ Please fill in all fields.");
+            return;
+        }
+
+        const templateParams = {
+            user_name: name,
+            user_email: email,
+            subject: subject,
+            message: message,
+        };
+
+        emailjs
+            .send("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", templateParams, "YOUR_PUBLIC_KEY")
+            .then(
+                (response) => {
+                    console.log("SUCCESS!", response.status, response.text);
+                    setStatusMessage("✅ Message sent successfully!");
+                    setFormData({ name: "", email: "", subject: "", message: "" }); // Clear form
+                },
+                (err) => {
+                    console.error("FAILED...", err);
+                    setStatusMessage("❌ Failed to send message. Try again.");
+                }
+            );
+    };

@@ -9,24 +9,24 @@ const DigitalWorkplace = () => {
     <>
     <KmHeroSection heroSection={digitalWorkplace[0]}/>
     <section className="container mx-auto px-6 py-12 flex flex-col md:items-center md:space-x-12">
-    <p className="text-gray-900 font-bold text-center uppercase">Managed IT Service</p>
-        <h2 className="text-5xl font-bold text-gray-900 mt-5 mb-10 text-center">
-        A catalyst in business transformation
+    <p className="text-gray-900 font-bold text-center uppercase text-sm">Digital Workplace</p>
+        <h2 className="text-4xl font-bold text-gray-900 mt-5 mb-10 text-center">
+        Digital Workspace: Anything, Anytime, Anywhere with Modern Workplace Solutions
         </h2>
       {/* Left - Image */}
-      <div className="relative w-full md:w-1/2 ">
+      <div className="relative w-full md:w-[40%] ">
         <img
-          src="https://imgs.search.brave.com/fQQzrrb64-w-f2OpEXO0XgwkqhVyIRwxzDt_uV-OLYw/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/b2ZmaWNlc3BhY2Vz/b2Z0d2FyZS5jb20v/d3AtY29udGVudC91/cGxvYWRzL2RpZ2l0/YWwtd29ya3NwYWNl/LWJlbmVmaXRzLTEw/MjR4NjgzLmpwZw"
-          alt="Cloud Telephony"
+          src="https://images.stockcake.com/public/a/0/e/a0e230ac-c327-46f5-bf9d-24b974a0d5e9/holographic-workspace-design-stockcake.jpg"
+          alt="Digital Workplace"
           className="rounded-lg shadow-lg w-full"
         />
       </div>
 
       {/* Right - Text Content */}
-      <div className="w-full md:w-full my-10 text-center">
+      <div className="w-full md:w-[80%] my-10 text-justify flex flex-col justify-center items-center">
         
         <p className="text-gray-700 mt-4 leading-relaxed">
-        Our Managed IT Service is based on modern digital solutions and services that use innovative technology solutions to solve business problems, delivering exceptional value. Specializing in digital transformation and cloud-based technologies, we imagine, build, and empower IT-enabled business solutions. From essential reactive monitoring to overall  IT infrastructure management, Emtech’s managed services ensure that all our customers delegate their routine maintenance tasks to us whilst investing their capital and resources on other mission-critical tasks requiring domain expertise.
+        Our Managed IT Service is based on modern digital solutions and services that use innovative technology solutions to solve business problems, delivering exceptional value. Specializing in digital transformation and cloud-based technologies, we imagine, build, and empower IT-enabled business solutions. From essential reactive monitoring to overall  IT infrastructure management, Techpappa’s managed services ensure that all our customers delegate their routine maintenance tasks to us whilst investing their capital and resources on other mission-critical tasks requiring domain expertise.
         </p>
         
         <p className="text-gray-700 mt-4 leading-relaxed">

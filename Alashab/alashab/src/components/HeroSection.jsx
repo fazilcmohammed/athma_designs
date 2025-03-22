@@ -1,6 +1,8 @@
 import { useState, useEffect } from "react";
 import bgimg1 from "../assets/images/bg_1.jpg";
 import bgimg2 from "../assets/images/bg_2.jpg";
+import { Link } from "react-router-dom";
+
 
 const slides = [
   {
@@ -61,7 +63,7 @@ const HeroSection = () => {
           {slides[currentIndex].description}
         </p>
         <button className="mt-6 px-6 py-3 bg-[#068f96] text-white font-semibold rounded-md hover:bg-green-600 transition-all">
-          View Details
+          <Link to="/about">View Details</Link>
         </button>
       </div>
     </div>

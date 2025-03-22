@@ -2,7 +2,7 @@ import React from 'react'
 
 const FooterLinkServices = ({ services, titles }) => {
   return (
-    <section className="container mx-auto px-6">
+    <section className="container mx-auto px-6 md:w-[80%]">
           {/* Header */}
           <div className="text-center">
             <p className="text-primaryBlue font-bold uppercase">{titles.serviceSubTitle}</p>

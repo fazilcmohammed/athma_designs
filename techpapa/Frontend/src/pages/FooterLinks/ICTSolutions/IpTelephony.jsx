@@ -10,22 +10,22 @@ const IpTelephony = () => {
             <KmHeroSection heroSection={ipTelephony[0]} />
             <section className="container mx-auto px-6 py-12 flex flex-col md:items-center ">
                 {/* Left - Image */}
-                <p className="text-gray-900 font-bold text-center uppercase">Infrastructure Solutions</p>
-                <h2 className="text-5xl font-bold text-gray-900 mt-5 mb-10 text-center">
+                <p className="text-gray-900 font-bold text-center uppercase text-sm">Infrastructure Solutions</p>
+                <h2 className="text-4xl font-bold text-gray-900 mt-5 mb-10 text-center">
                 IP Telephony
                 </h2>
-                <div className="relative w-full md:w-[50%]">
+                <div className="relative w-full md:w-[40%]">
 
                     <img
                         src="https://i-techsupport.com/wp-content/uploads/2022/10/IT-Support.jpg"
-                        alt="Cloud Telephony"
-                        className="rounded-lg shadow-lg w-full h-[350px]"
+                        alt="IP Telephony"
+                        className="rounded-lg shadow-lg w-full "
                     />
                     {/* Decorative Dots */}
                 </div>
 
                 {/* Right - Text Content */}
-                <div className="w-full md:w-full my-10 text-center">
+                <div className="w-full md:w-[80%] my-10 text-justify flex flex-col justify-center items-center">
 
                     <p className="text-gray-700 mt-4 leading-relaxed">
                     IP telephony refers to any phone system that uses an internet connection to send and receive voice data. Unlike a regular telephone that uses landlines to transmit analog signals, IP phones connect to the internet via a router and modem. IP telephone systems use the Internet Protocol (IP) or other digital protocols to transfer voice communications over the internet. IP telephony describes any system that fits within the internet-based telecommunications umbrella, including fax and other systems. VoIP has become the most popular IP telephony solution. VoIP telephony is taking over the business telecommunications market. Many businesses are making the switch to VoIP telephony as it cheaper than landlines. IP telephony also enables your business to access advanced features without having to invest in extra hardware. IP telephony has ushered in the development of unified communications solutions which can provide a complete communications package all in one, to be ran over a single network and on one platform.

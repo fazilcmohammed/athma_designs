@@ -352,17 +352,17 @@ export const productsByCountry = [
   {
     name: "Avocado",
     img : avocado,
-    country: "African"
+    country: "Africa"
   },
   {
     name: "African Mango",
     img : africanMango,
-    country: "African"
+    country: "Africa"
   },
   {
     name: "African Mandarin",
     img : africanMandarin,
-    country: "African"
+    country: "Africa"
   },
   {
     name: "Moroccon Apple",
@@ -406,7 +406,7 @@ export const countrys = [
     img: chinaThumb
   },
   {
-    country : "Sri Lanka",
+    country : "SriLanka",
     img: "https://www.nationaldaycalendar.com/.image/ar_16:9%2Cc_fill%2Ccs_srgb%2Cg_faces:center%2Cq_auto:eco%2Cw_768/MjA1ODUzNDc0NjQ1MDkxOTYw/website-feature---fresh-fruit-and-vegetable-month--june.png"
   },
   {

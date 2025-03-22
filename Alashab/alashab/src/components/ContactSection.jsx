@@ -1,50 +1,35 @@
 import React, { useState } from "react";
 import emailjs from "@emailjs/browser";
+import { toast } from "react-toastify";
 
 const ContactSection = () => {
-    const [formData, setFormData] = useState({
-        name: "",
-        email: "",
-        subject: "",
-        message: "",
-    });
 
-    const [statusMessage, setStatusMessage] = useState("");
+    const [result, setResult] = React.useState("");
 
-    const handleChange = (e) => {
-        setFormData({ ...formData, [e.target.name]: e.target.value });
-    };
+    const onSubmit = async (event) => {
+        event.preventDefault();
+        setResult("Sending....");
+        const formData = new FormData(event.target);
 
-    const handleSubmit = (e) => {
-        e.preventDefault();
+        formData.append("access_key", "0700f983-8ebe-424a-989b-454ca672f6cc");
 
-        const { name, email, subject, message } = formData;
+        const response = await fetch("https://api.web3forms.com/submit", {
+            method: "POST",
+            body: formData
+        });
 
-        if (!name || !email || !subject || !message) {
-            setStatusMessage("❌ Please fill in all fields.");
-            return;
+        const data = await response.json();
+
+        if (data.success) {
+            setResult("");
+            toast.success("Form Submitted Successfully")
+            event.target.reset();
+        } else {
+            console.log("Error", data);
+            toast.error(data.message)
+
+            setResult("");
         }
-
-        const templateParams = {
-            user_name: name,
-            user_email: email,
-            subject: subject,
-            message: message,
-        };
-
-        emailjs
-            .send("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", templateParams, "YOUR_PUBLIC_KEY")
-            .then(
-                (response) => {
-                    console.log("SUCCESS!", response.status, response.text);
-                    setStatusMessage("✅ Message sent successfully!");
-                    setFormData({ name: "", email: "", subject: "", message: "" }); // Clear form
-                },
-                (err) => {
-                    console.error("FAILED...", err);
-                    setStatusMessage("❌ Failed to send message. Try again.");
-                }
-            );
     };
 
     return (
@@ -89,14 +74,12 @@ const ContactSection = () => {
 
                 {/* Contact Form */}
                 <div className="bg-white shadow-md p-8 rounded-lg">
-                    <form onSubmit={handleSubmit}>
+                    <form onSubmit={onSubmit}>
                         <input
                             type="text"
                             name="name"
                             placeholder="Your Name"
                             className="w-full p-3 border border-gray-300 rounded-lg mb-4"
-                            value={formData.name}
-                            onChange={handleChange}
                             required
                         />
                         <input
@@ -104,8 +87,6 @@ const ContactSection = () => {
                             name="email"
                             placeholder="Your Email"
                             className="w-full p-3 border border-gray-300 rounded-lg mb-4"
-                            value={formData.email}
-                            onChange={handleChange}
                             required
                         />
                         <input
@@ -113,26 +94,22 @@ const ContactSection = () => {
                             name="subject"
                             placeholder="Subject"
                             className="w-full p-3 border border-gray-300 rounded-lg mb-4"
-                            value={formData.subject}
-                            onChange={handleChange}
                             required
                         />
                         <textarea
                             name="message"
                             placeholder="Message"
                             className="w-full p-3 border border-gray-300 rounded-lg mb-4 h-28"
-                            value={formData.message}
-                            onChange={handleChange}
                             required
                         ></textarea>
                         <button
                             type="submit"
                             className="bg-[#068f96] text-white font-semibold py-3 px-6 rounded-lg w-full hover:bg-[#20d6e0]"
                         >
-                            Send Message
+                            {result ? result : "Send Message"}
                         </button>
                     </form>
-                    {statusMessage && <p className="text-center mt-4 text-gray-700">{statusMessage}</p>}
+                    {/* {statusMessage && <p className="text-center mt-4 text-gray-700">{statusMessage}</p>} */}
                 </div>
             </div>
         </div>

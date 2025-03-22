@@ -35,7 +35,7 @@ export const services = [
       icon: FaCloud ,
       bgColor: "bg-white",
       textColor: "text-black",
-      link: "/services/telephony-as-a-service/"
+      link: "/services/hybrid-cloud-solutions/"
     },
     {
       id: 2,
@@ -223,7 +223,7 @@ export const hybridCloudServices = [
   heroTitle : "Hybrid Cloud Solutions",
   contentSubTitle : " Microsoft Azure",
   contentTitle : "Modernize your IT with Microsoft Azure",
-  content : "TECHPAPPA is a Microsoft Gold Cloud Platform Partner, recognized as a leading Azure provider with deep knowledge of cloud strategy, platform deployment, and ongoing management. Our provision includes migration assessments, deployment plans, and cloud optimization, ensuring the best performance from your infrastructure. We keep ahead of the latest Azure developments from Microsoft so that our customers can adopt best practices, enable innovation, and future-proof their businesses. TECHPAPPA offers tailored Azure solutions to align with your unique business goals, driving productivity and efficiency. Our team of certified experts provides end-to-end support, from planning to deployment, ensuring a smooth and secure cloud transition. TECHPAPPA’s managed Azure services allow your business to scale seamlessly while controlling costs and enhancing agility. Partnering with TECHPAPPA means reliable, scalable, and secure cloud infrastructure that empowers your business to thrive.",
+  content : "Tecpappa is a Microsoft Gold Cloud Platform Partner, recognized as a leading Azure provider with deep knowledge of cloud strategy, platform deployment, and ongoing management. Our provision includes migration assessments, deployment plans, and cloud optimization, ensuring the best performance from your infrastructure. We keep ahead of the latest Azure developments from Microsoft so that our customers can adopt best practices, enable innovation, and future-proof their businesses. TECHPAPPA offers tailored Azure solutions to align with your unique business goals, driving productivity and efficiency. Our team of certified experts provides end-to-end support, from planning to deployment, ensuring a smooth and secure cloud transition. TECHPAPPA’s managed Azure services allow your business to scale seamlessly while controlling costs and enhancing agility. Partnering with TECHPAPPA means reliable, scalable, and secure cloud infrastructure that empowers your business to thrive.",
   contentImg : "https://imageio.forbes.com/specials-images/imageserve/65adf497bd5d0347e5af3b8d/Data-is-a-strategic-asset-/960x0.jpg?format=jpg&width=960",
   serviceSubTitle : "Azure Managed Service",
   serviceTitle : "What Microsoft Azure services do we provide?",

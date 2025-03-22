@@ -4,9 +4,9 @@ const AboutSection = () => {
   return (
     <section className="px-6 md:px-12 lg:px-24 py-16">
       {/* Heading Section */}
-      <div className="text-center">
+      <div className="text-center mb-5 md:mb-10">
         <p className="text-gray-900 font-bold">About</p>
-        <h2 className="text-3xl sm:text-4xl md:text-5xl text-primaryBlue font-extrabold mb-4">
+        <h2 className="text-4xl md:text-5xl text-primaryBlue font-extrabold">
           TechPappa
         </h2>
       </div>
@@ -15,7 +15,7 @@ const AboutSection = () => {
       <div className="container mx-auto grid grid-cols-1 xl:grid-cols-2 gap-12 items-center">
         {/* Left Content */}
         <div className="text-center xl:text-left">
-          <p className="text-gray-700 leading-relaxed">
+          <p className="text-gray-700 leading-relaxed text-justify">
             At Tech Pappa, we are dedicated to revolutionizing the world of
             technology by providing innovative solutions that empower businesses
             and individuals. Our expertise spans across account technology,
@@ -23,7 +23,7 @@ const AboutSection = () => {
             secure digital transactions, ensuring that our clients stay ahead in
             an ever-evolving digital landscape.
           </p>
-          <p className="text-gray-700 mt-4 leading-relaxed">
+          <p className="text-gray-700 mt-4 leading-relaxed text-justify">
             With a commitment to efficiency, security, and innovation, Tech
             Pappa helps businesses streamline operations, optimize performance,
             and embrace the future of technology. Whether it’s automating

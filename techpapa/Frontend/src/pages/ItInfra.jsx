@@ -11,22 +11,22 @@ const ItInfra = () => {
 
       <section className="container mx-auto px-6 py-12 flex flex-col md:items-center md:space-x-12">
       {/* Left - Image */}
-      <p className="text-gray-900 font-bold text-center uppercase">Transform Your It Infrastructure</p>
-        <h2 className="text-5xl font-bold text-gray-900 mt-5 mb-10 text-center">
+      <p className="text-gray-900 font-bold text-center uppercase text-sm">Transform Your It Infrastructure</p>
+        <h2 className="text-4xl font-bold text-gray-900 mt-5 mb-10 text-center">
         IT Infrastructure Services That Offer A Differentiated Value
         </h2>
-      <div className="relative w-full md:w-[50%]">
+      <div className="relative w-full md:w-[40%]">
       
         <img
-          src="https://cdn.prod.website-files.com/6436709e876f3f217c2a3e0a/644b2d17ed46000fe3e5c45b_Digital%20Solutions_Data%20Analytics%20and%20Business%20Intelligence-min.png"
-          alt="Cloud Telephony"
-          className="rounded-lg shadow-lg w-full h-[350px]"
+          src="https://thecyberexpress.com/wp-content/uploads/image-from-rawpixel-id-3237284-jpeg-750x375.jpg?crop=1"
+          alt="It Infrastructure"
+          className="rounded-lg shadow-lg w-full "
         />
         {/* Decorative Dots */}
       </div>
 
       {/* Right - Text Content */}
-      <div className="w-full md:w-full my-10 text-center">
+      <div className="w-full md:w-[80%] my-10 text-justify flex flex-col justify-center items-center">
         
         <p className="text-gray-700 mt-4 leading-relaxed">
         TECHPAPPA offers a range of IT infrastructure services. We provide free active consultation, we implement services by using the latest technology solutions that deliver a differentiated value to your business, by enhancing operational efficiencies, boosting productivity and performance, accelerating time-to-market, and reducing costs.

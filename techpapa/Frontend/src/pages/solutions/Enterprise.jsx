@@ -1,30 +1,34 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { enterprise } from '../../assets/constant'
 import KmBottom from '../../components/KmComponents/KmBottom'
 import KmHeroSection from '../../components/KmComponents/KmHeroSection'
+import CallbackModal from '../../components/CallBackModal'
+
 
 const Enterprise = () => {
+  const [showModal, setShowModal] = useState(false);
   return (
     <>
     <KmHeroSection heroSection={enterprise[0]}/>
 
-    <section className="container mx-auto px-6 py-12 flex flex-col md:items-center md:space-x-12">
-      {/* Left - Image */}
-      <div className="relative w-full md:w-[50%]">
-      <p className="text-gray-900 font-bold text-center uppercase">Professional Service</p>
+    <section className="container mx-auto px-6 py-12 flex flex-col md:items-center ">
+    <p className="text-gray-900 font-bold text-center uppercase">Professional Service</p>
         <h2 className="text-5xl font-bold text-gray-900 mt-5 mb-10 text-center">
         Enterprise ICT Solutions
         </h2>
+      {/* Left - Image */}
+      <div className="relative w-full md:w-[40%]">
+      
         <img
           src="https://www.visiontechin.com/wp-content/uploads/2023/03/ict-img-1-opt.jpg"
-          alt="Cloud Telephony"
-          className="rounded-lg shadow-lg w-full h-[350px]"
+          alt="Enterprise ICT Solutions"
+          className="rounded-lg shadow-lg w-full "
         />
         {/* Decorative Dots */}
       </div>
 
       {/* Right - Text Content */}
-      <div className="w-full md:w-full my-10 text-center">
+      <div className="w-full md:w-[80%] my-10 text-justify flex flex-col justify-center items-center">
         
         <p className="text-gray-700 mt-4 leading-relaxed">
         TECHPAPPA, one among the top IT companies in UAE, follows a comprehensive approach to creating and managing enterprise ICT
@@ -46,6 +50,7 @@ const Enterprise = () => {
         >
           REQUEST A CALLBACK
         </button>
+        <CallbackModal isOpen={showModal} onClose={() => setShowModal(false)} />
       </div>
     </section>
 

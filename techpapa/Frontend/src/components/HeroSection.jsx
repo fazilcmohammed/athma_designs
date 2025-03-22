@@ -12,7 +12,7 @@ const HeroSection = () => {
 
         {/* Left Section - Text & Buttons */}
         <div className="text-center lg:text-left lg:w-1/2">
-          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 leading-tight mb-4">
+          <h1 className="text-5xl font-bold text-gray-900 leading-tight mb-4">
             Innovative IT Solutions for Business Growth in UAE
           </h1>
           <p className="text-base sm:text-lg text-gray-600 mb-6">

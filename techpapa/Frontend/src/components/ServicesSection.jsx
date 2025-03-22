@@ -10,7 +10,7 @@ const ServicesSection = () => {
       style={{ backgroundImage: "url('https://imgs.search.brave.com/mU4ertPEbFQvWQArV1bYxJTxVfM7a2YDbtlWnTs8xbA/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly90NC5m/dGNkbi5uZXQvanBn/LzAyLzIyLzY4LzM5/LzM2MF9GXzIyMjY4/MzkzMF9tWFdmSG5P/azlzcENZT3lFaHFY/TlNXYldoWmQ0ZEZL/Ri5qcGc')" }}
     >
       <div className="container mx-auto px-6 text-center  bg-opacity-50 p-10 rounded-lg">
-        <p className="text-sm uppercase text-gray-300">Modernize Your IT</p>
+        {/* <p className="text-sm uppercase text-gray-300">Modernize Your IT</p> */}
         <h2 className="text-3xl sm:text-4xl font-bold mt-2">
           Enabling Technology For Modern Business
         </h2>
@@ -24,8 +24,8 @@ const ServicesSection = () => {
             >
               
               <div>
-                <h3 className="text-lg font-bold mb-3">{service.title}</h3>
-                <p className="text-sm mb-4">{service.description}</p>
+                <h3 className="text-lg font-bold mb-3 text-left">{service.title}</h3>
+                <p className="text-sm mb-4 text-left">{service.description}</p>
               </div>
               <div className="flex justify-between items-center mt-auto">
               <Link to={service.link} className="text-sm font-bold flex items-center">

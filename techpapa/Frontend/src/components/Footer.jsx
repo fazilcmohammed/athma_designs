@@ -25,11 +25,11 @@ const Footer = () => {
               <span className="md:hidden">{isCompanyOpen ? <FaChevronUp /> : <FaChevronDown />}</span>
             </h3>
             <ul className={`space-y-2 text-gray-300 text-sm ${isCompanyOpen ? "block" : "hidden"} md:block`}>
-              <li><Link to="/about">About us</Link></li>
-              <li><Link to="/contact">Contact</Link></li>
-              <li><Link to="/careers">Careers</Link></li>
-              <li><Link to="/blogs">Blogs</Link></li>
-              <li><Link to="/privacy-policy">Privacy Policy</Link></li>
+              <li><Link className="hover:text-primaryBlue transition-all ease-in-out" to="/about" >About us</Link></li>
+              <li><Link className="hover:text-primaryBlue transition-all ease-in-out" to="/contact">Contact</Link></li>
+              <li><Link className="hover:text-primaryBlue transition-all ease-in-out" to="/careers">Careers</Link></li>
+              <li><Link className="hover:text-primaryBlue transition-all ease-in-out" to="/blogs">Blogs</Link></li>
+              <li><Link className="hover:text-primaryBlue transition-all ease-in-out" to="/privacy-policy">Privacy Policy</Link></li>
             </ul>
           </div>
 
@@ -43,16 +43,16 @@ const Footer = () => {
               <span className="md:hidden">{isIctSolutionsOpen ? <FaChevronUp /> : <FaChevronDown />}</span>
             </h3>
             <ul className={`space-y-2 text-gray-300 text-sm ${isIctSolutionsOpen ? "block" : "hidden"} md:block`}>
-              <li><Link to="/service/wifi-solutions/">Campus Wi-Fi Solution</Link></li>
-              <li><Link to="/service/cctv-surveillance/">CCTV Surveillance</Link></li>
-              <li><Link to="/service/hci-infrastructure/">HCI Infrastructure</Link></li>
-              <li><Link to="/service/intelligent-switching/">Intelligent Switching</Link></li>
-              <li><Link to="/service/ip-telephony-solutions/">IP Telephony Solutions</Link></li>
-              <li><Link to="/service/next-generation-firewall/">Next Generation Firewall</Link></li>
-              <li><Link to="/service/server-solutions/">Server Solutions</Link></li>
-              <li><Link to="/service/storage-solutions/">Storage Solutions</Link></li>
-              <li><Link to="/service/structured-cabling/">Structured Cabling</Link></li>
-              <li><Link to="/service/virtualization-solutions/">Virtualization Solutions</Link></li>
+              <li><Link className="hover:text-primaryBlue transition-all ease-in-out" to="/service/wifi-solutions/">Campus Wi-Fi Solution</Link></li>
+              <li><Link className="hover:text-primaryBlue transition-all ease-in-out" to="/service/cctv-surveillance/">CCTV Surveillance</Link></li>
+              <li><Link className="hover:text-primaryBlue transition-all ease-in-out" to="/service/hci-infrastructure/">HCI Infrastructure</Link></li>
+              <li><Link className="hover:text-primaryBlue transition-all ease-in-out" to="/service/intelligent-switching/">Intelligent Switching</Link></li>
+              <li><Link className="hover:text-primaryBlue transition-all ease-in-out" to="/service/ip-telephony-solutions/">IP Telephony Solutions</Link></li>
+              <li><Link className="hover:text-primaryBlue transition-all ease-in-out" to="/service/next-generation-firewall/">Next Generation Firewall</Link></li>
+              <li><Link className="hover:text-primaryBlue transition-all ease-in-out" to="/service/server-solutions/">Server Solutions</Link></li>
+              <li><Link className="hover:text-primaryBlue transition-all ease-in-out" to="/service/storage-solutions/">Storage Solutions</Link></li>
+              <li><Link className="hover:text-primaryBlue transition-all ease-in-out" to="/service/structured-cabling/">Structured Cabling</Link></li>
+              <li><Link className="hover:text-primaryBlue transition-all ease-in-out" to="/service/virtualization-solutions/">Virtualization Solutions</Link></li>
             </ul>
           </div>
 
@@ -66,16 +66,16 @@ const Footer = () => {
               <span className="md:hidden">{isCloudSolutionsOpen ? <FaChevronUp /> : <FaChevronDown />}</span>
             </h3>
             <ul className={`space-y-2 text-gray-300 text-sm ${isCloudSolutionsOpen ? "block" : "hidden"} md:block`}>
-              <li><Link to="/service/azure-cloud-solution/">Azure Cloud Solution</Link></li>
-              <li><Link to="/service/microsoft-azure-backup/">Azure Backup Solution</Link></li>
-              <li><Link to="/service/azure-active-directory/">Azure Active Directory</Link></li>
-              <li><Link to="/service/cloud-managed-networking/">Cloud Managed Networking</Link></li>
-              <li><Link to="/service/cloud-email-security/">Cloud Email Security</Link></li>
-              <li><Link to="/service/cloud-optimization-service/">Cloud Optimization</Link></li>
-              <li><Link to="/service/next-generation-cloud-firewall/">Cloud Firewall</Link></li>
-              <li><Link to="/service/desktop-as-a-service/">Desktop as a Service</Link></li>
-              <li><Link to="/service/wi-fi-as-a-service/">Wi-Fi as a Service</Link></li>
-              <li><Link to="/service/telephony-as-a-service/">Telephony as a Service</Link></li>
+              <li><Link className="hover:text-primaryBlue transition-all ease-in-out" to="/service/azure-cloud-solution/">Azure Cloud Solution</Link></li>
+              <li><Link className="hover:text-primaryBlue transition-all ease-in-out" to="/service/microsoft-azure-backup/">Azure Backup Solution</Link></li>
+              <li><Link className="hover:text-primaryBlue transition-all ease-in-out" to="/service/azure-active-directory/">Azure Active Directory</Link></li>
+              <li><Link className="hover:text-primaryBlue transition-all ease-in-out" to="/service/cloud-managed-networking/">Cloud Managed Networking</Link></li>
+              <li><Link className="hover:text-primaryBlue transition-all ease-in-out" to="/service/cloud-email-security/">Cloud Email Security</Link></li>
+              <li><Link className="hover:text-primaryBlue transition-all ease-in-out" to="/service/cloud-optimization-service/">Cloud Optimization</Link></li>
+              <li><Link className="hover:text-primaryBlue transition-all ease-in-out" to="/service/next-generation-cloud-firewall/">Cloud Firewall</Link></li>
+              <li><Link className="hover:text-primaryBlue transition-all ease-in-out" to="/service/desktop-as-a-service/">Desktop as a Service</Link></li>
+              <li><Link className="hover:text-primaryBlue transition-all ease-in-out" to="/service/wi-fi-as-a-service/">Wi-Fi as a Service</Link></li>
+              <li><Link className="hover:text-primaryBlue transition-all ease-in-out" to="/service/telephony-as-a-service/">Telephony as a Service</Link></li>
             </ul>
           </div>
 
@@ -89,16 +89,16 @@ const Footer = () => {
               <span className="md:hidden">{isProfessionalServicesOpen ? <FaChevronUp /> : <FaChevronDown />}</span>
             </h3>
             <ul className={`space-y-2 text-gray-300 text-sm ${isProfessionalServicesOpen ? "block" : "hidden"} md:block`}>
-              <li><Link to="/service/azure-management-service/">Azure Managed Services</Link></li>
-              <li><Link to="/service/cloud-operations-center/">Cloud Operations Center</Link></li>
-              <li><Link to="/services/digital-it">Digital IT Support</Link></li>
-              <li><Link to="/services/help-desk">IT Help Desk Service</Link></li>
-              <li><Link to="/service/managed-it-service/">Managed IT Services</Link></li>
-              <li><Link to="/services/noc">Network Operations Center</Link></li>
-              <li><Link to="/services/on-site">On-Site Engineer</Link></li>
-              <li><Link to="/service/it-amc/">Premium AMC Support</Link></li>
-              <li><Link to="/services/consulting">Technology Consulting</Link></li>
-              <li><Link to="/service/it-support/">24/7 Critical Support</Link></li>
+              <li><Link className="hover:text-primaryBlue transition-all ease-in-out" to="/service/azure-management-service/">Azure Managed Services</Link></li>
+              <li><Link className="hover:text-primaryBlue transition-all ease-in-out" to="/service/cloud-operations-center/">Cloud Operations Center</Link></li>
+              <li><Link className="hover:text-primaryBlue transition-all ease-in-out" to="/service/digital-it-support/">Digital IT Support</Link></li>
+              <li><Link className="hover:text-primaryBlue transition-all ease-in-out" to="/service/it-help-desk-service/">IT Help Desk Service</Link></li>
+              <li><Link className="hover:text-primaryBlue transition-all ease-in-out" to="/service/managed-it-service/">Managed IT Services</Link></li>
+              <li><Link className="hover:text-primaryBlue transition-all ease-in-out" to="/service/network-operation-center/">Network Operations Center</Link></li>
+              <li><Link className="hover:text-primaryBlue transition-all ease-in-out" to="/service/on-site-engineer/">On-Site Engineer</Link></li>
+              <li><Link className="hover:text-primaryBlue transition-all ease-in-out" to="/service/it-amc/">Premium AMC Support</Link></li>
+              <li><Link className="hover:text-primaryBlue transition-all ease-in-out" to="/service/it-consultant/">Technology Consulting</Link></li>
+              <li><Link className="hover:text-primaryBlue transition-all ease-in-out" to="/service/it-support/">24/7 Critical Support</Link></li>
             </ul>
           </div>
 
@@ -125,7 +125,7 @@ const Footer = () => {
       {/* Footer Bottom */}
       <div className="bg-white px-6 md:px-20 py-4 flex flex-col md:flex-row justify-between items-center">
         <div className="text-xl font-bold text-red-600 mb-4 md:mb-0">
-          <img src={logo} alt="logo" className="w-32 md:w-36" />
+          <Link to="/"><img src={logo} alt="logo" className="w-32 md:w-36" /></Link>
         </div>
         <div className="text-center md:text-left mb-4 md:mb-0">
           <p className="text-gray-700">Copyright © 2024 TECHPAPPA. All rights reserved.</p>

@@ -1,30 +1,34 @@
-import React from 'react'
+import React, { useState } from 'react'
 import KmHeroSection from '../../components/KmComponents/KmHeroSection'
 import { virtualizationSolution } from '../../assets/constant'
 import KmServices from '../../components/KmComponents/KmServices'
 import KmBottom from '../../components/KmComponents/KmBottom'
+import CallbackModal from '../../components/CallBackModal'
 
 const Virtualization = () => {
+  const [showModal, setShowModal] = useState(false);
   return (
     <>
     <KmHeroSection heroSection={virtualizationSolution[0]}/>
-    <section className="container mx-auto px-6 py-12 flex flex-col md:items-center md:space-x-12">
-      {/* Left - Image */}
-      <div className="relative w-full md:w-[50%]">
-      <p className="text-gray-900 font-bold text-center uppercase">Infrastructure Solutions</p>
-        <h2 className="text-5xl font-bold text-gray-900 mt-5 mb-10 text-center">
+    <section className="container mx-auto px-6 py-12 flex flex-col md:items-center">
+
+    <p className="text-gray-900 font-bold text-center uppercase text-sm">Infrastructure Solutions</p>
+        <h2 className="text-4xl font-bold text-gray-900 mt-5 mb-10 text-center">
         Virtualization Solutions, Design, and Deployment
         </h2>
+      {/* Left - Image */}
+      <div className="relative w-full md:w-[40%]">
+      
         <img
           src="https://imgs.search.brave.com/yVpitjjq6AfsqAjXgsLkevIg5Sr74fJSEGFQFq5D58s/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvMTM1/NDE5Mjc3Ni9waG90/by9zaG90LW9mLXR3/by10ZWNobmljaWFu/cy13b3JraW5nLXRv/Z2V0aGVyLWluLWEt/c2VydmVyLXJvb20u/anBnP3M9NjEyeDYx/MiZ3PTAmaz0yMCZj/PUlsenRJVFpnTE5E/MGlKczRNQ3dnOFI2/N1pzb29Kelo4NUlN/R3VuVV9wS289"
-          alt="Cloud Telephony"
-          className="rounded-lg shadow-lg w-full h-[350px]"
+          alt="Virtualization"
+          className="rounded-lg shadow-lg w-full "
         />
         {/* Decorative Dots */}
       </div>
 
       {/* Right - Text Content */}
-      <div className="w-full md:w-full my-10 text-center">
+      <div className="w-full md:w-[80%] my-10 text-justify flex flex-col justify-center items-center">
         
         <p className="text-gray-700 mt-4 leading-relaxed">
         Many IT organizations deploy servers that are only running at a fraction of their capacity, often because they are dedicating their physical 
@@ -44,6 +48,7 @@ const Virtualization = () => {
         >
           REQUEST A CALLBACK
         </button>
+        <CallbackModal isOpen={showModal} onClose={() => setShowModal(false)} />
       </div>
     </section>
     <KmServices services={virtualizationSolution} titles = {virtualizationSolution[0]}/>

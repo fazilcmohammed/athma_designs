@@ -9,24 +9,24 @@ const ManagedService = () => {
     <>
       <KmHeroSection heroSection={managedService[0]}/>
       
-            <section className="container mx-auto px-6 py-12 flex flex-col md:items-center md:space-x-12">
+            <section className="container mx-auto px-6 py-12 flex flex-col md:items-center ">
             {/* Left - Image */}
-            <p className="text-gray-900 font-bold text-center">MANAGED IT SERVICE</p>
-              <h2 className="text-5xl font-bold text-gray-900 mt-5 mb-10 text-center">
+            <p className="text-gray-900 font-bold text-center text-sm">MANAGED IT SERVICE</p>
+              <h2 className="text-4xl font-bold text-gray-900 mt-5 mb-10 text-center">
               A Catalyst in Business Transformation
               </h2>
-            <div className="relative w-full md:w-[50%]">
+            <div className="relative w-full md:w-[40%]">
             
               <img
                 src="https://c.pxhere.com/photos/bc/1f/udgagora-201396.jpg!d"
-                alt="Cloud Telephony"
-                className="rounded-lg shadow-lg w-full h-[350px]"
+                alt="MANAGED IT SERVICE"
+                className="rounded-lg shadow-lg w-full"
               />
               {/* Decorative Dots */}
             </div>
       
             {/* Right - Text Content */}
-            <div className="w-full md:w-full my-10 text-center">
+            <div className="w-full md:w-[80%] my-10 text-justify flex flex-col justify-center items-center">
               
               <p className="text-gray-700 mt-4 leading-relaxed">
               Our Managed IT Service is based on modern digital solutions and services that use innovative technology solutions to solve business problems, delivering exceptional value. Specializing in digital transformation and cloud-based technologies, we imagine, build, and empower IT-enabled business solutions. From essential reactive monitoring to overall IT infrastructure management, Techpappa’s managed services ensure that all our customers delegate their routine maintenance tasks to us whilst investing their capital and resources on other mission-critical tasks requiring domain expertise.

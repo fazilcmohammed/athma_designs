@@ -16,7 +16,7 @@ const HybridCloud = () => {
       <KmServices 
         services={hybridCloudServices} titles = {hybridCloudServices[0]}
       />
-      <section className="py-12 px-6 bg-white">
+      <section className="py-12 px-6 bg-white text-justify">
       {/* Subheading */}
       <p className="text-primaryBlue font-bold text-center uppercase text-sm">
         Your Partner of Choice for Microsoft Azure
@@ -25,19 +25,19 @@ const HybridCloud = () => {
       {/* Main Heading */}
       <h2 className="text-3xl md:text-4xl font-extrabold text-gray-900 text-center max-w-4xl mx-auto mt-2">
         Migrate your Infrastructure to Azure local cloud with Managed Service
-        from Emtech and stay compliant!
+        from Techpappa and stay compliant!
       </h2>
 
       {/* Paragraphs */}
       <p className="text-gray-700 text-lg text-left max-w-5xl mx-auto mt-6">
         <strong>Microsoft Azure</strong> offers unparalleled cloud computing
         capabilities, yet effectively managing this environment requires
-        expertise and strategic insight. Emtech’s Cloud Management for Azure
+        expertise and strategic insight. Techpappa’s Cloud Management for Azure
         provides operational support and maintenance, guiding your journey to
         Azure with a focus on efficiency and optimization. Our team of experts
         offers in-depth guidance on cloud operations and financial governance,
         with dedicated support for all your questions and concerns. Purchase
-        Azure directly from Emtech without a long-term commitment, benefiting
+        Azure directly from Techpappa without a long-term commitment, benefiting
         from a seamless service that optimizes your cloud environment, enabling
         you to focus on your business goals.
       </p>

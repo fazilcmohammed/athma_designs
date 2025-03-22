@@ -46,6 +46,11 @@ import CloudFirewall from './pages/FooterLinks/Cloud Solution/CloudFirewall';
 import DesktopAsService from './pages/FooterLinks/Cloud Solution/DesktopAsService';
 import WifiAsService from './pages/FooterLinks/Cloud Solution/WifiAsService';
 import TelephonyAsServices from './pages/FooterLinks/Cloud Solution/TelephonyAsServices';
+import DigitalItSupport from './pages/FooterLinks/Professional Service/DigitalItSupport';
+import HelpDesk from './pages/FooterLinks/Professional Service/HelpDesk';
+import NetworkOperation from './pages/FooterLinks/Professional Service/NetworkOperation';
+import OnSiteEngineer from './pages/FooterLinks/Professional Service/OnSiteEngineer';
+import TechnologyConsulting from './pages/FooterLinks/Professional Service/TechnologyConsulting';
 
 
 function App() {
@@ -61,12 +66,12 @@ function App() {
         <Route path="/about" element={<AboutUs/>} />
         <Route path="/digital-solutions" element={<DigitalSolutions/>} />
         <Route path="/cloud-service" element={<CloudService />} />
-        <Route path="/services/telephony-as-a-service/" element={<HybridCloud />} />
+        <Route path="/services/hybrid-cloud-solutions/" element={<HybridCloud />} />
         <Route path="/service/managed-it-service/" element={<ManagedItService />} />
         <Route path="/service/digital-workspace/" element={<DigitalWorkplace />} />
         <Route path="/service/digital-learning-solutions/" element={<DigitalLearningSolutions />} />
-        <Route path="/it-infrastructure" element={<ItInfra />} /> {/* 404 Route */}
-        <Route path="/cyber-security" element={<CyberSecurity />} /> {/* 404 Route */}
+        <Route path="/it-infrastructure" element={<ItInfra />} /> 
+        <Route path="/cyber-security" element={<CyberSecurity />} /> 
         <Route path="/it-managed-service" element={<ManagedService />} /> 
         <Route path="/service/virtualization-solutions/" element={<Virtualization />} />
         <Route path="/service/it-amc/" element={<AmcSupport />} />
@@ -100,7 +105,11 @@ function App() {
         <Route path="/service/desktop-as-a-service/" element={<DesktopAsService/>} />
         <Route path="/service/wi-fi-as-a-service/" element={<WifiAsService/>} />
         <Route path="/service/telephony-as-a-service/" element={<TelephonyAsServices/>} />
-        
+        <Route path="/service/digital-it-support/" element={<DigitalItSupport/>} />
+        <Route path="/service/it-help-desk-service/" element={<HelpDesk/>} />
+        <Route path="/service/network-operation-center/" element={<NetworkOperation/>} />
+        <Route path="/service/on-site-engineer/" element={<OnSiteEngineer/>} />
+        <Route path="/service/it-consultant/" element={<TechnologyConsulting/>} />
       </Routes>
         
         <Footer/>

@@ -1,29 +1,31 @@
-import React from 'react'
+import React, { useState } from 'react'
 import KmHeroSection from '../../components/KmComponents/KmHeroSection'
 import { iot } from '../../assets/constant'
 import KmBottom from '../../components/KmComponents/KmBottom'
+import CallbackModal from '../../components/CallBackModal'
 
 const IoT = () => {
+  const [showModal, setShowModal] = useState(false);
   return (
     <>
       <KmHeroSection heroSection={iot[0]} />
 
-      <section className="container mx-auto px-6 py-12 flex flex-col md:items-center md:space-x-12">
-      <p className="text-gray-900 font-bold text-center uppercase">Cloud Solutions</p>
-        <h2 className="text-5xl font-bold text-gray-900 mt-5 mb-10 text-center">
+      <section className="container mx-auto px-6 py-12 flex flex-col md:items-center ">
+      <p className="text-gray-900 font-bold text-center uppercase text-sm">Cloud Solutions</p>
+        <h2 className="text-4xl font-bold text-gray-900 mt-5 mb-10 text-center">
         Internet of Things (IoT)
         </h2>
       {/* Left - Image */}
-      <div className="relative w-full md:w-1/2">
+      <div className="relative w-full md:w-[40%]">
         <img
           src="https://cdn.thingsup.io/wp-content/uploads/2023/10/iStock-1184401187.jpg"
-          alt="Cloud Telephony"
+          alt="Internet of Things (IoT)"
           className="rounded-lg shadow-lg w-full"
         />
       </div>
 
       {/* Right - Text Content */}
-      <div className="w-full md:w-full my-10 text-center">
+      <div className="w-full md:w-[80%] my-10 text-justify flex flex-col justify-center items-center">
         
         <p className="text-gray-700 mt-4 leading-relaxed">
         We provide innovative AI solutions to help businesses become agile and smart. As a leading AI provider, we offer
@@ -41,6 +43,7 @@ const IoT = () => {
         >
           REQUEST A CALLBACK
         </button>
+        <CallbackModal isOpen={showModal} onClose={() => setShowModal(false)} />
       </div>
     </section >
 

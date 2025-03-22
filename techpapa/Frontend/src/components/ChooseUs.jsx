@@ -4,7 +4,7 @@ const ChooseUs = () => {
   return (
     <section className="py-12 bg-white text-center">
       {/* Heading */}
-      <h4 className="text-red-600 text-sm font-semibold">// WHY CHOOSE US</h4>
+      <h4 className="text-red-600 text-sm font-semibold">WHY CHOOSE US</h4>
       <h2 className="text-3xl font-bold mt-2">We Are Trusted Nationwide Across</h2>
 
       {/* Background Section */}

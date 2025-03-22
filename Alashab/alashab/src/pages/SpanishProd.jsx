@@ -3,24 +3,24 @@ import { productsByCountry } from '../assets/constant';
 import AboutHeroSection from '../components/AboutHeroSection';
 import { Link } from "react-router-dom";
 
-const SrilankanProd = () => {
 
-    const srilankanProducts = productsByCountry.filter(product => product.country === "Srilanka");
+const SpanishProd = () => {
+    const spanishProducts = productsByCountry.filter(product => product.country === "Spain");
     const scrollToTop = () => {
         window.scrollTo({ top: 0, behavior: "smooth" });
       };
-
+  
     return (
         <>
-            <AboutHeroSection page="Sri Lankan Fruits & Vegetables" />
+            <AboutHeroSection page="Spanish Fruits & Vegetables" />
 
             {/* Display Products */}
             <div className="px-6 md:px-20 py-6">
-                <h1 className="text-3xl font-semibold text-center text-gray-800 ">Sri Lankan Products</h1>
+                <h1 className="text-3xl font-semibold text-center text-gray-800 ">Spanish Products</h1>
 
                 {/* Products Grid */}
                 <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-8 my-10">
-                    {srilankanProducts.map((product, index) => (
+                    {spanishProducts.map((product, index) => (
                         <div
                             key={index}
                             className="shadow-md bg-white transform transition duration-300 hover:cursor-pointer hover:scale-105 hover:shadow-xl"
@@ -37,19 +37,19 @@ const SrilankanProd = () => {
             </div>
 
             <h2 className="text-2xl font-semibold text-center text-gray-700 mt-10 mb-5">Browse by Country</h2>
-            <div className="flex flex-wrap justify-center gap-4 mb-20">
-                {[...new Set(productsByCountry.map((product) => product.country))].map((country, index) => (
-                    <Link
-                        key={index}
-                        to={`/products/${country.toLowerCase()}`} onClick={scrollToTop}
-                        className="px-4 py-2 bg-white text-gray-700 font-medium rounded-md shadow hover:bg-primaryColor hover:text-white transition duration-300"
-                    >
-                        {country}
-                    </Link>
-                ))}
-            </div>
+                        <div className="flex flex-wrap justify-center gap-4 mb-20">
+                            {[...new Set(productsByCountry.map((product) => product.country))].map((country, index) => (
+                                <Link 
+                                    key={index}
+                                    to={`/products/${country.toLowerCase()}`} onClick={scrollToTop}
+                                    className="px-4 py-2 bg-white text-gray-700 font-medium rounded-md shadow hover:bg-primaryColor hover:text-white transition duration-300"
+                                >
+                                    {country}
+                                </Link>
+                            ))}
+                        </div>
         </>
     )
 }
 
-export default SrilankanProd
+export default SpanishProd

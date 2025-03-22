@@ -4,25 +4,25 @@ import CallbackModal from '../CallBackModal';
 const KmServices = ({ services, titles }) => {
   const [showModal, setShowModal] = useState(false);
   return (
-    <section className="container mx-auto px-6 py-12">
+    <section className="container mx-auto px-6 py-12 md:w-[80%]">
       {/* Header */}
       <div className="text-center">
         <p className="text-primaryBlue font-bold uppercase">{titles.serviceSubTitle}</p>
-        <h2 className="text-4xl font-bold text-gray-900 mt-2">
+        <h2 className="text-3xl font-bold text-gray-900 my-3 text-center ">
         {titles.serviceTitle}
         </h2>
-        <p className="text-gray-700 mt-4 md:w-[90%]  mx-auto">
+        <p className="text-gray-700 md:w-[90%] text-justify  mx-auto">
         {titles.serviceContent}
         </p>
       </div>
 
       {/* Service Cards */}
-      <div className="mt-10 space-y-8">
+      <div className="mt-10  space-y-8">
         {/* Mapping over the services array */}
         {services[0].services.map((service, index) => (
           <div
             key={index}
-            className={`flex flex-col md:flex-row items-center md:justify-between md:px-20 md:py-10 bg-white shadow-lg rounded-lg overflow-hidden ${
+            className={`flex flex-col md:flex-row items-center md:justify-between md:px-10 md:py-10 bg-white shadow-lg rounded-lg overflow-hidden ${
               index % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'
             }`}
           >
@@ -38,7 +38,7 @@ const KmServices = ({ services, titles }) => {
             {/* Text */}
             <div className="md:w-[58%] p-6">
               <h3 className="text-2xl font-bold">{service.title}</h3>
-              <p className="text-gray-700 my-3">{service.description}</p>
+              <p className="text-gray-700 my-3 text-justify">{service.description}</p>
               <button
           className="px-6 py-3 mt-5 bg-primaryBlue hover:bg-blue-800 text-white font-semibold rounded transition"
           onClick={() => setShowModal(true)}
