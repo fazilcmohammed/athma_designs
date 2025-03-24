@@ -1,10 +1,13 @@
-import React from 'react'
+import React, { useState } from 'react'
 import KmHeroSection from '../components/KmComponents/KmHeroSection'
 import { digitalSolutions } from '../assets/constant'
 import KmServices from '../components/KmComponents/KmServices'
 import KmBottom from '../components/KmComponents/KmBottom'
+import CallbackModal from '../components/CallBackModal'
+
 
 const DigitalSolutions = () => {
+  const [showModal, setShowModal] = useState(false);
   return (
     <>
     <KmHeroSection heroSection={digitalSolutions[0]}/>
@@ -40,6 +43,7 @@ const DigitalSolutions = () => {
         >
           REQUEST A CALLBACK
         </button>
+        <CallbackModal isOpen={showModal} onClose={() => setShowModal(false)} />
       </div>
     </section>
     <KmServices 

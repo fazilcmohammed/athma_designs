@@ -1,20 +1,16 @@
 import { FaCloud, FaHeadset, FaLaptop, FaGraduationCap } from "react-icons/fa";
 import { FaServer, FaTools, FaBuilding, FaMicrochip, FaRobot, FaNetworkWired, FaLifeRing, FaMicrosoft  } from "react-icons/fa";
 
-import logo1 from '../assets/images/brandLogos/1.jpg'
 import logo2 from '../assets/images/brandLogos/2.png'
 import logo3 from '../assets/images/brandLogos/3.png'
 import logo4 from '../assets/images/brandLogos/4.png'
-import logo5 from '../assets/images/brandLogos/5.jpg'
 import logo6 from '../assets/images/brandLogos/6.png'
 import logo7 from '../assets/images/brandLogos/7.png'
-import logo8 from '../assets/images/brandLogos/8.png'
+import logo8 from '../assets/images/brandLogos/8.svg'
 import logo9 from '../assets/images/brandLogos/9.png'
-import logo10 from '../assets/images/brandLogos/10.png'
-import logo11 from '../assets/images/brandLogos/11.png'
-import logo12 from '../assets/images/brandLogos/12.png'
-import logo13 from '../assets/images/brandLogos/13.png'
-import logo14 from '../assets/images/brandLogos/14.png'
+import logo10 from '../assets/images/brandLogos/10.svg'
+import logo11 from '../assets/images/brandLogos/11.svg'
+
 
 export const menuItems = [
     { name: "About us", dropdown: ["Our Team", "Careers", "Contact"] },
@@ -168,22 +164,15 @@ export const services = [
   
 
   export const companyLogos = [
-    logo1,
     logo2,
     logo3,
     logo4,
-    logo5,
     logo6,
     logo7,
     logo8,
     logo9,
     logo10,
-    logo11,
-    logo12,
-    logo13,
-    logo14,
-    
-
+    logo11
   ];
 
 export const azureServices = [

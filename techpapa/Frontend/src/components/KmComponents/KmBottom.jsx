@@ -10,7 +10,7 @@ const KmBottom = ({bottomSection}) => {
 
       {/* WhatsApp Button */}
       <a
-        href="https://wa.me/919876543210" // Replace with your WhatsApp number
+        href="https://wa.me/971569000801" // Replace with your WhatsApp number
         target="_blank"
         rel="noopener noreferrer"
         className="mt-6 inline-block bg-primaryBlue text-white font-bold py-3 px-6 rounded-lg hover:bg-blue-800 transition duration-300"

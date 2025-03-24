@@ -1,10 +1,12 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { cloudServices } from '../assets/constant'
 import KmHeroSection from '../components/KmComponents/KmHeroSection'
 import KmServices from '../components/KmComponents/KmServices'
 import KmBottom from '../components/KmComponents/KmBottom'
+import CallbackModal from '../components/CallBackModal'
 
 const CloudService = () => {
+  const [showModal, setShowModal] = useState(false);
   return (
     <>
       <KmHeroSection heroSection={cloudServices[0]}/>
@@ -41,6 +43,7 @@ const CloudService = () => {
         >
           REQUEST A CALLBACK
         </button>
+        <CallbackModal isOpen={showModal} onClose={() => setShowModal(false)} />
       </div>
     </section>
     <KmServices services={cloudServices} titles = {cloudServices[0]}/>

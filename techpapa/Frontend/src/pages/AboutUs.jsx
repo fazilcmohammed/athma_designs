@@ -4,7 +4,7 @@ import { aboutUs } from '../assets/constant'
 import { aboutSolutions } from '../assets/constant';
 import { FaHandPointRight } from "react-icons/fa";
 import { FaArrowRight } from "react-icons/fa";
-
+import { Link } from "react-router-dom";
 
 const AboutUs = () => {
   return (
@@ -66,9 +66,7 @@ const AboutUs = () => {
               <div className="text-left">
                 <h3 className="text-xl font-bold">{solution.title}</h3>
                 <p className="text-gray-600 mt-2 text-justify ">{solution.description}</p>
-                <a href={solution.path} className="mt-4 px-4 py-2 bg-primaryBlue text-white rounded-lg flex items-center gap-2 hover:bg-blue-700 md:w-[40%]">
-                  Learn More <span><FaArrowRight /></span>
-                </a>
+                <Link to={solution.path} className="mt-4 px-4 py-2 bg-primaryBlue text-white rounded-lg flex items-center gap-2 hover:bg-blue-700 md:w-[40%]">Learn More <span><FaArrowRight /></span></Link>
               </div>
             </div>
           ))}
