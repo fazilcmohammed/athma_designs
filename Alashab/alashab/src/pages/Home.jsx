@@ -6,6 +6,7 @@ import Products from '../components/Products'
 import Newsletter from '../components/Newsletter'
 import { Helmet } from "react-helmet-async";
 import ProductsByCountry from '../components/ProductsByCountry'
+import AboutUs from '../components/AboutUs'
 
 const Home = () => {
   return (
@@ -15,8 +16,9 @@ const Home = () => {
         <meta name="description" content="Welcome to Al Ashab, the best exporter of fresh fruits and vegetables in UAE." />
       </Helmet>
         <HeroSection/>
-        <Features/>
+        <AboutUs/>
         <ProductsByCountry/>
+        <Features/>
         <Products/>
         <Newsletter/>
     </div>

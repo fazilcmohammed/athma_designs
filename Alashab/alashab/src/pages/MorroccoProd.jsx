@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 
 const MorroccoProd = () => {
-    const chineseProducts = productsByCountry.filter(product => product.country === "China");
+    const chineseProducts = productsByCountry.filter(product => product.country === "Morocco");
     const scrollToTop = () => {
         window.scrollTo({ top: 0, behavior: "smooth" });
       };

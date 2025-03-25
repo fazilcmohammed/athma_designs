@@ -20,7 +20,7 @@ const Navbar = () => {
       </Link>
 
       {/* Desktop Links */}
-      <div className="hidden md:flex space-x-10 text-gray-700 text-sm font-medium items-center">
+      <div className="hidden md:flex space-x-12 text-gray-800 text-sm font-medium items-center">
         <Link to="/" className="hover:text-[#068f96]" onClick={scrollToTop}>HOME</Link>
         <Link to="/about" className="hover:text-[#068f96]" onClick={scrollToTop}>ABOUT</Link>
 
@@ -53,10 +53,10 @@ const Navbar = () => {
       </div>
 
       {/* Cart (Visible only on Large Screens) */}
-      <div className="hidden md:flex items-center space-x-2">
+      {/* <div className="hidden md:flex items-center space-x-2">
         <FaShoppingCart className="text-xl text-gray-700" />
         <span className="text-gray-700">[0]</span>
-      </div>
+      </div> */}
 
       {/* Hamburger Button (Mobile) */}
       <button

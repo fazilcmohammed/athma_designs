@@ -22,14 +22,13 @@ const Footer = () => {
       </button>
 
       {/* Footer Content */}
-      <div className="container mx-auto grid md:grid-cols-4 sm:grid-cols-2 gap-8 items-start text-center md:text-left">
+      <div className="container mx-auto flex flex-col  md:flex-row  gap-10 md:items-start text-center md:text-left">
 
         {/* Logo & Social Links */}
-        <div>
+        <div className="lg:w-[50%]">
           <img src={logo} alt="Logo" className="w-20 md:w-28 mx-auto md:mx-0" />
-          <p className="text-gray-500 mt-3">
-            Far far away, behind the word mountains, far from the countries
-            Vokalia and Consonantia.
+          <p className=" mt-3">
+            Importing of high quality fresh fruits and vegetables all over the world.
           </p>
           <div className="flex justify-center md:justify-start space-x-3 mt-3">
             <a href="#" className="bg-gray-200 p-3 rounded-full hover:bg-[#068f96] hover:text-white transition">
@@ -45,7 +44,7 @@ const Footer = () => {
         </div>
 
         {/* Menu Links */}
-        <div>
+        <div className="lg:w-[20%]">
           <h3 className="text-xl font-semibold mb-3">Menu</h3>
           <ul className="space-y-2">
             <li><Link to="/" onClick={scrollToTop} className="hover:text-[#068f96]">Home</Link></li>
@@ -56,7 +55,7 @@ const Footer = () => {
         </div>
 
         {/* Help Links */}
-        <div>
+        {/* <div>
           <h3 className="text-xl font-semibold mb-3">Help</h3>
           <ul className="space-y-2">
             <li><Link to="/shipping-information" className="hover:text-[#068f96]">Shipping Information</Link></li>
@@ -66,23 +65,37 @@ const Footer = () => {
             <li><Link to="/faqs" className="hover:text-[#068f96]">FAQs</Link></li>
             <li><Link to="/contact" className="hover:text-[#068f96]">Contact</Link></li>
           </ul>
-        </div>
+        </div> */}
 
         {/* Contact Information */}
-        <div className="flex flex-col items-center text-center sm:items-start sm:text-left">
+        <div className="lg:w-[60%] flex flex-col items-center text-center sm:items-start sm:text-left">
           <h3 className="text-xl font-semibold mb-3">Have a Question?</h3>
-          <ul className="space-y-3 text-gray-500">
+          <ul className="space-y-3 ">
             <li className="flex flex-col sm:flex-row items-center sm:items-start gap-3">
               <FaMapMarkerAlt className="text-[#068f96] text-2xl" />
-              <span>Office No 166-107 Al Garhoud Bussiness Center, Al Garhoud</span>
+              <a href="https://www.google.com/maps/place/Al+Garhoud+Business+Center/@25.2513392,55.3085574,14z/data=!4m10!1m2!2m1!1soffice+No+166-107+Al+Garhoud+Business+Center,+Al+Garhoud,+Dubai,+UAE.!3m6!1s0x3e5f5db432aa90d3:0x285c5a0db5187ab8!8m2!3d25.2513392!4d55.3395762!15sCkVvZmZpY2UgTm8gMTY2LTEwNyBBbCBHYXJob3VkIEJ1c2luZXNzIENlbnRlciwgQWwgR2FyaG91ZCwgRHViYWksIFVBRS6SAQ9idXNpbmVzc19jZW50ZXLgAQA!16s%2Fg%2F11fmknplpt?entry=ttu&g_ep=EgoyMDI1MDMxOS4yIKXMDSoASAFQAw%3D%3D" className=""><span className="font-bold">Head office :</span>Office No 166-107 Al Garhoud Business Center, Al Garhoud, Dubai, UAE.</a> <br />
+            </li>
+            <li className="flex flex-col sm:flex-row items-center sm:items-start gap-3">
+              <FaMapMarkerAlt className="text-[#068f96] text-2xl" />
+              <a href="https://www.google.com/maps/place/Al+Aweer+Market+Building/@25.2048493,54.9823917,11z/data=!4m10!1m2!2m1!1sOffice+No+22,+1st+Floor,+Al+Aweer+Fruits+%26+Vegetable+Market+Union+Coop+Society+Building,+Dubai,+UAE!3m6!1s0x3e5f677ab12427e3:0x10711ab0ea10a7a2!8m2!3d25.1780596!4d55.3884397!15sCmNPZmZpY2UgTm8gMjIsIDFzdCBGbG9vciwgQWwgQXdlZXIgRnJ1aXRzICYgVmVnZXRhYmxlIE1hcmtldCBVbmlvbiBDb29wIFNvY2lldHkgQnVpbGRpbmcsIER1YmFpLCBVQUUiA4gBAZIBFmZvb2RfcHJvZHVjdHNfc3VwcGxpZXLgAQA!16s%2Fg%2F11k728wnl8?entry=ttu&g_ep=EgoyMDI1MDMxOS4yIKXMDSoASAFQAw%3D%3D" className=""><span className="font-bold">Branch Office:</span> Office No 22, 1st Floor, Al Aweer Fruits & Vegetable Market Union Coop Society Building, Dubai, UAE</a>
             </li>
             <li className="flex flex-col sm:flex-row items-center sm:items-start gap-3">
               <FaPhoneAlt className="text-[#068f96] text-xl" />
-              <span>+971 58 2700427 <br /> +971 507576780 <br /> +971 50 6370154</span>
+              <a href="tel:+971582700427" className="">+971 58 2700427, </a>
+              <a href="tel:+971507576780" className=""> +971 507576780,</a>
+              <a href="tel:+971506370154" className="">+971 50 6370154</a>
             </li>
-            <li className="flex flex-col sm:flex-row items-center sm:items-start gap-3">
-              <FaEnvelope className="text-[#068f96] text-xl" />
-              <span>info@alashab.net <br />sales@alashab.net <br />purchase@alashab.net</span>
+            <li className="flex flex-col items-center md:flex-row gap-3">
+              <FaEnvelope className="text-[#068f96]  text-xl " />
+              <a href="mailto:info@alashab.net" className="m-0">
+                info@alashab.net
+              </a> 
+              <a href="mailto:sales@alashab.net" className="m-0">
+                sales@alashab.net
+              </a>
+              <a href="mailto:purchase@alashab.net" className="">
+                purchase@alashab.net
+              </a>
             </li>
           </ul>
         </div>

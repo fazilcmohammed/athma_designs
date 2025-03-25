@@ -7,12 +7,10 @@ const ProductsByCountry = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
   return (
-    <section className="py-20 bg-white">
+    <section className="py-10 md:py-20 bg-white">
       <div className="container mx-auto px-6 md:px-12">
-        <h2 className="text-4xl font-bold text-center mb-4">Products By Country</h2>
-        <p className="text-center text-gray-500 mb-8">
-          Far far away, behind the word mountains, far from the countries Vokalia and Consonantia
-        </p>
+        <h2 className="text-4xl font-bold text-center mb-12">Products By Country</h2>
+        
 
         <div className="grid grid-cols-2 md:grid-cols-3 gap-10">
           {countrys.map((prod, index) => (

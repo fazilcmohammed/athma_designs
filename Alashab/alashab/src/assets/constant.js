@@ -1,4 +1,4 @@
-import { FaTruck, FaLeaf, FaAward, FaHeadset } from "react-icons/fa";
+import { FaEnvira, FaLeaf, FaAward, FaHeadset } from "react-icons/fa";
 
 // product images
 import prod1 from "../assets/images/product-1.jpg";
@@ -64,29 +64,24 @@ import morocconPomegranate from "../assets/images/products/morocco/morocconPomeg
 import chinaThumb from "../assets/images/products/chinese/chinaThumbnail.jpg"
 
 export const features = [
-  {
-    icon: FaTruck,
-    bgColor: "bg-pink-300",
-    title: "FREE SHIPPING",
-    description: "ON ORDER OVER $100",
-  },
+
   {
     icon: FaLeaf,
     bgColor: "bg-yellow-300",
-    title: "ALWAYS FRESH",
-    description: "PRODUCT WELL PACKAGE",
+    title: "ORGANIC PRODUCTS",
+    description: "All our products are fully certified organic, grown according to international standards, and packed in compostable and renewable packaging materials.",
   },
   {
     icon: FaAward,
     bgColor: "bg-blue-300",
     title: "SUPERIOR QUALITY",
-    description: "QUALITY PRODUCTS",
+    description: "We have the highest quality standards which all our produce must meet in order to be fit for your table.",
   },
   {
-    icon: FaHeadset,
+    icon: FaEnvira,
     bgColor: "bg-yellow-300",
-    title: "SUPPORT",
-    description: "24/7 SUPPORT",
+    title: "100% NATURAL",
+    description: "supplies only the real thing to our customers and we are dedicated to offering fresh and healty fruits and vegetables to our customers",
   },
 ];
 
@@ -424,5 +419,38 @@ export const countrys = [
   {
     country : "Morocco",
     img: "https://cdn.blueberriesconsulting.com/2022/01/blue07013-1.jpg"
+  },
+]
+
+import supply from "../assets/images/supplyy.jpg"
+import importing from "../assets/images/importing.jpg"
+import exporting from "../assets/images/exporting.jpg"
+import retail from "../assets/images/retail.jpg"
+import partner from "../assets/images/partnership.jpg"
+export const aboutTimeline = [
+  {
+    img:supply,
+    title: "Supply",
+    description: "We specialize in wholesale supply of fresh fruits and vegetables across the UAE market, ensuring that our clients receive the finest produce at competitive prices."
+  },
+  {
+    img:importing,
+    title: "Import",
+    description: "We import premium-quality fruits and vegetables from all corners of the globe. Our suppliers are located in Brazil, Egypt, the USA, Africa, Holland, Australia, KSA, Oman, Thailand, Iran, China, Sri Lanka, India, Pakistan, Kenya, Bangladesh, and many more. With a strong network, we ensure that only the freshest produce reaches our outlets, which are conveniently spread across Dubai."
+  },
+  {
+    img:exporting,
+    title: "Export",
+    description: "We also export our high-quality fresh fruits and vegetables to various parts of the world, with a focus on markets in the Middle East, Africa, and Asia. Our extensive market presence and reliable shipping services ensure that our products are available to meet the needs of customers worldwide."
+  },
+  {
+    img:retail,
+    title: "Retail",
+    description: "We offer van sales, delivering fresh produce directly to retail shops, hotels, and catering businesses. Whether you require large or small quantities of fresh fruits and vegetables, ALASHAB guarantees quality and timely delivery, tailored to your needs."
+  },
+  {
+    img:partner,
+    title: "Partnership",
+    description: "ALASHAB partners with over 20 contract farms in India, Sri Lanka, and the UAE, ensuring a consistent supply of top-tier produce. This collaboration allows us to deliver only the best fresh fruits and vegetables to our customers."
   },
 ]

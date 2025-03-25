@@ -5,6 +5,7 @@ import AboutWelcome from '../components/AboutWelcome'
 import Newsletter from '../components/Newsletter'
 import Features from '../components/Feautres'
 import { Helmet } from "react-helmet-async";
+import AboutTimeline from '../components/AboutTimeline'
 
 const About = () => {
   return (
@@ -16,6 +17,7 @@ const About = () => {
       <Navbar/>
       <AboutHeroSection page="About Us"/>
       <AboutWelcome/>
+      <AboutTimeline/>
       <Newsletter/>
       <Features/>
     </div>
