@@ -1,14 +1,14 @@
 import { motion } from "framer-motion";
-import heroBg from "../assets/images/heroBg.jpg"
+import heroBg from "../assets/images/heroBg.webp";
 
-const HeroSection = () => {
+const HeroSection = ({ scrollToProducts }) => {
   return (
-    <section className="relative h-screen bg-black/40 flex items-center justify-center">
+    <section className="relative h-[500px] md:h-[550px] bg-black/40 flex items-center justify-center">
       {/* Background Image */}
       <img
         src={heroBg}
         alt="Printer Banner"
-        className="absolute w-full h-full object-cover opacity-70"
+        className="absolute w-full h-full object-cover opacity-90"
       />
 
       {/* Overlay Content */}
@@ -26,7 +26,10 @@ const HeroSection = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1 }}
         >
-          <button className="bg-white text-black px-8 py-3 rounded-md hover:bg-gray-100">
+          <button
+            onClick={scrollToProducts}
+            className="bg-white text-black px-8 py-3 rounded-md hover:bg-gray-100 transition-all"
+          >
             Shop All
           </button>
         </motion.div>

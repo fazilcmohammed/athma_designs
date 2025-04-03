@@ -9,7 +9,7 @@ import prod5 from "../assets/images/product-5.jpg";
 import prod6 from "../assets/images/product-6.jpg";
 import prod7 from "../assets/images/product-7.jpg";
 
-import semiCoconut from "../assets/images/products/indian/321.jpg"
+import semiCoconut from "../assets/images/products/indian/321.webp"
 import onion from "../assets/images/products/indian/5404.jpg"
 import smallOnion from "../assets/images/products/indian/8289.jpg"
 import bananaLeaf from "../assets/images/products/indian/bananaleaf.webp"

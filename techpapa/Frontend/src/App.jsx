@@ -51,6 +51,7 @@ import HelpDesk from './pages/FooterLinks/Professional Service/HelpDesk';
 import NetworkOperation from './pages/FooterLinks/Professional Service/NetworkOperation';
 import OnSiteEngineer from './pages/FooterLinks/Professional Service/OnSiteEngineer';
 import TechnologyConsulting from './pages/FooterLinks/Professional Service/TechnologyConsulting';
+import { ToastContainer, toast } from 'react-toastify';
 
 
 function App() {
@@ -59,6 +60,7 @@ function App() {
   return (
     <>
       <div>
+        <ToastContainer/>
         <ScrollToTop /> {/* Ensures scrolling to top on route change */}
         <Navbar/>
         <Routes>

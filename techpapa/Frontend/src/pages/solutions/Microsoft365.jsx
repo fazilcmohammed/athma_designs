@@ -3,6 +3,7 @@ import KmHeroSection from '../../components/KmComponents/KmHeroSection'
 import { microsoft365 } from '../../assets/constant'
 import KmServices from '../../components/KmComponents/KmServices'
 import KmBottom from '../../components/KmComponents/KmBottom'
+import CallbackModal from '../../components/CallbackModal'
 
 const Microsoft365 = () => {
   const [showModal, setShowModal] = useState(false);
@@ -37,6 +38,7 @@ const Microsoft365 = () => {
         >
           REQUEST A CALLBACK
         </button>
+        <CallbackModal isOpen={showModal} onClose={() => setShowModal(false)} />
       </div>
     </section >
 

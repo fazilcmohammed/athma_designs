@@ -1,18 +1,26 @@
-import React from 'react'
-import HeroSection from '../components/HeroSection'
-import OurProducts from '../components/OurProducts'
-import CustomerLogos from '../components/CustomerLogos'
-import WhyChooseUs from '../components/WhyChooseUs'
+import React, { useRef } from "react";
+import HeroSection from "../components/HeroSection";
+import OurProducts from "../components/OurProducts";
+import CustomerLogos from "../components/CustomerLogos";
+import WhyChooseUs from "../components/WhyChooseUs";
+import ProductCard from "../components/ProductCard";
 
 const Home = () => {
+  const productsRef = useRef(null);
+
+  const scrollToProducts = () => {
+    productsRef.current?.scrollIntoView({ behavior: "smooth" });
+  };
+
   return (
     <>
-        <HeroSection/>
-        <CustomerLogos/>
-        <OurProducts/>
-        <WhyChooseUs/>
+      <HeroSection scrollToProducts={scrollToProducts} />
+      {/* <CustomerLogos /> */}
+      <OurProducts ref={productsRef} />
+      <ProductCard/>
+      <WhyChooseUs />
     </>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;

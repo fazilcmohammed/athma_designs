@@ -35,7 +35,7 @@ const ContactSection = () => {
     return (
         <div className="max-w-6xl mx-auto py-16 px-6">
             {/* Contact Details */}
-            <div className="grid grid-cols-1 md:grid-cols-4 gap-5 mb-10">
+            <div className="grid grid-cols-1 md:grid-cols-4 gap-5 mb-10 text-center md:text-left">
                 <div className="bg-gray-100 p-6 rounded-lg">
                     <h3 className="text-lg font-semibold">Address (Head Office):</h3>
                     <a href="https://www.google.com/maps/place/Al+Garhoud+Business+Center/@25.2513392,55.3085574,14z/data=!4m10!1m2!2m1!1soffice+No+166-107+Al+Garhoud+Business+Center,+Al+Garhoud,+Dubai,+UAE.!3m6!1s0x3e5f5db432aa90d3:0x285c5a0db5187ab8!8m2!3d25.2513392!4d55.3395762!15sCkVvZmZpY2UgTm8gMTY2LTEwNyBBbCBHYXJob3VkIEJ1c2luZXNzIENlbnRlciwgQWwgR2FyaG91ZCwgRHViYWksIFVBRS6SAQ9idXNpbmVzc19jZW50ZXLgAQA!16s%2Fg%2F11fmknplpt?entry=ttu&g_ep=EgoyMDI1MDMxOS4yIKXMDSoASAFQAw%3D%3D" className="text-[#068f96] font-semibold mb-2">Office No 166-107 Al Garhoud Business Center, Al Garhoud, Dubai, UAE.</a> <br />
@@ -46,9 +46,9 @@ const ContactSection = () => {
                 </div>
                 <div className="bg-gray-100 p-6 rounded-lg">
                     <h3 className="text-lg font-semibold">Phone:</h3>
+                    <a href="tel:+971506370154" className="text-[#068f96] font-bold">+971 50 6370154</a><br />
+                    <a href="tel:+971507576780" className="text-[#068f96] font-bold">+971 50 7576780</a><br />
                     <a href="tel:+971582700427" className="text-[#068f96] font-bold">+971 58 2700427 </a><br />
-                    <a href="tel:+971507576780" className="text-[#068f96] font-bold"> +971 507576780</a><br />
-                    <a href="tel:+971506370154" className="text-[#068f96] font-bold">+971 50 6370154</a>
                 </div>
                 <div className="bg-gray-100 p-6 rounded-lg">
                     <h3 className="text-lg font-semibold">Email:</h3>
@@ -57,7 +57,7 @@ const ContactSection = () => {
                             info@alashab.net
                         </a> <br />
                         <a href="mailto:sales@alashab.net" className="text-[#068f96] font-bold">
-                            sales@alashab.net
+                            sale@alashab.net
                         </a><br />
                         <a href="mailto:purchase@alashab.net" className="text-[#068f96] font-bold">
                             purchase@alashab.net

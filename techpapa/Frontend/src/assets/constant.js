@@ -1,15 +1,28 @@
 import { FaCloud, FaHeadset, FaLaptop, FaGraduationCap } from "react-icons/fa";
 import { FaServer, FaTools, FaBuilding, FaMicrochip, FaRobot, FaNetworkWired, FaLifeRing, FaMicrosoft  } from "react-icons/fa";
 
+
+import logo1 from '../assets/images/brandLogos/1.jpg'
 import logo2 from '../assets/images/brandLogos/2.png'
 import logo3 from '../assets/images/brandLogos/3.png'
 import logo4 from '../assets/images/brandLogos/4.png'
+import logo5 from '../assets/images/brandLogos/5.png'
 import logo6 from '../assets/images/brandLogos/6.png'
 import logo7 from '../assets/images/brandLogos/7.png'
 import logo8 from '../assets/images/brandLogos/8.svg'
 import logo9 from '../assets/images/brandLogos/9.png'
-import logo10 from '../assets/images/brandLogos/10.svg'
-import logo11 from '../assets/images/brandLogos/11.svg'
+import logo10 from '../assets/images/brandLogos/10.png'
+import logo11 from '../assets/images/brandLogos/11.png'
+import logo12 from '../assets/images/brandLogos/12.png'
+import logo13 from '../assets/images/brandLogos/13.png'
+import logo14 from '../assets/images/brandLogos/14.png'
+import logo15 from '../assets/images/brandLogos/15.svg'
+import logo16 from '../assets/images/brandLogos/16.svg'
+import logo17 from '../assets/images/brandLogos/17.png'
+import logo18 from '../assets/images/brandLogos/18.png'
+import logo19 from '../assets/images/brandLogos/19.jpg'
+import logo20 from '../assets/images/brandLogos/20.png'
+import logo21 from '../assets/images/brandLogos/21.png'
 
 
 export const menuItems = [
@@ -164,15 +177,27 @@ export const services = [
   
 
   export const companyLogos = [
+    logo1,
     logo2,
     logo3,
     logo4,
+    logo5,
     logo6,
     logo7,
     logo8,
     logo9,
     logo10,
-    logo11
+    logo11,
+    logo12,
+    logo13,
+    logo14,
+    logo15,
+    logo16,
+    logo17,
+    logo18,
+    logo19,
+    logo20,
+    logo21,
   ];
 
 export const azureServices = [
@@ -555,6 +580,8 @@ export const aboutUs = [
   }
 ]
 
+import digitalSolutionImg from "../assets/images/digitalSoutionsss.jpg"
+import cloudSolutionImg from "../assets/images/cloudSolutionnImg.jpg"
 export const aboutSolutions = [
   {
     title: "Infrastructure Solutions",
@@ -565,7 +592,7 @@ export const aboutSolutions = [
   {
     title: "Cloud Solutions",
     description: "Take the full advantage of cloud innovation and accelerate your business by relying on effective hybrid and multi cloud approach from us.",
-    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbqDeReMyKOCEAXLbTnCMy5eLBHQmO59RPoA&s",
+    image: cloudSolutionImg,
     path: "/cloud-service"
   },
   {
@@ -583,13 +610,13 @@ export const aboutSolutions = [
   {
     title: "Digital Solutions",
     description: "Creating digital solutions to solve conventional business challenges by using latest in Web, AI, and Blockchain technologies.",
-    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkdWEPaAKsKmUw8bMSmFurZbf2vSWZh9NGzw&s",
+    image: digitalSolutionImg,
     path: "/digital-solutions"
   },
 ]
 
 
-
+import digitalLearningSolution from "../assets/images/digitalLearningSolution.jpg"
 export const digitalSolutions = [
   {
   heroTitle : "Digital Solutions",
@@ -619,7 +646,7 @@ export const digitalSolutions = [
     {
       title:"Digital Learning Solutions",
       description:"We provide innovative learning technology solutions and eLearning content development services to support the organization’s digital transformation of training. We develop eLearning courses that learners will enjoy learning from, helping to meet the learning objective. View the complete service and solutions details to learn about our digital learning solutions.",
-      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRj6q26edHKoPFPUoJvX_V8-KpqZnIDx5d30A&s"
+      image: digitalLearningSolution
     },
     {
       title:"Digital Collaboration Solutions",
@@ -632,6 +659,7 @@ export const digitalSolutions = [
   }
 ]
 
+import microsoftAzure from "../assets/images/microsoftAzureImg.jpg"
 export const cloudServices = [
   {
   heroTitle : "Cloud Service",
@@ -646,7 +674,7 @@ export const cloudServices = [
     {
       title:"Azure Design & Deployment Services",
       description:"Consult, Design, Implement and Optimize cloud solutions for enterprises. Working closely with Microsoft we help organizations with seamless cloud adaption and seamless migration services.",
-      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqJ4AUyJmzRlg14IYzIx8-XAb3zr0lCIFpTg&s"
+      image: microsoftAzure
     },
     {
       title:"Optimize And Manage Cloud Spend",
@@ -673,7 +701,8 @@ export const cloudServices = [
   bottomTitle : "Delivering Innovative Cloud Solutions With World-Class Expertise",
   }
 ]
-
+import campusWifi from "../assets/images/campusWifi.jpg"
+import switchingSolutions from "../assets/images/switchingSolutions.jpg"
 export const itInfrastructure = [
   {
   heroTitle : "IT Infrastructure Services",
@@ -688,7 +717,7 @@ export const itInfrastructure = [
     {
       title:"Campus Wi-Fi Solutions",
       description:"Get up to speed with our WiFi solutions that work for your community’s education, residential, and business needs. We offer a range of WiFi solutions that can be tailored to meet your specific needs. From high-speed internet access to corporate networks, we have the right solution for every application.",
-      image: "https://www.sentia.ca/Portals/0/EasyDNNNews/222/600600p1133EDNmainimg-Wireless-Network1.png"
+      image: campusWifi
     },
     {
       title:"CCTV Solutions",
@@ -698,7 +727,7 @@ export const itInfrastructure = [
     {
       title:"Switching Solutions",
       description:"We provide a comprehensive portfolio of switching solutions for Enterprise Networks, data centers, and smaller businesses. These solutions are optimized for a wide range of industries, including service providers, financial services, and the public sector.",
-      image: "https://edspl.net/uploads/netswitch_1.webp"
+      image: switchingSolutions
     },
     {
       title:"IP Telephony Solution",
@@ -720,6 +749,8 @@ export const itInfrastructure = [
   }
 ]
 
+import cdr from "../assets/images/edrMdr.jpg"
+import threatDetection from "../assets/images/threatDetection.jpg"
 export const cyberSecurity = [
   {
   heroTitle : "Cyber Security",
@@ -734,7 +765,7 @@ export const cyberSecurity = [
     {
       title:"EDR, MDR & XDR Solutions",
       description:"Central to every security strategy is a detection and response capability which catches threats that have circumvented traditional security measures. EDR , MDR, XDR are three main detection and response solutions",
-      image: "https://media.licdn.com/dms/image/D5612AQGX6glFlEArJg/article-cover_image-shrink_600_2000/0/1681234403630?e=2147483647&v=beta&t=gq0NvcEzPoNO-p7cbbaFg0gABEkeq8PCWvGujAB7KH4"
+      image: cdr
     },
     {
       title:"Network Security & WAF Solutions",
@@ -744,7 +775,7 @@ export const cyberSecurity = [
     {
       title:"SIEM & SOC Solutions",
       description:"Multi-tenant cloud architecture fueled with integrated threat intelligence, a built-in app store with purpose-built threat detection apps. Proactively monitor your endpoint, network, and the cloud using our SOC As A Service.",
-      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoqUZXkULGkiKfjuvRRneM40rCvxIPmDQ9AA&s"
+      image: threatDetection
     },
     {
       title:"Messaging Security, Dark web solutions",

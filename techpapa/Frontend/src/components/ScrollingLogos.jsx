@@ -5,10 +5,10 @@ const ScrollingLogos = () => {
     return (
         <div className="overflow-hidden w-full bg-white py-10">
           <div className="relative flex items-center">
-            <div className="flex animate-scroll gap-20 w-max">
+            <div className="flex animate-scroll gap-16 w-max">
               {/* Display the logos twice for infinite looping */}
               {[...companyLogos, ...companyLogos].map((logo, index) => (
-                <div key={index} className="w-40 flex-shrink-0">
+                <div key={index} className="w-28 flex-shrink-0">
                   <img src={logo} alt={`Company ${index}`} className="h-16 object-contain grayscale-logo" />
                 </div>
               ))}

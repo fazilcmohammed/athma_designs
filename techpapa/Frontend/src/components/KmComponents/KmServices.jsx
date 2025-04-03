@@ -38,7 +38,7 @@ const KmServices = ({ services, titles }) => {
             <div className="md:w-[58%] p-6">
               <h3 className="text-2xl font-bold">{service.title}</h3>
               <p className="text-gray-700 mt-3 mb-6 text-justify">{service.description}</p>
-              <a href="https://wa.me/971569000801" // Replace with your WhatsApp number
+              <a href="https://wa.me/97143519944" // Replace with your WhatsApp number
                 target="_blank"
                 className="px-6 py-3 bg-primaryBlue hover:bg-blue-800 text-white font-semibold rounded transition"
               >

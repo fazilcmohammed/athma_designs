@@ -4,6 +4,7 @@ import { FaPaperPlane, FaChevronDown, FaChevronUp } from "react-icons/fa";
 import logo from '../assets/images/logo.png';
 import CallbackModal from "./CallBackModal";
 
+
 const Footer = () => {
   const [showModal, setShowModal] = useState(false);
   const [isCompanyOpen, setIsCompanyOpen] = useState(false);
@@ -128,7 +129,9 @@ const Footer = () => {
           <Link to="/"><img src={logo} alt="logo" className="w-32 md:w-36" /></Link>
         </div>
         <div className="text-center md:text-left mb-4 md:mb-0">
-          <p className="text-gray-700">Copyright © 2024 TECHPAPPA. All rights reserved.</p>
+          <p className="text-gray-700">
+            Copyright © {new Date().getFullYear()} TECHPAPPA. All rights reserved.
+          </p>
         </div>
         <div>
           <button

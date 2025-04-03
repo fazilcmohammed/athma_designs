@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import { FaShoppingCart, FaBars, FaTimes } from "react-icons/fa";
 import { IoIosArrowDown } from "react-icons/io"; // Import arrow icon
-import logo from '../assets/images/logo.png';
+import logo from '../assets/images/alashabLogo.png';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -13,10 +13,10 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-white shadow-md px-6 md:px-20 py-4 flex items-center justify-between fixed top-0 left-0 w-full z-50">
+    <nav className="bg-white shadow-md px-6 md:px-24 py-5 flex items-center justify-between fixed top-0 left-0 w-full z-50">
       {/* Logo */}
       <Link to="/" className="hover:text-[#068f96]">
-        <img src={logo} alt="Logo" className="w-14 md:w-[75px]" />
+        <img src={logo} alt="Logo" className="w-40 md:w-[250px]" />
       </Link>
 
       {/* Desktop Links */}
@@ -68,7 +68,7 @@ const Navbar = () => {
 
       {/* Mobile Menu */}
       <div
-        className={`absolute top-[70px] left-0 w-full bg-[#00B3BC] text-white text-center py-10 flex flex-col space-y-6 transition-all duration-300 ${isOpen ? "opacity-100 visible" : "opacity-0 invisible"}`}
+        className={`absolute top-[67px] left-0 w-full bg-[#00B3BC] text-white text-center py-10 flex flex-col space-y-6 transition-all duration-300 ${isOpen ? "opacity-100 visible" : "opacity-0 invisible"}`}
       >
         <Link to="/" className="hover:text-green-400" onClick={() => setIsOpen(false)}>HOME</Link>
         <Link to="/about" className="hover:text-green-400" onClick={() => setIsOpen(false)}>ABOUT</Link>

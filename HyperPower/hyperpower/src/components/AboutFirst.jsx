@@ -1,9 +1,10 @@
 import React from 'react'
 import { motion } from "framer-motion";
+import aboutImg from "../assets/images/aboutImg.webp"
 
 const AboutFirst = () => {
   return (
-    <section className="max-w-[1200px] mx-auto px-4 py-12">
+    <section className=" mx-auto px-6 md:px-20 py-12">
       <div className="grid md:grid-cols-2 gap-10 items-center">
         {/* Left Image Section */}
         <motion.div
@@ -13,7 +14,7 @@ const AboutFirst = () => {
           viewport={{ once: true }}
         >
           <img
-            src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d"
+            src={aboutImg}
             alt="About"
             className="rounded-2xl shadow-md"
           />
@@ -26,7 +27,7 @@ const AboutFirst = () => {
           transition={{ duration: 0.7 }}
           viewport={{ once: true }}
         >
-          <h1 className="text-3xl font-bold mb-6 text-left">About HyperPower</h1>
+          <h1 className="text-3xl font-bold mb-6 md:text-left ">About <span className='text-orange-600'>HyperPower</span></h1>
           <p className="text-gray-700 mb-4 leading-relaxed text-justify">
           Since its founding, HyperPower General Trading has successfully grown to become one of the leading importers, wholesalers, and retailers of toners and cartridges in the region. With a strong commitment to quality and customer satisfaction, HyperPower offers prompt and efficient solutions for all your toner and cartridge requirements. We stock a wide range of products from globally trusted brands such as HP, Canon, Brother, and many more — all at competitive prices and backed by our excellent customer service.
 

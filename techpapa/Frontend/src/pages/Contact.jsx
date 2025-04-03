@@ -4,9 +4,38 @@ import KmHeroSection from "../components/KmComponents/KmHeroSection";
 import { BiSupport } from "react-icons/bi";
 import { FaPhoneAlt } from "react-icons/fa";
 import { HiLocationMarker } from "react-icons/hi";
+import { toast } from "react-toastify";
 
 
 const Contact = () => {
+
+  const [result, setResult] = React.useState("");
+
+  const onSubmit = async (event) => {
+    event.preventDefault();
+    setResult("Sending....");
+    const formData = new FormData(event.target);
+
+    formData.append("access_key", "9ab246b2-ce01-4db8-96a8-fbafb99256ef");
+
+    const response = await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      body: formData
+    });
+
+    const data = await response.json();
+
+    if (data.success) {
+      setResult("");
+      toast.success("Form Submitted Successfully")
+      event.target.reset();
+    } else {
+      console.log("Error", data);
+      toast.error(data.message)
+      setResult(data.message);
+    }
+  };
+
   return (
     <>
       <KmHeroSection heroSection={contactUs[0]} />
@@ -22,14 +51,16 @@ const Contact = () => {
 
           <div className="grid md:grid-cols-2 gap-10">
             {/* Contact Form */}
-            <form className="space-y-6">
+            <form onSubmit={onSubmit} className="space-y-6">
               <div>
+                <input type="hidden" name="from_name" value="TechPappa Web"></input>
                 <label className="block text-gray-700 font-medium mb-2">Full Name</label>
                 <input
                   type="text"
                   className="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primaryBlue"
                   placeholder="Your Name"
                   required
+                  name="name"
                 />
               </div>
               <div>
@@ -39,6 +70,7 @@ const Contact = () => {
                   className="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primaryBlue"
                   placeholder="your@email.com"
                   required
+                  name="email"
                 />
               </div>
               <div>
@@ -48,13 +80,14 @@ const Contact = () => {
                   rows="4"
                   placeholder="Write your message..."
                   required
+                  name="message"
                 ></textarea>
               </div>
               <button
                 type="submit"
                 className="w-full bg-primaryBlue text-white py-3 rounded-md hover:bg-blue-700 transition"
               >
-                Send Message
+                {result ? result : "Send Message"}
               </button>
             </form>
 
@@ -82,11 +115,11 @@ const Contact = () => {
             <h3 className="text-lg font-semibold mt-4">Support</h3>
             <p className="text-gray-600">Contact our fast support team</p>
             <a href="mailto:info@techpappa.com" className="text-primaryBlue hover:underline">
-              info@techpappa.com
+              support@techpappa.com
             </a><br />
-            <a href="mailto:techpappa.com@outlook.com" className="text-primaryBlue hover:underline">
+            {/* <a href="mailto:techpappa.com@outlook.com" className="text-primaryBlue hover:underline">
               techpappa.com@outlook.com
-            </a>
+            </a> */}
           </div>
 
           {/* Phone Card */}
@@ -99,14 +132,13 @@ const Contact = () => {
             <h3 className="text-lg font-semibold mt-4">Phone</h3>
             <p className="text-gray-600">Mon-Fri from 9am to 6pm.</p>
             <a href="tel:+97143519944" className="text-primaryBlue hover:underline mr-1">
-              +97143519944,
-            </a>
-            <a href="tel:+971043522991" className="text-primaryBlue hover:underline">
-              +971043522991
+              +971 351 99 44
             </a><br />
-            <a href="tel:+971043519944" className="text-primaryBlue hover:underline">
-              +971043519944
+            <p className="text-gray-600">24/7 Technical Support:</p>
+            <a href="tel:+971043522991" className="text-primaryBlue hover:underline">
+              +971 4 35 22 991
             </a>
+          
           </div>
           <div className="w-full bg-white shadow-lg rounded-lg p-8 text-center">
             <div className="flex justify-center">

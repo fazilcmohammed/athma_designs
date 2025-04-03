@@ -3,7 +3,7 @@ import KmHeroSection from '../../components/KmComponents/KmHeroSection'
 import { itSupport } from '../../assets/constant'
 import KmServices from '../../components/KmComponents/KmServices'
 import KmBottom from '../../components/KmComponents/KmBottom'
-import CallbackModal from '../../components/CallBackModal'
+import CallbackModal from '../../components/CallbackModal'
 
 const ItSupport = () => {
   const [showModal, setShowModal] = useState(false);

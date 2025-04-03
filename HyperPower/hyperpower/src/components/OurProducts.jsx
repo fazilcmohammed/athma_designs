@@ -1,12 +1,12 @@
-import React from 'react';
-import { products } from '../assets/constant';
-import { motion } from 'framer-motion';
+import React from "react";
+import { products } from "../assets/constant";
+import { motion } from "framer-motion";
 
-const OurProducts = () => {
-  const whatsappNumber = "919876543210"; // Change this to your number
+const OurProducts = React.forwardRef((props, ref) => {
+  const whatsappNumber = "971525440610"; // Change this to your number
 
   return (
-    <section className="px-6 py-10 max-w-[1200px] mx-auto">
+    <section ref={ref} className="px-6 md:px-20 py-10  mx-auto">
       <h1 className="font-bold text-3xl mb-8">Our Products</h1>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 cursor-pointer">
         {products.map((item, index) => (
@@ -27,7 +27,7 @@ const OurProducts = () => {
             <div className="absolute inset-0 bg-blue-800 bg-opacity-30 flex flex-col items-start justify-end p-4">
               <h2 className="text-white text-2xl font-semibold">{item.title}</h2>
               <a
-                href={`https://wa.me/${whatsappNumber}?text=Hi, I am interested in ${item.title}`}
+                href={`https://wa.me/${whatsappNumber}?text=${encodeURIComponent(`Hi, I am interested in ${item.title}`)}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-md text-white underline mt-2"
@@ -40,6 +40,6 @@ const OurProducts = () => {
       </div>
     </section>
   );
-};
+});
 
 export default OurProducts;

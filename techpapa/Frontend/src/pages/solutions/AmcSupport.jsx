@@ -3,7 +3,7 @@ import KmHeroSection from '../../components/KmComponents/KmHeroSection'
 import KmServices from '../../components/KmComponents/KmServices'
 import { amcSupport } from '../../assets/constant'
 import KmBottom from '../../components/KmComponents/KmBottom'
-import CallbackModal from '../../components/CallBackModal'
+import CallbackModal from '../../components/CallbackModal'
 
 const AmcSupport = () => {
   const [showModal, setShowModal] = useState(false);

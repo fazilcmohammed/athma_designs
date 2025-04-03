@@ -22,9 +22,10 @@ const HeroSection = () => {
             <Link to="/about" className="px-5 sm:px-6 py-2 bg-[#079DDA] text-white font-semibold rounded-lg shadow-md hover:bg-cyan-600 transition">
               Learn More
             </Link>
-            <a href="https://wa.me/971569000801" // Replace with your WhatsApp number
+            <a href="https://wa.me/97143519944"
               target="_blank"
-              rel="noopener noreferrer" className="px-5 sm:px-6 py-2 flex items-center gap-2 bg-transparent text-[#079DDA] font-semibold border-2 border-[#079DDA] rounded-lg shadow-md hover:bg-blue-50 transition">
+              rel="noopener noreferrer"
+              className="px-5 sm:px-6 py-2 flex items-center gap-2 bg-transparent text-[#079DDA] font-semibold border-2 border-[#079DDA] rounded-lg shadow-md hover:bg-blue-50 transition">
               Let's Talk
               <motion.span
                 initial={{ x: 0 }}
@@ -34,6 +35,7 @@ const HeroSection = () => {
                 <ArrowRightIcon className="w-5 h-5 text-[#079DDA]" />
               </motion.span>
             </a>
+
           </div>
         </div>
 

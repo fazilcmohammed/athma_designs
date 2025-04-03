@@ -1,11 +1,13 @@
-import React from 'react'
+import React, { useState } from 'react'
 import KmHeroSection from '../../components/KmComponents/KmHeroSection'
 import KmServices from '../../components/KmComponents/KmServices'
 import { managedItService } from '../../assets/constant'
 import KmFirstSection from '../../components/KmComponents/KmFirstSection'
 import KmBottom from '../../components/KmComponents/KmBottom'
+import CallbackModal from '../../components/CallBackModal'
 
 const ManagedItService = () => {
+  const [showModal, setShowModal] = useState(false);
   return (
     <>
       <KmHeroSection heroSection={managedItService[0]}/>
@@ -36,7 +38,14 @@ const ManagedItService = () => {
           telephony settings in your business by moving everything to the cloud for a better 
           communication experience for you, your customers, clients, and suppliers alike.
         </p>
-      </div>
+        <button
+          className="px-6 py-3 mt-5 bg-primaryBlue hover:bg-blue-800 text-white font-semibold rounded transition"
+          onClick={() => setShowModal(true)}
+        >
+          REQUEST A CALLBACK
+        </button>
+        <CallbackModal isOpen={showModal} onClose={() => setShowModal(false)} />
+      </div>      
     </section>
       <KmServices 
         services={managedItService} titles = {managedItService[0]}

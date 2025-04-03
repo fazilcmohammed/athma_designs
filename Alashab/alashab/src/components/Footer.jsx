@@ -2,7 +2,7 @@ import React from "react";
 import { FaTwitter, FaFacebook, FaInstagram } from "react-icons/fa";
 import { FaMapMarkerAlt, FaPhoneAlt, FaEnvelope } from "react-icons/fa";
 import { IoIosArrowUp } from "react-icons/io";
-import logo from '../assets/images/logo.png'
+import logo from '../assets/images/alashabLogo.png'
 import { Link } from "react-router-dom";
 
 
@@ -12,7 +12,7 @@ const Footer = () => {
   };
 
   return (
-    <footer className="bg-gray-100 text-gray-700 py-16 px-6 md:px-20 relative">
+    <footer className="bg-gray-100 text-gray-700 pt-16 px-6 md:px-20 relative">
       {/* Scroll to Top Button */}
       <button
         onClick={scrollToTop}
@@ -26,7 +26,8 @@ const Footer = () => {
 
         {/* Logo & Social Links */}
         <div className="lg:w-[50%]">
-          <img src={logo} alt="Logo" className="w-20 md:w-28 mx-auto md:mx-0" />
+          <Link to="/" onClick={scrollToTop}><img src={logo} alt="Logo" className="w-44 md:w-60 mx-auto md:mx-0" /></Link>
+          
           <p className=" mt-3">
             Importing of high quality fresh fruits and vegetables all over the world.
           </p>
@@ -73,7 +74,7 @@ const Footer = () => {
           <ul className="space-y-3 ">
             <li className="flex flex-col sm:flex-row items-center sm:items-start gap-3">
               <FaMapMarkerAlt className="text-[#068f96] text-2xl" />
-              <a href="https://www.google.com/maps/place/Al+Garhoud+Business+Center/@25.2513392,55.3085574,14z/data=!4m10!1m2!2m1!1soffice+No+166-107+Al+Garhoud+Business+Center,+Al+Garhoud,+Dubai,+UAE.!3m6!1s0x3e5f5db432aa90d3:0x285c5a0db5187ab8!8m2!3d25.2513392!4d55.3395762!15sCkVvZmZpY2UgTm8gMTY2LTEwNyBBbCBHYXJob3VkIEJ1c2luZXNzIENlbnRlciwgQWwgR2FyaG91ZCwgRHViYWksIFVBRS6SAQ9idXNpbmVzc19jZW50ZXLgAQA!16s%2Fg%2F11fmknplpt?entry=ttu&g_ep=EgoyMDI1MDMxOS4yIKXMDSoASAFQAw%3D%3D" className=""><span className="font-bold">Head office :</span>Office No 166-107 Al Garhoud Business Center, Al Garhoud, Dubai, UAE.</a> <br />
+              <a href="https://www.google.com/maps/place/Al+Garhoud+Business+Center/@25.2513392,55.3085574,14z/data=!4m10!1m2!2m1!1soffice+No+166-107+Al+Garhoud+Business+Center,+Al+Garhoud,+Dubai,+UAE.!3m6!1s0x3e5f5db432aa90d3:0x285c5a0db5187ab8!8m2!3d25.2513392!4d55.3395762!15sCkVvZmZpY2UgTm8gMTY2LTEwNyBBbCBHYXJob3VkIEJ1c2luZXNzIENlbnRlciwgQWwgR2FyaG91ZCwgRHViYWksIFVBRS6SAQ9idXNpbmVzc19jZW50ZXLgAQA!16s%2Fg%2F11fmknplpt?entry=ttu&g_ep=EgoyMDI1MDMxOS4yIKXMDSoASAFQAw%3D%3D" className=""><span className="font-bold">Head office :</span> Office No 166-107 Al Garhoud Business Center, Al Garhoud, Dubai, UAE.</a> <br />
             </li>
             <li className="flex flex-col sm:flex-row items-center sm:items-start gap-3">
               <FaMapMarkerAlt className="text-[#068f96] text-2xl" />
@@ -81,17 +82,17 @@ const Footer = () => {
             </li>
             <li className="flex flex-col sm:flex-row items-center sm:items-start gap-3">
               <FaPhoneAlt className="text-[#068f96] text-xl" />
+              <a href="tel:+971506370154" className="">+971 50 6370154,</a>
+              <a href="tel:+971507576780" className=""> +971 50 7576780</a>
               <a href="tel:+971582700427" className="">+971 58 2700427, </a>
-              <a href="tel:+971507576780" className=""> +971 507576780,</a>
-              <a href="tel:+971506370154" className="">+971 50 6370154</a>
             </li>
             <li className="flex flex-col items-center md:flex-row gap-3">
               <FaEnvelope className="text-[#068f96]  text-xl " />
               <a href="mailto:info@alashab.net" className="m-0">
-                info@alashab.net
+                info@alashab.net,
               </a> 
               <a href="mailto:sales@alashab.net" className="m-0">
-                sales@alashab.net
+                sale@alashab.net,
               </a>
               <a href="mailto:purchase@alashab.net" className="">
                 purchase@alashab.net
@@ -103,8 +104,9 @@ const Footer = () => {
       </div>
 
       {/* Copyright Section */}
-      <div className="text-center mt-8 text-gray-500 text-sm">
-        Copyright © {new Date().getFullYear()} All rights reserved
+      <div className="text-center py-10 text-gray-500 text-sm ">
+        <hr className="mb-6" />
+        Copyright © {new Date().getFullYear()} ALASHAB | All Rights Reserved
       </div>
     </footer>
   );

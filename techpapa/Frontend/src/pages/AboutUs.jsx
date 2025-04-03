@@ -60,17 +60,29 @@ const AboutUs = () => {
         {/* <h2 className="text-blue-600 font-semibold">OUR SOLUTIONS</h2> */}
         <h1 className="text-3xl font-bold mb-8">Our Solutions</h1>
         <div className="max-w-6xl mx-auto grid md:grid-cols-2 lg:grid-cols-2 gap-8">
-          {aboutSolutions.map((solution, index) => (
-            <div key={index} className="bg-white shadow-lg rounded-lg p-6 flex flex-col md:flex-row items-center gap-6">
-              <img src={solution.image} alt={solution.title} className="w-full h-[50%] md:w-32 md:h-32 rounded-md" />
-              <div className="text-left">
-                <h3 className="text-xl font-bold">{solution.title}</h3>
-                <p className="text-gray-600 mt-2 text-justify ">{solution.description}</p>
-                <Link to={solution.path} className="mt-4 px-4 py-2 bg-primaryBlue text-white rounded-lg flex items-center gap-2 hover:bg-blue-700 md:w-[40%]">Learn More <span><FaArrowRight /></span></Link>
-              </div>
-            </div>
-          ))}
-        </div>
+  {aboutSolutions.map((solution, index) => (
+    <div key={index} className="bg-white shadow-lg rounded-lg p-6 flex flex-col md:flex-row items-center gap-6">
+      {/* Image Container */}
+      <div className="relative w-full md:w-80 md:h-32">
+        <img
+          src={solution.image}
+          alt={solution.title}
+          className="w-full h-full object-cover rounded-md"
+        />
+      </div>
+
+      {/* Text Content */}
+      <div className="text-left">
+        <h3 className="text-xl font-bold">{solution.title}</h3>
+        <p className="text-gray-600 mt-2 text-justify ">{solution.description}</p>
+        <Link to={solution.path} className="mt-4 px-4 py-2 bg-primaryBlue text-white rounded-lg flex items-center gap-2 w-[45%] hover:bg-blue-700 md:w-[40%]">
+          Learn More <span><FaArrowRight /></span>
+        </Link>
+      </div>
+    </div>
+  ))}
+</div>
+
       </section>
 
     </>
