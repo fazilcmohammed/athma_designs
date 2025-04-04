@@ -26,7 +26,7 @@ const Contact = () => {
                 <div className="bg-orange-500 p-3 rounded-full">
                   <FaMapMarkerAlt className="text-white text-sm" />
                 </div>
-                <p><strong>Address:</strong> PO Box 234793, Shop No.90, Nakheel Centre, Deira, Dubai</p>
+                <p><strong>Address:</strong> Shams Business Center, Sharjah Media City free Zone, Al Messaned, Sharjah, UAE</p>
               </div>
               <div className="flex items-center gap-3 flex-col md:flex-row">
                 <div className="bg-orange-500 p-3 rounded-full">
@@ -81,9 +81,10 @@ const Contact = () => {
           whileInView={{ opacity: 1 }}
           transition={{ duration: 1 }}
         >
+          <h2 className="text-2xl underline font-bold mb-4  text-center md:text-left text-black">ALL UAE:</h2>
           <iframe
             className="w-full h-64 rounded-lg shadow-lg"
-            src="https://www.google.com/maps/embed?pb=!1m21!1m12!1m3!1d48979.36116383764!2d55.28563391437321!3d25.28213263276737!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m6!3e6!4m0!4m3!3m2!1d25.2742138!2d55.3134727!5e0!3m2!1sen!2sin!4v1743151125240!5m2!1sen!2sin"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3607.791250040762!2d55.677869475384455!3d25.277606777659315!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ef59333cdc4230d%3A0x619b40557215b586!2sShams%20Business%20Center!5e0!3m2!1sen!2sin!4v1743742046550!5m2!1sen!2sin"
             allowFullScreen=""
             loading="lazy"
           ></iframe>

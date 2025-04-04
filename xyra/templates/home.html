@@ -1,68 +1,113 @@
 {% extends "base.html" %} {% load static %} {% block content %}
 <main id="content" class="wrapper layout-page">
   <section>
-    <div class="hero hero-header-06 container mt-8">
-      <div class="row">
-        <div data-animate="fadeInUp" class="col-md-6 mb-9 mb-md-0">
+    <div
+      class="slick-slider hero hero-header-09"
+      data-slick-options="{&#34;arrows&#34;:false,&#34;autoplay&#34;:true,&#34;cssEase&#34;:&#34;ease-in-out&#34;,&#34;dots&#34;:false,&#34;fade&#34;:true,&#34;infinite&#34;:true,&#34;slidesToShow&#34;:1,&#34;speed&#34;:600}"
+    >
+      <div class="vh-100 d-flex align-items-center">
+        <div
+          class="lazy-bg bg-overlay position-absolute z-index-1 w-100 h-100 light-mode-img"
+          data-bg-src="{% static "images/hero-slider/hero-slider-18.jpg" %}"
+        ></div>
+        
+        <div
+          class="position-relative z-index-2 container container-xxl pt-22 pb-15 pt-xl-13 pb-xl-11 px-20 "
+        >
           <div
-            class="d-flex justify-content-center border-0 text-center hero-hover-shine hover-zoom-in"
+            class="border-0 ps-lg-1 mx-md-0 mx-auto hero-card text-center"
           >
-            <img
-              class="lazy-image object-fit-cover w-100 card-img light-mode-img"
-              src="#"
-              data-src="{% static "images/hero-slider/hero-slider-13.jpg" %}"
-              width="570"
-              height="700"
-              alt="Sale 40% Off"
-            />
-            
-            <div
-              class="card-img-overlay d-inline-flex flex-column px-10 py-11 justify-content-end hero-overlay"
-            >
-              <h3 class="card-title fs-2 text-white mb-5">Sale 40% Off</h3>
-              <div>
-                <a
-                  href="#"
-                  class="pb-2 btn btn-link text-white p-0 fw-semibold text-decoration-none"
-                >
-                  Discover Now
-                  <svg class="icon icon-arrow-right">
-                    <use xlink:href="#icon-arrow-right"></use>
-                  </svg>
-                </a>
+            <div class="text-start text-xl-start">
+              <div data-animate="fadeInDown">
+                <p class="text-primary mb-10 hero-title font-primary">
+                  
+                </p>
+                <h1 class="mb-7 hero-title ">
+                  Beauty Inspired by Real Life
+                </h1>
+                <p class="hero-desc fs-18px mb-11 text-body-calculate">
+                  Made using clean, non-toxic ingredients, our products are
+                  designed for everyone.
+                </p>
               </div>
+              <a
+                href="#"
+                data-animate="fadeInUp"
+                class="btn btn-lg btn-dark btn-hover-bg-primary btn-hover-border-primary"
+              >
+                Shop Now
+              </a>
             </div>
           </div>
         </div>
-        <div data-animate="fadeInUp" class="col-md-6 mb-9 mb-md-0">
+      </div>
+
+      <div class="vh-100 d-flex align-items-center">
+        <div
+          class="lazy-bg bg-overlay position-absolute z-index-1 w-100 h-100 light-mode-img"
+          data-bg-src="{% static "images/hero-slider/hero-slider-19.jpg" %}"
+        ></div>
+        
+        <div
+          class="position-relative z-index-2 container container-xxl pt-22 pb-15 pt-xl-13 pb-xl-11 px-20"
+        >
           <div
-            class="d-flex justify-content-center border-0 text-center hero-hover-shine hover-zoom-in"
+            class="border-0 ps-lg-1 mx-md-0 mx-auto hero-card text-center"
           >
-            <img
-              class="lazy-image dark-mode-img object-fit-cover w-100 card-img"
-              src="#"
-              data-src="{% static "images/hero-slider/hero-slider-white-15.jpg" %}"
-              width="570"
-              height="700"
-              alt="Sale Up To 40% Off"
-            />
-            <div
-              class="card-img-overlay d-inline-flex flex-column px-10 py-11 justify-content-end hero-overlay"
-            >
-              <h3 class="card-title fs-2 text-white mb-5">
-                Sale Up To 40% Off
-              </h3>
-              <div>
-                <a
-                  href="#"
-                  class="pb-2 btn btn-link text-white p-0 fw-semibold text-decoration-none"
-                >
-                  Discover Now
-                  <svg class="icon icon-arrow-right">
-                    <use xlink:href="#icon-arrow-right"></use>
-                  </svg>
-                </a>
+            <div class="text-start text-xl-start">
+              <div data-animate="fadeInDown">
+                {% comment %} <p class="text-primary mb-8 hero-title font-primary">
+                  Made for you!
+                </p> {% endcomment %}
+                <h1 class="mb-7 hero-title">
+                  Beauty Inspired by Real Life
+                </h1>
+                <p class="hero-desc fs-18px mb-11 text-body-calculate">
+                  Made using clean, non-toxic ingredients, our products are
+                  designed for everyone.
+                </p>
               </div>
+              <a
+                href="#"
+                data-animate="fadeInUp"
+                class="btn btn-lg btn-dark btn-hover-bg-primary btn-hover-border-primary"
+              >
+                Shop Now
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="vh-100 d-flex align-items-center">
+        <div
+          class="lazy-bg bg-overlay position-absolute z-index-1 w-100 h-100 light-mode-img"
+          data-bg-src="{% static "images/hero-slider/hero-slider-20.jpg" %}"
+        ></div>
+        
+        <div
+          class="position-relative z-index-2 container container-xxl pt-22 pb-15 pt-xl-13 pb-xl-11 px-20"
+        >
+          <div
+            class="border-0 ps-lg-1 mx-md-0 mx-auto hero-card text-center"
+          >
+            <div class="text-start text-xl-start">
+              <div data-animate="fadeInDown">
+                <h1 class="mb-7 hero-title">
+                  Beauty Inspired by Real Life
+                </h1>
+                <p class="hero-desc fs-18px mb-11 text-body-calculate">
+                  Made using clean, non-toxic ingredients, our products are
+                  designed for everyone.
+                </p>
+              </div>
+              <a
+                href="#"
+                data-animate="fadeInUp"
+                class="btn btn-lg btn-dark btn-hover-bg-primary btn-hover-border-primary"
+              >
+                Shop Now
+              </a>
             </div>
           </div>
         </div>
