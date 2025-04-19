@@ -24,7 +24,7 @@ const OurProducts = React.forwardRef((props, ref) => {
               alt={item.title}
               className="w-full h-[250px] object-cover group-hover:scale-105 transition-all duration-500"
             />
-            <div className="absolute inset-0 bg-blue-800 bg-opacity-30 flex flex-col items-start justify-end p-4">
+            <div className="absolute inset-0 bg-orange-800 bg-opacity-10 flex flex-col items-start justify-end p-4">
               <h2 className="text-white text-2xl font-semibold">{item.title}</h2>
               <a
                 href={`https://wa.me/${whatsappNumber}?text=${encodeURIComponent(`Hi, I am interested in ${item.title}`)}`}

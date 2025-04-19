@@ -582,11 +582,12 @@ export const aboutUs = [
 
 import digitalSolutionImg from "../assets/images/digitalSoutionsss.jpg"
 import cloudSolutionImg from "../assets/images/cloudSolutionnImg.jpg"
+import itInfrastructureImg from "../assets/images/IT-Infrastructure-Solution.jpg"
 export const aboutSolutions = [
   {
     title: "Infrastructure Solutions",
     description: "We help our clients design, implement, and manage best-in-class, highly secure, and scalable enterprise IT infrastructure solutions.",
-    image: "https://cdn-lloaj.nitrocdn.com/ZZYluWSojHiVGvdfeOPfFCBERbKVDvPk/assets/images/optimized/rev-886f8dd/i0.wp.com/pegasustechnologies.com/wp-content/uploads/2022/02/3bf9e20f0ffcb5955e0b814d75b96c67.content.jpg",
+    image: itInfrastructureImg,
     path: "/it-infrastructure"
   },
   {
@@ -656,6 +657,37 @@ export const digitalSolutions = [
 
   ],
   bottomTitle : "Get The Transformational Technologies And Expertise To Guide Your Organization Through Digital Business Changes"
+  }
+]
+
+export const careers = [
+  {
+  heroTitle : "Careers",
+  contentSubTitle : " ",
+  contentTitle : "",
+  content : "",
+  contentImg : "https://imageio.forbes.com/specials-images/imageserve/65adf497bd5d0347e5af3b8d/Data-is-a-strategic-asset-/960x0.jpg?format=jpg&width=960",
+  serviceSubTitle : "Digital Solutions. Digital Results",
+  serviceTitle : "A Complete Set Of Digital Services To Help You Ride The Digital Wave",
+  serviceContent : "",
+  services : [
+    {
+      title:"",
+      description:"",
+      image: ""
+    },
+    
+
+  ],
+  bottomTitle : "Get The Transformational Technologies And Expertise To Guide Your Organization Through Digital Business Changes"
+  }
+]
+
+export const privacyPolicy = [
+  {
+  heroTitle : "Privacy Policy and Terms and Conditions",
+  contentSubTitle : " ",
+
   }
 ]
 
@@ -1234,3 +1266,88 @@ export const contactUs = [
   bottomTitle : "Reduce your cloud spend up to 30% by optimizing your cloud workloads.!",
   }
 ]
+
+export const privacyPolicyContent = {
+  intro: `Welcome to Techpappa (the “Company”, “we”, “us”, “our”). We are committed to protecting your privacy and ensuring that your personal information is handled in a safe and responsible manner. This Privacy Policy outlines how we collect, use, disclose, and safeguard your information when you visit our website Techpappa.com (the “Site”), and is supplemented by our Terms of Use.`,
+
+  sections: [
+    {
+      title: '1. Information We Collect',
+      description:
+        'We collect information that identifies, relates to, describes, or is capable of being associated with, an individual (“Personal Information”). This includes:',
+      items: [
+        'Personal identifiers, such as your name, email address, phone number, and company details.',
+        'Internet activity, such as your browsing history, search history, and information regarding your interaction with the Site.',
+        'Geolocation data, when you enable location-based services on your device.',
+      ],
+    },
+    {
+      title: '2. How We Use Your Information',
+      description: 'We use the information we collect for various purposes, including to:',
+      items: [
+        'Provide, operate, and maintain our Site',
+        'Improve, personalize, and expand our Site',
+        'Understand and analyze how you use our Site',
+        'Develop new products, services, features, and functionality',
+        'Communicate with you, including for customer service, to provide you with updates and other information relating to the Site, and for marketing and promotional purposes',
+        'Send you emails',
+        'Find and prevent fraud',
+      ],
+    },
+    {
+      title: '3. How We Share Your Information',
+      description:
+        'We may share your information with our subsidiary companies and affiliates. Additionally, we may share your information with:',
+      items: [
+        'Service providers who perform services for us, under confidentiality agreements',
+        'Legal authorities when required by law or to protect against harm to the Site rights, property, or safety, or of our users or the public, as required or permitted by law.',
+      ],
+    },
+    {
+      title: '4. Third-Party Websites',
+      description:
+        'Our Site may contain links to third-party websites that are not affiliated with us. Once you have used these links to leave the Site, any information you provide to these third parties is not covered by this Privacy Policy, and we cannot guarantee the safety and privacy of your information.',
+      items: [],
+    },
+    {
+      title: '5. Security of Your Information',
+      description:
+        'We use administrative, technical, and physical security measures to help protect your personal information. While we have taken reasonable steps to secure the personal information you provide to us, please be aware that despite our efforts, no security measures are perfect or impenetrable, and no method of data transmission can be guaranteed against any interception or other type of misuse.',
+      items: [],
+    },
+    {
+      title: '6. Changes to This Privacy Policy',
+      description:
+        'We may update this Privacy Policy from time to time. The updated version will be indicated by an updated “Revised” date and the updated version will be effective as soon as it is accessible.',
+      items: [],
+    },
+    {
+      title: '7. Terms of Use',
+      description: '',
+      items: [
+        'General Information: The content of the pages of this website is for your general information and use only. It is subject to change without notice.',
+        'Disclaimer: Neither we nor any third parties provide any warranty or guarantee as to the accuracy, timeliness, performance, completeness or suitability of the information and materials found or offered on this website for any particular purpose. You acknowledge that such information and materials may contain inaccuracies or errors and we expressly exclude liability for any such inaccuracies or errors to the fullest extent permitted by law.',
+        'Risk: Your use of any information or materials on this website is entirely at your own risk, for which we shall not be liable. It shall be your own responsibility to ensure that any products, services, or information available through this website meet your specific requirements.',
+        'Intellectual Property: This website contains material which is owned by or licensed to us. This material includes, but is not limited to, the design, layout, look, appearance, and graphics. Reproduction is strictly prohibited.',
+        'External Links: From time to time, this website may also include links to other websites. These links are provided for your convenience to provide further information. They do not signify that we endorse the website(s). We have no responsibility for the content of the linked website(s).',
+        'Agreement: If you disagree with any part of these terms and conditions, please do not use our website.',
+      ],
+    },
+    {
+      title: '8. Contact Us',
+      description:
+        'If you have any questions or concerns about this Privacy Policy, our practices with regards to your personal information, or the Terms of Use, please contact us at:',
+      items: [
+        'PO Box: 21934 City Avenue Building, 4th Floor, 1401, Dubai, United Arab Emirates',
+        'Email: support@techpappa.com',
+        'Phone: +971 4 351 99 44',
+      ],
+    },
+    {
+      title: '9. Consent',
+      description:
+        'By using our Site, you consent to the collection and use of your information as described in this Privacy Policy and agree to the Terms of Use.',
+      items: [],
+    },
+  ],
+};

@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <footer className="bg-blue-900 text-white py-10 px-10 md:px-20 ">
+    <footer className="bg-gray-800 text-white py-10 px-10 md:px-20 ">
       <div className="mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10 text-center sm:text-left">
         
         {/* Logo & Socials */}
@@ -32,20 +32,26 @@ const Footer = () => {
 
         {/* Address */}
         <div>
-          <h2 className="font-semibold text-lg mb-4">Address</h2>
-          <p className="text-sm">PO Box 234793, Shop No.90, Nakheel Centre, Deira, Dubai</p>
+          <h2 className="font-semibold text-lg mb-4">Address (ALL UAE): </h2>
+          
+          <p className="text-sm">Shams Business Center, Sharjah Media City free Zone, Al Messaned, Sharjah, UAE</p>
+          <p className="text-sm mb-2 mt-2">Tel: +971 553 377 320</p>
+          <p className="text-sm mb-2">Fax: 04 2566638</p>
+          <p className="text-sm">Email: info.hyperpower@gmail.com</p>
         </div>
 
         {/* Contact Info */}
         <div>
-          <h2 className="font-semibold text-lg mb-4">Contact Us</h2>
-          <p className="text-sm mb-2">Tel: +971 553 377 320</p>
-          <p className="text-sm mb-2">Fax: 04 2566638</p>
+        <h2 className="font-semibold text-lg mb-4">Address (ALL INDIA): </h2>
+          
+          <p className="text-sm">Chalakudy, Kanjirappilly P.O</p>
+          <p className="text-sm mb-2 mt-2">Tel: +91 9539 967 445</p>
+          <p className="text-sm mb-2 mt-2">Tel: +91 8925 999 598</p>
+          <p className="text-sm mb-2 mt-2">Tel: +91 9947 769 395</p>
           <p className="text-sm">Email: info.hyperpower@gmail.com</p>
         </div>
       </div>
     </footer>
   );
 };
-
 export default Footer;

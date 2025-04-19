@@ -37,7 +37,7 @@ const Navbar = () => {
             </a>
 
             {/* Phone Number Below */}
-            <h3 className="text-sm font-medium">+971 351 99 44</h3>
+            <h3 className="text-sm font-medium">+971 4 351 99 44</h3>
           </div>
           <div className="bg-gray-300 w-0.5 h-5 mx-5"></div>
           <Link to="/contact" className="bg-primaryBlue text-white px-4 py-2 text-sm font-medium rounded-full hover:bg-blue-700">Contact Us</Link>

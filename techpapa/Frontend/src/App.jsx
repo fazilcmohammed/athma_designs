@@ -52,6 +52,9 @@ import NetworkOperation from './pages/FooterLinks/Professional Service/NetworkOp
 import OnSiteEngineer from './pages/FooterLinks/Professional Service/OnSiteEngineer';
 import TechnologyConsulting from './pages/FooterLinks/Professional Service/TechnologyConsulting';
 import { ToastContainer, toast } from 'react-toastify';
+import Careers from './pages/FooterLinks/Careers';
+import PrivacyPolicy from './pages/FooterLinks/PrivacyPolicy';
+import NotFound from './pages/NotFound';
 
 
 function App() {
@@ -112,6 +115,9 @@ function App() {
         <Route path="/service/network-operation-center/" element={<NetworkOperation/>} />
         <Route path="/service/on-site-engineer/" element={<OnSiteEngineer/>} />
         <Route path="/service/it-consultant/" element={<TechnologyConsulting/>} />
+        <Route path="/careers" element={<Careers/>} />
+        <Route path="/privacy-policy" element={<PrivacyPolicy/>} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
         
         <Footer/>

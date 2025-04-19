@@ -132,7 +132,7 @@ const Contact = () => {
             <h3 className="text-lg font-semibold mt-4">Phone</h3>
             <p className="text-gray-600">Mon-Fri from 9am to 6pm.</p>
             <a href="tel:+97143519944" className="text-primaryBlue hover:underline mr-1">
-              +971 351 99 44
+              +971 4 351 99 44
             </a><br />
             <p className="text-gray-600">24/7 Technical Support:</p>
             <a href="tel:+971043522991" className="text-primaryBlue hover:underline">
