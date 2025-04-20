@@ -4,21 +4,21 @@ export const jobListings = [
     company: "Tech Solutions Inc",
     location: "India",
     type: "Full-time",
-    salary: "$120k - $180k",
+    salary: "₹59000",
   },
   {
     title: "General",
     company: "Global Brands",
     location: "Dubai",
     type: "Full-time",
-    salary: "$80k - $120k",
+    salary: "₹59000",
   },
   {
     title: "Super Market",
     company: "Creative Studio",
     location: "Remote",
     type: "Contract",
-    salary: "$90k - $130k",
+    salary: "₹59000",
   },
 ];
 

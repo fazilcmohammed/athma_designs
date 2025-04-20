@@ -62,12 +62,13 @@ const TravelPackages = () => {
                   <Users className="h-4 w-4" />
                   <span>{pkg.groupSize}</span>
                 </div>
-                <div className="text-xl sm:text-2xl font-bold text-corporate-navy">
+                <Badge variant="outline"
+                    className="text-corporate-coral border-corporate-coral text-lg">
                   {pkg.price}
-                </div>
+                </Badge>
               </CardContent>
               <CardFooter>
-                <Button className="w-full bg-corporate-coral hover:bg-corporate-coral/90 text-white text-lg">
+                <Button className="w-full bg-corporate-navy hover:bg-corporate-navy/90 text-white text-lg">
                 <Link to="/booktravel">Book Now</Link>
                   
                 </Button>

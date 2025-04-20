@@ -45,15 +45,17 @@ const FeaturedJobs = () => {
                   <MapPin className="h-4 w-4" />
                   <span>{job.location}</span>
                 </div>
-                <div className="flex flex-wrap gap-2">
-                  <Badge variant="secondary">{job.type}</Badge>
-                  {/* <Badge
+                <div className="flex flex-wrap">
+                  {/* <Badge variant="secondary">{job.type}</Badge> */}
+                  <Badge
                     variant="outline"
-                    className="text-corporate-coral border-corporate-coral"
+                    className="text-corporate-coral border-corporate-coral text-lg"
                   >
                     {job.salary}
-                  </Badge> */}
+                  </Badge><br />
+                  
                 </div>
+                <p className="text-sm ">*Includes Visa & Tickets</p>
               </CardContent>
               <CardFooter>
                 <Button className="w-full bg-corporate-navy hover:bg-corporate-navy/90">
