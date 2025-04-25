@@ -123,4 +123,10 @@ class Wishlist(models.Model):
 
     def __str__(self):
         return f"{self.user.username} - {self.product.name}"
+    
 
+class ServiceFee(models.Model):
+    fee = models.DecimalField(max_digits=6, decimal_places=2, default=3.00)
+
+    def __str__(self):
+        return f"Service Fee: ₹{self.fee}"

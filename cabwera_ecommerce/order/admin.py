@@ -1,6 +1,6 @@
 from django.contrib import admin
 
-from .models import CartItem, Location, Notification, Order, OrderUpdate, Wishlist
+from .models import CartItem, Location, Notification, Order, OrderUpdate, Wishlist, ServiceFee
 
 # Register your models here.
 
@@ -40,3 +40,5 @@ class LocationAdmin(admin.ModelAdmin):
 class WishlistAdmin(admin.ModelAdmin):
     list_display = ("user", "product")
     search_fields = ("user__username", "product__name")
+
+admin.site.register(ServiceFee)

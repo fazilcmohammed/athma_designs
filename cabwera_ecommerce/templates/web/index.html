@@ -130,10 +130,10 @@
               </div>
             </div>
             <div class="text-small mb-1">
-              <a href="#!" class="text-decoration-none text-muted"><small>{{ product.category }}</small></a>
+              <a href="" class="text-decoration-none text-muted"><small>{{ product.category }}</small></a>
             </div>
             <h2 class="fs-6">
-              <a href="" class="text-inherit text-decoration-none">{{ product.name }}</a>
+              <a href="{{ product.get_absolute_url }}" class="text-inherit text-decoration-none">{{ product.name }}</a>
             </h2>
             <div>
               <small class="text-warning">
@@ -174,7 +174,7 @@
 <!-- /// -->
 <section class="my-lg-14 my-8">
   <div class="container">
-    <div class="row">
+    <div class="row d-flex justify-content-between" style="">
       <div class="col-md-6 col-lg-3">
         <div class="mb-8 mb-xl-0">
           <div class="mb-6">

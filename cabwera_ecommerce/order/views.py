@@ -5,8 +5,9 @@ from django.shortcuts import get_object_or_404, redirect, render
 from django.views import View
 from django.views.generic.list import ListView
 from .forms import ShippingAddressForm
-from order.models import Order
+from order.models import Order, ServiceFee
 import uuid  
+from django.views.generic import TemplateView
 
 
 from products.models import AvailableSize, Product
@@ -195,3 +196,29 @@ class ClearCartView(View):
         user = request.user
         CartItem.objects.filter(user=user).delete()
         return redirect('order:cart') 
+
+    
+from django.views.generic import TemplateView
+from .models import CartItem, ServiceFee
+
+class CartView(LoginRequiredMixin, TemplateView):
+    template_name = 'web/cart.html'
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+
+        cart_items = CartItem.objects.filter(user=self.request.user)
+        subtotal = sum(item.get_total_price() for item in cart_items)
+
+        # Get service fee from DB (fallback to 3.00 if none set)
+        service_fee_obj = ServiceFee.objects.first()
+        service_fee = float(service_fee_obj.fee) if service_fee_obj else 3.00
+
+        total = subtotal + service_fee
+
+        context['cart_items'] = cart_items
+        context['subtotal'] = subtotal
+        context['service_fee'] = service_fee
+        context['total'] = total
+
+        return context

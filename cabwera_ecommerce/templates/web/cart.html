@@ -134,25 +134,28 @@
                       <div>Item Subtotal</div>
 
                     </div>
-                    <span>₹{{cart_total}}</span>
+                    <span>₹{{ subtotal|floatformat:0 }}</span>
                   </li>
 
                   <!-- list group item -->
-                  <li class="list-group-item d-flex justify-content-between align-items-start">
-                    <div class="me-auto">
-                      <div>Service Fee</div>
+                  <!-- Service Fee -->
+<li class="list-group-item d-flex justify-content-between align-items-start">
+  <div class="me-auto">
+    <div>Service Fee</div>
+  </div>
+  <span>₹{{ service_fee }}</span>
+</li>
 
-                    </div>
-                    <span>$3.00</span>
-                  </li>
-                  <!-- list group item -->
-                  <li class="list-group-item d-flex justify-content-between align-items-start">
-                    <div class="me-auto">
-                      <div class="fw-bold">Subtotal</div>
+<!-- Subtotal -->
 
-                    </div>
-                    <span class="fw-bold">$67.00</span>
-                  </li>
+<!-- Total -->
+<li class="list-group-item d-flex justify-content-between align-items-start">
+  <div class="me-auto">
+    <div class="fw-bold">Total</div>
+  </div>
+  <span class="fw-bold">₹{{ total }}</span>
+</li>
+
                 </ul>
 
               </div>
