@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    {% load static %}
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta content="Odadoz" name="author">
+        <title>{% block title %}{% endblock %} | Odadoz</title>
+        
+        <!-- Favicon icon-->
+        <link rel="shortcut icon" type="image/x-icon" href="{% static 'web/images/favicon/icon.svg' %}">
+
+         <!-- Libs CSS -->
+         
+        <link rel="stylesheet" href="{% static 'web/libs/slick-carousel/slick/slick.css' %}" />
+        <link rel="stylesheet" href="{% static 'web/libs/slick-carousel/slick/slick-theme.css' %}" />
+        <link rel="stylesheet" href="{% static 'web/libs/tiny-slider/dist/tiny-slider.css' %}" />
+       
+        <link href="{% static 'web/libs/bootstrap-icons/font/bootstrap-icons.min.css' %}" rel="stylesheet">
+        <link href="{% static 'web/libs/feather-webfont/dist/feather-icons.css' %}" rel="stylesheet">
+        <link href="{% static 'web/libs/simplebar/dist/simplebar.min.css' %}" rel="stylesheet">
+        <link href="{% static 'web/libs/nouislider/dist/nouislider.min.css' %}" rel="stylesheet">
+
+        <!-- Theme CSS -->
+        <link rel="stylesheet" href="{% static 'web/css/theme.min.css' %}" />
+        <link rel="stylesheet" href="{% static 'web/css/style.css' %}" />
+
+        {% block css_plugins %}{% endblock %}
+        {% block css %}{% endblock %}
+
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-M8S4MT3EYG"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-M8S4MT3EYG');
+        </script>
+    </head>
+    <body>
+        
+        {% include 'web/includes/header.html' %}
+        <main>
+            {% block content %}{% endblock %} 
+            {% include 'web/includes/modal/category_filter.html' %}
+            {% block modal %}{% endblock %} 
+        </main>
+        {% include 'web/includes/footer.html' %}
+
+        <!-- Libs JS -->
+        <script src="{% static 'web/libs/jquery/dist/jquery.min.js' %}"></script>
+        <script src="{% static 'web/libs/bootstrap/dist/js/bootstrap.bundle.min.js' %}"></script>
+        <script src="{% static 'web/libs/simplebar/dist/simplebar.min.js' %}"></script>
+        <script src="{% static 'web/libs/nouislider/dist/nouislider.min.js' %}"></script>
+        <script src="{% static 'web/libs/wnumb/wNumb.min.js' %}"></script>
+
+        <!-- Theme JS -->
+        <script src="{% static 'web/js/theme.min.js' %}"></script>
+        <script src="{% static 'web/libs/slick-carousel/slick/slick.min.js' %}"></script>
+        <script src="{% static 'web/js/vendors/slick-slider.js' %}"></script>
+        <script src="{% static 'web/libs/tiny-slider/dist/min/tiny-slider.js' %}"></script>
+        <script src="{% static 'web/js/vendors/tns-slider.js' %}"></script>
+        <script src="{% static 'web/js/vendors/zoom.js' %}"></script>
+        <script src="{% static 'web/js/vendors/increment-value.js' %}"></script>
+        <script src="{% static 'web/libs/jquery-countdown/dist/jquery.countdown.min.js' %}"></script>
+        <script src="{% static 'web/js/vendors/countdown.js' %}"></script>
+        {% block js_plugins %}{% endblock %}
+        {% block js %}{% endblock %}
+    </body>
+</html>

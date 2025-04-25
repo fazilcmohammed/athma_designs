@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    {% load static %}
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta content="Odadoz" name="author">
+        <title>{% block title %}{% endblock %} | Odadoz</title>
+        
+        <!-- Favicon icon-->
+        <link rel="shortcut icon" type="image/x-icon" href="{% static 'web/images/favicon/icon.webp' %}">
+
+         <!-- Libs CSS -->
+        <link href="{% static 'web//libs/bootstrap-icons/font/bootstrap-icons.min.css' %}" rel="stylesheet">
+        <link href="{% static 'web//libs/feather-webfont/dist/feather-icons.css' %}" rel="stylesheet">
+        <link href="{% static 'web//libs/simplebar/dist/simplebar.min.css' %}" rel="stylesheet">
+        <!-- Theme CSS -->
+        <link rel="stylesheet" href="{% static 'web/css/theme.min.css' %}" />
+        {% block css_plugins %}{% endblock %}
+        {% block css %}{% endblock %}
+
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-M8S4MT3EYG"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-M8S4MT3EYG');
+        </script>
+    </head>
+    <body>
+        <div>
+            {% include 'dashboard/includes/top_nav.html' %}
+            <div class="main-wrapper">
+                {% include 'dashboard/includes/sidebar.html' %}
+                <main class="main-content-wrapper">
+                    <section class="container">
+                    {% block content %}{% endblock %} 
+                    </section>
+                </main>
+            </div>
+        </div>
+        {% include 'web/includes/footer.html' %}
+        <!-- Libs JS -->
+        <script src="{% static 'web/libs/jquery/dist/jquery.min.js' %}"></script>
+        <script src="{% static 'web/libs/bootstrap/dist/js/bootstrap.bundle.min.js' %}"></script>
+        <script src="{% static 'web/libs/simplebar/dist/simplebar.min.js' %}"></script>
+        <!-- Theme JS -->
+        <script src="{% static 'web/js/theme.min.js' %}"></script>
+        {% block js_plugins %}{% endblock %}
+        {% block js %}{% endblock %}
+    </body>
+</html>

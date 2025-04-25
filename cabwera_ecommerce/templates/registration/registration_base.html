@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {% load static %}
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Primary Meta Tags -->
+    <title>{% block title %} {% endblock %} Odadoz</title>
+    <meta name="title" content="">
+    <meta name="description" content="">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="">
+    <meta property="og:title" content="">
+    <meta property="og:description" content="">
+    <meta property="og:image" content="">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="">
+    <meta property="twitter:title" content="">
+    <meta property="twitter:description" content="">
+    <meta property="twitter:image" content="">
+
+    <!-- Favicon icon-->
+    <link rel="shortcut icon" type="image/x-icon" href="{% static 'web/images/favicon/icon.svg' %}">
+
+    <!-- Libs CSS -->
+    <link href="{% static 'web/libs/bootstrap-icons/font/bootstrap-icons.min.css' %}" rel="stylesheet">
+    <link href="{% static 'web/libs/feather-webfont/dist/feather-icons.css' %}" rel="stylesheet">
+    <link href="{% static 'web/libs/simplebar/dist/simplebar.min.css' %}" rel="stylesheet">
+
+    <!-- Theme CSS -->
+    <link rel="stylesheet" href="{% static 'web/css/theme.min.css' %}">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-M8S4MT3EYG"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-M8S4MT3EYG');
+    </script>
+
+</head>
+
+<body>
+
+    <!-- navigation -->
+    <div class="border-bottom shadow-sm">
+        <nav class="navbar navbar-light py-2">
+        <div class="container justify-content-center justify-content-lg-between">
+            <a class="navbar-brand" href="/">
+            <img src="{% static 'web/images/logo/traddoxi.svg' %}" alt="" class="nav-logo d-inline-block align-text-top">
+            </a>
+            {% block reg_nav %}{% endblock reg_nav %}
+        </div>
+        </nav>
+    </div>
+
+    <main>
+        {% block content %} {% endblock content %}
+    </main>
+    {% include 'web/includes/footer.html' %}
+      <!-- Libs JS -->
+    <script src="{% static 'web/libs/jquery/dist/jquery.min.js' %}"></script>
+    <script src="{% static 'web/libs/bootstrap/dist/js/bootstrap.bundle.min.js' %}"></script>
+    <script src="{% static 'web/libs/simplebar/dist/simplebar.min.js' %}"></script>
+
+    <!-- Theme JS -->
+    <script src="{% static 'web/js/theme.min.js' %}"></script>
+
+</body>
+
+</html>

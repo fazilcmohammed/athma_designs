@@ -1,0 +1,68 @@
+{% extends 'account/base.html' %} {% load static %} {% block title %}order{%endblock%} {% block content %}
+<div class="col-lg-9 col-md-8 col-12">
+  <div class="py-6 p-md-6 p-lg-10">
+    <!-- heading -->
+    <h2 class="mb-6">Your Orders</h2>
+
+    <div class="table-responsive-xxl border-0">
+      <!-- Table -->
+      <table class="table mb-0 text-nowrap table-centered">
+        <!-- Table Head -->
+        <thead class="bg-light">
+          <tr>
+            <th>&nbsp;</th>
+            <th>Product</th>
+            <th>Order</th>
+            <th>Date</th>
+            <th>Items</th>
+            <th>Status</th>
+            <th>Amount</th>
+
+            <th></th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Table body -->
+          {% for item in items %}
+          <tr>
+            <td class="align-middle border-top-0 w-0">
+              <a href="#">
+                <img
+                  src="{{item.product.image.url}}"
+                  alt="Ecommerce"
+                  class="icon-shape icon-xl"
+              /></a>
+            </td>
+            <td class="align-middle border-top-0">
+              <a href="#" class="fw-semi-bold text-inherit">
+                <h6 class="mb-0">{{item.product.name}}</h6>
+              </a>
+              <span><small class="text-muted">{{item.variant}}</small></span>
+            </td>
+            <td class="align-middle border-top-0">
+              <a href="#" class="text-inherit">{{item.product.product_code}}</a>
+            </td>
+            <td class="align-middle border-top-0">March 5, 2023</td>
+            <td class="align-middle border-top-0">{{item.quantity}}</td>
+            <td class="align-middle border-top-0">
+              <span class="badge bg-warning">status</span>
+            </td>
+            <td class="align-middle border-top-0">${{item.get_total_price}}</td>
+            <td class="text-muted align-middle border-top-0">
+              <a
+                href="#"
+                class="text-inherit"
+                data-bs-toggle="tooltip"
+                data-bs-placement="top"
+                data-bs-title="View"
+                ><i class="feather-icon icon-eye"></i
+              ></a>
+            </td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+{% endblock content %}

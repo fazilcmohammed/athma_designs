@@ -1,0 +1,110 @@
+{% extends 'web/base.html' %} {% load static %} {% block title %}Contact{%endblock%} 
+{% block content %}
+<section class="my-lg-14 my-8">
+  <!-- container -->
+  <div class="container">
+    <div class="row">
+      <!-- col -->
+      <div class="offset-lg-2 col-lg-8 col-12">
+        <div class="mb-8">
+          <!-- heading -->
+          <h1 class="h3">Contact Inquiries</h1>
+          <p class="lead mb-0">
+            This form is for Contact inquiries only. For all other customer or
+            shopper support requests, please visit the links below this form.
+          </p>
+        </div>
+        <!-- form -->
+        <form class="row ajax redirect" data-redirect="/" method="post">
+            {% csrf_token %}
+          <!-- input -->
+          <div class="col-md-6 mb-3">
+            <label class="form-label" for="first_name">
+              First Name<span class="text-danger">*</span></label
+            >
+            <input
+              type="text"
+              id="first_name"
+              class="form-control"
+              name="first_name"
+              placeholder="Enter Your First Name"
+              required
+            />
+          </div>
+          <div class="col-md-6 mb-3">
+            <!-- input -->
+            <label class="form-label" for="last_name">
+              Last Name<span class="text-danger">*</span></label
+            >
+            <input
+              type="text"
+              id="last_name"
+              class="form-control"
+              name="last_name"
+              placeholder="Enter Your Last name"
+              required
+            />
+          </div>
+          
+          <div class="col-md-12 mb-3">
+            <!-- input -->
+            <label class="form-label" for="palce"> Place</label>
+            <input
+              type="text"
+              id="palce"
+              name="place"
+              class="form-control"
+              placeholder="Your Place"
+              required
+            />
+          </div>
+          <div class="col-md-6 mb-3">
+            <label class="form-label" for="emailContact"
+              >Email<span class="text-danger">*</span></label
+            >
+            <input
+              type="email"
+              id="emailContact"
+              name="email"
+              class="form-control"
+              placeholder="Enter Your Email"
+              required
+            />
+          </div>
+          <div class="col-md-6 mb-3">
+            <!-- input -->
+            <label class="form-label" for="phone"> Phone</label>
+            <input
+              type="tel"
+              id="phone"
+              name="phone"
+              class="form-control"
+              placeholder="Your Phone Number"
+              required
+            />
+          </div>
+          <div class="col-md-12 mb-3">
+            <!-- input -->
+            <label class="form-label" for="message"> Comments</label>
+            <textarea
+              rows="3"
+              id="message"
+              name="message"
+              class="form-control"
+              placeholder="Your Message..."
+            ></textarea>
+          </div>
+          <div class="col-md-12">
+            <!-- btn -->
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock content %}
+
+{% block js %}
+{% include 'web/includes/form-ajax.html' %}
+{% endblock %}
