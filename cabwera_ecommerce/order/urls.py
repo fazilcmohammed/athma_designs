@@ -17,4 +17,5 @@ urlpatterns = [
     path("shop/wishlist/remove/<int:product_id>/",views.RemoveFromWishlistView.as_view(),name="remove_from_wishlist"),
     path("shop/checkout/", views.CheckoutView.as_view(), name="checkout"),
     path("shop/orders/", views.OrderView.as_view(), name="orders"),
+    path('payment', views.paymentdemo, name='payment')
 ]

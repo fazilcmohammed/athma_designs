@@ -22,7 +22,7 @@ class Slider(models.Model):
 
     class Meta:
         verbose_name = _("Slider")
-        verbose_name_plural = _("Sliders")
+        verbose_name_plural = _("Sliders") 
         ordering = ("title",)
 
     def __str__(self):

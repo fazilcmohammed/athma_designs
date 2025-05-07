@@ -15,3 +15,4 @@ class ShippingAddressForm(forms.ModelForm):
         'zip_code': forms.TextInput(attrs={'class': 'form-control', 'placeholder': 'Zip Code'}),
         'is_default': forms.CheckboxInput(attrs={'class': 'form-check-input'}),
     }
+

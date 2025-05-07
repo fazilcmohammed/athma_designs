@@ -1,6 +1,6 @@
 from django.contrib import admin
 
-from .models import CartItem, Location, Notification, Order, OrderUpdate, Wishlist, ServiceFee
+from .models import CartItem, Location, Notification, Order, OrderUpdate, Wishlist, ServiceFee, OrderItem, Payment
 
 # Register your models here.
 
@@ -11,7 +11,12 @@ class OrderAdmin(admin.ModelAdmin):
     list_filter = ['status', 'timestamp']
     search_fields = ['order_id', 'user__username']
 
-    
+
+@admin.register(OrderItem)
+class OrderItemAdmin(admin.ModelAdmin):
+    list_display = ['order', 'product', 'variant', 'price', 'quantity']
+    search_fields = ['order__order_id', 'product__name']
+
 @admin.register(CartItem)
 class CartItemAdmin(admin.ModelAdmin):
     list_display = ("variant", "quantity")
@@ -42,3 +47,5 @@ class WishlistAdmin(admin.ModelAdmin):
     search_fields = ("user__username", "product__name")
 
 admin.site.register(ServiceFee)
+admin.site.register(Payment)
+

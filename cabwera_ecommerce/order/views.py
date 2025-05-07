@@ -8,11 +8,10 @@ from .forms import ShippingAddressForm
 from order.models import Order, ServiceFee
 import uuid  
 from django.views.generic import TemplateView
-
-
+from accounts.models import ShippingAddress
 from products.models import AvailableSize, Product
 
-from .models import CartItem, Wishlist
+from .models import CartItem, Wishlist, OrderItem
 
 
 class CartView(LoginRequiredMixin, View):
@@ -132,40 +131,79 @@ class CheckoutView(LoginRequiredMixin, View):
     template_name = "web/shop-checkout.html"
 
     def get(self, request, *args, **kwargs):
-        user = self.request.user
+        user = request.user
         cart_items = CartItem.objects.filter(user=user)
+
+        # ✅ If cart is empty, redirect to shop
+        if not cart_items.exists():
+            messages.error(request, "Your cart is empty.")
+            return redirect('web:shop')
+    
+        # Fetch only the default address
+        default_address = ShippingAddress.objects.filter(customer=user, is_default=True).first()
+
         form = ShippingAddressForm()
-        return render(request, self.template_name, {"cart_items": cart_items, "form": form})
+        return render(request, self.template_name, {
+            "cart_items": cart_items,
+            "form": form,
+            "default_address": default_address  # Pass the default address only
+        })
 
     def post(self, request, *args, **kwargs):
-        user = self.request.user
+        user = request.user
         cart_items = CartItem.objects.filter(user=user)
+
+        # ✅ If cart is empty, redirect to shop
+        if not cart_items.exists():
+            messages.error(request, "Your cart is empty.")
+            return redirect('web:shop')
+
+        selected_address_id = request.POST.get('address')
         form = ShippingAddressForm(request.POST)
 
-        if form.is_valid():
-            # Save the shipping address to the user's profile or order
+        if selected_address_id:
+            shipping_address = ShippingAddress.objects.get(id=selected_address_id, customer=user)
+        elif form.is_valid():
             shipping_address = form.save(commit=False)
             shipping_address.customer = user
             shipping_address.save()
+        else:
+            addresses = ShippingAddress.objects.filter(customer=user)
+            return render(request, self.template_name, {
+                "cart_items": cart_items,
+                "form": form,
+                "addresses": addresses
+            })
 
-            # Create an order and associate it with the user and shipping address
-            order = Order.objects.create(
+        # ✅ Create Order
+        order = Order.objects.create(
+            user=user,
+            order_id=str(uuid.uuid4()),
+            address=shipping_address,
+            status="Pending",
+        )
+
+        # ✅ Move cart items ➔ OrderItems
+        for cart_item in cart_items:
+            print(f"Moving cart item: {cart_item}")  # 🔥 Debug print
+            OrderItem.objects.create(
+                order=order,
                 user=user,
-                order_id=str(uuid.uuid4()),  # Generate a unique order ID
-                address=shipping_address,
-                status="Pending",
+                product=cart_item.product,
+                variant=cart_item.variant,
+                size="",  # Add size if you store it in cart
+                price=cart_item.price,
+                quantity=cart_item.quantity,
+                ordered=True,
             )
 
-            # Associate cart items with the order
-            for cart_item in cart_items:
-                order.product.add(cart_item)
+        # ✅ Clear cart
+        cart_items.delete()
 
-            # Clear the user's cart after creating the order
-            cart_items.delete()
+        messages.success(request, "Order placed successfully!")
+        return redirect('web:index')
 
-            return redirect('web:index')
-        else:
-            return render(request, self.template_name, {"cart_items": cart_items, "form": form})
+
 
 
 class OrderView(LoginRequiredMixin, View):
@@ -194,7 +232,7 @@ class UpdateCartView(View):
 class ClearCartView(View):
     def get(self, request, *args, **kwargs):
         user = request.user
-        CartItem.objects.filter(user=user).delete()
+        CartItem.objects.filter(user=user).delete() 
         return redirect('order:cart') 
 
     
@@ -222,3 +260,7 @@ class CartView(LoginRequiredMixin, TemplateView):
         context['total'] = total
 
         return context
+
+
+def paymentdemo(request):
+    return render(request, 'web/payment.html')

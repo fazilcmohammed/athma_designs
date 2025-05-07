@@ -1,0 +1,107 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<main class='main-section'>
+    <div class="auth-container">
+        <div class="auth-header">
+            <h1 class="auth-title">Create Account</h1>
+            <p class="auth-subtitle">Join our community and make a difference</p>
+        </div>
+        
+        <div class="auth-form">
+            <div class="error-message" id="error-message">
+                Please correct the errors and try again.
+            </div>
+            
+            <form id="signup-form">
+                <div class="form-group">
+                    <label for="fullname">Full Name</label>
+                    <input type="text" id="fullname" name="fullname" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="confirm-password">Confirm Password</label>
+                    <input type="password" id="confirm-password" name="confirm-password" required>
+                </div>
+                
+                <div class="form-check">
+                    <input type="checkbox" id="terms" name="terms" required>
+                    <label for="terms">I agree to the <a href="#" class="auth-link">Terms of Service</a> and <a href="#" class="auth-link">Privacy Policy</a></label>
+                </div>
+                
+                <div class="form-check">
+                    <input type="checkbox" id="newsletter" name="newsletter">
+                    <label for="newsletter">Subscribe to our newsletter for updates on our programs and events</label>
+                </div>
+                
+                <button type="submit" class="submit-btn">Create Account</button>
+            </form>
+            
+            <div class="auth-divider">
+                <div class="divider-line"></div>
+                <span class="divider-text">OR</span>
+                <div class="divider-line"></div>
+            </div>
+            
+            <div class="social-auth">
+                <a href="#" class="social-btn">
+                    <span class="social-icon">G</span>
+                    <span>Google</span>
+                </a>
+                <a href="#" class="social-btn">
+                    <span class="social-icon">f</span>
+                    <span>Facebook</span>
+                </a>
+            </div>
+            
+            <div class="auth-footer">
+                Already have an account? <a href="login.html" class="auth-link">Log In</a>
+            </div>
+        </div>
+    </div>
+</main>
+
+<script>
+    // DOM elements
+    const signupForm = document.getElementById('signup-form');
+    const errorMessage = document.getElementById('error-message');
+    const passwordInput = document.getElementById('password');
+    const confirmPasswordInput = document.getElementById('confirm-password');
+    
+    // Form submission handler
+    signupForm.addEventListener('submit', function(event) {
+        event.preventDefault();
+        
+        // Simple validation - check if passwords match
+        if (passwordInput.value !== confirmPasswordInput.value) {
+            errorMessage.textContent = "Passwords do not match. Please try again.";
+            errorMessage.style.display = 'block';
+            return;
+        }
+        
+        // In a real application, you would send the form data to a server for processing
+        // For demo purposes, let's simulate a successful signup
+        
+        // Hide error message
+        errorMessage.style.display = 'none';
+        
+        // Store user info in localStorage (for demo purposes only)
+        localStorage.setItem('userEmail', document.getElementById('email').value);
+        
+        // Redirect to login page
+        window.location.href = 'login.html';
+    });
+</script>
+
+{% endblock content %}

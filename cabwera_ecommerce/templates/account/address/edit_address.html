@@ -1,0 +1,46 @@
+{% extends 'web/base.html' %}
+{% load static %}
+{% block content %}
+
+<div class="container py-5">
+  <h2 class="mb-4">Edit Address</h2>
+
+  <form method="post">
+    {% csrf_token %}
+    <div class="mb-3">
+      {{ form.first_name.label_tag }} {{ form.first_name }}
+    </div>
+    <div class="mb-3">
+      {{ form.last_name.label_tag }} {{ form.last_name }}
+    </div>
+    <div class="mb-3">
+      {{ form.address1.label_tag }} {{ form.address1 }}
+    </div>
+    <div class="mb-3">
+      {{ form.address2.label_tag }} {{ form.address2 }}
+    </div>
+    <div class="mb-3">
+      {{ form.city.label_tag }} {{ form.city }}
+    </div>
+    <div class="mb-3">
+      {{ form.state.label_tag }} {{ form.state }}
+    </div>
+    <div class="mb-3">
+      {{ form.country.label_tag }} {{ form.country }}
+    </div>
+    <div class="mb-3">
+      {{ form.phone.label_tag }} {{ form.phone }}
+    </div>
+    <div class="mb-3">
+      {{ form.zip_code.label_tag }} {{ form.zip_code }}
+    </div>
+    <div class="form-check mb-4">
+      {{ form.is_default }} {{ form.is_default.label_tag }}
+    </div>
+
+    <button type="submit" class="btn btn-primary">Update Address</button>
+    <a href="{% url 'accounts:address_list' %}" class="btn btn-secondary ms-2">Cancel</a>
+  </form>
+</div>
+
+{% endblock %}

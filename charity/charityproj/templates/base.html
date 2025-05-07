@@ -1,0 +1,25 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static "css/homestyle.css" %}">
+    <link rel="stylesheet" href="{% static "css/aboutstyle.css" %}">
+    <link rel="stylesheet" href="{% static "css/styles.css" %}">
+    <link rel="stylesheet" href="{% static "css/programestyle.css" %}">
+    <link rel="stylesheet" href="{% static "css/joblistingstyle.css" %}">
+    <link rel="stylesheet" href="{% static "css/contactstyle.css" %}">
+    <link rel="stylesheet" href="{% static "css/loginstyle.css" %}">
+    <title>Document</title>
+</head>
+<body>
+    {% include "includes/nav.html" %}
+    {% block content %}
+    
+    {% endblock content %}
+    {% include "includes/footer.html" %}
+
+    <script src={% static "js/script.js" %}></script>
+</body>
+</html>

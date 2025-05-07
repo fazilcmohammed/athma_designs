@@ -1,4 +1,4 @@
-from django.contrib.auth.models import User
+from django.contrib.auth.models import User, AbstractUser
 from django.db import models
 
 from main.models import GENDER_CHOICES
@@ -42,7 +42,10 @@ class ShippingAddress(models.Model):
     address1 = models.CharField(max_length=256, blank=True, null=True)
     address2 = models.CharField(max_length=256, blank=True, null=True)
     city = models.CharField(max_length=100, blank=True, null=True)
+    state = models.CharField(max_length=100, blank=True, null=True)
+    country = models.CharField(max_length=100, blank=True, null=True)
     zip_code = models.CharField(max_length=15, blank=True, null=True)
+    phone = models.CharField(max_length=15, blank=True, null=True)
     is_default = models.BooleanField(default=False)
 
     class Meta:
@@ -50,3 +53,5 @@ class ShippingAddress(models.Model):
 
     def __str__(self):
         return str(self.first_name)
+    
+

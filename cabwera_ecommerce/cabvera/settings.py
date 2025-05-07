@@ -21,12 +21,12 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/5.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-9t4-+0=#nj*+r7%l^5xf2y(1*c2a3_mkjp1+5v2qr#onj$1i9h'
+SECRET_KEY = config('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = config('DEBUG', default=False, cast=bool)
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["*"]
 
 
 # Application definition
@@ -64,7 +64,7 @@ ROOT_URLCONF = 'cabvera.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': ['templates'],
+        'DIRS': [BASE_DIR / "templates"],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -86,8 +86,13 @@ WSGI_APPLICATION = 'cabvera.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': config('DB_NAME'),
+        'USER': config('DB_USER'),
+        'PASSWORD': config('DB_PASSWORD'),
+        'HOST': config('DB_HOST'),
+        'PORT': "5432",
+        'OPTIONS': {},
     }
 }
 
@@ -123,6 +128,7 @@ USE_I18N = True
 USE_TZ = True
 
 USE_L10N = False
+
 DATE_INPUT_FORMATS = (
     "%d/%m/%Y",
     "%d-%m-%Y",
@@ -187,4 +193,19 @@ REGISTRATION_OPEN = True
 LOGIN_URL = "/accounts/login/"
 LOGOUT_URL = "/accounts/logout/"
 LOGIN_REDIRECT_URL = "/"
+
+# Email settings (for development)
+# vugc zghr eaka qlgy
+
+# EMAIL_BACKEND = 'main.backend.email_backend.EmailBackend'
+# EMAIL_HOST = 'smtp.gmail.com'
+# EMAIL_PORT = 587
+# EMAIL_USE_TLS = True
+# EMAIL_HOST_USER = 'crackthedata@gmail.com'  # your Gmail address
+# EMAIL_HOST_PASSWORD = 'vugczghreakaqlgy'  # app password, not your normal password
+# DEFAULT_FROM_EMAIL = EMAIL_HOST_USER
+
+
+# For testing: Print emails in console
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 

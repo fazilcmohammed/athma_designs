@@ -1,16 +1,34 @@
 from django.contrib.auth.models import User
 from django.db import models
 from django.utils.translation import gettext_lazy as _
-
+from products.models import Product
+from django.utils import timezone
 # Create your models here.
+
+class Payment(models.Model):
+    user = models.ForeignKey(User, on_delete=models.CASCADE)
+    payment_id = models.CharField(max_length=100)
+    payment_method = models.CharField(max_length=100)
+    amount_paid = models.CharField(max_length=100)
+    status = models.CharField(max_length=100)
+    created_at = models.DateTimeField(auto_now_add=True)
+
+    def __str__(self):
+        return self.payment_id
 
 
 class Order(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE)
-    product = models.ForeignKey("CartItem", verbose_name="Cart items", on_delete=models.CASCADE)
+    # product = models.ManyToManyField("CartItem", verbose_name="Cart items")
+    # address = models.ForeignKey("accounts.ShippingAddress", verbose_name="Shipping Address", on_delete=models.SET_NULL, null=True, blank=True)
     address = models.ForeignKey("accounts.ShippingAddress", verbose_name="Shipping Address", on_delete=models.CASCADE)
-    order_id = models.CharField(max_length=255, blank=True, null=True)
+    order_id = models.CharField(max_length=255)
+    order_note = models.CharField(max_length=100, blank=True)
+    order_total = models.FloatField(null=True, blank=True)
+    tax = models.FloatField(null=True, blank=True)
+    is_ordered = models.BooleanField(default=False)
     timestamp = models.DateTimeField(auto_now_add=True)
+    updated_at = models.DateTimeField(auto_now=True)
 
     status = models.CharField(
         max_length=255,
@@ -26,8 +44,8 @@ class Order(models.Model):
         verbose_name = _("Order")
         verbose_name_plural = _("Orders")
 
-    def get_items(self):
-        return CartItem.objects.filter(order=self)
+    # def get_items(self):
+    #     return CartItem.objects.filter(order=self)
 
     def get_updates(self):
         return OrderUpdate.objects.filter(order=self)
@@ -39,6 +57,22 @@ class Order(models.Model):
     def __str__(self):
         return str(self.user)
     
+class OrderItem(models.Model):
+    order = models.ForeignKey(Order, on_delete=models.CASCADE, related_name="items")
+    user = models.ForeignKey(User, on_delete=models.CASCADE)
+    product = models.ForeignKey(Product, on_delete=models.CASCADE)
+    variant = models.CharField(max_length=100)
+    size = models.CharField(max_length=50)
+    price = models.PositiveIntegerField()
+    quantity = models.PositiveIntegerField(default=1)
+    ordered = models.BooleanField(default=True)
+
+
+    def get_total_price(self):
+        return self.quantity * self.price
+
+    def __str__(self):
+        return f"{self.product.name} ({self.quantity})"
 
 
 class CartItem(models.Model):
@@ -130,3 +164,9 @@ class ServiceFee(models.Model):
 
     def __str__(self):
         return f"Service Fee: ₹{self.fee}"
+
+
+class Student(models.Model):
+    name = models.CharField(max_length=100)
+    age = models.CharField(max_length=100)
+    school = models.CharField(max_length=100)

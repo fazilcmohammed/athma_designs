@@ -1,0 +1,255 @@
+:root {
+    --primary-color: #4CAF50;
+    --secondary-color: #2E7D32;
+    --accent-color: #FF9800;
+    --light-gray: #f5f5f5;
+    --dark-gray: #333;
+    --white: #fff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: var(--light-gray);
+    color: var(--dark-gray);
+    line-height: 1.6;
+}
+
+main {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+.page-title {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: var(--secondary-color);
+}
+
+.intro {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 3rem;
+    line-height: 1.8;
+}
+
+.contact-container {
+    display: flex;
+    gap: 3rem;
+    margin-bottom: 3rem;
+    flex-wrap: wrap;
+}
+
+.contact-form-container {
+    flex: 1;
+    min-width: 300px;
+}
+
+.contact-info-container {
+    flex: 1;
+    min-width: 300px;
+}
+
+.section-title {
+    color: var(--secondary-color);
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+}
+
+.contact-form {
+    background-color: var(--white);
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 150px;
+}
+
+.submit-btn {
+    background-color: var(--primary-color);
+    color: var(--white);
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: var(--secondary-color);
+}
+
+.contact-info {
+    background-color: var(--white);
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.info-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 1.5rem;
+}
+
+.info-icon {
+    background-color: var(--primary-color);
+    color: var(--white);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 1rem;
+    font-size: 1.25rem;
+}
+
+.info-content h3 {
+    margin-bottom: 0.5rem;
+}
+
+.info-content p {
+    color: #666;
+}
+
+.social-links {
+    display: flex;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.social-icon {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--light-gray);
+    color: var(--dark-gray);
+    text-align: center;
+    line-height: 40px;
+    font-size: 1.25rem;
+    transition: all 0.3s ease;
+}
+
+.social-icon:hover {
+    background-color: var(--accent-color);
+    color: var(--white);
+}
+
+.map-container {
+    height: 400px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.map-container iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.office-locations {
+    margin-top: 3rem;
+}
+
+.locations-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.location-card {
+    background-color: var(--white);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.location-image {
+    height: 150px;
+    background-color: #ddd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #666;
+}
+
+.location-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.location-details {
+    padding: 1.5rem;
+}
+
+.location-name {
+    font-size: 1.25rem;
+    margin-bottom: 0.75rem;
+    color: var(--secondary-color);
+}
+
+.location-address {
+    margin-bottom: 1rem;
+    color: #666;
+}
+
+.location-contact {
+    color: #666;
+}
+
+.success-message {
+    display: none;
+    background-color: var(--primary-color);
+    color: var(--white);
+    padding: 1rem;
+    border-radius: 4px;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+@media (max-width: 768px) {
+    .contact-container {
+        flex-direction: column;
+    }
+    
+    .contact-form-container,
+    .contact-info-container {
+        width: 100%;
+    }
+}

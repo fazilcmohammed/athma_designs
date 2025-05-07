@@ -26,43 +26,47 @@
         <a
           class="nav-link active"
           aria-current="page"
-          href="account-orders.html"
+          href="{% url 'order:orders' %}"
           ><i class="feather-icon icon-shopping-bag me-2"></i>Your Orders</a
         >
       </li>
       <!-- nav item -->
       <li class="nav-item">
-        <a class="nav-link" href="account-settings.html"
+        <a class="nav-link" href="{% url "accounts:settings" %}"
           ><i class="feather-icon icon-settings me-2"></i>Settings</a
         >
       </li>
       <!-- nav item -->
       <li class="nav-item">
-        <a class="nav-link" href="account-address.html"
+        <a class="nav-link" href="{% url "accounts:address_list" %}"
           ><i class="feather-icon icon-map-pin me-2"></i>Address</a
         >
       </li>
       <!-- nav item -->
       <li class="nav-item">
-        <a class="nav-link" href="account-payment-method.html"
+        <a class="nav-link" href="{% url "accounts:payment_methods" %}"
           ><i class="feather-icon icon-credit-card me-2"></i>Payment Method</a
         >
       </li>
       <!-- nav item -->
-      <li class="nav-item">
+      {% comment %} <li class="nav-item">
         <a class="nav-link" href="account-notification.html"
           ><i class="feather-icon icon-bell me-2"></i>Notification</a
         >
-      </li>
+      </li> {% endcomment %}
       <!-- nav item -->
       <li class="nav-item">
         <hr />
       </li>
       <!-- nav item -->
+      
       <li class="nav-item">
-        <a class="nav-link" href="../index.html"
-          ><i class="feather-icon icon-log-out me-2"></i>Log out</a
-        >
+        <form action="{% url 'accounts:logout' %}" method="POST">
+          {% csrf_token %}
+          <button type="submit" class="nav-link">
+            <i class="feather-icon icon-log-out me-2"></i>Log Out
+          </button>
+        </form>
       </li>
     </ul>
   </div>
@@ -92,7 +96,7 @@
         <a
           class="nav-link active"
           aria-current="page"
-          href="account-orders.html"
+          href="{% url 'order:orders' %}"
           ><i class="feather-icon icon-shopping-bag me-2"></i>Your Orders</a
         >
       </li>
@@ -104,22 +108,22 @@
       </li>
       <!-- nav item -->
       <li class="nav-item">
-        <a class="nav-link" href="account-address.html"
+        <a class="nav-link" href="url"
           ><i class="feather-icon icon-map-pin me-2"></i>Address</a
         >
       </li>
       <!-- nav item -->
       <li class="nav-item">
-        <a class="nav-link" href="account-payment-method.html"
+        <a class="nav-link" href="{% url "accounts:payment_methods" %}"
           ><i class="feather-icon icon-credit-card me-2"></i>Payment Method</a
         >
       </li>
       <!-- nav item -->
-      <li class="nav-item">
+      {% comment %} <li class="nav-item">
         <a class="nav-link" href="account-notification.html"
           ><i class="feather-icon icon-bell me-2"></i>Notification</a
         >
-      </li>
+      </li> {% endcomment %}
     </ul>
     <hr class="my-6" />
     <div>
@@ -127,10 +131,14 @@
       <ul class="nav flex-column nav-pills nav-pills-dark">
         <!-- nav item -->
         <li class="nav-item">
-          <a class="nav-link" href="../index.html"
-            ><i class="feather-icon icon-log-out me-2"></i>Log out</a
-          >
+          <form action="{% url 'accounts:logout' %}" method="POST">
+            {% csrf_token %}
+            <button type="submit" class="nav-link">
+              <i class="feather-icon icon-log-out me-2"></i>Log Out
+            </button>
+          </form>
         </li>
+        
       </ul>
     </div>
   </div>

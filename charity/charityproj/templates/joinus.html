@@ -1,0 +1,223 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="page-header">
+    <div class="container">
+        <h1>Join Our Community</h1>
+        <p>Become a member of Community Care and help us make a lasting impact in our community. Together, we can create positive change.</p>
+    </div>
+</div>
+
+<section class="join-us-content">
+    <div class="container">
+        <div class="content-container">
+
+            <div class="membership-form">
+                <h2>Become a Member</h2>
+                <form id="joinForm" action="#" method="post">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="firstName">First Name*</label>
+                            <input type="text" id="firstName" name="firstName" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="lastName">Last Name*</label>
+                            <input type="text" id="lastName" name="lastName" class="form-control" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email Address*</label>
+                        <input type="email" id="email" name="email" class="form-control" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone" class="form-control">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="address">Street Address*</label>
+                        <input type="text" id="address" name="address" class="form-control" required>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="city">City*</label>
+                            <input type="text" id="city" name="city" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="state">State*</label>
+                            <input type="text" id="state" name="state" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="zip">Zip Code*</label>
+                            <input type="text" id="zip" name="zip" class="form-control" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>Select Membership Level*</label>
+                        <div class="membership-levels">
+                            <div class="membership-level" onclick="selectMembership('individual')">
+                                <h3>Individual</h3>
+                                <div class="price">$50/year</div>
+                                <ul>
+                                    <li>All basic benefits</li>
+                                    <li>Quarterly newsletter</li>
+                                    <li>Members-only events</li>
+                                </ul>
+                                <input type="radio" name="membershipLevel" value="individual" required style="display: none;">
+                            </div>
+                            <div class="membership-level" onclick="selectMembership('family')">
+                                <h3>Family</h3>
+                                <div class="price">$80/year</div>
+                                <ul>
+                                    <li>All individual benefits</li>
+                                    <li>Family volunteer opportunities</li>
+                                    <li>Discounted event tickets</li>
+                                </ul>
+                                <input type="radio" name="membershipLevel" value="family" required style="display: none;">
+                            </div>
+                            <div class="membership-level" onclick="selectMembership('sustaining')">
+                                <h3>Sustaining</h3>
+                                <div class="price">$150/year</div>
+                                <ul>
+                                    <li>All family benefits</li>
+                                    <li>Recognition in annual report</li>
+                                    <li>Priority volunteer placement</li>
+                                    <li>Exclusive leadership opportunities</li>
+                                </ul>
+                                <input type="radio" name="membershipLevel" value="sustaining" required style="display: none;">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>Areas of Interest (select all that apply)</label>
+                        <div class="checkbox-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="interests" value="youth">
+                                Youth Mentorship
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="interests" value="food">
+                                Food Security
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="interests" value="housing">
+                                Housing Support
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="interests" value="healthcare">
+                                Healthcare Access
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="interests" value="education">
+                                Educational Support
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="interests" value="environment">
+                                Environmental Initiatives
+                            </label>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>How would you like to be involved?</label>
+                        <div class="radio-group">
+                            <label class="radio-label">
+                                <input type="radio" name="involvement" value="volunteer">
+                                Volunteer Regularly
+                            </label>
+                            <label class="radio-label">
+                                <input type="radio" name="involvement" value="events">
+                                Attend Events
+                            </label>
+                            <label class="radio-label">
+                                <input type="radio" name="involvement" value="committee">
+                                Join a Committee
+                            </label>
+                            <label class="radio-label">
+                                <input type="radio" name="involvement" value="support">
+                                Financial Support Only
+                            </label>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="comments">Additional Comments or Questions</label>
+                        <textarea id="comments" name="comments" class="form-control" rows="4"></textarea>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="newsletter" value="yes" checked>
+                            I'd like to receive the monthly newsletter
+                        </label>
+                    </div>
+                    
+                    <div class="form-group">
+                        <button type="submit" class="btn">Submit Membership Application</button>
+                    </div>
+                </form>
+            </div>
+            <div class="membership-benefits">
+                <h2>Membership Benefits</h2>
+                <div class="benefits-list">
+                    <div class="benefit-item">
+                        <div class="benefit-icon">1</div>
+                        <div class="benefit-content">
+                            <h3>Make a Difference</h3>
+                            <p>Your membership directly supports our programs and initiatives, helping us create meaningful change in our community.</p>
+                        </div>
+                    </div>
+                    <div class="benefit-item">
+                        <div class="benefit-icon">2</div>
+                        <div class="benefit-content">
+                            <h3>Connect with Others</h3>
+                            <p>Join a network of like-minded individuals committed to community service and social impact.</p>
+                        </div>
+                    </div>
+                    <div class="benefit-item">
+                        <div class="benefit-icon">3</div>
+                        <div class="benefit-content">
+                            <h3>Exclusive Events</h3>
+                            <p>Gain access to member-only events, workshops, and networking opportunities throughout the year.</p>
+                        </div>
+                    </div>
+                    <div class="benefit-item">
+                        <div class="benefit-icon">4</div>
+                        <div class="benefit-content">
+                            <h3>Volunteer Opportunities</h3>
+                            <p>Receive priority access to volunteer positions and special community service projects.</p>
+                        </div>
+                    </div>
+                    <div class="benefit-item">
+                        <div class="benefit-icon">5</div>
+                        <div class="benefit-content">
+                            <h3>Leadership Development</h3>
+                            <p>Opportunities to develop leadership skills through committee participation and program coordination.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonials">
+                    <h3>What Our Members Say</h3>
+                    <div class="testimonial">
+                        <p>"Joining Community Care was one of the best decisions I've made. I've met amazing people, developed new skills, and found meaningful ways to give back to my community."</p>
+                        <div class="testimonial-author">- Sarah J., Member since 2022</div>
+                    </div>
+                    <div class="testimonial">
+                        <p>"The sense of community and purpose I've found through my membership has been incredible. I feel like I'm truly making a difference."</p>
+                        <div class="testimonial-author">- Michael T., Member since 2023</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock content %}
+
+

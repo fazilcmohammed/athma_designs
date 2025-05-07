@@ -14,11 +14,17 @@
           <form>
             <!-- input -->
             <div class="mb-3">
-              <label class="form-label">Name</label>
+              <label class="form-label">First Name</label>
               <input
                 type="text"
                 class="form-control"
-                placeholder="jitu chauhan"
+                placeholder="jitu"
+              />
+              <label class="form-label">Last Name</label>
+              <input
+                type="text"
+                class="form-control"
+                placeholder="chauhan"
               />
             </div>
             <!-- input -->
@@ -51,36 +57,72 @@
     <div class="pe-lg-14">
       <!-- heading -->
       <h5 class="mb-4">Password</h5>
-      <form class="row row-cols-1 row-cols-lg-2">
-        <!-- input -->
-        <div class="mb-3 col">
-          <label class="form-label">New Password</label>
-          <input
-            type="password"
-            class="form-control"
-            placeholder="**********"
-          />
+    
+      <!-- Success message block -->
+      {% if messages %}
+        <div class="alert alert-success alert-dismissible fade show" role="alert">
+          {% for message in messages %}
+            {{ message }}
+          {% endfor %}
+          <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
         </div>
-        <!-- input -->
-        <div class="mb-3 col">
+      {% endif %}
+    
+      <!-- Error message block -->
+      {% if form.errors %}
+        <div class="alert alert-danger alert-dismissible fade show" role="alert">
+          <strong>There were errors in your form:</strong>
+          <ul>
+            {% for field in form %}
+              {% for error in field.errors %}
+                <li>{{ error }}</li>
+              {% endfor %}
+            {% endfor %}
+          </ul>
+          <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+      {% endif %}
+    
+      <!-- Password Change Form -->
+      <form method="post" action="{% url 'accounts:password_change' %}" class="row">
+        {% csrf_token %}
+        
+        <div class="col-12 col-lg-6 mb-3">
           <label class="form-label">Current Password</label>
           <input
             type="password"
+            name="old_password"
             class="form-control"
-            placeholder="**********"
-          />
+            placeholder="Enter current password"
+          >
         </div>
-        <!-- input -->
+        
+        <div class="col-12 col-lg-6 mb-3">
+          <label class="form-label">New Password</label>
+          <input
+            type="password"
+            name="new_password1"
+            class="form-control"
+            placeholder="Enter new password"
+          >
+        </div>
+    
+        <div class="col-12 col-lg-6 mb-4">
+          <label class="form-label">Confirm New Password</label>
+          <input
+            type="password"
+            name="new_password2"
+            class="form-control"
+            placeholder="Confirm new password"
+          >
+        </div>
+    
         <div class="col-12">
-          <p class="mb-4">
-            Can’t remember your current password?<a href="#">
-              Reset your password.</a
-            >
-          </p>
-          <a href="#" class="btn btn-primary">Save Password</a>
+          <button type="submit" class="btn btn-primary mt-2">Save Password</button>
         </div>
       </form>
     </div>
+    
     <hr class="my-10" />
     <div>
       <!-- heading -->
@@ -91,7 +133,7 @@
         the order details associated with it.
       </p>
       <!-- btn -->
-      <a href="#" class="btn btn-outline-danger">I want to delete my account</a>
+      <a href="{% url "accounts:delete_account" %}" class="btn btn-outline-danger">I want to delete my account</a>
     </div>
   </div>
 </div>

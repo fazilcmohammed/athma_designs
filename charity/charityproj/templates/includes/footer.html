@@ -1,0 +1,41 @@
+<!-- Footer Section -->
+{% load static %}
+
+<footer class="footer">
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Helping Hands Charity</h3>
+                <p>Making a difference in our community through dedicated service and compassion.</p>
+                <div class="social-links">
+                    <a href="#"><span>f</span></a>
+                    <a href="#"><span>t</span></a>
+                    <a href="#"><span>in</span></a>
+                    <a href="#"><span>ig</span></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="{% url "home" %}">Home</a></li>
+                    <li><a href="{% url "about" %}">About Us</a></li>
+                    <li><a href="#programs">Our Programs</a></li>
+                    <li><a href="#membership">Join Us</a></li>
+                    <li><a href="#jobs">Job Listings</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Newsletter</h3>
+                <p>Stay updated with our latest news and events.</p>
+                <form style="margin-top: 15px;">
+                    <input type="email" class="form-control" placeholder="Your Email" style="margin-bottom: 10px;" required>
+                    <button type="submit" class="btn" style="width: 100%;">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Helping Hands Charity. All Rights Reserved.</p>
+        </div>
+    </div>
+</footer>

@@ -1,0 +1,115 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+{% block content %}
+
+<section class="hero">
+    <div class="container">
+        <h1>Making a Difference Together</h1>
+        <p>Join our mission to create positive change in the community through dedicated service and compassion.</p>
+        <a href="membership.html" class="btn btn-white">Become a Member</a>
+        <a href="jobs.html" class="btn">View Job Openings</a>
+    </div>
+</section>
+
+<!-- Feature Section -->
+<section class="section">
+    <div class="container">
+        <h2 class="section-title">How We Make an Impact</h2>
+        <div class="impact-stats">
+            <div class="stat-box">
+                <h3>10,000+</h3>
+                <p>People Served</p>
+            </div>
+            <div class="stat-box">
+                <h3>250+</h3>
+                <p>Dedicated Volunteers</p>
+            </div>
+            <div class="stat-box">
+                <h3>25+</h3>
+                <p>Community Programs</p>
+            </div>
+            <div class="stat-box">
+                <h3>15</h3>
+                <p>Years of Service</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Programs Highlight Section -->
+<section class="section" style="background-color: #e8f5e9;">
+    <div class="container">
+        <h2 class="section-title">Our Programs</h2>
+        <div class="programs-grid">
+            <div class="program-card">
+                <div class="program-img">
+                    <img src="https://via.placeholder.com/400x200" alt="Food Drive">
+                </div>
+                <div class="program-content">
+                    <h3>Food Distribution</h3>
+                    <p>We organize regular food drives and maintain a food bank to ensure that no one in our community goes hungry.</p>
+                    <a href="programs.html#food" class="btn btn-sm">Learn More</a>
+                </div>
+            </div>
+            <div class="program-card">
+                <div class="program-img">
+                    <img src="https://via.placeholder.com/400x200" alt="Education Support">
+                </div>
+                <div class="program-content">
+                    <h3>Education Support</h3>
+                    <p>Our tutoring program and scholarship initiatives help students from underprivileged backgrounds succeed academically.</p>
+                    <a href="programs.html#education" class="btn btn-sm">Learn More</a>
+                </div>
+            </div>
+            <div class="program-card">
+                <div class="program-img">
+                    <img src="https://via.placeholder.com/400x200" alt="Healthcare Outreach">
+                </div>
+                <div class="program-content">
+                    <h3>Healthcare Outreach</h3>
+                    <p>We provide health screenings, wellness workshops, and connect individuals with affordable healthcare resources.</p>
+                    <a href="programs.html#healthcare" class="btn btn-sm">Learn More</a>
+                </div>
+            </div>
+        </div>
+        <div class="text-center" style="margin-top: 30px;">
+            <a href="programs.html" class="btn">View All Programs</a>
+        </div>
+    </div>
+</section>
+
+<!-- Testimonials Section -->
+<section class="section">
+    <div class="container">
+        <h2 class="section-title">What People Say</h2>
+        <div class="testimonials">
+            <div class="testimonial">
+                <div class="testimonial-content">
+                    <p>"The support I received from Helping Hands during my difficult times was invaluable. They not only provided food and resources but also restored my hope."</p>
+                </div>
+                <div class="testimonial-author">
+                    <img src="https://via.placeholder.com/60x60" alt="Sarah J." class="testimonial-img">
+                    <div>
+                        <h4>Sarah J.</h4>
+                        <p>Community Member</p>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial">
+                <div class="testimonial-content">
+                    <p>"Volunteering with Helping Hands has been one of the most rewarding experiences of my life. The team is dedicated and the impact we make is truly meaningful."</p>
+                </div>
+                <div class="testimonial-author">
+                    <img src="https://via.placeholder.com/60x60" alt="Michael T." class="testimonial-img">
+                    <div>
+                        <h4>Michael T.</h4>
+                        <p>Volunteer Member</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock content %}

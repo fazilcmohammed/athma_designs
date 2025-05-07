@@ -1,0 +1,163 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<main>
+    <h1 class="page-title">Contact Us</h1>
+    
+    <p class="intro">
+        We value your feedback, questions, and support. Reach out to us using the form below, 
+        or contact us directly through any of our communication channels. We're here to help!
+    </p>
+    
+    <div class="contact-container">
+        <div class="contact-form-container">
+            <h2 class="section-title">Send Us a Message</h2>
+            
+            <div class="success-message" id="success-message">
+                Your message has been sent successfully! We'll get back to you soon.
+            </div>
+            
+            <form class="contact-form" id="contact-form">
+                <div class="form-group">
+                    <label for="name">Your Name *</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email Address *</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone">
+                </div>
+                
+                <div class="form-group">
+                    <label for="subject">Subject *</label>
+                    <select id="subject" name="subject" required>
+                        <option value="">Please select</option>
+                        <option value="general-inquiry">General Inquiry</option>
+                        <option value="donation">Donation Information</option>
+                        <option value="volunteer">Volunteer Opportunities</option>
+                        <option value="partnership">Partnership Proposal</option>
+                        <option value="media">Media Inquiry</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="message">Your Message *</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+                
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+        </div>
+        
+        <div class="contact-info-container">
+            <h2 class="section-title">Contact Information</h2>
+            
+            <div class="contact-info">
+                <div class="info-item">
+                    <div class="info-icon">📍</div>
+                    <div class="info-content">
+                        <h3>Our Address</h3>
+                        <p>123 Charity Street<br>New York, NY 10001<br>United States</p>
+                    </div>
+                </div>
+                
+                <div class="info-item">
+                    <div class="info-icon">📞</div>
+                    <div class="info-content">
+                        <h3>Phone</h3>
+                        <p>Main: (123) 456-7890<br>Donations: (123) 456-7891</p>
+                    </div>
+                </div>
+                
+                <div class="info-item">
+                    <div class="info-icon">✉️</div>
+                    <div class="info-content">
+                        <h3>Email</h3>
+                        <p>General: info@charityname.org<br>Support: support@charityname.org</p>
+                    </div>
+                </div>
+                
+                <div class="info-item">
+                    <div class="info-icon">🕒</div>
+                    <div class="info-content">
+                        <h3>Office Hours</h3>
+                        <p>Monday-Friday: 9:00 AM - 5:00 PM<br>Saturday-Sunday: Closed</p>
+                    </div>
+                </div>
+                
+                <h3 style="margin-top: 2rem; margin-bottom: 1rem;">Connect With Us</h3>
+                <div class="social-links">
+                    <a href="#" class="social-icon" title="Facebook">f</a>
+                    <a href="#" class="social-icon" title="Twitter">t</a>
+                    <a href="#" class="social-icon" title="Instagram">ig</a>
+                    <a href="#" class="social-icon" title="LinkedIn">in</a>
+                    <a href="#" class="social-icon" title="YouTube">yt</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="map-container">
+        <!-- Replace with your actual Google Maps embed code -->
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.9663095343016!2d-74.0059418843508!3d40.74730404331687!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259bf5c1654f3%3A0xc80f9cfce5383d5d!2sEmpire%20State%20Building!5e0!3m2!1sen!2sus!4v1651234567890!5m2!1sen!2sus" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+    
+    <div class="office-locations">
+        <h2 class="section-title">Our Offices Around the World</h2>
+        
+        <div class="locations-grid">
+            <div class="location-card">
+                <div class="location-image">
+                    <div>New York Office Image</div>
+                </div>
+                <div class="location-details">
+                    <h3 class="location-name">New York (Headquarters)</h3>
+                    <p class="location-address">123 Charity Street<br>New York, NY 10001<br>United States</p>
+                    <p class="location-contact">Tel: (123) 456-7890<br>Email: newyork@charityname.org</p>
+                </div>
+            </div>
+            
+            <div class="location-card">
+                <div class="location-image">
+                    <div>London Office Image</div>
+                </div>
+                <div class="location-details">
+                    <h3 class="location-name">London</h3>
+                    <p class="location-address">45 Charity Lane<br>London, SW1A 1AA<br>United Kingdom</p>
+                    <p class="location-contact">Tel: +44 20 1234 5678<br>Email: london@charityname.org</p>
+                </div>
+            </div>
+            
+            <div class="location-card">
+                <div class="location-image">
+                    <div>Nairobi Office Image</div>
+                </div>
+                <div class="location-details">
+                    <h3 class="location-name">Nairobi</h3>
+                    <p class="location-address">789 Uhuru Avenue<br>Nairobi<br>Kenya</p>
+                    <p class="location-contact">Tel: +254 20 123 4567<br>Email: nairobi@charityname.org</p>
+                </div>
+            </div>
+            
+            <div class="location-card">
+                <div class="location-image">
+                    <div>New Delhi Office Image</div>
+                </div>
+                <div class="location-details">
+                    <h3 class="location-name">New Delhi</h3>
+                    <p class="location-address">56 Charity Road<br>New Delhi, 110001<br>India</p>
+                    <p class="location-contact">Tel: +91 11 2345 6789<br>Email: delhi@charityname.org</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+{% endblock content %}

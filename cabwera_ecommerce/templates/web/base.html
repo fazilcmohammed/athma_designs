@@ -6,8 +6,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <meta content="Odadoz" name="author">
-        <title>{% block title %}{% endblock %} | Cabera</title>
+        <meta content="Cabvera" name="author">
+        <title>{% block title %}{% endblock %} | Cabvera</title>
         
         <!-- Favicon icon-->
         <link rel="shortcut icon" type="image/x-icon" href="{% static 'web/images/favicon/icon.webp' %}">
@@ -51,6 +51,7 @@
         {% include 'web/includes/footer.html' %}
 
         <!-- Libs JS -->
+        <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
         <script src="{% static 'web/libs/jquery/dist/jquery.min.js' %}"></script>
         <script src="{% static 'web/libs/bootstrap/dist/js/bootstrap.bundle.min.js' %}"></script>
         <script src="{% static 'web/libs/simplebar/dist/simplebar.min.js' %}"></script>
@@ -67,6 +68,43 @@
         <script src="{% static 'web/js/vendors/increment-value.js' %}"></script>
         <script src="{% static 'web/libs/jquery-countdown/dist/jquery.countdown.min.js' %}"></script>
         <script src="{% static 'web/js/vendors/countdown.js' %}"></script>
+
+
+        
+        
+        
+
+        <script>
+            // Attach an event listener to the "Edit" buttons
+            const editButtons = document.querySelectorAll('.btn-outline-warning');
+            
+            editButtons.forEach(button => {
+              button.addEventListener('click', function() {
+                const addressId = this.getAttribute('data-id');  // Get the address ID
+                const form = document.querySelector('#editAddressModal form');  // Find the form in the modal
+                const actionUrl = `{% url 'accounts:edit_address' 0 %}`.replace('0', addressId);  // Build the action URL with the ID
+                form.setAttribute('action', actionUrl);  // Set the form's action URL
+              });
+            });
+          </script>
+          <script>
+            document.addEventListener('DOMContentLoaded', function() {
+              // Make entire address card clickable
+              document.querySelectorAll('.card-body').forEach(card => {
+                card.addEventListener('click', function(e) {
+                  // Don't trigger if clicking on buttons or links
+                  if (e.target.tagName === 'A' || e.target.closest('a')) return;
+                  
+                  const radio = this.querySelector('.form-check-input');
+                  if (radio) {
+                    radio.checked = true;
+                    // Update visual selection
+                    document.querySelectorAll('.card').forEach(c => c.classList.remove('bg-light'));
+                    this.closest('.card').classList.add('bg-light');
+                  }
+                });
+              });
+            });
         {% block js_plugins %}{% endblock %}
         {% block js %}{% endblock %}
     </body>
