@@ -80,6 +80,8 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'cabvera.wsgi.application'
 
+WHATSAPP_NUMBER = "917356568224" 
+
 
 # Database
 # https://docs.djangoproject.com/en/5.2/ref/settings/#databases

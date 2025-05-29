@@ -47,20 +47,24 @@
       </div>
     </div>
     <div class="category-slider">
-      {% for category in categories %}
-      <div class="item">
-        <a href="{% url 'web:shop' %}?category={{category.slug}}" class="text-decoration-none text-inherit">
-          <div class="card card-product mb-lg-4">
-            <div class="card-body text-center py-8">
-              <img src="{{category.image.url }}" alt="{{ category.name }}" class="mb-3 img-fluid" />
-              <div class="text-truncate">{{ category.name }}</div>
-            </div>
-          </div>
-        </a>
+  {% for category in categories %}
+  <div class="item">
+    <a href="{% url 'web:shop' %}?category={{ category.slug }}" class="text-decoration-none text-inherit">
+      <div class="card card-product mb-lg-4">
+        <div class="card-body text-center py-8">
+          {% if category.image and category.image.url %}
+            <img src="{{ category.image.url }}" alt="{{ category.name }}" class="mb-3 img-fluid" />
+          {% else %}
+            <img src="{% static 'images/default.jpg' %}" alt="Default Image" class="mb-3 img-fluid" />
+          {% endif %}
+          <div class="text-truncate">{{ category.name }}</div>
+        </div>
       </div>
-      {% endfor %}
+    </a>
+  </div>
+  {% endfor %}
+</div>
 
-    </div>
   </div>
 </section>
 <!-- Category Section End-->
@@ -153,14 +157,30 @@
                 <span class="text-decoration-line-through text-muted">₹{{ product.get_regular_price|floatformat:0 }}</span>
               </div>
               <div>
-                <a href="{% url 'order:add_to_cart' pk=product.id %}?variant=" id="add-to-cart-link" class="btn btn-primary btn-sm">
+                {% comment %} <a href="{% url 'order:add_to_cart' pk=product.id %}?variant=" id="add-to-cart-link" class="btn btn-primary btn-sm">
                   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
                     stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                     class="feather feather-plus">
                     <line x1="12" y1="5" x2="12" y2="19"></line>
                     <line x1="5" y1="12" x2="19" y2="12"></line>
                   </svg>
-                  Add</a>
+                  Add</a> {% endcomment %}
+                  <a href="#" 
+   class="btn btn-primary btn-sm whatsapp-link" 
+   data-name="{{ product.name }}" 
+   data-price="{{ product.get_sale_price }}"
+   data-url="{{ request.scheme }}://{{ request.get_host }}{{ product.get_absolute_url }}"
+   data-products="{{ request.scheme }}://{{ request.get_host }}/products/">
+  
+  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" 
+       fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" 
+       stroke-linejoin="round" class="feather feather-plus">
+    <line x1="12" y1="5" x2="12" y2="19"></line>
+    <line x1="5" y1="12" x2="19" y2="12"></line>
+  </svg>
+  Add
+</a>
+
               </div>
             </div>
           </div>
@@ -174,59 +194,79 @@
 <!-- /// -->
 <section class="my-lg-14 my-8">
   <div class="container">
-    <div class="row d-flex justify-content-between" style="">
-      <div class="col-md-6 col-lg-3">
-        <div class="mb-8 mb-xl-0">
-          <div class="mb-6">
-            <img src="{% static 'web/images/icons/clock.svg' %}" alt="" />
-          </div>
-          <h3 class="h5 mb-3">10 minute grocery now</h3>
-          <p>
-            Get your order delivered to your doorstep at the earliest from
-            Cabvera pickup stores near you.
-          </p>
-        </div>
+  <div class="row justify-content-center justify-content-lg-between text-center">
+    <div class="col-12 col-sm-6 col-lg-3 mb-4">
+      <div class="mb-3">
+        <img src="{% static 'web/images/icons/kitchen-utensils.svg' %}" alt="Wide Range" style="width: 50px; height: 50px;" class="mx-auto" />
       </div>
-      <div class="col-md-6 col-lg-3">
-        <div class="mb-8 mb-xl-0">
-          <div class="mb-6">
-            <img src="{% static 'web/images/icons/gift.svg' %}" alt="" />
-          </div>
-          <h3 class="h5 mb-3">Best Prices & Offers</h3>
-          <p>
-            Cheaper prices than your local supermarket, great cashback offers to
-            top it off. Get best pricess & offers.
-          </p>
-        </div>
+      <h3 class="h5 mb-2">Premium Kitchen Tools</h3>
+      <p class="mb-0">
+        Explore a curated collection of top-quality kitchen tools and accessories that blend style with functionality.
+      </p>
+    </div>
+
+    <div class="col-12 col-sm-6 col-lg-3 mb-4">
+      <div class="mb-3">
+        <img src="{% static 'web/images/icons/delivery-truck.svg' %}" alt="Fast Delivery" style="width: 50px; height: 50px;" class="mx-auto" />
       </div>
-      <div class="col-md-6 col-lg-3">
-        <div class="mb-8 mb-xl-0">
-          <div class="mb-6">
-            <img src="{% static 'web/images/icons/package.svg' %}" alt="" />
-          </div>
-          <h3 class="h5 mb-3">Wide Assortment</h3>
-          <p>
-            Choose from 5000+ products across food, personal care, household,
-            bakery, veg and non-veg & other categories.
-          </p>
-        </div>
+      <h3 class="h5 mb-2">Fast & Reliable Delivery</h3>
+      <p class="mb-0">
+        Get your kitchen essentials delivered quickly and securely, right to your doorstep, across major cities.
+      </p>
+    </div>
+
+    <div class="col-12 col-sm-6 col-lg-3 mb-4">
+      <div class="mb-3">
+        <img src="{% static 'web/images/icons/qualityy.svg' %}" alt="Top Quality" style="width: 50px; height: 50px;" class="mx-auto" />
       </div>
-      <div class="col-md-6 col-lg-3">
-        <div class="mb-8 mb-xl-0">
-          <div class="mb-6">
-            <img src="{% static 'web/images/icons/refresh-cw.svg' %}" alt="" />
-          </div>
-          <h3 class="h5 mb-3">Easy Returns</h3>
-          <p>
-            Not satisfied with a product? Return it at the doorstep & get a
-            refund within hours. No questions asked <a href="#!">policy</a>.
-          </p>
-        </div>
+      <h3 class="h5 mb-2">Assured Quality</h3>
+      <p class="mb-0">
+        We partner with trusted brands to ensure all our products meet the highest standards of durability and performance.
+      </p>
+    </div>
+
+    <div class="col-12 col-sm-6 col-lg-3 mb-4">
+      <div class="mb-3">
+        <img src="{% static 'web/images/icons/return.svg' %}" alt="Easy Returns" style="width: 50px; height: 50px;" class="mx-auto" />
       </div>
+      <h3 class="h5 mb-2">Hassle-Free Returns</h3>
+      <p class="mb-0">
+        Changed your mind? Easily return any unused item within 7 days as per our <a href="#!">return policy</a>.
+      </p>
     </div>
   </div>
+</div>
+
 </section>
 <!-- end/// -->
+
+
+<script>
+  document.querySelectorAll('.whatsapp-link').forEach(link => {
+    link.addEventListener('click', function (e) {
+      e.preventDefault();
+
+      const name = this.dataset.name;
+      const price = this.dataset.price;
+      const productUrl = this.dataset.url;
+      const productsPageUrl = this.dataset.products;
+      const phone = '917510444222'; // Client’s WhatsApp number
+
+      let message = `I'm interested in buying *${name}* for ₹${price}.`;
+
+      if (productUrl) {
+        message += `\n\nProduct Link:\n${productUrl}`;
+      }
+
+      if (productsPageUrl) {
+        message += `\n\nSee more products:\n${productsPageUrl}`;
+      }
+
+      const whatsappUrl = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
+      window.open(whatsappUrl, '_blank');
+    });
+  });
+</script>
 
 {% endblock %}
 

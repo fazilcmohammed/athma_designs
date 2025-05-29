@@ -1,0 +1,251 @@
+{% load static %}
+
+<footer id="footer" class="footer background-gray md-pb-70">
+    <div class="footer-wrap">
+        <div class="footer-body">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-3 col-md-6 col-12">
+                        <div class="footer-infor">
+                           
+                            <ul>
+                                <li>
+                                    <p>Address: Charutha Silks <br> Hospital Rd, Kannankulangara, Thrippunithura | <br>Main Road, North Paravur</p>
+                                </li>
+                                <li>
+                                    <p>Email: <a href="mailto:charuthasilks@gmail.com">charuthasilks@gmail.com</a></p>
+                                </li>
+                                <li>
+                                    <p>Phone: <a href="tel:04842784425">0484 2784425</a></p>
+                                    <p>Phone: <a href="tel:04843019192">0484 3019192</a></p>
+                                </li>
+                            </ul>
+                            {% comment %} <a href="#" class="tf-btn btn-line">Get direction<i class="icon icon-arrow1-top-left"></i></a> {% endcomment %}
+                            <ul class="tf-social-icon d-flex gap-10">
+                                <li><a href="https://www.instagram.com/kmtsilks_gallery?igsh=Y3F0ZWlhZHEycTR1&utm_source=qr" class="box-icon w_34 round social-instagram social-line"><i class="icon fs-14 icon-instagram"></i></a></li>
+                                <li><a href="#" class="box-icon w_34 round social-twiter social-line"><i class="icon fs-12 icon-Icon-x"></i></a></li>
+                                <li><a href="https://www.instagram.com/noor_by_kmtsilks/profilecard/?igsh=MTJqZ2hvam02Zmdoeg==" class="box-icon w_34 round social-instagram social-line"><i class="icon fs-14 icon-instagram"></i></a></li>
+                              
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-md-6 col-12 footer-col-block">
+                        <div class="footer-heading footer-heading-desktop">
+                            <h6>Category</h6>
+                        </div>
+                        <div class="footer-heading footer-heading-moblie">
+                            <h6>Category</h6>
+                        </div>
+                        <ul class="footer-menu-list tf-collapse-content">
+                            {% for cat in all_categories  %}
+                            
+                            <li>
+                                <a href="{{cat.get_absolute_url}}" class="footer-menu_item">{{cat.name}}</a>
+                            </li>
+                            {% endfor %}
+                           
+                           
+                        </ul>
+                    </div>
+                    <div class="col-xl-2 col-md-6 col-12 footer-col-block">
+                        <div class="footer-heading footer-heading-desktop">
+                            <h6>Men</h6>
+                        </div>
+                        <div class="footer-heading footer-heading-moblie">
+                            <h6>Men</h6>
+                        </div>
+                        <ul class="footer-menu-list tf-collapse-content">
+                            {% for cat in display_men_sub_category %}
+                            
+                            <li>
+                                <a href="{{cat.get_absolute_url}}" class="footer-menu_item">{{cat.name}}</a>
+                            </li>
+                            {% endfor %}
+                           
+                           
+                        </ul>
+                    </div>
+                    <div class="col-xl-2 col-md-6 col-12 footer-col-block">
+                        <div class="footer-heading footer-heading-desktop">
+                            <h6>Women</h6>
+                        </div>
+                        <div class="footer-heading footer-heading-moblie">
+                            <h6>Women</h6>
+                        </div>
+                        <ul class="footer-menu-list tf-collapse-content">
+                            {% for cat in display_women_sub_category %}
+                            
+                            <li>
+                                <a href="{{cat.get_absolute_url}}" class="footer-menu_item">{{cat.name}}</a>
+                            </li>
+                            {% endfor %}
+                           
+                           
+                        </ul>
+                    </div>
+
+                    <div class="col-xl-3 col-md-6 col-12 footer-col-block">
+                        <div class="footer-heading footer-heading-desktop">
+                            <h6>About us</h6>
+                        </div>
+                        <div class="footer-heading footer-heading-moblie">
+                            <h6>About us</h6>
+                        </div>
+                        <ul class="footer-menu-list tf-collapse-content">
+                            <li>
+                                <a href="{% url 'web:about' %}" class="footer-menu_item">Our Story</a>
+                            </li>
+                            <li> 
+                                <a href="{% url 'web:shop' %}" class="footer-menu_item">Visit Our Store</a>
+                            </li>
+                            <li> 
+                                <a href="{% url 'web:contact' %}" class="footer-menu_item">Contact Us</a>
+                            </li>
+                            <li> 
+                                <a href="{% url 'web:privacy_policy' %}" class="footer-menu_item">Privacy Policy</a>
+                            </li>
+                          
+                        </ul>
+                    </div>
+                  
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="footer-bottom-wrap d-flex gap-20 flex-wrap justify-content-between align-items-center">
+                            <div class="footer-menu_item">© 2025 <a href="https://gedexo.com">Athma Productions</a> All Rights Reserved</div>
+                          
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+</div>
+
+<!-- gotop -->
+<div class="progress-wrap">
+<svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+<path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" style="transition: stroke-dashoffset 10ms linear 0s; stroke-dasharray: 307.919, 307.919; stroke-dashoffset: 286.138;"></path>
+</svg>
+</div>
+<!-- /gotop -->
+
+<!-- toolbar-bottom -->
+<div class="tf-toolbar-bottom type-1150">
+<div class="toolbar-item">
+    <a href="{% url 'web:shop' %}">
+        <div class="toolbar-icon">
+            <i class="icon-shop"></i>
+        </div>
+        <div class="toolbar-label">Shop</div>
+    </a>
+</div>
+
+
+<div class="toolbar-item">
+    <a href="#canvasSearch" data-bs-toggle="offcanvas" aria-controls="offcanvasLeft">
+        <div class="toolbar-icon">
+            <i class="icon-search"></i>
+        </div>
+        <div class="toolbar-label">Search</div>
+    </a>
+</div>
+
+<div class="toolbar-item">
+    <a href="#shoppingCart" data-bs-toggle="modal">
+        <div class="toolbar-icon">
+            <i class="icon-bag"></i>
+            <div class="toolbar-count">{{ cart_count|default:'0' }}</div>
+        </div>
+        <div class="toolbar-label">Cart</div>
+    </a>
+</div>
+</div>
+<!-- /toolbar-bottom -->
+
+
+<!-- mobile menu -->
+<div class="offcanvas offcanvas-start canvas-mb" id="mobileMenu">
+<span class="icon-close icon-close-popup" data-bs-dismiss="offcanvas" aria-label="Close"></span>
+<div class="mb-canvas-content">
+    <div class="mb-body">
+        <ul class="nav-ul-mb" id="wrapper-menu-navigation">
+            <li class="nav-mb-item">
+                <a href="{% url 'web:index' %}" class="collapsed mb-menu-link current">
+                    <span>Home</span>
+                    <span class="btn-open-sub"></span>
+                </a>
+                
+                
+            </li>
+            <li class="nav-mb-item">
+                <a href="{% url 'web:about' %}" class="collapsed mb-menu-link current">
+                    <span>About</span>
+                    <span class="btn-open-sub"></span>
+                </a>
+             
+            </li>
+            <li class="nav-mb-item">
+                <a href="{% url 'web:shop' %}" class="collapsed mb-menu-link current">
+                    <span>Shop</span>
+                    <span class="btn-open-sub"></span>
+                </a>
+             
+            </li>
+          
+        </li>
+        <li class="nav-mb-item">
+            <a href="{% url 'web:showrooms' %}" class="collapsed mb-menu-link current">
+                <span>Showrooms</span>
+                <span class="btn-open-sub"></span>
+            </a>
+         
+        </li>
+        <li class="nav-mb-item">
+            <a href="{% url 'web:contact' %}" class="collapsed mb-menu-link current">
+                <span>Contact Us</span>
+                <span class="btn-open-sub"></span>
+            </a>
+         
+        </li>
+        {% if user.is_superuser %}
+        <li class="nav-mb-item">
+            <a href="{% url 'main:index' %}" class="collapsed mb-menu-link current">
+                <span>Dashboard</span>
+                <span class="btn-open-sub"></span>
+            </a>
+         
+        </li>
+        {% endif %}
+           
+          
+        </ul>
+        <div class="mb-other-content">
+           
+            <div class="mb-notice">
+                <a href="{% url 'web:contact' %}" class="text-need">Need help ?</a>
+            </div>
+            <ul class="mb-info">
+                <li>Address:KMT Silks - Perithalmanna</li>
+                <li>Email: <b>kmtsilks@gmail.com</b></li>
+                <li>Phone: <b>04933-226893</b></li>
+            </ul>
+            <br>
+            <ul class="mb-info">
+                <li>Address:KMT Silks - Kottakkal</li>
+                <li>Email: <b>kmtsilks@gmail.com</b></li>
+                <li>Phone: <b>0483-2962266</b></li>
+            </ul>
+        </div>
+    </div>
+   
+</div>       
+</div>
+<!-- /mobile menu -->

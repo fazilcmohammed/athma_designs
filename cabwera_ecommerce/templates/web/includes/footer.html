@@ -2,67 +2,50 @@
   <!-- footer -->
   <footer class="footer">
     <div class="container">
-      <div class="row g-3 py-4">
-        <div class="col-12 col-md-12 col-lg-2">
-          <h6 class="mb-4">Categories</h6>
-          <div class="row">
-            <div class="col-12">
-              <!-- list -->
-              <ul class="nav flex-column">
-                {% for category in all_categories %}
-                <li class="nav-item mb-2"><a href="{% url 'web:shop' %}?category={{category.slug}}" class="nav-link">{{category.name}}</a></li>
-              {% endfor %}
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 col-md-12 col-lg-10">
-          <div class="row g-4">
-            <div class="col-6 col-sm-6 col-md-3">
-              <h6 class="mb-4">Get to know us</h6>
-                <!-- list -->
-              <ul class="nav flex-column">
-                <li class="nav-item mb-2"><a href="{% url 'web:about' %}" class="nav-link">About</a></li>
-                <li class="nav-item mb-2"><a href="" class="nav-link">Shop</a></li>
-                <li class="nav-item mb-2"><a href="{% url 'web:contact' %}" class="nav-link">Contact</a></li>
-
-              </ul>
-            </div>
-            <div class="col-6 col-sm-6 col-md-3">
-              <h6 class="mb-4">For Consumers</h6>
-              <ul class="nav flex-column">
-                    <!-- list -->
-                <li class="nav-item mb-2"><a href="{% url 'web:privacy_policy' %}" class="nav-link">Privacy Policy</a></li>
-                <li class="nav-item mb-2"><a href="{% url 'web:refund_policy' %}" class="nav-link">Refund Policy</a></li>
-                <li class="nav-item mb-2"><a href="{% url 'web:terms_conditions' %}" class="nav-link">Terms & Conditions</a></li>
-                <li class="nav-item mb-2"><a href="{% url 'order:checkout' %}" class="nav-link">Shop Checkout</a></li>
-              </ul>
-            </div>
-            <div class="col-6 col-sm-6 col-md-3">
-              <h6 class="mb-4">Become a Shopper</h6>
-              <ul class="nav flex-column">
-                  <!-- list -->
-                <li class="nav-item mb-2"><a href="#!" class="nav-link">Shopper Opportunities</a></li>
-                <li class="nav-item mb-2"><a href="#!" class="nav-link">Become a Shopper</a></li>
-                <li class="nav-item mb-2"><a href="#!" class="nav-link">Earnings</a></li>
-                <li class="nav-item mb-2"><a href="#!" class="nav-link">Ideas & Guides</a></li>
-                <li class="nav-item mb-2"><a href="#!" class="nav-link">New Retailers</a></li>
-              </ul>
-            </div>
-            <div class="col-6 col-sm-6 col-md-3">
-              <h6 class="mb-4">Cabvera programs</h6>
-              <ul class="nav flex-column">
-                  <!-- list -->
-                <li class="nav-item mb-2"><a href="#!" class="nav-link">Cabvera programs</a></li>
-                <li class="nav-item mb-2"><a href="#!" class="nav-link">Gift Cards</a></li>
-                <li class="nav-item mb-2"><a href="#!" class="nav-link">Promos & Coupons</a></li>
-                <li class="nav-item mb-2"><a href="#!" class="nav-link">Cabvera Ads</a></li>
-                <li class="nav-item mb-2"><a href="#!" class="nav-link">Careers</a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
+      <div class="row g-3 py-4 justify-content-lg-center text-start text-lg-center">
+  <div class="col-12 col-md-12 col-lg-10">
+    <div class="row g-4 justify-content-lg-center text-start text-lg-center">
+      <div class="col-6 col-sm-6 col-md-3">
+        <h6 class="mb-4">Get to know us</h6>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a href="{% url 'web:about' %}" class="nav-link">About</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link">Shop</a></li>
+          <li class="nav-item mb-2"><a href="{% url 'web:contact' %}" class="nav-link">Contact</a></li>
+        </ul>
       </div>
+      <div class="col-6 col-sm-6 col-md-3">
+        <h6 class="mb-4">For Consumers</h6>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a href="{% url 'web:privacy_policy' %}" class="nav-link">Privacy Policy</a></li>
+          <li class="nav-item mb-2"><a href="{% url 'web:refund_policy' %}" class="nav-link">Refund Policy</a></li>
+          <li class="nav-item mb-2"><a href="{% url 'web:terms_conditions' %}" class="nav-link">Terms & Conditions</a></li>
+          <li class="nav-item mb-2"><a href="{% url 'order:checkout' %}" class="nav-link">Shop Checkout</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-sm-6 col-md-3">
+        <h6 class="mb-4">Become a Shopper</h6>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a href="#!" class="nav-link">Shopper Opportunities</a></li>
+          <li class="nav-item mb-2"><a href="#!" class="nav-link">Become a Shopper</a></li>
+          <li class="nav-item mb-2"><a href="#!" class="nav-link">Earnings</a></li>
+          <li class="nav-item mb-2"><a href="#!" class="nav-link">Ideas & Guides</a></li>
+          <li class="nav-item mb-2"><a href="#!" class="nav-link">New Retailers</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-sm-6 col-md-3">
+        <h6 class="mb-4">Cabvera programs</h6>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a href="#!" class="nav-link">Cabvera programs</a></li>
+          <li class="nav-item mb-2"><a href="#!" class="nav-link">Gift Cards</a></li>
+          <li class="nav-item mb-2"><a href="#!" class="nav-link">Promos & Coupons</a></li>
+          <li class="nav-item mb-2"><a href="#!" class="nav-link">Cabvera Ads</a></li>
+          <li class="nav-item mb-2"><a href="#!" class="nav-link">Careers</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
       <div class="border-top py-4">
         <div class="row align-items-center">
           <div class="col-lg-5 text-lg-start text-center mb-2 mb-lg-0">

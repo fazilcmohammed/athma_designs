@@ -67,7 +67,7 @@
                               {% endfor %}
                           </ul>
                         </div>
-                        <div class="mb-8">
+                        {% comment %} <div class="mb-8">
                             <!-- price -->
                             <form action="" method="get">
                               <h5 class="mb-3">Price</h5>
@@ -82,7 +82,7 @@
                                 <button type="submit" class="btn btn-primary btn-sm"> Filter </button>
                               </div>
                             </form>
-                          </div>
+                          </div> {% endcomment %}
                     </div>
                 </div>
             </aside>
@@ -190,14 +190,33 @@
                                       <span class="text-decoration-line-through text-muted">₹{{ product.get_regular_price|floatformat:0 }}</span>
                                     </div>
                                     <div>
-                                      <a href="{% url 'order:add_to_cart' pk=product.id %}?variant=" id="add-to-cart-link" class="btn btn-primary btn-sm">
+                                      {% comment %} <a href="{% url 'order:add_to_cart' pk=product.id %}?variant=" id="add-to-cart-link" class="btn btn-primary btn-sm">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
                                           stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                                           class="feather feather-plus">
                                           <line x1="12" y1="5" x2="12" y2="19"></line>
                                           <line x1="5" y1="12" x2="19" y2="12"></line>
                                         </svg>
-                                        Add</a>
+                                        Add</a> {% endcomment %}
+
+                                        <a href="#"
+   class="btn btn-primary btn-sm whatsapp-link"
+   data-name="{{ product.name }}"
+   data-price="{{ product.get_sale_price }}"
+   data-url="{{ request.scheme }}://{{ request.get_host }}{{ product.get_absolute_url }}"
+   data-products="{{ request.scheme }}://{{ request.get_host }}/products/">
+
+  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+       fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+       stroke-linejoin="round" class="feather feather-plus">
+    <line x1="12" y1="5" x2="12" y2="19"></line>
+    <line x1="5" y1="12" x2="19" y2="12"></line>
+  </svg>
+  Add
+</a>
+
+
+
                                     </div>
                                   </div>
                                 <!-- btn -->
@@ -239,6 +258,36 @@
         </div>
     </div>
 </div>
+
+
+<script>
+  document.querySelectorAll('.whatsapp-link').forEach(link => {
+    link.addEventListener('click', function (e) {
+      e.preventDefault();
+
+      const name = this.dataset.name;
+      const price = this.dataset.price;
+      const productUrl = this.dataset.url;
+      const productsPageUrl = this.dataset.products;
+      const phone = '917510444222';
+
+      let message = `I'm interested in buying *${name}* for ₹${price}.`;
+
+      if (productUrl) {
+        message += `\n\nProduct Link:\n${productUrl}`;
+      }
+
+      if (productsPageUrl) {
+        message += `\n\nSee more products:\n${productsPageUrl}`;
+      }
+
+      const whatsappUrl = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
+      window.open(whatsappUrl, '_blank');
+    });
+  });
+</script>
+
+
 
 {% endblock content %}
 

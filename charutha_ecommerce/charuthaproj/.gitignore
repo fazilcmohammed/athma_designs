@@ -1,0 +1,65 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Django stuff:
+*.log
+*.pot
+*.pyc
+*.pyo
+*.db
+*.sqlite3
+
+# If you use Django migrations:
+*/migrations/*.py
+!*/migrations/__init__.py
+
+# Media uploads
+/media/
+*.media
+
+# Static files (if generated, e.g. by collectstatic)
+staticfiles/
+static/
+
+# Virtual environment
+venv/
+env/
+ENV/
+.venv/
+.pyvenv/
+
+# VSCode / IDE settings
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# dotenv
+.env
+.env.*
+
+# Coverage reports
+htmlcov/
+.coverage
+coverage.xml
+
+# Test stuff
+*.mo
+.pytest_cache/
+.tox/
+
+# MyPy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Pip
+pip-log.txt
+pip-delete-this-directory.txt

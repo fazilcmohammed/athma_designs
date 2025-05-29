@@ -109,11 +109,16 @@
             <!-- input -->
             
                   <!-- Add to Cart button -->
-                  <a href="{% url 'order:add_to_cart' pk=product.id %}" id="add-to-cart-link">
+                  {% comment %} <a href="{% url 'order:add_to_cart' pk=product.id %}" id="add-to-cart-link">
                     <button type="button" class="btn btn-primary">
                       <i class="feather-icon icon-shopping-bag me-2"></i>Add to Cart
                     </button>
-                  </a>
+                  </a> {% endcomment %}
+                 <a href="#" id="whatsapp-button" target="_blank" rel="noopener noreferrer">
+  <button type="button" class="btn btn-primary">
+    <i class="feather-icon icon-shopping-bag me-2"></i>Add to Cart
+  </button>
+</a>
                   <a class="btn btn-light " href="{% url 'order:add_to_wishlist' product_id=product.id %}" data-bs-toggle="tooltip" data-bs-html="true" aria-label="Wishlist"><i class="feather-icon icon-heart"></i></a>
 
                 <!-- btn -->
@@ -537,5 +542,57 @@
     addToCartLink.attr('href', currentHref );
   })
 </script>
+
+{% comment %} whatsapp msg {% endcomment %}
+<script>
+  const radioButtons = document.querySelectorAll('.product-size');
+  const whatsappBtn = document.getElementById('whatsapp-button');
+  const productName = "{{ product.name|escapejs }}";
+  const productUrl = "{{ request.build_absolute_uri|escapejs }}";  // Current product URL
+  const productsPageUrl = "{{ request.scheme }}://{{ request.get_host }}/shop/";  // General products page
+  const baseUrl = "https://wa.me/917510444222";
+
+  const defaultSizeBtn = document.querySelector('.product-size');
+  const defaultSalePrice = defaultSizeBtn ? defaultSizeBtn.getAttribute("data-sale_price") : "";
+  const defaultOfferPercent = defaultSizeBtn ? defaultSizeBtn.getAttribute("data-offer_percent") : "";
+
+  function updateWhatsAppLink() {
+    const selected = document.querySelector('.product-size:checked');
+
+    let sizeText = "", salePrice = "", offerPercent = "";
+
+    if (selected) {
+      const label = document.querySelector(`label[for="${selected.id}"]`);
+      sizeText = label ? label.textContent.trim() : "";
+      salePrice = selected.getAttribute("data-sale_price");
+      offerPercent = selected.getAttribute("data-offer_percent");
+    } else {
+      salePrice = defaultSalePrice;
+      offerPercent = defaultOfferPercent;
+    }
+
+    // Message with standalone links (to make them clickable)
+    let message = `I'm interested in buying *${productName}*.`;
+    if (sizeText) message += `\nSize: *${sizeText}*`;
+    if (salePrice) message += `\nSale Price: *₹${salePrice}*`;
+    if (offerPercent) message += `\nOffer: *${offerPercent}%*`;
+
+    message += `\n\nProduct Link:\n${productUrl}`;
+    message += `\n\nSee more products:\n${productsPageUrl}`;
+
+    whatsappBtn.href = `${baseUrl}?text=${encodeURIComponent(message)}`;
+  }
+
+  radioButtons.forEach(btn => {
+    btn.addEventListener('change', updateWhatsAppLink);
+  });
+
+  updateWhatsAppLink();
+</script>
+
+
+
 {% endblock %}
+
+
 {% endblock content %}

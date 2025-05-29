@@ -60,11 +60,11 @@
                     <li>
                       <a class="dropdown-item" href="/">Home</a>
                     </li>
-                    <li>
+                    {% comment %} <li>
                       <a class="dropdown-item" href="{% url 'main:index' %}"
                         >Profile</a
                       >
-                    </li>
+                    </li> {% endcomment %}
                     <li>
                       <a class="dropdown-item" href="{% url "accounts:settings" %}">Settings</a>
                     </li>
@@ -303,7 +303,26 @@
       </a>
     </div>
     <div class="w-25 ms-2 py-4 icon-hover">
-      <a href="account-orders.html" class="text-inherit">
+      <a href="{% url "web:shop" %}" class="text-inherit">
+        <div class="text-center">
+          <div class="">
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="22"
+    height="22"
+    fill="currentColor"
+    class="bi bi-bag"
+    viewBox="0 0 16 16"
+  >
+    <path d="M8 1a2 2 0 0 0-2 2v1H3a1 1 0 0 0-1 1v9a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V5a1 1 0 0 0-1-1h-3V3a2 2 0 0 0-2-2zM6 3a1 1 0 0 1 2 0v1H6V3zm1 7a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0zm3 0a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0z"/>
+  </svg>
+</div>
+
+        </div>
+      </a>
+    </div>
+    <div class="w-25 ms-2 py-4 icon-hover">
+      <a href="{% url "order:orders" %}" class="text-inherit">
         <div class="text-center">
           <div class="">
             <svg

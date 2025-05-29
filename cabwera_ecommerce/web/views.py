@@ -33,6 +33,7 @@ class ShopView(ListView):
     model = Product
     template_name = "web/shop.html"
     context_object_name = "products"
+    
 
     def get_queryset(self):
         products = Product.objects.all()

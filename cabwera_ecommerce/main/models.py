@@ -25,7 +25,8 @@ UNIT_CHOICES = (
     ("ml", "Milliliter"),
     ("m", "Meter"),
     ("cm", "Centimeter"),
-    ("mm", "Millimeter")
+    ("mm", "Millimeter"),
+    ("in", "Inches")
 )
 
 

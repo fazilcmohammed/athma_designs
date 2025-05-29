@@ -1,0 +1,168 @@
+{% extends "web/base.html" %}
+{% load static %}
+{% block content  %}
+
+<meta name="product-id" content="{{ product.id }}">
+        <!-- breadcrumb -->
+        <div class="tf-breadcrumb">
+            <div class="container">
+                <div class="tf-breadcrumb-wrap d-flex justify-content-between flex-wrap align-items-center">
+                    <div class="tf-breadcrumb-list">
+                        <a href="{% url 'web:index' %}" class="text">Home</a>
+                        <i class="icon icon-arrow-right"></i>
+                        <a href="#" class="text">{{product.name}}</a>
+                      
+                    </div>
+                    <div class="tf-breadcrumb-prev-next">
+                        <a href="#" class="tf-breadcrumb-prev hover-tooltip center">
+                            <i class="icon icon-arrow-left"></i>
+                            <!-- <span class="tooltip">Cotton jersey top</span> -->
+                        </a>
+                        <a href="#" class="tf-breadcrumb-back hover-tooltip center">
+                            <i class="icon icon-shop"></i>
+                            <!-- <span class="tooltip">Back to Women</span> -->
+                        </a>
+                        <a href="#" class="tf-breadcrumb-next hover-tooltip center">
+                            <i class="icon icon-arrow-right"></i>
+                            <!-- <span class="tooltip">Cotton jersey top</span> -->
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /breadcrumb -->
+        <!-- default -->
+        <section class="flat-spacing-4 pt_0">
+            <div class="tf-main-product section-image-zoom">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="tf-product-media-wrap sticky-top">
+                                <div class="thumbs-slider">
+                                    <!-- Thumbnails Slider -->
+                                    <div dir="ltr" class="swiper tf-product-media-thumbs other-image-zoom" data-direction="vertical">
+                                        <div class="swiper-wrapper stagger-wrap">
+                                            {% for image in product.get_images %}
+                                                <div class="swiper-slide stagger-item" data-color="beige">
+                                                    <div class="item">
+                                                        <img class="lazyload" data-src="{{ image.image.url }}" src="{{ image.image.url }}" alt="img-product">
+                                                    </div>
+                                                </div>
+                                            {% endfor %}
+                                        </div>
+                                        <!-- Pagination for Thumbnails (if needed) -->
+                                        <div class="swiper-pagination thumbs-pagination"></div>
+                                    </div>
+                        
+                                    <!-- Main Gallery Slider -->
+                                    <div dir="ltr" class="swiper tf-product-media-main" id="gallery-swiper-started">
+                                        <div class="swiper-wrapper">
+                                            {% for image in product.get_images %}
+                                                <div class="swiper-slide" data-color="beige">
+                                                    <a href="{{ image.image.url }}" target="_blank" class="item" data-pswp-width="770" data-pswp-height="1075">
+                                                        <img class="tf-image-zoom lazyload" data-zoom="{{ image.image.url }}" data-src="{{ image.image.url }}" src="{{ image.image.url }}" alt="">
+                                                    </a>
+                                                </div>
+                                            {% endfor %}
+                                        </div>
+                                        <!-- Navigation Buttons -->
+                                      
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 ">
+                            <div class="tf-product-info-wrap position-relative">
+                                <div class="tf-zoom-main"></div>
+                                <div class="tf-product-info-list other-image-zoom">
+                                    <div class="tf-product-info-title">
+                                        <h5>{{product.name}}</h5>
+                                    </div>
+                                   
+                                    <div class="tf-product-info-price">
+                                        <div class="price-on-sale"  id="price-on-sale">{{product.get_sale_price}}</div>
+                                        <div class="compare-at-price" id="compare-at-price">{{product.get_regular_price}}</div>
+                                        
+                                    </div>
+                                    <div class="tf-product-description">
+                                        <p>{{product.details|safe}}</p>
+                                    </div>
+                                 
+                                    <div class="tf-product-info-variant-picker">
+                                 
+                                  
+                                        <div class="variant-picker-item">
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <div class="variant-picker-label">
+                                                    Size: <span class="fw-6 variant-picker-label-value size-label"
+                                                        id="current-size-{{ product.id }}"></span>
+                                                </div>
+            
+                                            </div>
+                                            <div class="variant-picker-values">
+                                                <input type="hidden" id="selected-size-product-id" name="product_id" value="">
+                                                <div class="btn-group product-size m-0">
+                                                    {% for item in product.get_sizes %}
+                                                    <input type="radio" class="btn-check size-selector"
+                                                        name="product_size-{{ product.id }}" value="{{ item.id }}"
+                                                        id="btnradio{{ product.id }}{{ forloop.counter }}"
+                                                        data-sale-price="{{ item.sale_price }}"
+                                                        data-regular-price="{{ item.regular_price }}"
+                                                        data-product-id="{{ product.id }}" {% if forloop.first %}checked{% endif %}>
+                                                    <label class="btn btn-size" for="btnradio{{ product.id }}{{ forloop.counter }}">
+                                                        {{ item.weight }} {{ item.unit }}
+                                                    </label>
+                                                    {% endfor %}
+                                                </div>
+                                            </div>
+                                        </div>    
+
+                                    </div>
+                                    <div class="tf-product-info-quantity ">
+                                        <div class="quantity-title fw-6">Quantity</div>
+                                        <div class="wg-quantity">
+                                            <span class="btn-quantity minus-btn">-</span>
+                                            <input type="text" name="quantity" class="quantity__input" value="1">
+                                            <span class="btn-quantity plus-btn">+</span>
+                                        </div>
+                                    </div>
+                                   
+                                
+                                    <div class="tf-product-info-buy-button">
+                                        <form class="">
+                                            <a href="javascript:void(0);"
+                                                class="tf-btn btn-fill justify-content-center fw-6 fs-16 flex-grow-1 animate-hover-btn btn-add-to-cart cart-add-btn"
+                                                data-product="{{ product.id }}"><span>Add to cart &nbsp;</span></a>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+           
+        </section>
+      
+        <!-- product -->
+       
+     
+       
+
+    </div>
+   
+
+{% block js %}
+<script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+    crossorigin="anonymous"></script>
+<script src="{% static 'web/js/product_detail.js' %}"></script>
+
+<div id="cart-modal" style="">
+    {% include "web/includes/cart_modal.html" %}
+</div>
+<script src="{% static 'web/js/shop-filter.js' %}"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.0/dist/sweetalert2.all.min.js"></script>
+{% include "web/includes/search.html" %}
+{% endblock %}
+
+ {% endblock %}
