@@ -4061,9 +4061,18 @@ ul.cat li a:hover {
 }
 
 /* 25. contact */
-.contact-map{
-	min-height: 800px;
+.contact-map {
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 500px;
 }
+
+.map-half {
+  flex: 1 1 50%;
+  min-height: 300px;
+}
+
+
 .contact-info-area {
 	margin-top: -115px;
 }
@@ -5326,3 +5335,26 @@ p.checkout-coupon input[type="text"] {
 	cursor: pointer;
 	top: 11px;
 }
+
+@media (max-width: 768px) {
+  .map-half {
+    flex: 1 1 100%;
+  }
+}
+
+
+.modal-header .close {
+    font-size: 2rem;
+    line-height: 1;
+    padding: 0;
+    margin: -1rem -1rem -1rem auto;
+    color: #000;
+    opacity: 0.5;
+    background: transparent;
+    border: 0;
+}
+
+.modal-header .close:hover {
+    opacity: 1;
+}
+
