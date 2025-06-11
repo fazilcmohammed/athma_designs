@@ -35,14 +35,14 @@
                                             </ul>
                                         </li>
                                         <li><a href="{% url "core:works" %}">Our Works</a>
-                                            <ul class="sub-menu text-left">
+                                            {% comment %} <ul class="sub-menu text-left">
                                                 <li><a href="{% url "core:works" %}">All</a></li>
                                                 <li><a href="{% url "core:posters" %}">Posters</a></li>
                                                 <li><a href="{% url "core:videos" %}">Videos</a></li>
-                                            </ul>
+                                            </ul> {% endcomment %}
                                         </li>
-                                        <li><a href="{% url "core:blog" %}">blog</a></li>
-                                        <li><a href="{% url "core:contact" %}">contact</a></li>
+                                        <li><a href="{% url "blog:blog" %}">blog</a></li>
+                                        <li><a href="{% url "contact:contact" %}">contact</a></li>
                                     </ul>
                                 </nav>
                             </div>

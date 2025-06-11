@@ -12,7 +12,7 @@
         <main>
 
             <!-- breadcrumb-area-start -->
-            <div class="breadcrumb-area pt-260 pb-265" style="background-image:url({% static "img/bg/bg-13.jpg" %})">
+            <div class="breadcrumb-area pt-100 pb-100" style="background-image:url({% static "img/bg/bg-13.jpg" %})">
                 <div class="container">
                     <div class="row">
                         <div class="col-xl-12">
@@ -30,91 +30,88 @@
             <!-- breadcrumb-area-end -->
 
             <!-- Films-area-start -->
-            <div class="gallery-area pt-130 pb-130 fix">
-    <div class="container">
-        <div class="row">
-  <div class="col-xl-12">
-    <!-- Button Menu (visible on large screens only) -->
-    <div class="portfolio-menu text-center mb-60 d-none d-lg-flex flex-wrap justify-content-center gap-2">
-      <button class="active" data-filter="*">Show All</button>
-      {% for category in categories %}
-        <button data-filter=".{{ category.0 }}">
-          {{ category.1 }}
-        </button>
-      {% endfor %}
+           <div class="gallery-area pt-130 pb-130 fix">
+  <div class="container">
+    <div class="row">
+      <div class="col-xl-12">
+        <!-- Button Menu: Visible on all devices -->
+        <!-- Wrapper for horizontal scrolling -->
+<div class="portfolio-menu-wrapper mb-60" style="overflow-x: auto; -webkit-overflow-scrolling: touch;">
+  <!-- Inner flex container -->
+  <!-- Wrapper to center the menu -->
+<div class="d-flex justify-content-center overflow-auto">
+  <div class="portfolio-menu d-flex flex-nowrap gap-2 px-2" style="min-width: max-content;">
+    <button class="active" data-filter="*">Show All</button>
+    {% for category in categories %}
+      <button data-filter=".{{ category.0 }}">
+        {{ category.1 }}
+      </button>
+    {% endfor %}
+  </div>
+</div>
+
+</div>
+
+      </div>
     </div>
 
-    <!-- Dropdown Menu (visible only on small screens) -->
-    <div class="portfolio-dropdown d-block d-lg-none text-center mb-60">
-      <select id="categoryDropdown" class="form-select w-auto mx-auto">
-        <option value="*">Show All</option>
-        {% for category in categories %}
-          <option value=".{{ category.0 }}">{{ category.1 }}</option>
-        {% endfor %}
-      </select>
+    <!-- Portfolio Grid -->
+    <div id="portfolio-grid" class="row row-portfolio">
+      <div class="grid-sizer"></div>
+      {% for work in works %}
+        <div class="col-xl-3 col-lg-3 col-md-6 grid-item {{ work.category }} mb-30">
+          <div class="portfolio-wrapper">
+            <div class="portfolio-img">
+              {% if work.video %}
+                <a href="#" data-toggle="modal" data-target="#videoModal{{ work.id }}">
+                  <img src="{{ work.thumbnail.url }}" alt="{{ work.title }}">
+                  <div class="portfolio-content">
+                    <div class="portfolio-video">
+                      <i class="fas fa-play"></i>
+                    </div>
+                    <h1 style="margin: 0; color: white;">{{ work.title }}</h1>
+                  </div>
+                </a>
+
+                <!-- Modal -->
+                <div class="modal fade video-modal" id="videoModal{{ work.id }}" tabindex="-1" role="dialog"
+                     aria-labelledby="videoModalLabel{{ work.id }}" aria-hidden="true">
+                  <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title">{{ work.title }}</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">×</span>
+                        </button>
+                      </div>
+                      <div class="modal-body p-0">
+                        <video class="portfolio-video-player"
+                               id="video{{ work.id }}"
+                               controls
+                               style="width: 100%; max-height: 500px; object-fit: contain;">
+                          <source src="{{ work.video.url }}" type="video/mp4">
+                        </video>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              {% elif work.image %}
+                <a class="popup-image" href="{{ work.image.url }}">
+                  <img src="{{ work.thumbnail.url }}" alt="{{ work.title }}">
+                  <div class="portfolio-content">
+                    <h1 style="margin: 0; color: white;">{{ work.title }}</h1>
+                  </div>
+                </a>
+              {% endif %}
+            </div>
+          </div>
+        </div>
+      {% endfor %}
     </div>
   </div>
 </div>
 
-    </div>
-    <div id="portfolio-grid" class="row row-portfolio">
-        <div class="grid-sizer"></div>
-        {% for work in works %}
-            <div class="col-xl-3 col-lg-3 col-md-6 grid-item {{ work.category }} mb-30">
-                <div class="portfolio-wrapper">
-                    <div class="portfolio-img">
-                        {% if work.video %}
-                            <!-- Video Thumbnail Trigger -->
-                            <a href="#" data-toggle="modal" data-target="#videoModal{{ work.id }}">
-                                <img src="{{ work.thumbnail.url }}" alt="{{ work.title }}">
-                                <div class="portfolio-content">
-                                    <div class="portfolio-video">
-                                        <i class="fas fa-play"></i>
-                                    </div>
-                                    <h1 style="margin: 0; color: white;">{{ work.title }}</h1>
-                                </div>
-                            </a>
-
-                            <!-- Modal Structure -->
-                            <!-- Modal Structure -->
-<!-- Modal Structure -->
-<div class="modal fade video-modal" id="videoModal{{ work.id }}" tabindex="-1" role="dialog" 
-     aria-labelledby="videoModalLabel{{ work.id }}" aria-hidden="true">
-    <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title">{{ work.title }}</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">×</span>
-                </button>
-            </div>
-            <div class="modal-body p-0">
-                <video class="portfolio-video-player" 
-                       id="video{{ work.id }}"
-                       controls
-                       style="width: 100%; max-height: 500px; object-fit: contain;">
-                    <source src="{{ work.video.url }}" type="video/mp4">
-                </video>
-            </div>
-        </div>
-    </div>
-</div>
-
-                        {% elif work.image %}
-                            <!-- Image Preview -->
-                            <a class="popup-image" href="{{ work.image.url }}">
-                                <img src="{{ work.thumbnail.url }}" alt="{{ work.title }}">
-                                <div class="portfolio-content">
-                                    <h1 style="margin: 0; color: white;">{{ work.title }}</h1>
-                                </div>
-                            </a>
-                        {% endif %}
-                    </div>
-                </div>
-            </div>
-        {% endfor %}
-    </div>
-</div>
             <!-- Films-area-end -->
 
             <!-- cta-area-start -->

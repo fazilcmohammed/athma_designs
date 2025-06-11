@@ -12,8 +12,7 @@ class AboutTeamMembersListView(ListView):
     template_name = 'core/aboutus.html'
     context_object_name = 'team_members'
 
-class ContactView(TemplateView):
-    template_name = 'core/contact.html'
+
 
 class BlogView(TemplateView):
     template_name = 'core/blog.html'

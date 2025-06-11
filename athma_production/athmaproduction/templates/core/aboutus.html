@@ -11,7 +11,7 @@
 <main>
 
             <!-- breadcrumb-area-start -->
-            <div class="breadcrumb-area pt-260 pb-265" style="background-image:url({% static "img/bg/bg-13.jpg" %})">
+            <div class="breadcrumb-area pt-100 pb-100" style="background-image:url({% static "img/bg/bg-13.jpg" %})">
                 <div class="container">
                     <div class="row">
                         <div class="col-xl-12">
@@ -143,7 +143,7 @@
                     </div>
                     <div class="row">
                         {% for members in team_members %}
-                        <div class="col-xl-3 col-lg-3 col-md-6 mb-30">
+                        <div class="col-xl-2 col-lg-2 col-md-6 mb-30">
                             <div class="team-wrapper">
                                 <div class="team-img">
                                     <img src="{{ members.image.url }}" alt="{{ member.name }}">
@@ -155,8 +155,8 @@
                                     </div>
                                     <div class="team-text pos-relative">
                                         {% comment %} <h2>Member {{members.id}}</h2> {% endcomment %}
-                                        <h4>{{members.name}}</h4>
-                                        <span>{{members.role}}</span>
+                                        <h6>{{members.name}}</h6>
+                                        <span style="font-size: 10px;">{{members.role}}</span>
                                     </div>
                                 </div>
                             </div>

@@ -81,40 +81,48 @@
                         </div>
                         <div class="col-xl-8">
                             <div class="contact-form">
-                                <form id="contact-form" action="https://www.devsnews.com/template/bazna/bazna/mail.php" method="POST">
-                                    <div class="row">
-                                        <div class="col-lg-6">
-                                            <div class="form-box user-icon mb-30">
-                                                <input type="text" name="name" placeholder="Your Name">
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-6">
-                                            <div class="form-box email-icon mb-30">
-                                                <input type="text" name="email" placeholder="Your Email">
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-6">
-                                            <div class="form-box phone-icon mb-30">
-                                                <input type="text" name="phone" placeholder="Your Phone">
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-6">
-                                            <div class="form-box subject-icon mb-30">
-                                                <input type="text" name="subject" placeholder="Your Subject">
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-12">
-                                            <div class="form-box message-icon mb-30">
-                                                <textarea name="message" id="message" cols="30" rows="10" placeholder="Your Message"></textarea>
-                                            </div>
-                                            <div class="contact-btn">
-                                                <button class="btn btn-icon ml-0" type="submit">Send Message <i class="far fa-long-arrow-right"></i></button>
-
-                                            </div>
-                                        </div>
-                                    </div>
-                                </form>
-                                <p class="ajax-response"></p>
+                                <form id="contact-form" action="{% url 'contact:contact' %}" method="POST">
+    {% csrf_token %}
+    
+    <div class="row">
+        <div class="col-lg-6">
+            <div class="form-box user-icon mb-30">
+                {{ form.name }}
+                {{ form.name.errors }}
+            </div>
+        </div>
+        <div class="col-lg-6">
+            <div class="form-box email-icon mb-30">
+                {{ form.email }}
+                {{ form.email.errors }}
+            </div>
+        </div>
+        <div class="col-lg-6">
+            <div class="form-box phone-icon mb-30">
+                {{ form.phone }}
+                {{ form.phone.errors }}
+            </div>
+        </div>
+        <div class="col-lg-6">
+            <div class="form-box subject-icon mb-30">
+                {{ form.subject }}
+                {{ form.subject.errors }}
+            </div>
+        </div>
+        <div class="col-lg-12">
+            <div class="form-box message-icon mb-30">
+                {{ form.message }}
+                {{ form.message.errors }}
+            </div>
+            <div class="contact-btn">
+                <button class="btn btn-icon ml-0" type="submit">
+                    Send Message <i class="far fa-long-arrow-right"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+</form>
+                                {% comment %} <p class="ajax-response"></p> {% endcomment %}
                             </div>
                         </div>
                     </div>

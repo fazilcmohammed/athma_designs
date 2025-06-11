@@ -41,7 +41,10 @@ INSTALLED_APPS = [
     'core',
     'team',
     'works',
-    
+    'contact',
+    'blog',
+    'ckeditor',
+    'ckeditor_uploader',
 ]
 
 MIDDLEWARE = [
@@ -83,6 +86,15 @@ DATABASES = {
         'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
+
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
+EMAIL_HOST_USER = 'crackthedata@gmail.com'
+EMAIL_HOST_PASSWORD = 'slezxgkfpmzqmlmm'  # Gmail App Password
+DEFAULT_FROM_EMAIL = '"Athma Designs" <athma@gmail.com>'
+CONTACT_EMAIL = 'crackthedata@gmail.com' 
 
 
 # Password validation
@@ -126,8 +138,13 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles') # for production use (collec
 MEDIA_URL = '/media/'
 MEDIA_ROOT = BASE_DIR / 'media'
 
+CKEDITOR_UPLOAD_PATH = "uploads/"
+
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+
+# slez xgkf pmzq mlmm
