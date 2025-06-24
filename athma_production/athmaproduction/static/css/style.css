@@ -559,7 +559,12 @@ label {
   position: relative;
 }
 .slider-height {
-	min-height: 950px;
+	min-height: 800px;
+}
+@media (min-width: 1024px){
+	.slider-height{
+		min-height: 700px;
+	}
 }
 .slider-1-height {
 	min-height: 835px;

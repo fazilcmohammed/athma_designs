@@ -557,11 +557,12 @@
 	margin-top: 0;
 }
 .main-menu-area {
-	padding: 40px 0;
+	padding: 10px 0;
 }
 .main-menu-area.sticky {
-	padding: 20px 0;
+	padding: 5px 0;
 	padding-bottom: 10px;
+	padding-top: 15px;
 }
 .slider-1-height {
 	min-height: 600px;
@@ -925,9 +926,9 @@
 	margin-left: 0;
 }
 .black-menu .mean-container a.meanmenu-reveal {
-	border: 1px solid #262626;
+	border: 0px solid #262626;
 	color: #262626;
-	margin-top:-30px;
+	margin-top:-35px;
 }
 .black-menu .mean-container a.meanmenu-reveal span {
 	background: #262626;

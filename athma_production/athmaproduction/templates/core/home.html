@@ -13,7 +13,7 @@
 					<div class="row" style="margin: 15px 0;">
 						<div class="col-xl-3 col-lg-3 d-flex align-items-center">
                             <div class="logo">
-                                <a href="{% url "core:home" %}"><img src="{% static "img/logo/athma_logo.png" %}" alt="" style="width: 60px;" /></a>
+                                <a href="{% url "core:home" %}"><img src="{% static "img/logo/athma_logo.png" %}" alt="" style="width: 40px;" /></a>
                             </div>
 						</div>
 						<div class="col-xl-9 col-lg-9 col-md-9">
@@ -122,9 +122,10 @@
   <!-- slider-start -->
   <div class="slider-area">
     <div class="slider-active">
+      {% for slider in sliders %}
       <div
         class="single-slider slider-height d-flex align-items-center"
-        style="background-image: url('{% static 'img/slider/slider-01.jpg' %}')"
+        style="background-image: url('{{ slider.image.url }}')"
       >
         <div class="container">
           <div class="row">
@@ -134,7 +135,7 @@
                   ><i class="far fa-camera-retro"></i> Best Flim Studio</span
                 >
                 <h1 data-animation="fadeInUp" data-delay=".7s">
-                  We Make Videos That People Want
+                  {{ slider.title }}
                 </h1>
                 <div class="slider-button">
                   <a
@@ -157,41 +158,7 @@
           </div>
         </div>
       </div>
-      <div
-        class="single-slider slider-height d-flex align-items-center"
-        style="background-image: url({% static "img/slider/slider-5.jpg" %})"
-      >
-        <div class="container">
-          <div class="row">
-            <div class="col-xl-9 col-lg-9">
-              <div class="slider-content mt-90">
-                <span
-                  ><i class="far fa-camera-retro"></i> Best Flim Studio</span
-                >
-                <h1 data-animation="fadeInUp" data-delay=".5s">
-                  We Make Videos That People Want
-                </h1>
-                <div class="slider-button">
-                  <a
-                    class="btn btn-gray"
-                    href="#"
-                    data-animation="fadeInLeft"
-                    data-delay=".9s"
-                    >Latest Video <i class="far fa-long-arrow-right"></i
-                  ></a>
-                  <a
-                    class="btn btn-white"
-                    href="#"
-                    data-animation="fadeInRight"
-                    data-delay="1.1s"
-                    >Contact Us <i class="far fa-long-arrow-right"></i
-                  ></a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+      {% endfor %}
     </div>
   </div>
   <!-- slider-start -->
@@ -208,38 +175,29 @@
         <div class="col-xl-6 col-lg-6">
           <div class="about-wrapper mb-30">
             <div class="section-title">
-              <span>incredible experience</span>
-              <h1>Advancer Without Boundaries</h1>
+              <span>CREATIVE VISUAL SOLUTIONS</span>
+              <h1>Bringing Your Vision to Life</h1>
               <p>
-                But we must orem ipsum dolor sit amet consectetur adipisicing
-                elitsed do eiusmod tempor incididunt ut labore et dolore magna
-                aliqua. Ut enim adeste minim veniam, quis nostrud exercitation
-                ullamco laboris nisi ut aliquip exea commodo consequat. Duis
-                aute irure dolor in reprehenderit in voluptate velit esse cillum
-                dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                cupidatat non proident, sunt in culpa qui officia deserunt
-                mollit anim id est laborum. Sed ut perspiciatis unde omnis iste
-                natus error sit
+                At Athma Production, we don’t just create content—we build brands, tell stories, and drive results. 
+                From stunning designs and dynamic video edits to engaging content creation, powerful websites, and 
+                strategic digital marketing campaigns, we bring every element together to elevate your digital presence.
+                <br>
+                Whether you're looking to launch a bold visual campaign, redesign your online presence, or boost your 
+                social media engagement, our expert team blends creativity with technology to deliver impactful solutions 
+                tailored to your goals. Let us turn your ideas into unforgettable digital experiences that truly resonate.
               </p>
             </div>
             <div class="about-button">
               <a class="btn" href="#"
                 >Read More <i class="far fa-long-arrow-right"></i
               ></a>
-              <div class="about-video">
-                <span>Watch Our Video</span>
-                <a
-                  class="popup-video"
-                  href="https://www.youtube.com/watch?v=LTXD6XZXc3U"
-                  ><i class="fas fa-play"></i
-                ></a>
-              </div>
+              
             </div>
           </div>
         </div>
-        <div class="col-xl-6 col-lg-6">
+        <div class="col-xl-6 col-lg-6 d-flex justify-content-center align-items-center">
           <div class="about-img mb-30">
-            <img src="{% static "img/about/about.png" %}" alt="" />
+            <img src="{% static "img/about/about-img.jpg" %}" alt="" />
           </div>
         </div>
       </div>
@@ -247,142 +205,9 @@
   </div>
   <!-- about-area-end -->
 
-  <!-- brand-area-start -->
-  <div class="brand-area pb-130 pos-relative">
-    <div class="shape d-none d-xl-block">
-      <div class="shape-item ab-02 bounce-animate">
-        <img src="{% static "img/shape/shape-2.png" %}" alt="" />
-      </div>
-    </div>
-    <div class="container">
-      <div class="row">
-        <div class="col-xl-8 col-lg-8 offset-lg-2 offset-xl-2">
-          <div class="section-title text-center mb-100 pos-relative">
-            <div class="section-icon">
-              <img src="{% static "img/icon/section.png" %}" alt="" />
-            </div>
-            <span>Our certificates</span>
-            <h1>We Have Got Many Other Certifications</h1>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="brand-active owl-carousel">
-          <div class="col-xl-12">
-            <div class="brand-img text-center">
-              <img src="{% static "img/brand/brand-1.png" %}" alt="" />
-            </div>
-          </div>
-          <div class="col-xl-12">
-            <div class="brand-img text-center">
-              <img src="{% static "img/brand/brand-2.png" %}" alt="" />
-            </div>
-          </div>
-          <div class="col-xl-12">
-            <div class="brand-img text-center">
-              <img src="{% static "img/brand/brand-3.png" %}" alt="" />
-            </div>
-          </div>
-          <div class="col-xl-12">
-            <div class="brand-img text-center">
-              <img src="{% static "img/brand/brand-4.png" %}" alt="" />
-            </div>
-          </div>
-          <div class="col-xl-12">
-            <div class="brand-img text-center">
-              <img src="{% static "img/brand/brand-5.png" %}" alt="" />
-            </div>
-          </div>
-          <div class="col-xl-12 text-center">
-            <div class="brand-img">
-              <img src="{% static "img/brand/brand-6.png" %}" alt="" />
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- brand-area-end -->
-
-  <!-- trailer-area-start -->
-  <div
-    class="trailer-area pt-130 pb-100"
-    style="background-image: url({% static "img/bg/bg-1.jpg" %})"
-  >
-    <div class="container">
-      <div class="row">
-        <div class="col-xl-6 col-lg-6">
-          <div class="row">
-            <div class="col-xl-12 col-lg-12 mb-30">
-              <div class="trailer-video-wrapper">
-                <div class="trailer-img">
-                  <img src="{% static "img/trailer/trailer-1.jpg" %}" alt="" />
-                  <div class="trailer-video">
-                    <a
-                      class="popup-video"
-                      href="https://www.youtube.com/watch?v=LTXD6XZXc3U"
-                      ><i class="fas fa-play"></i
-                    ></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-xl-6 col-lg-6 col-md-6 mb-30">
-              <div class="trailer-video-wrapper">
-                <div class="trailer-img">
-                  <img src="{% static "img/trailer/trailer-2.jpg" %}" alt="" />
-                  <div class="trailer-video trailer-2-video">
-                    <a
-                      class="popup-video"
-                      href="https://www.youtube.com/watch?v=LTXD6XZXc3U"
-                      ><i class="fas fa-play"></i
-                    ></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-xl-6 col-lg-6 col-md-6 mb-30">
-              <div class="trailer-video-wrapper">
-                <div class="trailer-img">
-                  <img src="{% static "img/trailer/trailer-3.jpg" %}" alt="" />
-                  <div class="trailer-video trailer-2-video">
-                    <a
-                      class="popup-video"
-                      href="https://www.youtube.com/watch?v=LTXD6XZXc3U"
-                      ><i class="fas fa-play"></i
-                    ></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-xl-6 col-lg-6">
-          <div class="trailer-wrapper mb-30">
-            <div class="section-title white-title">
-              <span>latest Trailer</span>
-              <h1>We Published Our Recent Movie Trailer Let’s See</h1>
-              <p>
-                But we ipsum dolor sit amet consectetur adipisicing elit sed
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim aminiveniam quis nostrud exercitation ullamco laboris nisi
-                aliquip exea
-              </p>
-            </div>
-            <div class="about-button">
-              <a class="btn" href="#"
-                >View All Trailer <i class="far fa-long-arrow-right"></i
-              ></a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- trailer-area-end -->
 
   <!-- our-services-area-start -->
-  <div class="our-services-area pt-145 pb-105">
+  <div class="our-services-area pb-105">
     <div class="container">
       <div class="row">
         <div class="col-xl-8 col-lg-8 offset-lg-2 offset-xl-2">
@@ -452,103 +277,19 @@
   </div>
   <!-- our-services-area-end -->
 
-  <!-- gallery-area-start -->
-  <div class="gallery-area pr-55 pl-55 pb-100">
-    <div class="container">
-      <div class="row">
-        <div class="col-xl-8 col-lg-8 offset-lg-2 offset-xl-2">
-          <div
-            class="section-title text-center mb-105 pr-40 pl-40 pos-relative"
-          >
-            <div class="section-icon">
-              <img src="{% static "img/icon/section.png" %}" alt="" />
-            </div>
-            <span>our services</span>
-            <h1>We Offer Better Services For Your Films</h1>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
-          <div class="gallery-wrapper">
-            <div class="gallery-img">
-              <img src="{% static "img/gallery/gallery-1.jpg" %}" alt="" />
-              <div class="gallery-video">
-                <a
-                  class="popup-video"
-                  href="https://www.youtube.com/watch?v=LTXD6XZXc3U"
-                  ><i class="fas fa-play"></i
-                ></a>
-              </div>
-              <div class="gallery-text">
-                <h1>
-                  Double Gun <br />
-                  Shooter
-                </h1>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
-          <div class="gallery-wrapper">
-            <div class="gallery-img">
-              <img src="{% static "img/gallery/gallery-2.jpg" %}" alt="" />
-              <div class="gallery-video">
-                <a
-                  class="popup-video"
-                  href="https://www.youtube.com/watch?v=LTXD6XZXc3U"
-                  ><i class="fas fa-play"></i
-                ></a>
-              </div>
-              <div class="gallery-text">
-                <h1>
-                  Pure Love <br />
-                  Wanted
-                </h1>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
-          <div class="gallery-wrapper">
-            <div class="gallery-img">
-              <img src="{% static "img/gallery/gallery-3.jpg" %}" alt="" />
-              <div class="gallery-video">
-                <a
-                  class="popup-video"
-                  href="https://www.youtube.com/watch?v=LTXD6XZXc3U"
-                  ><i class="fas fa-play"></i
-                ></a>
-              </div>
-              <div class="gallery-text">
-                <h1>
-                  Animation For <br />
-                  Small Babys
-                </h1>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- gallery-area-end -->
-
   <!-- team-area-start -->
   <div class="team-area pb-95">
     <div class="container">
       <div class="row">
         <div class="col-xl-8 col-lg-8 offset-lg-2 offset-xl-2">
           <div
-            class="section-title text-center mb-10 pr-80 pl-80 pos-relative"
+            class="section-title text-center mb-60 pr-80 pl-80 pos-relative"
           >
             <div class="section-icon">
               <img src="img/icon/section.png" alt="" />
             </div>
             <span>our team member</span>
-            <h1>Meet Our Creative Muttal Members</h1>
+            <h1>Meet Our Creative Members</h1>
           </div>
         </div>
       </div>
@@ -888,46 +629,6 @@
   </div>
   <!-- blog-area-end -->
 
-  <!-- brand-area-start -->
-  <div class="brand-area pt-130 pb-130">
-    <div class="container">
-      <div class="row">
-        <div class="brand-active owl-carousel">
-          <div class="col-xl-12">
-            <div class="brand-img text-center">
-              <img src="{% static "img/brand/brand-1.png" %}" alt="" />
-            </div>
-          </div>
-          <div class="col-xl-12">
-            <div class="brand-img text-center">
-              <img src="{% static "img/brand/brand-2.png" %}" alt="" />
-            </div>
-          </div>
-          <div class="col-xl-12">
-            <div class="brand-img text-center">
-              <img src="{% static "img/brand/brand-3.png" %}" alt="" />
-            </div>
-          </div>
-          <div class="col-xl-12">
-            <div class="brand-img text-center">
-              <img src="{% static 'img/brand/brand-4.png' %}" alt="" />
-            </div>
-          </div>
-          <div class="col-xl-12">
-            <div class="brand-img text-center">
-              <img src="{% static "img/brand/brand-5.png" %}" alt="" />
-            </div>
-          </div>
-          <div class="col-xl-12 text-center">
-            <div class="brand-img">
-              <img src="{% static "img/brand/brand-6.png" %}" alt="" />
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- brand-area-end -->
 </main>
 
 {% endblock content %}

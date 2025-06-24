@@ -1,0 +1,59 @@
+{% extends "web/base.html" %}
+{% load static %}
+{% block content  %}
+<link rel="stylesheet" href="{% static 'web/css/about.css' %}">
+        <!-- page-title -->
+        <div class="tf-page-title" style="background-color: red;">
+            <div class="container-full">
+                <div class="heading text-center">About Us</div>
+            </div>
+        </div>
+ 
+        <div class="makeup-section mb-40 mt-40">
+            <div class="container">
+                <div class="makeup-top-item">
+                    <div class="row align-items-center justify-content-center g-0 gy-4 mt-2">
+                        <!-- Image Column -->
+                        <div class="col-lg-6">
+                            <div class="makeup-img hover-img text-center">
+                                <img src="{% static 'web/images/about_us.jpg' %}" alt="Showroom" class="img-fluid rounded" style="max-width: 60%;">
+                            </div>
+                        </div>
+        
+        <!-- Text Column -->
+                         <div class="col-lg-6">
+                            <div class="makeup-content ps-lg-4 text-justify">
+                                <p style="text-align: justify;">Charutha Silks, Kerala's first ISO 9001:2015 certified textile showroom, is woven with tradition and styled for celebration. With flagship showrooms in Tripunithura and North Paravoor, Charutha Silks is a name synonymous with elegance, quality, and trust. We take pride in offering an exclusive range of ethnic and contemporary wear — from timeless sarees and churidars to vibrant festive collections and Holy Communion dresses.</p>
+
+                                <p style="text-align: justify;"> At Charutha Silks, we believe in making every occasion special. Our commitment to excellence and personalized service has earned us the love and loyalty of countless customers across generations. With the perfect blend of tradition and modernity, we continue to redefine the shopping experience in Kerala's fashion landscape.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <section class="cta-section fade-in ">
+                <h2>Experience the Charutha Difference</h2>
+                <p>Discover our exquisite collection of handwoven silks and become part of our story</p>
+                <a href="{% url 'web:shop' %}" class="cta-button">Explore Collections</a>
+            </section>
+
+            
+
+
+    
+    
+    <br>
+    
+        
+    
+        </div>
+        
+    </div>
+    
+    
+
+{% endblock %}
+   
+
+  

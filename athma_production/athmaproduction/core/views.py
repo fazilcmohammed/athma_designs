@@ -1,11 +1,17 @@
 from django.views.generic import TemplateView, ListView
 from team.models import Team
 from works.models import Work
+from . models import Slider
 
 # Create your views here.
 
 class HomeView(TemplateView):
     template_name = 'core/home.html'
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context["sliders"] = Slider.objects.filter(is_active=True).order_by("-created_at")
+        return context
 
 class AboutTeamMembersListView(ListView):
     model = Team
@@ -50,3 +56,9 @@ class PostersView(TemplateView):
 
 class VideosView(TemplateView):
     template_name = 'core/works/videos.html'
+
+class SliderListView(ListView):
+    model = Slider
+    template_name = 'core/home.html'
+    context_object_name = 'sliders'
+    queryset = Slider.objects.filter(is_active=True).order_by('-created_at')
