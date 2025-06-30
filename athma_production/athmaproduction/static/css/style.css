@@ -968,35 +968,43 @@ label {
 	margin-top: 41px;
 }
 
-/* 7. our-services-area */
+.our-services-wrapper {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 .our-services-icon {
-	float: left;
-	margin-right: 30px;
-	margin-top: 9px;
+  margin: 0 0 20px 0; /* remove float, center spacing */
 }
-.our-services-icon img{
-	backface-visibility: hidden;
-	-webkit-transform: translate3d(0,0,0);
-	-moz-transform: translate3d(0,0,0);
-	transform: translate3d(0,0,0);
-	-webkit-transition: transform .3s cubic-bezier(.21,.6,.44,2.18);
-	-moz-transition: transform .3s cubic-bezier(.21,.6,.44,2.18);
-	transition: transform .3s cubic-bezier(.21,.6,.44,2.18);
+
+.our-services-icon img {
+  backface-visibility: hidden;
+  transform: translate3d(0, 0, 0);
+  transition: transform 0.3s cubic-bezier(0.21, 0.6, 0.44, 2.18);
+  max-width: 60px; /* Optional: control icon size */
 }
+
 .our-services-icon img:hover {
-	-webkit-transform: translate3d(0,-10px,0);
-	-moz-transform: translate3d(0,-10px,0);
-	transform: translate3d(0,-10px,0);
+  transform: translate3d(0, -10px, 0);
 }
-.our-services-text{overflow: hidden;}
+
+.our-services-text {
+  overflow: visible; /* no need to hide overflow now */
+  max-width: 300px; /* Optional: control text width */
+}
+
 .our-services-text h3 {
-	font-size: 24px;
-	line-height: 1.4;
-	margin-bottom: 13px;
+  font-size: 24px;
+  line-height: 1.4;
+  margin-bottom: 13px;
 }
+
 .our-services-text p {
-	margin-bottom: 0;
-	margin-right: 38px;
+  margin-bottom: 0;
+  margin-right: 0;
 }
 
 /* services-2-style */

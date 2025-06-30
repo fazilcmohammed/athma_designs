@@ -36,6 +36,6 @@ urlpatterns = (
 )
 handler404 = "web.views.custom_404"
 
-admin.site.site_header = "kmtsilks Administration"
-admin.site.site_title = "kmtsilks Admin Portal"
-admin.site.index_title = "Welcome to kmtsilks Admin Portal"
+admin.site.site_header = "charuthasilks Administration"
+admin.site.site_title = "charuthasilks Admin Portal"
+admin.site.index_title = "Welcome to charuthasilks Admin Portal"

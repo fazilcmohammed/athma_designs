@@ -188,7 +188,7 @@
               </p>
             </div>
             <div class="about-button">
-              <a class="btn" href="#"
+              <a class="btn" href="{% url "core:about" %}"
                 >Read More <i class="far fa-long-arrow-right"></i
               ></a>
               
@@ -213,10 +213,10 @@
         <div class="col-xl-8 col-lg-8 offset-lg-2 offset-xl-2">
           <div class="section-title text-center mb-95 pr-40 pl-40 pos-relative">
             <div class="section-icon">
-              <img src="{% static "img/icon/section.png" %}" alt="" />
+              {% comment %} <img src="{% static "img/icon/section.png" %}" alt="" /> {% endcomment %}
             </div>
             <span>our services</span>
-            <h1>We Offer Better Services For Your Films</h1>
+            <h1>Crafting Experiences That Captivate & Convert</h1>
           </div>
         </div>
       </div>
@@ -228,12 +228,11 @@
             </div>
             <div class="our-services-text">
               <h3>
-                Movie & Flim <br />
+                 Creative Video <br />
                 Production
               </h3>
               <p>
-                Do some ipsum dolor amecon ecte adipisicing elideiusm empor
-                incididunt ut labore dolore
+                From concept to final cut, we produce high-quality films, ads, and branded content that tell compelling stories and engage your audience.
               </p>
             </div>
           </div>
@@ -245,12 +244,11 @@
             </div>
             <div class="our-services-text">
               <h3>
-                Idea Generator <br />
+                Concept Development <br />
                 & Direction
               </h3>
               <p>
-                Do some ipsum dolor amecon ecte adipisicing elideiusm empor
-                incididunt ut labore dolore
+                We bring your ideas to life with innovative concepts, detailed storyboarding, and professional direction to ensure every frame delivers impact.
               </p>
             </div>
           </div>
@@ -262,12 +260,11 @@
             </div>
             <div class="our-services-text">
               <h3>
-                Get Your Final <br />
-                Visual Effects
+                Post-Production  <br />
+                & VFX
               </h3>
               <p>
-                Do some ipsum dolor amecon ecte adipisicing elideiusm empor
-                incididunt ut labore dolore
+                Enhance your visuals with expert editing, color grading, and stunning visual effects for a polished and cinematic finish.
               </p>
             </div>
           </div>
@@ -387,7 +384,7 @@
         <div class="col-xl-8 col-lg-8 offset-lg-2 offset-xl-2">
           <div class="section-title text-center pr-80 pl-80 pos-relative">
             <div class="section-icon">
-              <img src="{% static "img/icon/section.png" %}" alt="" />
+              {% comment %} <img src="{% static "img/icon/section.png" %}" alt="" /> {% endcomment %}
             </div>
             <span>our testimonials</span>
             <h1>Let’s See Our Awesome Client’s Reviews</h1>
@@ -456,15 +453,10 @@
               <div class="section-icon text-center mr-90">
                 <img src="img/icon/section.png" alt="" />
               </div>
-              <span>incredible experience</span>
-              <h1>We Have Great Achievement</h1>
+              <span>UNMATCHED RESULTS</span>
+              <h1>Delivering Impact That Matters</h1>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
-                doeiusmod tempor incididunt ut labore et dolore magna aliqua.
-                Utenim ad minim veniam, quis nostrud exercitation ullamco lab
-                oris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-                dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                fugiat nulla pariatur. Excepteur sint occaecat.
+                At Athma Productions, every project is a story told right. From compelling visuals to high-converting digital campaigns, we’ve helped businesses amplify their voice and connect with their audience. Our track record speaks volumes about the value we deliver.
               </p>
             </div>
           </div>
@@ -477,8 +469,8 @@
                   <img src="img/icon/c-1.png" alt="" />
                 </div>
                 <div class="counter-text">
-                  <h1 class="counter">6523</h1>
-                  <span>Project Complate</span>
+                  <h1 class="counter">320</h1>
+                  <span>Successful Projects</span>
                 </div>
               </div>
             </div>
@@ -488,8 +480,8 @@
                   <img src="img/icon/c-2.png" alt="" />
                 </div>
                 <div class="counter-text">
-                  <h1 class="counter">6985</h1>
-                  <span>Satisfied Clients</span>
+                  <h1 class="counter">150</h1>
+                  <span>Happy Clients</span>
                 </div>
               </div>
             </div>
@@ -499,7 +491,7 @@
                   <img src="img/icon/c-3.png" alt="" />
                 </div>
                 <div class="counter-text">
-                  <h1 class="counter">8964</h1>
+                  <h1 class="counter">25</h1>
                   <span>Win Awards</span>
                 </div>
               </div>
@@ -510,8 +502,8 @@
                   <img src="img/icon/c-4.png" alt="" />
                 </div>
                 <div class="counter-text">
-                  <h1 class="counter">6985</h1>
-                  <span>Satisfied Clients</span>
+                  <h1 class="counter">50</h1>
+                  <span>Brands We've Worked With</span>
                 </div>
               </div>
             </div>
@@ -533,9 +525,9 @@
           <div class="col-xl-10 col-lg-10 offset-lg-1 offset-xl-1">
             <div class="newsletters-wrapper">
               <div class="section-title text-center mb-60">
-                <span>subscribe newsletters</span>
+                <span>STAY CONNECTED</span>
                 <h1>
-                  Do You Want To Update Evey Latest Movie, Videos Or Trailer
+                  Want the Latest in Creative Media & Production?
                 </h1>
               </div>
               <div class="newsletter-form news-icon">
