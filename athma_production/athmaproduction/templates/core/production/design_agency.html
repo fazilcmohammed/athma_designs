@@ -18,7 +18,7 @@
                             <div class="breadcrumb-text text-center">
                                 <h1>Athma <br> Design Agency</h1>
                                 <ul class="breadcrumb-menu">
-                                    <li><a href="index.html">home</a></li>
+                                    <li><a href="{% url "core:home" %}">home</a></li>
                                     <li><span>Design Agency</span></li>
                                 </ul>
                             </div>
@@ -47,6 +47,81 @@
   </div>
 </section>
 
+<section class="design-services">
+  <h2>Our Design Services</h2>
+  <p class="subtitle">Comprehensive design solutions tailored to your brand's unique needs</p>
+  
+  <div class="services-grid">
+    <div class="service-card">
+      <div class="icon"><i class="fas fa-palette"></i></div>
+      <h3>Logo Design</h3>
+      <p>Distinctive logos that capture your brand essence and make lasting impressions across all platforms.</p>
+    </div>
+
+    <div class="service-card">
+      <div class="icon"><i class="fas fa-puzzle-piece"></i></div>
+      <h3>Brand Identity</h3>
+      <p>Complete brand systems including color palettes, typography, and guidelines that tell your unique story.</p>
+    </div>
+
+    <div class="service-card">
+      <div class="icon"><i class="fas fa-laptop-code"></i></div>
+      <h3>Web UI/UX Design</h3>
+      <p>User-centered digital experiences that combine beautiful interfaces with intuitive functionality.</p>
+    </div>
+
+    <div class="service-card">
+      <div class="icon"><i class="fas fa-box"></i></div>
+      <h3>Packaging Design</h3>
+      <p>Eye-catching packaging that protects your product while amplifying brand presence on shelves.</p>
+    </div>
+
+    <div class="service-card">
+      <div class="icon"><i class="fas fa-mobile-alt"></i></div>
+      <h3>Social Media Design</h3>
+      <p>Engaging content and templates to maintain brand consistency across all social platforms.</p>
+    </div>
+
+    <div class="service-card">
+      <div class="icon"><i class="fas fa-print"></i></div>
+      <h3>Print Design</h3>
+      <p>Professional print materials from brochures to business cards that make lasting impressions.</p>
+    </div>
+  </div>
+</section>
+
+
+<section class="why-choose-us">
+  <div class="container">
+    <h2>Why Choose Us?</h2>
+    <p class="subtitle">What sets us apart in the design industry</p>
+
+    <div class="features-grid">
+      <div class="feature-card">
+        <div class="icon blue"><i class="fas fa-users"></i></div>
+        <h3>Creative Team</h3>
+        <p>Award-winning designers with diverse expertise and fresh perspectives.</p>
+      </div>
+      <div class="feature-card">
+        <div class="icon green"><i class="fas fa-clock"></i></div>
+        <h3>On-time Delivery</h3>
+        <p>Reliable project timelines with consistent communication throughout.</p>
+      </div>
+      <div class="feature-card">
+        <div class="icon purple"><i class="fas fa-trophy"></i></div>
+        <h3>100+ Projects</h3>
+        <p>Proven track record with successful projects across various industries.</p>
+      </div>
+      <div class="feature-card">
+        <div class="icon orange"><i class="fas fa-star"></i></div>
+        <h3>Premium Quality</h3>
+        <p>Meticulous attention to detail ensuring exceptional design standards.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
             <!-- our-history-area-end -->
             <!-- about-area-start -->
             <div class="about-area pt-130 pb-100 grey-bg">
@@ -56,11 +131,8 @@
                             <div class="about-wrapper single-2-about mb-30">
                                 <div class="section-title">
                                     <span>Why choose us</span>
-                                    <h1>We Are Creative   Films Studio</h1>
-                                    <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here</p>
-                                </div>
-                                <div class="about-button">
-                                    <a class="btn" href="#">Hire Now <i class="far fa-long-arrow-right"></i></a>
+                                    <h1>We Craft Visually Stunning & Strategy-Driven Designs</h1>
+                                    <p>Our team of expert designers blends creativity with strategy to deliver designs that make brands unforgettable. From visual storytelling to user-first interfaces, we focus on what matters — results, experience, and impact.</p>
                                 </div>
                             </div>
                         </div>
@@ -72,15 +144,14 @@
                                             <h5 class="mb-0">
                                                 <a href="#" class="btn-link" data-toggle="collapse" data-target="#collapseOne"
                                                     aria-expanded="true" aria-controls="collapseOne">
-                                                Lats Years We Have Compalte 10+ Awards Winning Films
+                                                Our Team Has Delivered 100+ Winning Projects
                                                 </a>
                                             </h5>
                                         </div>
 
                                         <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
                                             <div class="card-body">
-                                                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatea ccusantium doloremque laudantium, totam rem aperiam,
-                                                eaque ipsa quae ab illventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+                                                <p>We’ve helped startups, brands, and enterprises create impactful visuals across digital and print platforms with a success-driven approach.</p>
                                             </div>
                                         </div>
                                     </div>
@@ -89,14 +160,13 @@
                                             <h5 class="mb-0">
                                                 <a href="#" class="btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo"
                                                     aria-expanded="false" aria-controls="collapseTwo">
-                                                    Attracting Users To Evaluate Your Product
+                                                    We Focus on Human-Centered, Pixel-Perfect Designs
                                                 </a>
                                             </h5>
                                         </div>
                                         <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
                                             <div class="card-body">
-                                                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatea ccusantium doloremque laudantium, totam rem aperiam,
-                                                eaque ipsa quae ab illventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+                                                <p>Our design process begins with user empathy and ends with intuitive, beautiful, and responsive designs across all devices and platforms.</p>
                                             </div>
                                         </div>
                                     </div>
@@ -105,14 +175,13 @@
                                             <h5 class="mb-0">
                                                 <a href="#" class="btn-link collapsed" data-toggle="collapse" data-target="#collapseThree"
                                                     aria-expanded="false" aria-controls="collapseThree">
-                                                    We Are Just Getting Started: 1,000 Smashing Members
+                                                    Trusted by 100+ Clients Around the Globe
                                                 </a>
                                             </h5>
                                         </div>
                                         <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
                                             <div class="card-body">
-                                                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatea ccusantium doloremque laudantium, totam rem aperiam,
-                                                eaque ipsa quae ab illventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+                                                <p>From rebranding local businesses to UI/UX overhauls for SaaS platforms — our designs consistently exceed expectations and inspire loyalty.</p>
                                             </div>
                                         </div>
                                     </div>
@@ -121,14 +190,13 @@
                                             <h5 class="mb-0">
                                                 <a href="#" class="btn-link collapsed" data-toggle="collapse" data-target="#collapseFour"
                                                     aria-expanded="false" aria-controls="collapseFour">
-                                                    What Happens When You Create A Flexbox Flex Container?
+                                                    Scalable & Smart Design Systems
                                                 </a>
                                             </h5>
                                         </div>
                                         <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
                                             <div class="card-body">
-                                                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatea ccusantium doloremque laudantium, totam rem aperiam,
-                                                eaque ipsa quae ab illventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+                                                <p>We don’t just deliver great looks; we build modular, scalable design systems that support your brand’s growth and evolving needs.</p>
                                             </div>
                                         </div>
                                     </div>
@@ -140,276 +208,63 @@
             </div>
             <!-- about-area-end -->
 
-            <!-- certificate-area-start -->
-            <div class="certificate-area pt-130 pb-130">
-                <div class="container">
-                    <div class="row">
-                        <div class="certificate-2-active owl-carousel">
-                            <div class="col-xl-12">
-                                <div class="certificate-img">
-                                    <img src="{% static "img/certificate/cer-1.jpg" %}" alt="">
-                                </div>
-                            </div>
-                            <div class="col-xl-12">
-                                <div class="certificate-img">
-                                    <img src="{% static "img/certificate/cer-2.jpg" %}" alt="">
-                                </div>
-                            </div>
-                            <div class="col-xl-12">
-                                <div class="certificate-img">
-                                    <img src="{% static "img/certificate/cer-1.jpg" %}" alt="">
-                                </div>
-                            </div>
-                            <div class="col-xl-12">
-                                <div class="certificate-img">
-                                    <img src="{% static "img/certificate/cer-3.jpg" %}" alt="">
-                                </div>
-                            </div>
-                            <div class="col-xl-12">
-                                <div class="certificate-img">
-                                    <img src="{% static "img/certificate/cer-1.jpg" %}" alt="">
-                                </div>
-                            </div>
-                            <div class="col-xl-12">
-                                <div class="certificate-img">
-                                    <img src="{% static "img/certificate/cer-2.jpg" %}" alt="">
-                                </div>
-                            </div>
-                            <div class="col-xl-12">
-                                <div class="certificate-img">
-                                    <img src="{% static "img/certificate/cer-1.jpg" %}" alt="">
-                                </div>
-                            </div>
-                            <div class="col-xl-12">
-                                <div class="certificate-img">
-                                    <img src="{% static "img/certificate/cer-3.jpg" %}" alt="">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- certificate-area-end -->
+            
 
-            <!-- counter-area-start -->
-            <div class="counter-area counter-border pb-95">
-                <div class="container">
-                    <div class="row justify-content-between">
-                        <div class="col-xl-2 col-lg-3 col-md-6">
-                            <div class="single-counter text-center mb-30">
-                                <div class="counter-icon">
-                                    <img src="{% static "img/icon/co-1.png" %}" alt="">
-                                </div>
-                                <div class="counter-text">
-                                    <h1 class="counter">6523</h1>
-                                    <span>Project Complate</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xl-2 col-lg-3 col-md-6">
-                            <div class="single-counter text-center mb-30">
-                                <div class="counter-icon">
-                                    <img src="{% static "img/icon/co-2.png" %}" alt="">
-                                </div>
-                                <div class="counter-text">
-                                    <h1 class="counter">6985</h1>
-                                    <span>Satisfied Clients</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xl-2 col-lg-3 col-md-6">
-                            <div class="single-counter text-center mb-30">
-                                <div class="counter-icon">
-                                    <img src="{% static "img/icon/co-3.png" %}" alt="">
-                                </div>
-                                <div class="counter-text">
-                                    <h1 class="counter">8964</h1>
-                                    <span>Win Awards</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xl-2 col-lg-3 col-md-6">
-                            <div class="single-counter text-center mb-30">
-                                <div class="counter-icon">
-                                    <img src="{% static "img/icon/co-4.png" %}" alt="">
-                                </div>
-                                <div class="counter-text">
-                                    <h1 class="counter">6789</h1>
-                                    <span>Project Complate</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- counter-area-end -->
+            <section class="testimonials">
+  <h2>What Our Clients Say</h2>
+  <p class="subtitle">Real feedback from satisfied customers</p>
 
-            <!-- team-area-start -->
-            <div class="team-area pt-145 pb-95">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-xl-8 col-lg-8 offset-lg-2 offset-xl-2">
-                            <div class="section-title text-center mb-105 pr-80 pl-80 pos-relative">
-                                <div class="section-icon">
-                                    <img src="{% static "img/icon/section.png" %}" alt="">
-                                </div>
-                                <span>our team member</span>
-                                <h1>Meet Our Creative Team Member</h1>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
-                            <div class="team-wrapper">
-                                <div class="team-img">
-                                    <img src="{% static "img/team/team-01.jpg" %}" alt="">
-                                </div>
-                                <div class="team-content text-center">
-                                    <div class="team-icon">
-                                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                                        <a href="#"><i class="fab fa-twitter"></i></a>
-                                        <a href="#"><i class="fab fa-instagram"></i></a>
-                                        <a href="#"><i class="fab fa-youtube"></i></a>
-                                    </div>
-                                    <div class="team-text pos-relative">
-                                        <h2>Member 01</h2>
-                                        <h4>Shek David Max</h4>
-                                        <span>Flim Director</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
-                            <div class="team-wrapper">
-                                <div class="team-img">
-                                    <img src="{% static "img/team/team-02.jpg" %}" alt="">
-                                </div>
-                                <div class="team-content text-center">
-                                    <div class="team-icon">
-                                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                                        <a href="#"><i class="fab fa-twitter"></i></a>
-                                        <a href="#"><i class="fab fa-instagram"></i></a>
-                                        <a href="#"><i class="fab fa-youtube"></i></a>
-                                    </div>
-                                    <div class="team-text pos-relative">
-                                        <h2>Member 02</h2>
-                                        <h4>Michel JK. Farina</h4>
-                                        <span>Awards Actors</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
-                            <div class="team-wrapper">
-                                <div class="team-img">
-                                    <img src="{% static "img/team/team-03.jpg" %}" alt="">
-                                </div>
-                                <div class="team-content text-center">
-                                    <div class="team-icon">
-                                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                                        <a href="#"><i class="fab fa-twitter"></i></a>
-                                        <a href="#"><i class="fab fa-instagram"></i></a>
-                                        <a href="#"><i class="fab fa-youtube"></i></a>
-                                    </div>
-                                    <div class="team-text pos-relative">
-                                        <h2>Member 03</h2>
-                                        <h4>Shek David Max</h4>
-                                        <span>Flim Director</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- team-area-end -->
+  <div class="testimonial-grid">
+    <div class="testimonial-card">
+      <i class="fas fa-quote-left quote-icon text-blue-400"></i>
+      <p>"Athma Designs transformed our brand identity completely. Their attention to detail and creative vision exceeded our expectations. Highly recommended!"</p>
+      <div class="client">
+        <img src="https://i.pravatar.cc/50?img=1" alt="Sarah Johnson">
+        <div>
+          <strong>Sarah Johnson</strong><br>
+          <small>CEO, TechStart Inc.</small>
+        </div>
+      </div>
+    </div>
 
-            <!-- latest-video-area-start -->
-            <div class="latest-video-area latest-2-video latest-3-video pt-215 pb-210" style="background-image:url({% static "img/bg/bg-14.jpg" %})">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-xl-6 col-lg-6 offset-lg-3 offset-xl-3">
-                            <div class="latest-video-wrapper text-center">
-                                <div class="latest-video">
-                                    <a class="popup-video" href="https://www.youtube.com/watch?v=LTXD6XZXc3U"><i class="far fa-play"></i></a>
-                                </div>
-                                <div class="latest-text">
-                                    <h1>Watch Our Latest Video</h1>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- latest-video-area-end -->
+    <div class="testimonial-card">
+      <i class="fas fa-quote-left quote-icon text-purple-400"></i>
+      <p>"Working with Athma Designs was a game-changer for our product launch. Their packaging design helped us stand out in a crowded market."</p>
+      <div class="client">
+        <img src="https://i.pravatar.cc/50?img=2" alt="Michael Chen">
+        <div>
+          <strong>Michael Chen</strong><br>
+          <small>Founder, EcoGoods</small>
+        </div>
+      </div>
+    </div>
 
-            <!-- brand-area-start -->
-            <div class="brand-area pt-130 pb-130">
-                <div class="container">
-                    <div class="row">
-                        <div class="brand-active owl-carousel">
-                            <div class="col-xl-12">
-                                <div class="brand-img text-center">
-                                    <img src="{% static "img/brand/brand-1.png" %}" alt="" />
-                                </div>
-                            </div>
-                            <div class="col-xl-12">
-                                <div class="brand-img text-center">
-                                    <img src="{% static "img/brand/brand-2.png" %}" alt="" />
-                                </div>
-                            </div>
-                            <div class="col-xl-12">
-                                <div class="brand-img text-center">
-                                    <img src="{% static "img/brand/brand-3.png" %}" alt="" />
-                                </div>
-                            </div>
-                            <div class="col-xl-12">
-                                <div class="brand-img text-center">
-                                    <img src="{% static "img/brand/brand-4.png" %}" alt="" />
-                                </div>
-                            </div>
-                            <div class="col-xl-12">
-                                <div class="brand-img text-center">
-                                    <img src="{% static "img/brand/brand-5.png" %}" alt="" />
-                                </div>
-                            </div>
-                            <div class="col-xl-12 text-center">
-                                <div class="brand-img">
-                                    <img src="{% static "img/brand/brand-6.png" %}" alt="" />
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- brand-area-end -->
+    <div class="testimonial-card">
+      <i class="fas fa-quote-left quote-icon text-green-400"></i>
+      <p>"Professional, creative, and incredibly responsive. Athma Designs delivered our website redesign on time and it looks absolutely stunning!"</p>
+      <div class="client">
+        <img src="https://i.pravatar.cc/50?img=3" alt="Emma Rodriguez">
+        <div>
+          <strong>Emma Rodriguez</strong><br>
+          <small>Marketing Director, FreshBites</small>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
-
-
-            <!-- cta-area-start -->
-            <div class="cta-area">
-                <div class="container">
-                    <div class="cta-bg pt-50 pb-20" style="background-image:url({% static "img/bg/bg-16.jpg" %})">
-                        <div class="row">
-                            <div class="col-xl-8 col-lg-8 col-md-8">
-                                <div class="single-cta mb-30">
-                                    <div class="cta-content">
-                                        <h1>Work Together</h1>
-                                        <span>Join Our Team To Get Creative Service</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xl-4 col-lg-4 col-md-4">
-                                <div class="cta-2-button mb-30 text-md-right">
-                                    <a class="btn" href="#">Join Our Team <i class="far fa-long-arrow-right"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- cta-area-end -->
-
+<section class="cta-section">
+  <div class="cta-container">
+    <h2>Ready to Transform Your Brand?</h2>
+    <p>
+      Let's collaborate to create exceptional design solutions that elevate your brand and captivate your audience.
+      Get in touch today for a free consultation and quote.
+    </p>
+    <div class="cta-buttons">
+      <a href="{% url "core:works" %}" class="btn secondary">View Portfolio</a>
+    </div>
+    
+</section>
         </main>
 
 {% endblock content %}

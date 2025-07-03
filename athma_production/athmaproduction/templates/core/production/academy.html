@@ -18,7 +18,7 @@
                             <div class="breadcrumb-text text-center">
                                 <h1>Athma <br> Digital Academy</h1>
                                 <ul class="breadcrumb-menu">
-                                    <li><a href="index.html">home</a></li>
+                                    <li><a href="{% url "core:home" %}">home</a></li>
                                     <li><span>Digital Academy</span></li>
                                 </ul>
                             </div>
@@ -27,7 +27,25 @@
                 </div>
             </div>
             <!-- breadcrumb-area-end -->
-            <!-- our-history-area-start -->
+            
+<section class="design-section">
+  <div class="container">
+    <div class="design-content">
+      <div class="text-block">
+        <h2>Empowering the Future of <span class="highlight"> Digital Education</span></h2>
+        <p>
+          At Athma Digital Academy, we are redefining how digital skills are taught and learned. Our mission is to bridge the gap between industry and education by offering practical, hands-on courses in areas like Digital Marketing, Graphic Design, Web Development, and VFX.
+        </p>
+    
+        <p>Our learner-first approach focuses on real-world applications, ensuring every student gains the confidence, skills, and portfolio they need to thrive in today’s digital economy. Whether you're starting fresh or upskilling, we help you unlock your potential and build a rewarding career.</p>
+      </div>
+      <div class="image-block">
+        <img src="{% static 'img/design_agency.jpg' %}" alt="Design workspace" />
+      </div>
+    </div>
+  </div>
+</section>
+
             <section class="course-section">
   <div class="container">
   <h2 class="section-title">Choose Your Path</h2>
@@ -265,104 +283,7 @@
             </div>
             <!-- counter-area-end -->
 
-            <!-- team-area-start -->
-            <div class="team-area pt-145 pb-95">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-xl-8 col-lg-8 offset-lg-2 offset-xl-2">
-                            <div class="section-title text-center mb-105 pr-80 pl-80 pos-relative">
-                                <div class="section-icon">
-                                    <img src="{% static "img/icon/section.png" %}" alt="">
-                                </div>
-                                <span>our team member</span>
-                                <h1>Meet Our Creative Team Member</h1>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
-                            <div class="team-wrapper">
-                                <div class="team-img">
-                                    <img src="{% static "img/team/team-01.jpg" %}" alt="">
-                                </div>
-                                <div class="team-content text-center">
-                                    <div class="team-icon">
-                                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                                        <a href="#"><i class="fab fa-twitter"></i></a>
-                                        <a href="#"><i class="fab fa-instagram"></i></a>
-                                        <a href="#"><i class="fab fa-youtube"></i></a>
-                                    </div>
-                                    <div class="team-text pos-relative">
-                                        <h2>Member 01</h2>
-                                        <h4>Shek David Max</h4>
-                                        <span>Flim Director</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
-                            <div class="team-wrapper">
-                                <div class="team-img">
-                                    <img src="{% static "img/team/team-02.jpg" %}" alt="">
-                                </div>
-                                <div class="team-content text-center">
-                                    <div class="team-icon">
-                                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                                        <a href="#"><i class="fab fa-twitter"></i></a>
-                                        <a href="#"><i class="fab fa-instagram"></i></a>
-                                        <a href="#"><i class="fab fa-youtube"></i></a>
-                                    </div>
-                                    <div class="team-text pos-relative">
-                                        <h2>Member 02</h2>
-                                        <h4>Michel JK. Farina</h4>
-                                        <span>Awards Actors</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
-                            <div class="team-wrapper">
-                                <div class="team-img">
-                                    <img src="{% static "img/team/team-03.jpg" %}" alt="">
-                                </div>
-                                <div class="team-content text-center">
-                                    <div class="team-icon">
-                                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                                        <a href="#"><i class="fab fa-twitter"></i></a>
-                                        <a href="#"><i class="fab fa-instagram"></i></a>
-                                        <a href="#"><i class="fab fa-youtube"></i></a>
-                                    </div>
-                                    <div class="team-text pos-relative">
-                                        <h2>Member 03</h2>
-                                        <h4>Shek David Max</h4>
-                                        <span>Flim Director</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- team-area-end -->
 
-            <!-- latest-video-area-start -->
-            <div class="latest-video-area latest-2-video latest-3-video pt-215 pb-210" style="background-image:url({% static "img/bg/bg-14.jpg" %})">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-xl-6 col-lg-6 offset-lg-3 offset-xl-3">
-                            <div class="latest-video-wrapper text-center">
-                                <div class="latest-video">
-                                    <a class="popup-video" href="https://www.youtube.com/watch?v=LTXD6XZXc3U"><i class="far fa-play"></i></a>
-                                </div>
-                                <div class="latest-text">
-                                    <h1>Watch Our Latest Video</h1>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- latest-video-area-end -->
 
             <section class="hero-section">
   <div class="hero-content">

@@ -11,14 +11,14 @@
         <main>
 
             <!-- breadcrumb-area-start -->
-            <div class="breadcrumb-area pt-260 pb-265" style="background-image:url({% static "img/bg/bg-13.jpg" %})">
+            <div class="breadcrumb-area pt-100 pb-100" style="background-image:url({% static "img/bg/bg-13.jpg" %})">
                 <div class="container">
                     <div class="row">
                         <div class="col-xl-12">
                             <div class="breadcrumb-text text-center">
                                 <h1>Athma Creation</h1>
                                 <ul class="breadcrumb-menu">
-                                    <li><a href="index.html">home</a></li>
+                                    <li><a href="{% url "core:home" %}">home</a></li>
                                     <li><span>Creation</span></li>
                                 </ul>
                             </div>
@@ -27,88 +27,80 @@
                 </div>
             </div>
             <!-- breadcrumb-area-end -->
-            <!-- our-history-area-start -->
-            <div class="our-history-area pt-145 pb-130">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-xl-6 col-lg-6 offset-lg-3 offset-xl-3">
-                            <div class="section-title text-center mb-105 pos-relative">
-                                <div class="section-icon">
-                                    <img src="{% static "img/icon/section.png" %}" alt="">
-                                </div>
-                                <span>our history</span>
-                                <h1>Know Something About History</h1>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-xl-6 col-lg-6 col-md-6">
-                            <div class="our-history-wrapper mb-60">
-                                <div class="our-history-icon">
-                                    <i class="far fa-dice-d6"></i>
-                                </div>
-                                <div class="our-history-text">
-                                    <h3>Since 1995-97</h3>
-                                    <span>When We Start</span>
-                                    <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It
-                                        has roots inpiece of classical Latin literature from 45 BC, making it over 2000 years old.
-                                        Richard McClintock, a Latin</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xl-6 col-lg-6 col-md-6">
-                            <div class="our-history-wrapper mb-60">
-                                <div class="our-history-icon">
-                                    <i class="far fa-dice-d6"></i>
-                                </div>
-                                <div class="our-history-text">
-                                    <h3>Since 1997-98</h3>
-                                    <span>When We Have A Team</span>
-                                    <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It
-                                        has roots inpiece of classical Latin literature from 45 BC, making it over 2000 years old.
-                                        Richard McClintock, a Latin</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xl-6 col-lg-6 col-md-6">
-                            <div class="our-history-wrapper mb-60">
-                                <div class="our-history-icon">
-                                    <i class="far fa-dice-d6"></i>
-                                </div>
-                                <div class="our-history-text">
-                                    <h3>Since 1998-99</h3>
-                                    <span>When We Make Our First Movie</span>
-                                    <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It
-                                        has roots inpiece of classical Latin literature from 45 BC, making it over 2000 years old.
-                                        Richard McClintock, a Latin</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xl-6 col-lg-6 col-md-6">
-                            <div class="our-history-wrapper mb-60">
-                                <div class="our-history-icon">
-                                    <i class="far fa-dice-d6"></i>
-                                </div>
-                                <div class="our-history-text">
-                                    <h3>Since 2000-2001</h3>
-                                    <span>When We Got Our First Awards</span>
-                                    <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It
-                                        has roots inpiece of classical Latin literature from 45 BC, making it over 2000 years old.
-                                        Richard McClintock, a Latin</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-xl-12">
-                            <div class="our-history-button text-center">
-                                <a class="btn" href="#">View More <i class="far fa-long-arrow-right"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- our-history-area-end -->
+
+             <section class="design-section">
+  <div class="container">
+    <div class="design-content">
+      <div class="text-block">
+        <h2>Crafting Extraordinary<span class="highlight"> Experiences</span></h2>
+        <p>
+          At Athma Creations, we believe every event tells a story. As part of the prestigious Athma Group, we bring together creative vision, flawless execution, and attention to detail to create events that resonate with your audience.
+        </p>
+    
+        <p>Our mission is to transform your ideas into reality, ensuring every element aligns perfectly with your brand's vision and objectives. From intimate gatherings to large-scale productions, we handle every aspect with precision and creativity.</p>
+      </div>
+      <div class="image-block">
+        <img src="{% static 'img/design_agency.jpg' %}" alt="Design workspace" />
+      </div>
+    </div>
+  </div>
+</section>
+            
+<section class="design-services" >
+  <h2>Our Event Services</h2>
+  <p class="subtitle" style="margin-bottom: 80px;">We specialize in creating memorable experiences across various event categories.</p>
+  
+  <div class="services-grid">
+    <div class="service-card">
+      <div class="icon"><i class="fa-solid fa-building"></i></div>
+      <h3>Corporate Events</h3>
+      <p>Professional conferences, seminars, and corporate gatherings that enhance your business image and engage your stakeholders.</p>
+    </div>
+
+    <div class="service-card">
+      <div class="icon"><i class="fa-solid fa-bolt"></i></div>
+      <h3>Brand Launches</h3>
+      <p>Spectacular launch events that create buzz, generate media coverage, and establish your brand presence in the market.</p>
+    </div>
+
+    <div class="service-card">
+      <div class="icon"><i class="fa-solid fa-ticket-simple"></i></div>
+      <h3>Creative Shows</h3>
+      <p>Artistic performances, fashion shows, and creative exhibitions that captivate audiences and showcase innovation.</p>
+    </div>
+  </div>
+</section>
+
+
+<section class="why-choose-us" style="margin-bottom: 80px;">
+  <div class="container">
+    <h2>Why Choose Us?</h2>
+    <p class="subtitle" style="margin-bottom: 80px;">We combine creativity, expertise, and flawless execution to deliver events that exceed expectations.</p>
+
+    <div class="features-grid">
+      <div class="feature-card">
+        <div class="icon blue"><i class="fa-solid fa-lightbulb"></i></div>
+        <h3>Creative Excellence</h3>
+        <p>Innovative concepts and creative solutions that make your events truly memorable and impactful.</p>
+      </div>
+      <div class="feature-card">
+        <div class="icon green"><i class="fa-solid fa-clock"></i></div>
+        <h3>Timely Execution</h3>
+        <p>Precise planning and flawless execution ensuring your events run smoothly and on schedule.</p>
+      </div>
+      <div class="feature-card">
+        <div class="icon purple"><i class="fa-solid fa-people-group"></i></div>
+        <h3>Expert Team</h3>
+        <p>Experienced professionals who understand your vision and work tirelessly to bring it to life.</p>
+      </div>
+      <div class="feature-card">
+        <div class="icon orange"><i class="fa-solid fa-heart"></i></div>
+        <h3>Personalized Service</h3>
+        <p>Tailored solutions that reflect your unique brand identity and meet your specific requirements.</p>
+      </div>
+    </div>
+  </div>
+</section>
             <!-- about-area-start -->
             <div class="about-area pt-130 pb-100 grey-bg">
                 <div class="container">
@@ -117,11 +109,11 @@
                             <div class="about-wrapper single-2-about mb-30">
                                 <div class="section-title">
                                     <span>Why choose us</span>
-                                    <h1>We Are Creative   Films Studio</h1>
-                                    <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here</p>
-                                </div>
-                                <div class="about-button">
-                                    <a class="btn" href="#">Hire Now <i class="far fa-long-arrow-right"></i></a>
+                                    <h1>We Are Athma Creations</h1>
+                                    <p>Athma Creations delivers vibrant, memorable experiences through expert event planning and creative execution.
+      From corporate events to brand launches, we bring energy, elegance, and excellence to every detail. Our team
+      ensures your event is flawlessly executed and leaves a lasting impact.
+</p>
                                 </div>
                             </div>
                         </div>
@@ -133,15 +125,14 @@
                                             <h5 class="mb-0">
                                                 <a href="#" class="btn-link" data-toggle="collapse" data-target="#collapseOne"
                                                     aria-expanded="true" aria-controls="collapseOne">
-                                                Lats Years We Have Compalte 10+ Awards Winning Films
+                                                Over 10+ Events Successfully Executed
                                                 </a>
                                             </h5>
                                         </div>
 
                                         <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
                                             <div class="card-body">
-                                                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatea ccusantium doloremque laudantium, totam rem aperiam,
-                                                eaque ipsa quae ab illventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+                                                <p>We've planned and managed events for leading brands, delivering seamless experiences from concept to completion.</p>
                                             </div>
                                         </div>
                                     </div>
@@ -150,14 +141,13 @@
                                             <h5 class="mb-0">
                                                 <a href="#" class="btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo"
                                                     aria-expanded="false" aria-controls="collapseTwo">
-                                                    Attracting Users To Evaluate Your Product
+                                                    Corporate, Creative & Promotional Events
                                                 </a>
                                             </h5>
                                         </div>
                                         <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
                                             <div class="card-body">
-                                                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatea ccusantium doloremque laudantium, totam rem aperiam,
-                                                eaque ipsa quae ab illventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+                                                <p>We specialize in business conferences, brand launches, exhibitions, and unique entertainment shows that wow your audience.</p>
                                             </div>
                                         </div>
                                     </div>
@@ -166,14 +156,13 @@
                                             <h5 class="mb-0">
                                                 <a href="#" class="btn-link collapsed" data-toggle="collapse" data-target="#collapseThree"
                                                     aria-expanded="false" aria-controls="collapseThree">
-                                                    We Are Just Getting Started: 1,000 Smashing Members
+                                                    Passionate Team with Creative Vision
                                                 </a>
                                             </h5>
                                         </div>
                                         <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
                                             <div class="card-body">
-                                                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatea ccusantium doloremque laudantium, totam rem aperiam,
-                                                eaque ipsa quae ab illventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+                                                <p>Our dedicated team of event planners, designers, and coordinators work closely with clients to bring their vision to life.</p>
                                             </div>
                                         </div>
                                     </div>
@@ -182,14 +171,13 @@
                                             <h5 class="mb-0">
                                                 <a href="#" class="btn-link collapsed" data-toggle="collapse" data-target="#collapseFour"
                                                     aria-expanded="false" aria-controls="collapseFour">
-                                                    What Happens When You Create A Flexbox Flex Container?
+                                                    End-to-End Event Management
                                                 </a>
                                             </h5>
                                         </div>
                                         <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
                                             <div class="card-body">
-                                                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatea ccusantium doloremque laudantium, totam rem aperiam,
-                                                eaque ipsa quae ab illventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+                                                <p>From venue sourcing to design, logistics, branding, and on-site execution—we handle every step with precision.</p>
                                             </div>
                                         </div>
                                     </div>
@@ -201,275 +189,61 @@
             </div>
             <!-- about-area-end -->
 
-            <!-- certificate-area-start -->
-            <div class="certificate-area pt-130 pb-130">
-                <div class="container">
-                    <div class="row">
-                        <div class="certificate-2-active owl-carousel">
-                            <div class="col-xl-12">
-                                <div class="certificate-img">
-                                    <img src="{% static "img/certificate/cer-1.jpg" %}" alt="">
-                                </div>
-                            </div>
-                            <div class="col-xl-12">
-                                <div class="certificate-img">
-                                    <img src="{% static "img/certificate/cer-2.jpg" %}" alt="">
-                                </div>
-                            </div>
-                            <div class="col-xl-12">
-                                <div class="certificate-img">
-                                    <img src="{% static "img/certificate/cer-1.jpg" %}" alt="">
-                                </div>
-                            </div>
-                            <div class="col-xl-12">
-                                <div class="certificate-img">
-                                    <img src="{% static "img/certificate/cer-3.jpg" %}" alt="">
-                                </div>
-                            </div>
-                            <div class="col-xl-12">
-                                <div class="certificate-img">
-                                    <img src="{% static "img/certificate/cer-1.jpg" %}" alt="">
-                                </div>
-                            </div>
-                            <div class="col-xl-12">
-                                <div class="certificate-img">
-                                    <img src="{% static "img/certificate/cer-2.jpg" %}" alt="">
-                                </div>
-                            </div>
-                            <div class="col-xl-12">
-                                <div class="certificate-img">
-                                    <img src="{% static "img/certificate/cer-1.jpg" %}" alt="">
-                                </div>
-                            </div>
-                            <div class="col-xl-12">
-                                <div class="certificate-img">
-                                    <img src="{% static "img/certificate/cer-3.jpg" %}" alt="">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- certificate-area-end -->
 
-            <!-- counter-area-start -->
-            <div class="counter-area counter-border pb-95">
-                <div class="container">
-                    <div class="row justify-content-between">
-                        <div class="col-xl-2 col-lg-3 col-md-6">
-                            <div class="single-counter text-center mb-30">
-                                <div class="counter-icon">
-                                    <img src="{% static "img/icon/co-1.png" %}" alt="">
-                                </div>
-                                <div class="counter-text">
-                                    <h1 class="counter">6523</h1>
-                                    <span>Project Complate</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xl-2 col-lg-3 col-md-6">
-                            <div class="single-counter text-center mb-30">
-                                <div class="counter-icon">
-                                    <img src="{% static "img/icon/co-2.png" %}" alt="">
-                                </div>
-                                <div class="counter-text">
-                                    <h1 class="counter">6985</h1>
-                                    <span>Satisfied Clients</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xl-2 col-lg-3 col-md-6">
-                            <div class="single-counter text-center mb-30">
-                                <div class="counter-icon">
-                                    <img src="{% static "img/icon/co-3.png" %}" alt="">
-                                </div>
-                                <div class="counter-text">
-                                    <h1 class="counter">8964</h1>
-                                    <span>Win Awards</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xl-2 col-lg-3 col-md-6">
-                            <div class="single-counter text-center mb-30">
-                                <div class="counter-icon">
-                                    <img src="{% static "img/icon/co-4.png" %}" alt="">
-                                </div>
-                                <div class="counter-text">
-                                    <h1 class="counter">6789</h1>
-                                    <span>Project Complate</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- counter-area-end -->
+            <section class="testimonials">
+  <h2>What Our Clients Say</h2>
+  <p class="subtitle">Real feedback from satisfied customers</p>
 
-            <!-- team-area-start -->
-            <div class="team-area pt-145 pb-95">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-xl-8 col-lg-8 offset-lg-2 offset-xl-2">
-                            <div class="section-title text-center mb-105 pr-80 pl-80 pos-relative">
-                                <div class="section-icon">
-                                    <img src="{% static "img/icon/section.png" %}" alt="">
-                                </div>
-                                <span>our team member</span>
-                                <h1>Meet Our Creative Team Member</h1>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
-                            <div class="team-wrapper">
-                                <div class="team-img">
-                                    <img src="{% static "img/team/team-01.jpg" %}" alt="">
-                                </div>
-                                <div class="team-content text-center">
-                                    <div class="team-icon">
-                                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                                        <a href="#"><i class="fab fa-twitter"></i></a>
-                                        <a href="#"><i class="fab fa-instagram"></i></a>
-                                        <a href="#"><i class="fab fa-youtube"></i></a>
-                                    </div>
-                                    <div class="team-text pos-relative">
-                                        <h2>Member 01</h2>
-                                        <h4>Shek David Max</h4>
-                                        <span>Flim Director</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
-                            <div class="team-wrapper">
-                                <div class="team-img">
-                                    <img src="{% static "img/team/team-02.jpg" %}" alt="">
-                                </div>
-                                <div class="team-content text-center">
-                                    <div class="team-icon">
-                                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                                        <a href="#"><i class="fab fa-twitter"></i></a>
-                                        <a href="#"><i class="fab fa-instagram"></i></a>
-                                        <a href="#"><i class="fab fa-youtube"></i></a>
-                                    </div>
-                                    <div class="team-text pos-relative">
-                                        <h2>Member 02</h2>
-                                        <h4>Michel JK. Farina</h4>
-                                        <span>Awards Actors</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
-                            <div class="team-wrapper">
-                                <div class="team-img">
-                                    <img src="{% static "img/team/team-03.jpg" %}" alt="">
-                                </div>
-                                <div class="team-content text-center">
-                                    <div class="team-icon">
-                                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                                        <a href="#"><i class="fab fa-twitter"></i></a>
-                                        <a href="#"><i class="fab fa-instagram"></i></a>
-                                        <a href="#"><i class="fab fa-youtube"></i></a>
-                                    </div>
-                                    <div class="team-text pos-relative">
-                                        <h2>Member 03</h2>
-                                        <h4>Shek David Max</h4>
-                                        <span>Flim Director</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- team-area-end -->
+  <div class="testimonial-grid">
+    <div class="testimonial-card">
+      <i class="fas fa-quote-left quote-icon text-blue-400"></i>
+      <p>""Athma Creations transformed our product launch into an unforgettable experience. Their attention to detail and creative approach exceeded all our expectations.""</p>
+      <div class="client">
+        <img src="https://i.pravatar.cc/50?img=1" alt="Sarah Johnson">
+        <div>
+          <strong>Richardson</strong><br>
+          <small>Marketing Director, TechCorp</small>
+        </div>
+      </div>
+    </div>
 
-            <!-- latest-video-area-start -->
-            <div class="latest-video-area latest-2-video latest-3-video pt-215 pb-210" style="background-image:url({% static "img/bg/bg-14.jpg" %})">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-xl-6 col-lg-6 offset-lg-3 offset-xl-3">
-                            <div class="latest-video-wrapper text-center">
-                                <div class="latest-video">
-                                    <a class="popup-video" href="https://www.youtube.com/watch?v=LTXD6XZXc3U"><i class="far fa-play"></i></a>
-                                </div>
-                                <div class="latest-text">
-                                    <h1>Watch Our Latest Video</h1>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- latest-video-area-end -->
+    <div class="testimonial-card">
+      <i class="fas fa-quote-left quote-icon text-purple-400"></i>
+      <p>"Professional, creative, and reliable. Athma Creations handled our annual conference flawlessly. Every guest was impressed with the execution."</p>
+      <div class="client">
+        <img src="https://i.pravatar.cc/50?img=2" alt="Michael Chen">
+        <div>
+          <strong>Johnson</strong><br>
+          <small>CEO, InnovateHub</small>
+        </div>
+      </div>
+    </div>
 
-            <!-- brand-area-start -->
-            <div class="brand-area pt-130 pb-130">
-                <div class="container">
-                    <div class="row">
-                        <div class="brand-active owl-carousel">
-                            <div class="col-xl-12">
-                                <div class="brand-img text-center">
-                                    <img src="{% static "img/brand/brand-1.png" %}" alt="" />
-                                </div>
-                            </div>
-                            <div class="col-xl-12">
-                                <div class="brand-img text-center">
-                                    <img src="{% static "img/brand/brand-2.png" %}" alt="" />
-                                </div>
-                            </div>
-                            <div class="col-xl-12">
-                                <div class="brand-img text-center">
-                                    <img src="{% static "img/brand/brand-3.png" %}" alt="" />
-                                </div>
-                            </div>
-                            <div class="col-xl-12">
-                                <div class="brand-img text-center">
-                                    <img src="{% static "img/brand/brand-4.png" %}" alt="" />
-                                </div>
-                            </div>
-                            <div class="col-xl-12">
-                                <div class="brand-img text-center">
-                                    <img src="{% static "img/brand/brand-5.png" %}" alt="" />
-                                </div>
-                            </div>
-                            <div class="col-xl-12 text-center">
-                                <div class="brand-img">
-                                    <img src="{% static "img/brand/brand-6.png" %}" alt="" />
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- brand-area-end -->
+    <div class="testimonial-card">
+      <i class="fas fa-quote-left quote-icon text-green-400"></i>
+      <p>"Working with Athma Creations was a game-changer for our brand launch. They understood our vision perfectly and delivered beyond expectations."</p>
+      <div class="client">
+        <img src="https://i.pravatar.cc/50?img=3" alt="Emma Rodriguez">
+        <div>
+          <strong>Emily Park</strong><br>
+          <small>Brand Manager, StyleCo</small>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
-
-
-            <!-- cta-area-start -->
-            <div class="cta-area">
-                <div class="container">
-                    <div class="cta-bg pt-50 pb-20" style="background-image:url({% static "img/bg/bg-16.jpg" %})">
-                        <div class="row">
-                            <div class="col-xl-8 col-lg-8 col-md-8">
-                                <div class="single-cta mb-30">
-                                    <div class="cta-content">
-                                        <h1>Work Together</h1>
-                                        <span>Join Our Team To Get Creative Service</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xl-4 col-lg-4 col-md-4">
-                                <div class="cta-2-button mb-30 text-md-right">
-                                    <a class="btn" href="#">Join Our Team <i class="far fa-long-arrow-right"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- cta-area-end -->
+<section class="cta-section">
+  <div class="cta-container">
+    <h2>Ready to Create Your Next Event?</h2>
+    <p>
+      Let's collaborate to bring your vision to life. Whether it's a corporate event, brand launch, or creative show, we're here to make it extraordinary.
+    </p>
+    <div class="cta-buttons">
+      <a href="#portfolio" class="btn secondary">Plan Your Event</a>
+    </div>
+    
+</section>
 
         </main>
 
